@@ -15,24 +15,23 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md">
+      <div className="container mx-auto px-6">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <PenTool className="w-6 h-6 text-accent-pink" />
-            <span className="font-serif font-bold text-xl">Coldedly Writing</span>
+          <Link to="/" className="flex items-center space-x-3">
+            <span className="font-serif font-bold text-2xl tracking-tight">coldedly writing</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+          <div className="hidden md:flex items-center space-x-12">
+            {navItems.slice(1).map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 className={cn(
-                  'nav-link',
-                  location.pathname === item.path && 'active'
+                  'text-muted-foreground hover:text-foreground transition-colors duration-200 font-medium text-sm tracking-wide uppercase',
+                  location.pathname === item.path && 'text-accent-pink'
                 )}
               >
                 {item.label}
@@ -44,7 +43,7 @@ const Navbar = () => {
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="ml-4"
+              className="h-9 w-9 hover:bg-transparent"
             >
               {theme === 'light' ? (
                 <Moon className="w-4 h-4" />
@@ -55,11 +54,24 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center space-x-4">
+            {navItems.slice(1).map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={cn(
+                  'text-muted-foreground hover:text-foreground transition-colors text-sm',
+                  location.pathname === item.path && 'text-accent-pink'
+                )}
+              >
+                {item.label}
+              </Link>
+            ))}
             <Button
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
+              className="h-9 w-9 hover:bg-transparent"
             >
               {theme === 'light' ? (
                 <Moon className="w-4 h-4" />
@@ -67,24 +79,6 @@ const Navbar = () => {
                 <Sun className="w-4 h-4" />
               )}
             </Button>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        <div className="md:hidden pb-4">
-          <div className="flex flex-col space-y-2">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={cn(
-                  'nav-link block py-2',
-                  location.pathname === item.path && 'active'
-                )}
-              >
-                {item.label}
-              </Link>
-            ))}
           </div>
         </div>
       </div>

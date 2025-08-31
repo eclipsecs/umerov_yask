@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import RoughNotation from '@/components/RoughNotation';
 import { ieltsEssays } from '@/data/ieltsEssays';
 
 const IELTSEssaysPage = () => {
@@ -38,7 +39,9 @@ const IELTSEssaysPage = () => {
         
         <CardTitle className="text-xl font-serif group-hover:text-accent-pink transition-colors">
           <Link to={`/ielts-essay/${essay.id}`}>
-            {essay.title}
+            <RoughNotation type="underline" color="#e91e63" animate={true}>
+              <span>{essay.title}</span>
+            </RoughNotation>
           </Link>
         </CardTitle>
         

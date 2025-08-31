@@ -3,6 +3,7 @@ import { Clock, Calendar, Tag, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import RoughNotation from '@/components/RoughNotation';
 import { articles } from '@/data/articles';
 
 const ArticlesPage = () => {
@@ -47,7 +48,9 @@ const ArticlesPage = () => {
               
               <CardTitle className="text-2xl font-serif group-hover:text-accent-pink transition-colors">
                 <Link to={`/article/${article.id}`}>
-                  {article.title}
+                  <RoughNotation type="highlight" color="#e91e63" animate={true}>
+                    <span>{article.title}</span>
+                  </RoughNotation>
                 </Link>
               </CardTitle>
               
