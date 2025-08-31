@@ -66,22 +66,6 @@ const HomePage = () => {
       </section>
 
       {/* About Section */}
-      <section className="text-center py-16 border-t border-border">
-        <div className="max-w-2xl mx-auto">
-          <div className="flex justify-center mb-6">
-            <PenTool className="w-12 h-12 text-accent-pink" />
-          </div>
-          <h2 className="text-3xl font-serif font-bold mb-6 text-foreground">
-            About This Space
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            This is a personal collection of thoughts on writing, language, and learning. 
-            Every piece is written in markdown format, making it easy to edit, update, 
-            and share. Whether you're here for the articles or the IELTS resources, 
-            I hope you find something useful for your own writing journey.
-          </p>
-        </div>
-      </section>
     </div>
   );
 };

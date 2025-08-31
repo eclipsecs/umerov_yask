@@ -48,7 +48,7 @@ const ArticlesPage = () => {
               
               <CardTitle className="text-2xl font-serif group-hover:text-accent-pink transition-colors">
                 <Link to={`/article/${article.id}`}>
-                  <RoughNotation type="highlight" color="#e91e63" animate={true}>
+                  <RoughNotation type="highlight" color="#f2ff00ff" animate={true}>
                     <span>{article.title}</span>
                   </RoughNotation>
                 </Link>
@@ -82,18 +82,6 @@ const ArticlesPage = () => {
           </Card>
         ))}
       </div>
-
-      {/* Add New Article Instruction */}
-      <Card className="mt-12 border-dashed border-2 border-muted">
-        <CardContent className="text-center py-12">
-          <h3 className="text-xl font-serif font-semibold mb-4">Add New Articles</h3>
-          <p className="text-muted-foreground">
-            To add new articles, create markdown files in the{' '}
-            <code className="bg-muted px-2 py-1 rounded text-sm">src/data/articles.ts</code>{' '}
-            file. Each article should follow the existing structure with title, content, tags, and metadata.
-          </p>
-        </CardContent>
-      </Card>
     </div>
   );
 };

@@ -11,44 +11,17 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: '1',
-    title: 'The Art of Cold Writing: Finding Your Voice',
-    excerpt: 'Discover how to develop a unique writing style that resonates with your readers while maintaining clarity and engagement.',
+    title: 'Coding sucks. AI takes over',
+    excerpt: 'Personal opinion about learning and code and programming overall.',
     publishedAt: '2024-01-15',
     readTime: 5,
-    tags: ['Writing', 'Style', 'Creativity'],
-    content: `# The Art of Cold Writing: Finding Your Voice
+    tags: ['AI', 'Coding', 'Opinion'],
+    content:
+    ` 
+# Coding sucks. AI takes over
 
-Writing is not just about putting words on paper—it's about discovering who you are as a communicator. When we talk about "cold writing," we're referring to that initial phase where ideas feel distant, unfamiliar, and challenging to articulate.
-
-## Understanding Your Writing Identity
-
-Every writer has a unique voice, but finding it requires practice and patience. Your voice is the combination of:
-
-- Your natural speech patterns
-- Your personal experiences and perspectives  
-- Your preferred sentence structures and rhythms
-- Your relationship with language itself
-
-## The Cold Start Problem
-
-When you sit down to write, especially at the beginning, everything feels cold. The cursor blinks mockingly, the page remains stubbornly blank, and words seem to hide just out of reach.
-
-This is normal. This is where growth happens.
-
-> "The first draft of anything is shit." - Ernest Hemingway
-
-## Techniques for Warming Up
-
-1. **Free writing**: Set a timer for 10 minutes and write continuously
-2. **Morning pages**: Three pages of stream-of-consciousness writing
-3. **Prompt exercises**: Use random prompts to kickstart creativity
-4. **Voice journaling**: Write as if talking to a friend
-
-## Finding Warmth in the Process
-
-The magic happens when you stop trying to be perfect and start trying to be authentic. Your voice emerges not from grand gestures but from consistent, honest practice.
-
-Remember: every professional writer started with cold, uncertain words. The key is to keep writing until those words find their fire.`
+I used to love coding. The thrill of solving problems, building something from scratch, and the endless possibilities of what I could create were exhilarating. But over time, that excitement faded. Coding became a chore, a series of frustrating bugs and endless debugging sessions that drained my enthusiasm.
+    `
   },
   {
     id: '2',
@@ -137,6 +110,46 @@ What gets measured gets managed:
 - Skills you're developing
 
 Remember: the goal isn't to become perfect overnight. It's to become someone who writes regularly, and that person will naturally become a better writer over time.`
+  },
+  {
+    id: '3',
+    title: 'My New Article Title',
+    excerpt: 'A short description of what this article is about - this shows up on the main articles page.',
+    publishedAt: '2024-01-20',
+    readTime: 4,
+    tags: ['Writing', 'Tips'],
+    content: `# My New Article Title
+
+This is where your actual article content goes. You can write in markdown format, which means:
+
+## You can use headings like this
+
+And regular paragraphs just by typing normally.
+
+### Smaller headings too
+
+**Bold text** and *italic text* work great.
+
+You can make lists:
+- Point one
+- Point two  
+- Point three
+
+Or numbered lists:
+1. First thing
+2. Second thing
+3. Third thing
+
+> You can even add quotes like this for emphasis
+
+And if you want to include code examples:
+\`\`\`
+const example = "code goes here";
+\`\`\`
+
+[Links work too](https://example.com)
+
+Just write naturally and use these formatting tricks when you need them!`
   },
   {
     id: '3',

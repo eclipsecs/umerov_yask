@@ -39,7 +39,7 @@ const IELTSEssaysPage = () => {
         
         <CardTitle className="text-xl font-serif group-hover:text-accent-pink transition-colors">
           <Link to={`/ielts-essay/${essay.id}`}>
-            <RoughNotation type="underline" color="#e91e63" animate={true}>
+            <RoughNotation type="underline" color="#fbff00ff" animate={true}>
               <span>{essay.title}</span>
             </RoughNotation>
           </Link>
@@ -132,21 +132,7 @@ const IELTSEssaysPage = () => {
       </Tabs>
 
       {/* Add New Essay Instruction */}
-      <Card className="border-dashed border-2 border-muted">
-        <CardContent className="text-center py-12">
-          <h3 className="text-xl font-serif font-semibold mb-4">Add New IELTS Essays</h3>
-          <p className="text-muted-foreground mb-4">
-            To add new IELTS essays, edit the{' '}
-            <code className="bg-muted px-2 py-1 rounded text-sm">src/data/ieltsEssays.ts</code>{' '}
-            file. Make sure to specify whether it's Task 1 or Task 2, include the original question, 
-            and provide scoring information.
-          </p>
-          <div className="text-sm text-muted-foreground">
-            <strong>Task 1:</strong> Describe charts, graphs, or visual data (150+ words)<br/>
-            <strong>Task 2:</strong> Essay responding to arguments or problems (250+ words)
-          </div>
-        </CardContent>
-      </Card>
+
     </div>
   );
 };

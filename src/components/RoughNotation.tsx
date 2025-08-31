@@ -14,8 +14,8 @@ interface RoughNotationProps {
 
 const RoughNotation: React.FC<RoughNotationProps> = ({
   children,
-  type = 'highlight',
-  color = '#e91e63',
+  type = 'box',
+  color = '#f7fb09ff',
   strokeWidth = 2,
   animate = true,
   animationDuration = 1000,

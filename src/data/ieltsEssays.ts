@@ -75,5 +75,40 @@ This data reflects growing environmental consciousness and technological advance
 *Word count: 187*
 *Writing time: 20 minutes*
 *Estimated band score: 7.5*`
+  },
+  {
+    id: '2',
+    task: 'task1',
+    title: 'Bar Chart: Global Energy Consumption',
+    question: 'The chart below shows the global energy consumption by different sources from 2010 to 2020. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 7.5,
+    writingTime: '20 minutes',
+    wordCount: 187,
+    tags: ['Bar Chart', 'Energy', 'Global Trends', 'Data Analysis'],
+    content: `# Global Energy Consumption Analysis
+
+## The Question
+The chart below shows the global energy consumption by different sources from 2010 to 2020. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.
+
+## My Essay
+
+The bar chart illustrates global energy consumption patterns across various sources over a decade, from 2010 to 2020.
+
+**Overview**
+Overall, fossil fuels remained the dominant energy sources throughout the period, while renewable energy sources showed significant growth. Coal consumption fluctuated considerably, whereas natural gas and renewable sources demonstrated steady upward trends.
+
+**Key Trends**
+In 2010, coal was the leading energy source at approximately 40% of global consumption, followed by oil at 32% and natural gas at 20%. Renewable sources, including solar, wind, and hydroelectric power, accounted for only 8% of total consumption.
+
+By 2020, the energy landscape had shifted notably. While oil maintained its position at around 33%, coal consumption declined to 35%. Natural gas consumption increased substantially to 25%, representing the most significant growth among fossil fuels. Most remarkably, renewable energy sources doubled their share to 16%, highlighting the global transition toward sustainable energy solutions.
+
+**Significant Changes**
+The most striking development was the consistent growth in renewable energy adoption, which experienced steady annual increases throughout the decade. Conversely, coal showed volatility with peaks around 2013-2014 before declining toward 2020.
+
+This data reflects growing environmental consciousness and technological advancement in the energy sector during this transformative decade.
+
+*Word count: 187*
+*Writing time: 20 minutes*
+*Estimated band score: 7.5*`
   }
 ];
