@@ -137,5 +137,45 @@ What gets measured gets managed:
 - Skills you're developing
 
 Remember: the goal isn't to become perfect overnight. It's to become someone who writes regularly, and that person will naturally become a better writer over time.`
+  },
+  {
+    id: '3',
+    title: 'My New Article Title',
+    excerpt: 'A short description of what this article is about - this shows up on the main articles page.',
+    publishedAt: '2024-01-20',
+    readTime: 4,
+    tags: ['Writing', 'Tips'],
+    content: `# My New Article Title
+
+This is where your actual article content goes. You can write in markdown format, which means:
+
+## You can use headings like this
+
+And regular paragraphs just by typing normally.
+
+### Smaller headings too
+
+**Bold text** and *italic text* work great.
+
+You can make lists:
+- Point one
+- Point two  
+- Point three
+
+Or numbered lists:
+1. First thing
+2. Second thing
+3. Third thing
+
+> You can even add quotes like this for emphasis
+
+And if you want to include code examples:
+\`\`\`
+const example = "code goes here";
+\`\`\`
+
+[Links work too](https://example.com)
+
+Just write naturally and use these formatting tricks when you need them!`
   }
 ];
