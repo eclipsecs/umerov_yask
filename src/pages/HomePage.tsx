@@ -6,66 +6,58 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const HomePage = () => {
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl">
+    <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <section className="text-center mb-16 py-20">
-        <div className="mb-8">
-          <RoughNotation type="highlight" color="#e91e63" animate={true}>
-            <h1 className="hero-title text-foreground">
-              coldedly writing
-            </h1>
-          </RoughNotation>
-        </div>
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          A collection of articles and IELTS essays exploring the craft of writing, 
-          language learning, and the art of clear communication.
-        </p>
-      </section>
-
-      {/* Featured Content Sections */}
-      <section className="grid md:grid-cols-2 gap-12 mb-20">
-        <div className="group p-8 rounded-2xl hover:bg-muted/30 transition-all duration-300 hover:scale-105">
-          <div className="flex items-center mb-6">
-            <FileText className="w-10 h-10 text-accent-pink mr-4" />
-            <h2 className="text-3xl font-serif font-bold">Articles</h2>
+      <section className="flex-1 flex items-center justify-center px-4 py-20">
+        <div className="text-center max-w-4xl mx-auto">
+          <div className="mb-12">
+            <RoughNotation type="box" animate={true}>
+              <h1 className="hero-title text-foreground px-8 py-4">
+                coldedly writing
+              </h1>
+            </RoughNotation>
           </div>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            In-depth explorations of writing techniques, creativity, and the writer's journey.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-16">
+            A collection of articles and IELTS essays exploring the craft of writing, 
+            language learning, and the art of clear communication.
           </p>
-          <p className="text-muted-foreground/80 mb-8 text-sm">
-            Discover insights about developing your voice, building consistent habits, 
-            and overcoming the challenges that every writer faces.
-          </p>
-          <Link to="/articles">
-            <Button className="group-hover:bg-accent-pink group-hover:text-accent-pink-foreground transition-all duration-300 px-6 py-2">
-              Read Articles
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
-        </div>
 
-        <div className="group p-8 rounded-2xl hover:bg-muted/30 transition-all duration-300 hover:scale-105">
-          <div className="flex items-center mb-6">
-            <BookOpen className="w-10 h-10 text-accent-pink mr-4" />
-            <h2 className="text-3xl font-serif font-bold">IELTS Essays</h2>
+          {/* Featured Content Sections */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <div className="group p-6 rounded-xl hover:bg-muted/20 transition-all duration-300">
+              <div className="flex items-center justify-center mb-4">
+                <FileText className="w-8 h-8 text-accent-pink mr-3" />
+                <h2 className="text-2xl font-serif font-bold">Articles</h2>
+              </div>
+              <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
+                In-depth explorations of writing techniques, creativity, and the writer's journey.
+              </p>
+              <Link to="/articles">
+                <Button variant="outline" className="w-full group-hover:border-accent-pink group-hover:text-accent-pink transition-all duration-300">
+                  Read Articles
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
+
+            <div className="group p-6 rounded-xl hover:bg-muted/20 transition-all duration-300">
+              <div className="flex items-center justify-center mb-4">
+                <BookOpen className="w-8 h-8 text-accent-pink mr-3" />
+                <h2 className="text-2xl font-serif font-bold">IELTS Essays</h2>
+              </div>
+              <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
+                Sample essays for IELTS Task 1 and Task 2 with detailed analysis.
+              </p>
+              <Link to="/ielts-essays">
+                <Button variant="outline" className="w-full group-hover:border-accent-pink group-hover:text-accent-pink transition-all duration-300">
+                  View Essays
+                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
           </div>
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            Sample essays for IELTS Task 1 and Task 2 with detailed analysis.
-          </p>
-          <p className="text-muted-foreground/80 mb-8 text-sm">
-            Study high-scoring essay examples, understand structure and style, 
-            and learn strategies for academic writing success.
-          </p>
-          <Link to="/ielts-essays">
-            <Button className="group-hover:bg-accent-pink group-hover:text-accent-pink-foreground transition-all duration-300 px-6 py-2">
-              View Essays
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
         </div>
       </section>
-
-      {/* About Section */}
     </div>
   );
 };
