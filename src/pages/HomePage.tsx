@@ -24,37 +24,41 @@ const HomePage = () => {
 
           {/* Featured Content Sections */}
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            <div className="group p-6 rounded-xl hover:bg-muted/20 transition-all duration-300">
-              <div className="flex items-center justify-center mb-4">
-                <FileText className="w-8 h-8 text-accent-pink mr-3" />
-                <h2 className="text-2xl font-serif font-bold">Articles</h2>
+            <Link
+              to="/articles"
+              className="group block p-8 rounded-xl hover:bg-muted/30 transition-all duration-300 bg-gradient-to-br from-background to-muted/20 border border-border/50"
+            >
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-6 bg-accent-pink/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <FileText className="w-8 h-8 text-accent-pink" />
+                </div>
+                <RoughNotation type="underline" onHover={true}>
+                  <h2 className="text-2xl font-serif font-bold mb-4">Articles</h2>
+                </RoughNotation>
+                <p className="text-muted-foreground leading-relaxed">
+                  Explore insightful articles on various topics including language learning, 
+                  writing techniques, and academic success strategies.
+                </p>
               </div>
-              <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-                In-depth explorations of writing techniques, creativity, and the writer's journey.
-              </p>
-              <Link to="/articles">
-                <Button variant="outline" className="w-full group-hover:border-accent-pink group-hover:text-accent-pink transition-all duration-300">
-                  Read Articles
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-            </div>
+            </Link>
 
-            <div className="group p-6 rounded-xl hover:bg-muted/20 transition-all duration-300">
-              <div className="flex items-center justify-center mb-4">
-                <BookOpen className="w-8 h-8 text-accent-pink mr-3" />
-                <h2 className="text-2xl font-serif font-bold">IELTS Essays</h2>
+            <Link
+              to="/ielts-essays"
+              className="group block p-8 rounded-xl hover:bg-muted/30 transition-all duration-300 bg-gradient-to-br from-background to-muted/20 border border-border/50"
+            >
+              <div className="text-center">
+                <div className="w-16 h-16 mx-auto mb-6 bg-accent-pink/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <BookOpen className="w-8 h-8 text-accent-pink" />
+                </div>
+                <RoughNotation type="underline" onHover={true}>
+                  <h2 className="text-2xl font-serif font-bold mb-4">IELTS Essays</h2>
+                </RoughNotation>
+                <p className="text-muted-foreground leading-relaxed">
+                  High-scoring IELTS essay samples with detailed analysis, 
+                  band scores, and expert feedback to help you excel.
+                </p>
               </div>
-              <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-                Sample essays for IELTS Task 1 and Task 2 with detailed analysis.
-              </p>
-              <Link to="/ielts-essays">
-                <Button variant="outline" className="w-full group-hover:border-accent-pink group-hover:text-accent-pink transition-all duration-300">
-                  View Essays
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

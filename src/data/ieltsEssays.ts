@@ -8,6 +8,7 @@ export interface IELTSEssay {
   writingTime: string;
   wordCount: number;
   tags: string[];
+  image?: string; // Optional image for Task 1 essays
 }
 
 export const ieltsEssays: IELTSEssay[] = [

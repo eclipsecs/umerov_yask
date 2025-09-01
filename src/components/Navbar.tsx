@@ -29,9 +29,10 @@ const Navbar = () => {
               href="https://www.youtube.com/@javokhirsielts" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-accent-pink transition-colors"
+              className="flex items-center gap-2 text-muted-foreground hover:text-accent-pink transition-colors"
             >
               <Youtube className="w-5 h-5" />
+              <span className="text-sm font-medium">YouTube</span>
             </a>
             {navItems.slice(1).map((item) => (
               <Link
@@ -67,9 +68,10 @@ const Navbar = () => {
               href="https://www.youtube.com/@javokhirsielts" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-accent-pink transition-colors"
+              className="flex items-center gap-1 text-muted-foreground hover:text-accent-pink transition-colors"
             >
               <Youtube className="w-4 h-4" />
+              <span className="text-xs font-medium">YT</span>
             </a>
             {navItems.slice(1).map((item) => (
               <Link

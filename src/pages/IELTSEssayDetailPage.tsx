@@ -83,6 +83,25 @@ const IELTSEssayDetailPage = () => {
         </div>
       </header>
 
+      {/* Task 1 Image Display */}
+      {essay.task === 'task1' && essay.image && (
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="text-lg">Task 1 Visual</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex justify-center">
+              <img 
+                src={essay.image} 
+                alt={`Task 1 visual for ${essay.title}`}
+                className="max-w-full h-auto rounded-lg border border-border/50"
+                style={{ maxHeight: '500px' }}
+              />
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       {/* Essay Content */}
       <article className="prose prose-lg max-w-none">
         <MarkdownRenderer content={essay.content} />

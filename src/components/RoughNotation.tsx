@@ -83,7 +83,7 @@ const RoughNotation: React.FC<RoughNotationProps> = ({
       onMouseLeave: handleMouseLeave,
       style: {
         ...((children as React.ReactElement).props.style || {}),
-        color: theme === 'dark' && (type === 'box' || type === 'highlight') ? '#000000' : undefined
+        color: theme === 'dark' ? '#000000' : 'inherit'
       }
     }
   );
