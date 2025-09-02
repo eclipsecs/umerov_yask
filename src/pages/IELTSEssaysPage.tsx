@@ -33,11 +33,9 @@ const IELTSEssaysPage = () => {
                   <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                     <Target className="w-4 h-4 text-primary" />
                   </div>
-                  <RoughNotation type="circle" onHover={true}>
-                    <span className="inline-block px-3 py-1 bg-accent-pink text-accent-pink-foreground text-xs font-medium rounded-full">
-                      {essay.task.toUpperCase()}
-                    </span>
-                  </RoughNotation>
+                  <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
+                    {essay.task.toUpperCase()}
+                  </span>
                 </div>
                 <span className="text-muted-foreground text-xs">Band {essay.bandScore}</span>
               </div>
@@ -72,11 +70,9 @@ const IELTSEssaysPage = () => {
                   <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                     <FileText className="w-4 h-4 text-primary" />
                   </div>
-                  <RoughNotation type="circle" onHover={true}>
-                    <span className="inline-block px-3 py-1 bg-accent-pink text-accent-pink-foreground text-xs font-medium rounded-full">
-                      {essay.task.toUpperCase()}
-                    </span>
-                  </RoughNotation>
+                  <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
+                    {essay.task.toUpperCase()}
+                  </span>
                 </div>
                 <span className="text-muted-foreground text-xs">Band {essay.bandScore}</span>
               </div>
