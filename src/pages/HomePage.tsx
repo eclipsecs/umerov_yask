@@ -13,13 +13,15 @@ const HomePage = () => {
           <div className="mb-12">
             <RoughNotation type="box" animate={true}>
               <h1 className="hero-title text-foreground px-8 py-4">
-                coldedly writing
+                Hi there👋
               </h1>
             </RoughNotation>
           </div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-16">
-            A collection of articles and IELTS essays exploring the craft of writing, 
-            language learning, and the art of clear communication.
+              <strong>This is where I store my ramblings.
+              <br />
+              IELTS essays and articles
+              </strong>
           </p>
 
           {/* Featured Content Sections */}
@@ -36,8 +38,7 @@ const HomePage = () => {
                   <h2 className="text-2xl font-serif font-bold mb-4">Articles</h2>
                 </RoughNotation>
                 <p className="text-muted-foreground leading-relaxed">
-                  Explore insightful articles on various topics including language learning, 
-                  writing techniques, and academic success strategies.
+                        A collection of opinions on different topics I’ve read about or watched.
                 </p>
               </div>
             </Link>
@@ -54,8 +55,7 @@ const HomePage = () => {
                   <h2 className="text-2xl font-serif font-bold mb-4">IELTS Essays</h2>
                 </RoughNotation>
                 <p className="text-muted-foreground leading-relaxed">
-                  High-scoring IELTS essay samples with detailed analysis, 
-                  band scores, and expert feedback to help you excel.
+                  In this repository, you can find collections of IELTS essays I have written throughout my teaching career.
                 </p>
               </div>
             </Link>

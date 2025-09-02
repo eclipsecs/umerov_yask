@@ -18,7 +18,7 @@ const RoughNotation: React.FC<RoughNotationProps> = ({
   children,
   type = 'box',
   color,
-  strokeWidth = 2,
+  strokeWidth = 4,
   animate = true,
   animationDuration = 1000,
   multiline = false,
@@ -29,7 +29,7 @@ const RoughNotation: React.FC<RoughNotationProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   const { theme } = useTheme();
   
-  const defaultColor = color || (theme === 'dark' ? '#f7fb09ff' : '#e91e63ff');
+  const defaultColor = color || (theme === 'dark' ? '#09e7fbff' : '#f80185ff');
 
   useEffect(() => {
     if (!elementRef.current) return;
