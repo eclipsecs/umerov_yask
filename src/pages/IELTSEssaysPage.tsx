@@ -30,8 +30,8 @@ const IELTSEssaysPage = () => {
             >
               <div className="flex justify-between items-start mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-accent-pink/10 rounded-full flex items-center justify-center">
-                    <Target className="w-4 h-4 text-accent-pink" />
+                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                    <Target className="w-4 h-4 text-primary" />
                   </div>
                   <RoughNotation type="circle" onHover={true}>
                     <span className="inline-block px-3 py-1 bg-accent-pink text-accent-pink-foreground text-xs font-medium rounded-full">
@@ -69,8 +69,8 @@ const IELTSEssaysPage = () => {
             >
               <div className="flex justify-between items-start mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-accent-pink/10 rounded-full flex items-center justify-center">
-                    <FileText className="w-4 h-4 text-accent-pink" />
+                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                    <FileText className="w-4 h-4 text-primary" />
                   </div>
                   <RoughNotation type="circle" onHover={true}>
                     <span className="inline-block px-3 py-1 bg-accent-pink text-accent-pink-foreground text-xs font-medium rounded-full">

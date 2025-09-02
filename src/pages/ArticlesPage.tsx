@@ -20,8 +20,8 @@ const ArticlesPage = () => {
           >
             <div className="flex justify-between items-start mb-4">
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-accent-pink/10 rounded-full flex items-center justify-center">
-                  <FileText className="w-4 h-4 text-accent-pink" />
+                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <FileText className="w-4 h-4 text-primary" />
                 </div>
                 <Badge variant="secondary" className="bg-accent-pink/10 text-accent-pink">
                   {new Date(article.publishedAt).toLocaleDateString('en-US', {
@@ -31,7 +31,7 @@ const ArticlesPage = () => {
                   })}
                 </Badge>
               </div>
-              <Clock className="w-4 h-4 text-muted-foreground" />
+              <Clock className="w-4 h-4 text-primary/70" />
             </div>
             <RoughNotation type="underline" onHover={true}>
               <h2 className="text-xl font-serif font-bold mb-3 text-foreground">

@@ -81,10 +81,10 @@ const RoughNotation: React.FC<RoughNotationProps> = ({
       className: `${(children as React.ReactElement).props.className || ''} rough-notation relative inline-block`.trim(),
       onMouseEnter: handleMouseEnter,
       onMouseLeave: handleMouseLeave,
-      style: {
-        ...((children as React.ReactElement).props.style || {}),
-        color: theme === 'dark' ? '#000000' : 'inherit'
-      }
+        style: {
+          ...((children as React.ReactElement).props.style || {}),
+          color: theme === 'dark' && (onHover ? isHovered : animate) ? '#000000' : 'inherit'
+        }
     }
   );
 };

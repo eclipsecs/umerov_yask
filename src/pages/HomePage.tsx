@@ -29,8 +29,8 @@ const HomePage = () => {
               className="group block p-8 rounded-xl hover:bg-muted/30 transition-all duration-300 bg-gradient-to-br from-background to-muted/20 border border-border/50"
             >
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-accent-pink/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <FileText className="w-8 h-8 text-accent-pink" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <FileText className="w-8 h-8 text-primary" />
                 </div>
                 <RoughNotation type="underline" onHover={true}>
                   <h2 className="text-2xl font-serif font-bold mb-4">Articles</h2>
@@ -47,8 +47,8 @@ const HomePage = () => {
               className="group block p-8 rounded-xl hover:bg-muted/30 transition-all duration-300 bg-gradient-to-br from-background to-muted/20 border border-border/50"
             >
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-accent-pink/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <BookOpen className="w-8 h-8 text-accent-pink" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <BookOpen className="w-8 h-8 text-primary" />
                 </div>
                 <RoughNotation type="underline" onHover={true}>
                   <h2 className="text-2xl font-serif font-bold mb-4">IELTS Essays</h2>
