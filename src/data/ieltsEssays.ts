@@ -1,5 +1,5 @@
 // IELTS Task 1 Images - Import your images here
-import sampleChart from '@/assets/ielts-task1-images/sample-chart.png';
+import chart_1_1 from '@/assets/ielts-task1-images/chart_1_1.png';
 // Add more images like this:
 // import energyChart from '@/assets/ielts-task1-images/energy-consumption-chart.png';
 // import populationGraph from '@/assets/ielts-task1-images/population-growth.png';
@@ -58,7 +58,7 @@ Therefore, rather than choosing one approach over the other, educators should st
     wordCount: 187,
     tags: ['Bar Chart', 'Energy', 'Global Trends', 'Data Analysis'],
     // TO ADD IMAGE: Replace 'sampleChart' with your imported image variable
-    image: sampleChart, // <-- This is where you link your imported image
+    image: chart_1_1, // <-- This is where you link your imported image
     content: `# Global Energy Consumption Analysis
 
 ## The Question
