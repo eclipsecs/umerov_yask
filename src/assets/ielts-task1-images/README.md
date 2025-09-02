@@ -1,41 +1,49 @@
 # IELTS Task 1 Images
 
-This folder contains images for IELTS Task 1 essays (charts, graphs, diagrams, etc.).
+This folder contains images for IELTS Task 1 essays (charts, graphs, tables, diagrams, etc.).
 
-## How to add images for Task 1 essays:
+## How to Add Images to Your IELTS Task 1 Essays
 
-1. Save your Task 1 image files in this folder (e.g., `chart-1.png`, `graph-population.jpg`)
+### Step 1: Add your image to this folder
+1. Save your chart/graph image in this folder: `src/assets/ielts-task1-images/`
+2. Use descriptive names like: `energy-consumption-chart.png`, `population-growth-graph.jpg`, etc.
 
-2. In your IELTS essay data file (`src/data/ieltsEssays.ts`), add an `image` property to Task 1 essays:
+### Step 2: Import the image in ieltsEssays.ts
+```typescript
+// At the top of src/data/ieltsEssays.ts, add your import:
+import energyChart from '@/assets/ielts-task1-images/energy-consumption-chart.png';
+import populationGraph from '@/assets/ielts-task1-images/population-growth-graph.jpg';
+```
 
+### Step 3: Add the image to your essay data
 ```typescript
 {
-  id: 'task1-essay-id',
+  id: '2',
   task: 'task1',
-  title: 'Population Growth Chart Analysis',
-  question: 'The chart shows population growth...',
-  content: '...',
-  // Add this line to link the image:
-  image: '/src/assets/ielts-task1-images/chart-1.png', // Path to your image
-  bandScore: 8.5,
-  // ... other properties
+  title: 'Bar Chart: Global Energy Consumption', 
+  // ... other properties ...
+  image: energyChart, // <-- Add this line with your imported image variable
+  content: `# Your essay content here...`
 }
 ```
 
-3. In the essay detail page (`src/pages/IELTSEssayDetailPage.tsx`), the image will automatically display if the `image` property exists.
+### Step 4: The image will automatically display
+The image will automatically appear above your essay content when users view the essay detail page.
 
-## Image Requirements:
-- Use common formats: PNG, JPG, JPEG, GIF, SVG
-- Keep file sizes reasonable (under 2MB recommended)
-- Use descriptive filenames
-- Ensure good quality and readability
+## Example
+See the current example with `sample-chart.png` - this shows exactly how to structure your imports and usage.
 
-## Example file structure:
-```
-src/assets/ielts-task1-images/
-├── README.md (this file)
-├── population-chart-2023.png
-├── sales-graph-quarterly.jpg
-├── process-diagram-water-cycle.png
-└── map-city-development.jpg
-```
+## Supported Formats
+- PNG (.png)
+- JPEG (.jpg, .jpeg)  
+- SVG (.svg)
+- WebP (.webp)
+
+## Best Practices
+- Use descriptive file names
+- Keep images under 2MB for fast loading
+- Prefer PNG for charts/graphs (better quality)
+- Make sure images are clear and readable
+
+## Current Files:
+- `sample-chart.png` - Example energy consumption bar chart (currently used in essay ID: 2)

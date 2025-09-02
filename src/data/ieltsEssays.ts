@@ -1,3 +1,9 @@
+// IELTS Task 1 Images - Import your images here
+import sampleChart from '@/assets/ielts-task1-images/sample-chart.png';
+// Add more images like this:
+// import energyChart from '@/assets/ielts-task1-images/energy-consumption-chart.png';
+// import populationGraph from '@/assets/ielts-task1-images/population-growth.png';
+
 export interface IELTSEssay {
   id: string;
   task: 'task1' | 'task2';
@@ -51,6 +57,8 @@ Therefore, rather than choosing one approach over the other, educators should st
     writingTime: '20 minutes',
     wordCount: 187,
     tags: ['Bar Chart', 'Energy', 'Global Trends', 'Data Analysis'],
+    // TO ADD IMAGE: Replace 'sampleChart' with your imported image variable
+    image: sampleChart, // <-- This is where you link your imported image
     content: `# Global Energy Consumption Analysis
 
 ## The Question
@@ -78,38 +86,42 @@ This data reflects growing environmental consciousness and technological advance
 *Estimated band score: 7.5*`
   },
   {
-    id: '2',
-    task: 'task1',
-    title: 'Bar Chart: Global Energy Consumption',
-    question: 'The chart below shows the global energy consumption by different sources from 2010 to 2020. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
-    bandScore: 7.5,
-    writingTime: '20 minutes',
-    wordCount: 187,
-    tags: ['Bar Chart', 'Energy', 'Global Trends', 'Data Analysis'],
-    content: `# Global Energy Consumption Analysis
+    id: '3',
+    task: 'task1', 
+    title: 'Line Graph: Temperature Changes',
+    question: 'The graph shows average temperature changes in three major cities over the past 50 years. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 8.0,
+    writingTime: '18 minutes', 
+    wordCount: 195,
+    tags: ['Line Graph', 'Temperature', 'Climate Change', 'Comparison'],
+    // TO ADD IMAGE: Import your image at the top and add it here
+    // image: temperatureGraph, // <-- Uncomment and use your image variable
+    content: `# Temperature Changes Analysis
 
-## The Question
-The chart below shows the global energy consumption by different sources from 2010 to 2020. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.
+## The Question  
+The graph shows average temperature changes in three major cities over the past 50 years. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.
 
 ## My Essay
 
-The bar chart illustrates global energy consumption patterns across various sources over a decade, from 2010 to 2020.
+The line graph depicts average temperature variations in three major cities over a five-decade period from 1970 to 2020.
 
 **Overview**
-Overall, fossil fuels remained the dominant energy sources throughout the period, while renewable energy sources showed significant growth. Coal consumption fluctuated considerably, whereas natural gas and renewable sources demonstrated steady upward trends.
+Overall, all three cities experienced upward temperature trends, with City A showing the most dramatic increase, while City C demonstrated the most gradual change throughout the period.
 
-**Key Trends**
-In 2010, coal was the leading energy source at approximately 40% of global consumption, followed by oil at 32% and natural gas at 20%. Renewable sources, including solar, wind, and hydroelectric power, accounted for only 8% of total consumption.
+**Detailed Analysis**
+In 1970, City B recorded the highest average temperature at 18°C, followed by City A at 15°C and City C at 12°C. However, the subsequent decades witnessed significant shifts in these patterns.
 
-By 2020, the energy landscape had shifted notably. While oil maintained its position at around 33%, coal consumption declined to 35%. Natural gas consumption increased substantially to 25%, representing the most significant growth among fossil fuels. Most remarkably, renewable energy sources doubled their share to 16%, highlighting the global transition toward sustainable energy solutions.
+City A experienced the most remarkable transformation, with temperatures rising consistently from 15°C in 1970 to approximately 22°C by 2020, representing a 7°C increase. This trajectory was particularly steep between 1990 and 2010, where temperatures jumped from 17°C to 20°C.
 
-**Significant Changes**
-The most striking development was the consistent growth in renewable energy adoption, which experienced steady annual increases throughout the decade. Conversely, coal showed volatility with peaks around 2013-2014 before declining toward 2020.
+City B maintained its leading position until around 2000, when its growth rate slowed considerably. By 2020, it reached 21°C, having increased by 3°C over the entire period.
 
-This data reflects growing environmental consciousness and technological advancement in the energy sector during this transformative decade.
+City C showed the most conservative temperature rise, climbing gradually from 12°C to 16°C over the five decades, representing a 4°C total increase.
 
-*Word count: 187*
-*Writing time: 20 minutes*
-*Estimated band score: 7.5*`
+**Conclusion**
+The data reveals varying degrees of temperature increases across all locations, with City A ultimately overtaking City B as the warmest location by 2020.
+
+*Word count: 195*
+*Writing time: 18 minutes*
+*Estimated band score: 8.0*`
   }
 ];
