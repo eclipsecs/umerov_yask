@@ -83,7 +83,7 @@ const RoughNotation: React.FC<RoughNotationProps> = ({
       onMouseLeave: handleMouseLeave,
         style: {
           ...((children as React.ReactElement).props.style || {}),
-          color: theme === 'dark' && (onHover ? isHovered : animate) ? '#000000' : 'inherit'
+          color: theme === 'dark' && (onHover ? isHovered : animate) ? '#ffffff' : 'inherit'
         }
     }
   );
