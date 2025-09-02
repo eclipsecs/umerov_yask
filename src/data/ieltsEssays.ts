@@ -1,5 +1,6 @@
 // IELTS Task 1 Images - Import your images here
 import sampleChart from '@/assets/ielts-task1-images/sample-chart.png';
+import coalElectricityProcess from '@/assets/ielts-task1-images/coal-electricity-process.png';
 // Add more images like this:
 // import energyChart from '@/assets/ielts-task1-images/energy-consumption-chart.png';
 // import populationGraph from '@/assets/ielts-task1-images/population-growth.png';
@@ -123,5 +124,45 @@ The data reveals varying degrees of temperature increases across all locations, 
 *Word count: 195*
 *Writing time: 18 minutes*
 *Estimated band score: 8.0*`
+  },
+  {
+    id: '4',
+    task: 'task1',
+    title: 'Process Diagram: Coal to Electricity Production',
+    question: 'The diagram below shows the process of producing electricity from coal. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 7.5,
+    writingTime: '20 minutes',
+    wordCount: 178,
+    tags: ['Process Diagram', 'Coal', 'Electricity', 'Industrial Process'],
+    image: coalElectricityProcess,
+    content: `# Coal to Electricity Production Process
+
+## The Question
+The diagram below shows the process of producing electricity from coal. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.
+
+## My Essay
+
+The diagram illustrates the comprehensive process of generating electricity from coal, encompassing extraction, processing, and power generation stages.
+
+**Overview**
+Overall, the process involves multiple sequential stages, beginning with coal extraction from mines and culminating in electricity distribution to residential areas. The process generates waste products at various stages, including gas emissions and waste heat.
+
+**Initial Extraction and Processing**
+The process commences with coal extraction from underground mines, utilizing specialized mining equipment. Subsequently, the extracted coal undergoes crushing in industrial crushers to achieve optimal particle size for transportation and processing.
+
+**Transportation and Preparation**
+Following crushing, coal is transported via trucks to processing facilities where it enters cooling systems. The cooling stage prepares the coal for the cleaning process, which removes impurities and enhances combustion efficiency.
+
+**Power Generation**
+The cleaned coal is then fed into gas power plants where combustion occurs, generating both electricity and waste heat. The electricity produced is transmitted through power lines to supply residential and commercial buildings.
+
+**Waste Management**
+Throughout this industrial process, waste products including gas emissions and excess heat are produced. These byproducts are managed through gasifier systems that convert waste materials into useful energy sources.
+
+The entire process demonstrates the complex transformation of raw coal into usable electrical energy for urban consumption.
+
+*Word count: 178*
+*Writing time: 20 minutes*
+*Estimated band score: 7.5*`
   }
 ];
