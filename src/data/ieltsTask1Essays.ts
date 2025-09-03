@@ -1,7 +1,6 @@
 // IELTS Task 1 Images - Import your images here
-import chart_1_1 from '@/assets/ielts-task1-images/chart_1_1.png';
-import chart_1_2 from '@/assets/ielts-task1-images/chart_1_2.png';
-import coalElectricityProcess from '@/assets/ielts-task1-images/coal-electricity-process.png';
+// Add your images like this:
+// import myChart from '@/assets/ielts-task1-images/my-chart.png';
 
 export interface IELTSEssay {
   id: string;
@@ -29,7 +28,7 @@ export const task1Essays: IELTSEssay[] = [
     writingTime: '20 minutes',
     wordCount: 172,
     tags: ['Process Chart'],
-    image: chart_1_1,
+    image: undefined, // Add your image here when available
     content: `# Energy generation from coal
 
 The **flow chart** illustrates the process of generating electricity from coal, beginning with coal extraction and ending with the distribution of electricity to households and industrial grids. Overall, electricity production involves multiple stages, starting from coal mining and crushing, followed by gasification and purification of the gas, before it is finally converted into electricity. Throughout the process, byproducts such as waste heat are released and managed accordingly.
@@ -50,7 +49,7 @@ This gas is then channeled to a cooling unit to reduce its temperature and remov
     writingTime: '23 minutes', 
     wordCount: 216,
     tags: ['Bar Chart'],
-    image: chart_1_2,
+    image: undefined, // Add your image here when available
     content: `# Gender employment rates in four countries
 
 The bar chart compares the percentage of employment for men and women aged between 60 and 64 in Belgium, the US, Japan, and Australia between 1997 and 2000. Overall, in all countries, employment figures in the male category were significantly higher compared to women, especially in 1970, outnumbering women. However, they exhibited a significant decline in later years compared to women.
@@ -70,7 +69,7 @@ In contrast, Belgium in the women's category has the lowest employment rate, ran
     writingTime: '14 minutes', 
     wordCount: 169,
     tags: ['Line Graph'],
-    image: chart_1_2,
+    image: undefined, // Add your image here when available
     content: `# The number of prisoners in a European country by gender
 
 The line graph, classified into male and female groups, illustrates the number of prisoners in a European country from 1911 and 2011.
@@ -92,7 +91,7 @@ Turning to female group, between 3.000 to 3.500 female were in locked in cell. A
     writingTime: '18 minutes',
     wordCount: 185,
     tags: ['Process Diagram', 'Energy'],
-    image: coalElectricityProcess,
+    image: undefined, // Add your image here when available
     content: `# Coal to Electricity Generation Process
 
 The process diagram illustrates the systematic conversion of coal into electricity through a series of interconnected stages. Overall, the process involves coal preparation, combustion, steam generation, and electrical output distribution.
