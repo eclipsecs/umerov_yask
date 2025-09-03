@@ -1,6 +1,6 @@
 // Article Images - Import your images here
-import john_Oliver from '@/assets/article-images/john_Oliver.png';
-import video1_1 from '@/assets/article-videos/video1_1.mp4';
+import thumbnail1_1 from '@/assets/article-images/thumbnail1_1.jpg';
+import oop_sucks from '@/assets/article-videos/oop_sucks.mp4';
 // Add more images like this:
 // import myImage from '@/assets/article-images/my-image.png';
 
@@ -27,18 +27,18 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: '1',
-    title: 'Coding sucks. AI takes over',
-    excerpt: 'Personal opinion about learning and code and programming overall.',
-    publishedAt: '2024-01-15',
-    readTime: 5,
+    title: 'CS degree vs AI',
+    excerpt: 'This is my personal opinion about majoring in computer science while AI is taking over literally everything from performing human tasks to coding itself.',
+    publishedAt: '2023-02-12',
+    readTime: 15,
     tags: ['AI', 'Coding', 'Opinion'],
-    video: video1_1,
-    image: john_Oliver, // <-- Link your imported image here
+    video: oop_sucks,
+    image: thumbnail1_1, // <-- Link your imported image here
     content:
     ` 
-# Coding sucks. AI takes over
+## Majoring in CS vs Artificial Intelligence
 
-I used to love coding. The thrill of solving problems, building something from scratch, and the endless possibilities of what I could create were exhilarating. But over time, that excitement faded. Coding became a chore, a series of frustrating bugs and endless debugging sessions that drained my enthusiasm.
+
     `
   },
   {
@@ -50,7 +50,7 @@ I used to love coding. The thrill of solving problems, building something from s
     tags: ['Productivity', 'Habits', 'Writing Tips'],
     // Example: This article would have a video with thumbnail
     // video: codingDemoVideo, // <-- Add video here when you have one
-    image: john_Oliver, // <-- This will be used as video poster
+    image: thumbnail1_1, // <-- This will be used as video poster
     content: `# ##Building Consistent Writing Habits
 
 Consistency is the secret weapon of successful writers. It's not about writing perfectly every day—it's about showing up regularly, even when inspiration feels absent.
