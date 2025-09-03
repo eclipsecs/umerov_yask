@@ -1,3 +1,8 @@
+// Article Images - Import your images here
+import aiCodingWorkspace from '@/assets/article-images/ai-coding-workspace.png';
+// Add more images like this:
+// import myImage from '@/assets/article-images/my-image.png';
+
 export interface Article {
   id: string;
   title: string;
@@ -6,6 +11,7 @@ export interface Article {
   publishedAt: string;
   readTime: number;
   tags: string[];
+  image?: string; // Optional image for articles
 }
 
 export const articles: Article[] = [
@@ -16,6 +22,7 @@ export const articles: Article[] = [
     publishedAt: '2024-01-15',
     readTime: 5,
     tags: ['AI', 'Coding', 'Opinion'],
+    image: aiCodingWorkspace, // <-- Link your imported image here
     content:
     ` 
 # Coding sucks. AI takes over
@@ -152,43 +159,51 @@ const example = "code goes here";
 Just write naturally and use these formatting tricks when you need them!`
   },
   {
-    id: '3',
-    title: 'My New Article Title',
-    excerpt: 'A short description of what this article is about - this shows up on the main articles page.',
-    publishedAt: '2024-01-20',
-    readTime: 4,
-    tags: ['Writing', 'Tips'],
-    content: `# My New Article Title
+    id: '4',
+    title: 'Writing in the Digital Age',
+    excerpt: 'How technology has transformed the way we write and communicate in the modern world.',
+    publishedAt: '2024-01-25',
+    readTime: 6,
+    tags: ['Technology', 'Writing', 'Communication'],
+    content: `# Writing in the Digital Age
 
-This is where your actual article content goes. You can write in markdown format, which means:
+Technology has fundamentally changed how we approach writing. From typewriters to word processors to AI assistants, each evolution has shaped not just our tools, but our thinking processes.
 
-## You can use headings like this
+## The Evolution of Writing Tools
 
-And regular paragraphs just by typing normally.
+The journey from pen and paper to digital documents represents more than just technological progress—it's a transformation in how we think about and approach writing itself.
 
-### Smaller headings too
+### Traditional Writing
+- Deliberate and careful
+- Limited editing capabilities  
+- Physical connection to words
+- Slower pace encouraged deeper thought
 
-**Bold text** and *italic text* work great.
+### Digital Revolution
+- Infinite editing possibilities
+- Real-time collaboration
+- Instant publication
+- Speed over reflection
 
-You can make lists:
-- Point one
-- Point two  
-- Point three
+## Modern Challenges
 
-Or numbered lists:
-1. First thing
-2. Second thing
-3. Third thing
+While digital tools have democratized publishing and made writing more accessible, they've also introduced new challenges:
 
-> You can even add quotes like this for emphasis
+**Information Overload**: With so much content available, standing out requires exceptional quality and unique perspective.
 
-And if you want to include code examples:
-\`\`\`
-const example = "code goes here";
-\`\`\`
+**Attention Economy**: Writers must compete with endless distractions for readers' limited attention spans.
 
-[Links work too](https://example.com)
+**AI Assistance**: As AI becomes more sophisticated, the line between human and machine-generated content blurs.
 
-Just write naturally and use these formatting tricks when you need them!`
+## Finding Balance
+
+The key isn't to reject technology or embrace it blindly, but to use it intentionally:
+
+1. Use digital tools for efficiency, not as a crutch
+2. Maintain the human element in your voice
+3. Focus on quality over quantity
+4. Preserve time for deep, uninterrupted thinking
+
+The future of writing lies not in choosing between traditional and digital approaches, but in thoughtfully combining the best of both worlds.`
   }
 ];

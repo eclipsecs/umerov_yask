@@ -73,6 +73,17 @@ const ArticleDetailPage = () => {
         </div>
       </header>
 
+      {/* Hero Image */}
+      {article.image && (
+        <div className="aspect-video w-full overflow-hidden rounded-lg mb-12 shadow-lg">
+          <img 
+            src={article.image} 
+            alt={article.title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+
       {/* Article Content */}
       <article className="prose prose-lg max-w-none">
         <MarkdownRenderer content={article.content} />
