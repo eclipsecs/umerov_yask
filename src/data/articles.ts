@@ -1,5 +1,6 @@
 // Article Images - Import your images here
-import aiCodingWorkspace from '@/assets/article-images/ai-coding-workspace.png';
+import johnoliver from '@/assets/article-images/john-oliver.png';
+import video1_1 from '@/assets/article-videos/video1_1.mp4';
 // Add more images like this:
 // import myImage from '@/assets/article-images/my-image.png';
 
@@ -31,7 +32,8 @@ export const articles: Article[] = [
     publishedAt: '2024-01-15',
     readTime: 5,
     tags: ['AI', 'Coding', 'Opinion'],
-    image: aiCodingWorkspace, // <-- Link your imported image here
+    video: video1_1,
+    image: johnoliver, // <-- Link your imported image here
     content:
     ` 
 # Coding sucks. AI takes over
@@ -48,8 +50,8 @@ I used to love coding. The thrill of solving problems, building something from s
     tags: ['Productivity', 'Habits', 'Writing Tips'],
     // Example: This article would have a video with thumbnail
     // video: codingDemoVideo, // <-- Add video here when you have one
-    image: sampleVideoThumbnail, // <-- This will be used as video poster
-    content: `# Building Consistent Writing Habits
+    image: johnoliver, // <-- This will be used as video poster
+    content: `# ##Building Consistent Writing Habits
 
 Consistency is the secret weapon of successful writers. It's not about writing perfectly every day—it's about showing up regularly, even when inspiration feels absent.
 
