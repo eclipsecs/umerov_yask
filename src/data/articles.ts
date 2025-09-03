@@ -38,12 +38,19 @@ export const articles: Article[] = [
     ` 
 ## Majoring in CS vs Artificial Intelligence
 
+So, learning computer science is fun until you realize that AI is already taking over many jobs that require coding.
+"FANG" Companies, these days, are no more looking to hire programmers either.
 
+On the one side, this is a technological revolution. Basically shaping everything around us. AI is rewriting codes that once
+took months to write, in a matter of seconds. Various companies used to hire individuals with extensive knowledge in programming.
+These people with deep knowledge were paid millions of dollars to reprogram a software or suggest architectural solutions.
+
+However, does this evolution in technology suggest that majoring in CS is becoming obsolete? Far from it.
     `
   },
   {
     id: '2',
-    title: 'Building Consistent Writing Habits',
+    title: 'Article 2',
     excerpt: 'Learn how to establish and maintain a writing routine that works with your lifestyle and helps you achieve your goals.',
     publishedAt: '2024-01-10',
     readTime: 7,
