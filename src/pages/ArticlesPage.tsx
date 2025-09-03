@@ -19,17 +19,6 @@ const ArticlesPage = () => {
             className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300 border border-border/30"
           >
             <div className="space-y-4">
-              {/* Image Display */}
-              {article.image && (
-                <div className="aspect-video w-full overflow-hidden rounded-lg mb-4">
-                  <img 
-                    src={article.image} 
-                    alt={article.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              )}
-              
               <div className="flex justify-between items-start mb-4">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">

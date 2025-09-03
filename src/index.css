@@ -21,8 +21,8 @@
     --primary: 220 13% 18%;
     --primary-foreground: 0 0% 100%;
     
-    /* Dark Pink Accent for Rough Notation */
-    --accent-pink: 340 85% 45%;
+    /* Blue Accent for Rough Notation */
+    --accent-pink: 220 90% 50%;
     --accent-pink-foreground: 0 0% 100%;
     
     /* Secondary Colors */
@@ -42,7 +42,7 @@
     /* Interactive Elements */
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 340 85% 45%;
+    --ring: 220 90% 50%;
     
     /* Typography Scale */
     --font-sans: 'Inter', system-ui, sans-serif;
@@ -73,8 +73,8 @@
     --primary: 220 14% 96%;
     --primary-foreground: 220 27% 8%;
     
-    /* Dark Pink Accent - Slightly Brighter in Dark Mode */
-    --accent-pink: 340 85% 55%;
+    /* Blue Accent - Slightly Brighter in Dark Mode */
+    --accent-pink: 220 90% 60%;
     --accent-pink-foreground: 220 27% 8%;
     
     /* Secondary Colors */
@@ -94,7 +94,7 @@
     /* Interactive Elements */
     --border: 220 27% 20%;
     --input: 220 27% 20%;
-    --ring: 340 85% 55%;
+    --ring: 220 90% 60%;
   }
 }
 
