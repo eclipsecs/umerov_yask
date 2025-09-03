@@ -1,5 +1,5 @@
 // Article Images - Import your images here
-import john_Oliver from '@/assets/article-images/john-oliver.png';
+import john_Oliver from '@/assets/article-images/john_Oliver.png';
 import video1_1 from '@/assets/article-videos/video1_1.mp4';
 // Add more images like this:
 // import myImage from '@/assets/article-images/my-image.png';
