@@ -13,15 +13,14 @@ const HomePage = () => {
           <div className="mb-12">
             <RoughNotation type="box" animate={true}>
               <h1 className="hero-title text-foreground px-8 py-4">
-                Hi there👋
+                Hi there
               </h1>
             </RoughNotation>
           </div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-16">
-              <strong>This is where I store my ramblings.
+              This is where I store my ramblings.
               <br />
               IELTS essays and articles
-              </strong>
           </p>
 
           {/* Featured Content Sections */}
