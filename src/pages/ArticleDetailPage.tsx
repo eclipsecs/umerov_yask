@@ -73,8 +73,22 @@ const ArticleDetailPage = () => {
         </div>
       </header>
 
-      {/* Hero Image */}
-      {article.image && (
+      {/* Hero Video */}
+      {article.video && (
+        <div className="aspect-video w-full overflow-hidden rounded-lg mb-12 shadow-lg">
+          <video 
+            src={article.video}
+            controls
+            className="w-full h-full object-cover"
+            poster={article.image} // Use image as poster if available
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      )}
+
+      {/* Hero Image (only if no video) */}
+      {!article.video && article.image && (
         <div className="aspect-video w-full overflow-hidden rounded-lg mb-12 shadow-lg">
           <img 
             src={article.image} 

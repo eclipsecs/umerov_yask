@@ -3,6 +3,14 @@ import aiCodingWorkspace from '@/assets/article-images/ai-coding-workspace.png';
 // Add more images like this:
 // import myImage from '@/assets/article-images/my-image.png';
 
+// Article Videos - Import your videos here
+// import myVideo from '@/assets/article-videos/my-video.mp4';
+// Add more videos like this (supported formats: .mp4, .webm, .ogg)
+
+// Example demonstration (uncomment when you have a real video file):
+// import codingDemoVideo from '@/assets/article-videos/coding-demo.mp4';
+import sampleVideoThumbnail from '@/assets/article-videos/sample-video-thumbnail.png';
+
 export interface Article {
   id: string;
   title: string;
@@ -12,6 +20,7 @@ export interface Article {
   readTime: number;
   tags: string[];
   image?: string; // Optional image for articles
+  video?: string; // Optional video for articles
 }
 
 export const articles: Article[] = [
@@ -37,6 +46,9 @@ I used to love coding. The thrill of solving problems, building something from s
     publishedAt: '2024-01-10',
     readTime: 7,
     tags: ['Productivity', 'Habits', 'Writing Tips'],
+    // Example: This article would have a video with thumbnail
+    // video: codingDemoVideo, // <-- Add video here when you have one
+    image: sampleVideoThumbnail, // <-- This will be used as video poster
     content: `# Building Consistent Writing Habits
 
 Consistency is the secret weapon of successful writers. It's not about writing perfectly every day—it's about showing up regularly, even when inspiration feels absent.
