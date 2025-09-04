@@ -50,7 +50,7 @@ However, does this evolution in technology suggest that majoring in CS is becomi
   },
   {
     id: '2',
-    title: 'Article 2',
+    title: 'Day in the life videos are horrible',
     excerpt: 'Learn how to establish and maintain a writing routine that works with your lifestyle and helps you achieve your goals.',
     publishedAt: '2024-01-10',
     readTime: 7,
