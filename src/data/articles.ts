@@ -31,7 +31,7 @@ export const articles: Article[] = [
     title: 'CS degree vs AI',
     excerpt: 'This is my personal opinion about majoring in computer science while AI is taking over literally everything from performing human tasks to coding itself.',
     publishedAt: '2023-02-12',
-    readTime: 15,
+    readTime: 3,
     tags: ['AI', 'Coding', 'Opinion'],
     video: oop_sucks,
     image: thumbnail1_1, // <-- Link your imported image here
@@ -54,30 +54,35 @@ Just a few years ago, when Ai was just considered to be a joke, I was wholly dif
     id: '2',
     title: 'DITL: Marketing or comparison tool?',
     excerpt: 'Day in the life videos are popular but not always. Read my opinion',
-    publishedAt: '2024-01-10',
-    readTime: 7,
-    tags: ['Productivity', 'Habits', 'Writing Tips'],
+    publishedAt: '2023-03-10',
+    readTime: 3,
+    tags: ['YouTube', 'Trend', 'Trap'],
     // Example: This article would have a video with thumbnail
     // video: codingDemoVideo, // <-- Add video here when you have one
     image: dayinthelife, // <-- This will be used as video poster
-    content: `# ##Is it a trend or a comparison tool?
+    content:
+    `
+## Is it a trend or a comparison tool?
+    
+“Day in the Life” (DITL) videos have recently taken over social media, becoming a trend that countless creators — both amateurs and well-known influencers — are eager to follow. From one side, it is easy to see why. These clips are engaging, especially for young viewers who look up to content creators as role models. Watching how their idols spend an ordinary day can feel authentic, even though much of the reality is often left off-screen.
 
-“Day in the Life” (DITL) videos have recently taken over social media, becoming a trend that countless creators — both amateurs and well-known influencers — are eager to follow. From one side, it is easy to see why. These clips are engaging, especially for young viewers who look up to content creators as role models. Watching how their idols spend an ordinary day can feel authentic, even though much of the reality is often left off-screen. At their best, such videos can encourage people of all ages to move away from a sedentary lifestyle and to establish routines, whether studying at school, working at an office, or pursuing personal projects. For some, the very act of creating this type of content can encourage them to thrive after something, maybe finding a purpose in life or unlock their hidden potentials, talents, creativity - a part which is mostly developed at school.
+At their best, such videos can encourage people of all ages to move away from a sedentary lifestyle and to establish routines, whether studying at school, working at an office, or pursuing personal projects. For some, the very act of creating this type of content can encourage them to thrive after something, maybe finding a purpose in life or unlock their hidden potentials, talents, creativity - a part which is mostly developed at school.
 
 However, there are bad sides to this. Most celebrities and vloggers refuse to reveal the less polished aspects of their daily lives. It is unrealistic to assume that every day runs smoothly, filled only with productivity and positive energy. Many creators struggle to balance content production with their private lives, and some may not even have a clear sense of purpose. This raises an important point: if viewers consume such content uncritically, they may be misled into comparing themselves with an ideal that does not exist - gradually ending up feeling stressed and depressed.
+That said, the solution is not to reject the trend altogether or to dismiss it as a waste of time. Instead, we should be attentive of how and what we consume online. When approached with awareness, DITL videos can be entertaining, sometimes even inspiring.
 
-That said, the solution is not to reject the trend altogether or to dismiss it as a waste of time. Instead, we should be attentive of how and what we consume online. When approached with awareness, DITL videos can be entertaining, sometimes even inspiring. If I were to join the trend myself, I would use it not to showcase perfection, but to cheer people on, like a personal coach or even a cheerleader, reminding them that life is about effort and progress rather than flawless routines.
-
-`
+If I were to join the trend myself, I would use it not to showcase perfection, but to cheer people on, like a personal coach or even a cheerleader, reminding them that life is about effort and progress rather than flawless routines.
+    
+    `
   },
   {
     id: '3',
-    title: 'My New Article Title',
-    excerpt: 'A short description of what this article is about - this shows up on the main articles page.',
+    title: 'If blue-collar job sucks. Why do them?',
+    excerpt: 'Blue-collar - a labor that does not require working in an office. If you didn’t know it',
     publishedAt: '2024-01-20',
     readTime: 4,
     tags: ['Writing', 'Tips'],
-    content: `# My New Article Title
+    content: `# Blue-collar jobs. Are they easy or stress-free?
 
 This is where your actual article content goes. You can write in markdown format, which means:
 
