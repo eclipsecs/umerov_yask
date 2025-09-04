@@ -12,33 +12,31 @@ const HomePage = () => {
       <section className="flex-1 flex items-center justify-center px-4 py-20">
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-12">
-            <RoughNotation type="box" animate={true}>
-              <h1 className="hero-title text-foreground px-8 py-4">
-                <GooeyText
-                  texts={[
-                    "Hi there", // English
-                    "Hola", // Spanish
-                    "Bonjour", // French
-                    "Hallo", // German
-                    "Ciao", // Italian
-                    "こんにちは", // Japanese
-                    "안녕하세요", // Korean
-                    "你好", // Chinese
-                    "Привет", // Russian
-                    "Olá", // Portuguese
-                    "Hej", // Swedish
-                    "Hoi", // Dutch
-                    "Γεια σας", // Greek
-                    "مرحبا", // Arabic
-                    "שלום", // Hebrew
-                    "Namaste" // Hindi
-                  ]}
-                  morphTime={1.2}
-                  cooldownTime={2}
-                  className="font-bold"
-                />
-              </h1>
-            </RoughNotation>
+            <h1 className="hero-title text-foreground px-8 py-4">
+              <GooeyText
+                texts={[
+                  "Hi there", // English
+                  "Hola", // Spanish
+                  "Bonjour", // French
+                  "Hallo", // German
+                  "Ciao", // Italian
+                  "こんにちは", // Japanese
+                  "안녕하세요", // Korean
+                  "你好", // Chinese
+                  "Привет", // Russian
+                  "Olá", // Portuguese
+                  "Hej", // Swedish
+                  "Hoi", // Dutch
+                  "Γεια σας", // Greek
+                  "مرحبا", // Arabic
+                  "שלום", // Hebrew
+                  "Namaste" // Hindi
+                ]}
+                morphTime={1.2}
+                cooldownTime={2}
+                className="font-bold"
+              />
+            </h1>
           </div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-16">
               This is where I store my ramblings.

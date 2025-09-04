@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Book, Calendar, Star, Tag, BookOpen, Clock } from 'lucide-react';
+import { Book, Calendar, Tag, BookOpen, Clock, ArrowRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { books } from '@/data/books';
@@ -8,13 +8,13 @@ const BooksPage = () => {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
-        return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
+        return 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800';
       case 'reading':
-        return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
+        return 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950 dark:text-blue-300 dark:border-blue-800';
       case 'to-read':
-        return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200';
+        return 'bg-slate-50 text-slate-700 border-slate-200 dark:bg-slate-950 dark:text-slate-300 dark:border-slate-800';
       default:
-        return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200';
+        return 'bg-slate-50 text-slate-700 border-slate-200 dark:bg-slate-950 dark:text-slate-300 dark:border-slate-800';
     }
   };
 
@@ -31,113 +31,108 @@ const BooksPage = () => {
     }
   };
 
+  const completedBooks = books.filter(b => b.readingStatus === 'completed').length;
+  const readingBooks = books.filter(b => b.readingStatus === 'reading').length;
+  const toReadBooks = books.filter(b => b.readingStatus === 'to-read').length;
+
   return (
-    <div className="container mx-auto px-4 py-12 max-w-6xl">
+    <div className="container mx-auto px-4 py-16 max-w-5xl">
       {/* Header */}
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-foreground">
-          Book Collection
+      <div className="text-center mb-20">
+        <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6 text-foreground">
+          Library
         </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          My personal library with thoughts, notes, and reflections on each book
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          A curated collection of books with personal reflections and insights
         </p>
       </div>
 
-      {/* Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <Card className="text-center">
-          <CardContent className="pt-6">
-            <BookOpen className="w-8 h-8 mx-auto mb-2 text-primary" />
-            <div className="text-2xl font-bold">{books.filter(b => b.readingStatus === 'completed').length}</div>
-            <div className="text-sm text-muted-foreground">Completed</div>
-          </CardContent>
-        </Card>
-        <Card className="text-center">
-          <CardContent className="pt-6">
-            <Clock className="w-8 h-8 mx-auto mb-2 text-blue-500" />
-            <div className="text-2xl font-bold">{books.filter(b => b.readingStatus === 'reading').length}</div>
-            <div className="text-sm text-muted-foreground">Currently Reading</div>
-          </CardContent>
-        </Card>
-        <Card className="text-center">
-          <CardContent className="pt-6">
-            <Book className="w-8 h-8 mx-auto mb-2 text-gray-500" />
-            <div className="text-2xl font-bold">{books.filter(b => b.readingStatus === 'to-read').length}</div>
-            <div className="text-sm text-muted-foreground">To Read</div>
-          </CardContent>
-        </Card>
+      {/* Stats Bar */}
+      <div className="flex justify-center items-center gap-8 mb-16 text-sm text-muted-foreground">
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-3 rounded-full bg-emerald-500"></div>
+          <span>{completedBooks} completed</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+          <span>{readingBooks} reading</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-3 rounded-full bg-slate-400"></div>
+          <span>{toReadBooks} to read</span>
+        </div>
       </div>
 
       {/* Books Grid */}
-      <div className="grid gap-8">
+      <div className="space-y-8">
         {books.map((book) => (
           <Link 
             key={book.id} 
             to={`/book/${book.id}`}
-            className="block group"
+            className="group block"
           >
-            <Card className="hover:shadow-lg transition-all duration-300 border border-border/50 group-hover:border-primary/30">
-              <CardHeader>
-                <div className="flex justify-between items-start mb-4">
-                  <div className="space-y-2">
-                    <CardTitle className="text-2xl font-serif group-hover:text-primary transition-colors">
-                      {book.title}
-                    </CardTitle>
-                    <CardDescription className="text-lg">
-                      by {book.author}
-                    </CardDescription>
-                  </div>
-                  <div className="flex flex-col items-end gap-2">
-                    <Badge className={getStatusColor(book.readingStatus)}>
-                      {formatStatus(book.readingStatus)}
-                    </Badge>
-                    {book.rating && (
-                      <div className="flex items-center gap-1">
-                        <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                        <span className="text-sm font-medium">{book.rating}/5</span>
+            <div className="border border-border/20 rounded-2xl p-8 hover:border-border/40 hover:shadow-lg transition-all duration-300 bg-background/50 backdrop-blur-sm">
+              <div className="flex flex-col lg:flex-row gap-8">
+                {/* Left Content */}
+                <div className="flex-1 space-y-6">
+                  <div className="flex items-start justify-between">
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3">
+                        <Badge 
+                          variant="outline" 
+                          className={`text-xs font-medium border ${getStatusColor(book.readingStatus)}`}
+                        >
+                          {formatStatus(book.readingStatus)}
+                        </Badge>
+                        {book.publishedYear && (
+                          <span className="text-sm text-muted-foreground">
+                            {book.publishedYear}
+                          </span>
+                        )}
                       </div>
-                    )}
+                      <h2 className="text-2xl lg:text-3xl font-serif font-bold group-hover:text-primary transition-colors leading-tight">
+                        {book.title}
+                      </h2>
+                      <p className="text-lg text-muted-foreground font-medium">
+                        {book.author}
+                      </p>
+                    </div>
+                    
+                    <div className="flex items-center text-muted-foreground group-hover:text-primary transition-colors">
+                      <ArrowRight className="w-5 h-5" />
+                    </div>
                   </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {book.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <Badge variant="outline" className="text-xs">
-                    {book.genre}
-                  </Badge>
-                  {book.publishedYear && (
+
+                  <p className="text-muted-foreground leading-relaxed text-lg">
+                    {book.description}
+                  </p>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="text-xs bg-muted/50">
+                      {book.genre}
+                    </Badge>
+                    {book.tags.slice(0, 3).map((tag) => (
+                      <Badge key={tag} variant="secondary" className="text-xs bg-muted/30">
+                        {tag}
+                      </Badge>
+                    ))}
                     <Badge variant="outline" className="text-xs">
-                      <Calendar className="w-3 h-3 mr-1" />
-                      {book.publishedYear}
+                      {book.chapters.length} chapters
                     </Badge>
-                  )}
-                  <Badge variant="outline" className="text-xs">
-                    {book.chapters.length} chapters
-                  </Badge>
-                </div>
-
-                <div className="flex flex-wrap gap-1">
-                  {book.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="text-xs">
-                      <Tag className="w-2 h-2 mr-1" />
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-
-                {book.personalComments && (
-                  <div className="mt-4 p-3 bg-muted/30 rounded-lg">
-                    <p className="text-sm text-muted-foreground italic">
-                      "{book.personalComments.substring(0, 150)}..."
-                    </p>
                   </div>
-                )}
-              </CardContent>
-            </Card>
+
+                  {/* Personal Comment Preview */}
+                  {book.personalComments && (
+                    <div className="border-l-2 border-primary/20 pl-6 py-2">
+                      <p className="text-muted-foreground italic text-sm leading-relaxed">
+                        "{book.personalComments.substring(0, 120)}..."
+                      </p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
           </Link>
         ))}
       </div>

@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Star, Tag, BookOpen, Clock, User } from 'lucide-react';
+import { ArrowLeft, Calendar, Tag, BookOpen, Clock, User, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -28,13 +28,13 @@ const BookDetailPage = () => {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'completed':
-        return 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200';
+        return 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800';
       case 'reading':
-        return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200';
+        return 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950 dark:text-blue-300 dark:border-blue-800';
       case 'to-read':
-        return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200';
+        return 'bg-slate-50 text-slate-700 border-slate-200 dark:bg-slate-950 dark:text-slate-300 dark:border-slate-800';
       default:
-        return 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200';
+        return 'bg-slate-50 text-slate-700 border-slate-200 dark:bg-slate-950 dark:text-slate-300 dark:border-slate-800';
     }
   };
 
@@ -73,7 +73,11 @@ const BookDetailPage = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-              <Badge className={getStatusColor(book.readingStatus)}>
+              <Badge 
+                variant="outline" 
+                className={`w-fit text-sm font-medium border ${getStatusColor(book.readingStatus)}`}
+              >
+                {book.readingStatus === 'completed' && <CheckCircle className="w-4 h-4 mr-2" />}
                 {formatStatus(book.readingStatus)}
               </Badge>
               
@@ -88,12 +92,6 @@ const BookDetailPage = () => {
                   <BookOpen className="w-4 h-4 mr-1" />
                   {book.chapters.length} chapters
                 </div>
-                {book.rating && (
-                  <div className="flex items-center">
-                    <Star className="w-4 h-4 mr-1 fill-yellow-400 text-yellow-400" />
-                    {book.rating}/5
-                  </div>
-                )}
               </div>
             </div>
             
@@ -166,19 +164,9 @@ const BookDetailPage = () => {
               <div>
                 <strong>Status:</strong> {formatStatus(book.readingStatus)}
               </div>
-              {book.rating && (
-                <div className="flex items-center gap-2">
-                  <strong>My Rating:</strong>
-                  <div className="flex items-center">
-                    {[...Array(5)].map((_, i) => (
-                      <Star 
-                        key={i} 
-                        className={`w-4 h-4 ${i < book.rating! ? 'fill-yellow-400 text-yellow-400' : 'text-gray-300'}`} 
-                      />
-                    ))}
-                  </div>
-                </div>
-              )}
+              <div>
+                <strong>Total Chapters:</strong> {book.chapters.length}
+              </div>
             </CardContent>
           </Card>
         </TabsContent>
