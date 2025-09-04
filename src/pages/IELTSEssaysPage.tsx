@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Clock, Award, FileText, Target, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -8,6 +8,8 @@ import RoughNotation from '@/components/RoughNotation';
 import { ieltsEssays } from '@/data/ieltsEssays';
 
 const IELTSEssaysPage = () => {
+  const [searchParams] = useSearchParams();
+  const activeTab = searchParams.get('tab') || 'task2';
   const task1Essays = ieltsEssays.filter(essay => essay.task === 'task1');
   const task2Essays = ieltsEssays.filter(essay => essay.task === 'task2');
 
@@ -15,10 +17,14 @@ const IELTSEssaysPage = () => {
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       <h1 className="text-3xl font-serif font-bold text-center mb-16">IELTS Essays</h1>
       
-      <Tabs defaultValue="task2" className="mb-8">
+      <Tabs value={activeTab} className="mb-8">
         <TabsList className="grid w-full grid-cols-2 mb-8 max-w-md mx-auto">
-          <TabsTrigger value="task1">Task 1</TabsTrigger>
-          <TabsTrigger value="task2">Task 2</TabsTrigger>
+          <TabsTrigger value="task1" asChild>
+            <Link to="/ielts-essays?tab=task1">Task 1</Link>
+          </TabsTrigger>
+          <TabsTrigger value="task2" asChild>
+            <Link to="/ielts-essays?tab=task2">Task 2</Link>
+          </TabsTrigger>
         </TabsList>
         
         <TabsContent value="task1" className="space-y-6 max-w-3xl mx-auto">

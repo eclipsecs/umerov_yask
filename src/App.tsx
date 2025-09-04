@@ -10,6 +10,8 @@ import ArticlesPage from "./pages/ArticlesPage";
 import ArticleDetailPage from "./pages/ArticleDetailPage";
 import IELTSEssaysPage from "./pages/IELTSEssaysPage";
 import IELTSEssayDetailPage from "./pages/IELTSEssayDetailPage";
+import BooksPage from "./pages/books/BooksPage";
+import BookDetailPage from "./pages/books/BookDetailPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,8 @@ const App = () => (
               <Route path="/article/:id" element={<ArticleDetailPage />} />
               <Route path="/ielts-essays" element={<IELTSEssaysPage />} />
               <Route path="/ielts-essay/:id" element={<IELTSEssayDetailPage />} />
+              <Route path="/books" element={<BooksPage />} />
+              <Route path="/book/:id" element={<BookDetailPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -12,6 +12,7 @@ const Navbar = () => {
     { path: '/', label: 'Home' },
     { path: '/articles', label: 'Articles' },
     { path: '/ielts-essays', label: 'IELTS Essays' },
+    { path: '/books', label: 'Books' },
   ];
 
   return (

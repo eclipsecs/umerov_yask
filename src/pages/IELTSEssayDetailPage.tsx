@@ -17,7 +17,7 @@ const IELTSEssayDetailPage = () => {
         <p className="text-muted-foreground mb-8">
           The essay you're looking for doesn't exist or has been moved.
         </p>
-        <Link to="/ielts-essays">
+        <Link to="/ielts-essays?tab=task2">
           <Button>Back to IELTS Essays</Button>
         </Link>
       </div>
@@ -27,7 +27,10 @@ const IELTSEssayDetailPage = () => {
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Back Button */}
-      <Link to="/ielts-essays" className="inline-flex items-center mb-8 text-muted-foreground hover:text-foreground transition-colors">
+      <Link 
+        to={`/ielts-essays?tab=${essay.task}`} 
+        className="inline-flex items-center mb-8 text-muted-foreground hover:text-foreground transition-colors"
+      >
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to IELTS Essays
       </Link>
@@ -148,7 +151,7 @@ const IELTSEssayDetailPage = () => {
       {/* Footer */}
       <footer className="mt-16 pt-8 border-t border-border">
         <div className="text-center">
-          <Link to="/ielts-essays">
+          <Link to={`/ielts-essays?tab=${essay.task}`}>
             <Button variant="outline">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to All Essays
