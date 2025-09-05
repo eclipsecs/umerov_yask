@@ -69,9 +69,6 @@ const HomePage = () => {
           {/* Right Side - Placeholder for future profile image */}
           <div className="lg:w-80">
             <div className="bg-gradient-to-br from-muted/30 to-muted/60 rounded-2xl p-8 text-center">
-              <div className="w-24 h-24 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                <PenTool className="w-12 h-12 text-primary" />
-              </div>
               <p className="text-sm text-muted-foreground italic">
                 "Writing is thinking on paper"
               </p>
@@ -102,7 +99,7 @@ const HomePage = () => {
               >
                 <div className="flex justify-between items-start mb-3">
                   <span className="text-sm text-muted-foreground">over 1 year ago</span>
-                  <span className="text-sm text-muted-foreground">3 min read</span>
+                  <span className="text-sm font-bold text-accent-pink">3 min read</span>
                 </div>
                 <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-accent-pink transition-colors">
                   CS degree vs AI
@@ -113,12 +110,12 @@ const HomePage = () => {
               </Link>
               
               <Link
-                to="/articles"
+                to="/article/2"
                 className="group block p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
               >
                 <div className="flex justify-between items-start mb-3">
                   <span className="text-sm text-muted-foreground">over 1 year ago</span>
-                  <span className="text-sm text-muted-foreground">3 min read</span>
+                  <span className="text-sm font-bold text-accent-pink">3 min read</span>
                 </div>
                 <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-accent-pink transition-colors">
                   DITL: Marketing or comparison tool?
@@ -127,55 +124,39 @@ const HomePage = () => {
                   Day in the life videos are popular but not always. Read my opinion on this trending format...
                 </p>
               </Link>
+              
+              <Link
+                to="/article/3"
+                className="group block p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
+              >
+                <div className="flex justify-between items-start mb-3">
+                  <span className="text-sm text-muted-foreground">10 months ago</span>
+                  <span className="text-sm font-bold text-accent-pink">4 min read</span>
+                </div>
+                <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-accent-pink transition-colors">
+                  If blue-collar job sucks. Why do them?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Blue-collar - a labor that does not require working in an office. If you didn't know it...
+                </p>
+              </Link>
+              
+              <Link
+                to="/article/4"
+                className="group block p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
+              >
+                <div className="flex justify-between items-start mb-3">
+                  <span className="text-sm text-muted-foreground">10 months ago</span>
+                  <span className="text-sm font-bold text-accent-pink">6 min read</span>
+                </div>
+                <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-accent-pink transition-colors">
+                  Writing in the Digital Age
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  How technology has transformed the way we write and communicate in the modern world...
+                </p>
+              </Link>
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <Link
-              to="/articles"
-              className="group p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
-            >
-              <div className="flex items-center gap-4 mb-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <FileText className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="font-serif font-bold">Articles</h3>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Personal thoughts and opinions
-              </p>
-            </Link>
-
-            <Link
-              to="/ielts-essays"
-              className="group p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
-            >
-              <div className="flex items-center gap-4 mb-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <PenTool className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="font-serif font-bold">IELTS Essays</h3>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Teaching resources and examples
-              </p>
-            </Link>
-
-            <Link
-              to="/books"
-              className="group p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
-            >
-              <div className="flex items-center gap-4 mb-3">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Book className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="font-serif font-bold">Library</h3>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Books with personal reflections
-              </p>
-            </Link>
           </div>
         </div>
       </section>
