@@ -15,13 +15,13 @@ export interface Book {
   genre: string;
   description: string;
   coverImage?: string;
-  rating?: number;
   readingStatus: 'to-read' | 'reading' | 'completed';
   startedDate?: string;
   completedDate?: string;
   personalComments: string;
   chapters: BookChapter[];
   tags: string[];
+  downloadUrl?: string; // Link to download the book
 }
 
 export const books: Book[] = [
@@ -33,11 +33,12 @@ export const books: Book[] = [
     publishedYear: 2013,
     genre: "Design",
     description: "A powerful primer on how to design for users and understand the psychology behind everyday objects.",
-    rating: 5,
+    coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1442460745i/840.jpg",
     readingStatus: "completed",
     startedDate: "2024-01-15",
     completedDate: "2024-02-20",
     personalComments: "This book completely changed how I think about user experience and design. The principles are timeless and applicable beyond just physical objects - they apply to digital interfaces, processes, and systems. Norman's insights about affordances and signifiers are particularly valuable.",
+    downloadUrl: "# Add your download link here",
     chapters: [
       {
         id: "ch1",
@@ -52,6 +53,13 @@ export const books: Book[] = [
         title: "The Psychology of Everyday Actions",
         content: "How people interact with objects and the mental models they form",
         notes: "The seven stages of action framework is crucial for understanding user behavior."
+      },
+      {
+        id: "ch3",
+        chapterNumber: 3,
+        title: "Knowledge in the Head and in the World",
+        content: "How we use both internal knowledge and external cues to navigate the world",
+        notes: "The distinction between knowledge in the head vs. in the world is fundamental to good design."
       }
     ],
     tags: ["design", "psychology", "UX", "usability"]
@@ -64,10 +72,11 @@ export const books: Book[] = [
     publishedYear: 2018,
     genre: "Self-Development",
     description: "An easy and proven way to build good habits and break bad ones through tiny changes that lead to remarkable results.",
-    rating: 4,
+    coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1535115320i/40121378.jpg",
     readingStatus: "reading",
     startedDate: "2024-08-01",
     personalComments: "Currently reading this one. The 1% better every day concept is compelling, though some examples feel repetitive. The habit stacking technique is something I'm actively trying to implement.",
+    downloadUrl: "# Add your download link here",
     chapters: [
       {
         id: "ch1",
@@ -75,8 +84,38 @@ export const books: Book[] = [
         title: "The Surprising Power of Atomic Habits",
         content: "How small changes compound over time",
         notes: "The 1% improvement principle - small habits compound into significant results over time."
+      },
+      {
+        id: "ch2",
+        chapterNumber: 2,
+        title: "How Your Habits Shape Your Identity",
+        content: "The relationship between habits and identity formation",
+        notes: "Every action is a vote for the type of person you wish to become."
       }
     ],
     tags: ["habits", "productivity", "self-improvement"]
+  },
+  {
+    id: "3",
+    title: "Thinking, Fast and Slow",
+    author: "Daniel Kahneman",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1317793965i/11468377.jpg",
+    readingStatus: "to-read",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
   }
 ];

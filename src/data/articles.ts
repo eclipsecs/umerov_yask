@@ -23,6 +23,7 @@ export interface Article {
   tags: string[];
   image?: string; // Optional image for articles
   video?: string; // Optional video for articles
+  youtubeUrl?: string; // Optional YouTube URL instead of video file
 }
 
 export const articles: Article[] = [
@@ -122,6 +123,8 @@ Just write naturally and use these formatting tricks when you need them!`
     publishedAt: '2024-01-25',
     readTime: 6,
     tags: ['Technology', 'Writing', 'Communication'],
+    // Example YouTube URL - replace with actual video URL when you have one
+    youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Example YouTube URL
     content: `# Writing in the Digital Age
 
 Technology has fundamentally changed how we approach writing. From typewriters to word processors to AI assistants, each evolution has shaped not just our tools, but our thinking processes.

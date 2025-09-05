@@ -3,7 +3,9 @@ import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
+import YouTubeEmbed from '@/components/YouTubeEmbed';
 import { articles } from '@/data/articles';
+import { calculateReadTime, formatReadTime } from '@/utils/readTime';
 
 const ArticleDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -32,6 +34,9 @@ const ArticleDetailPage = () => {
     });
   };
 
+  // Calculate read time if not provided
+  const readTime = article.readTime || calculateReadTime(article.content);
+
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Back Button */}
@@ -50,7 +55,7 @@ const ArticleDetailPage = () => {
             </div>
             <div className="flex items-center">
               <Clock className="w-4 h-4 mr-1" />
-              {article.readTime} min read
+              {formatReadTime(readTime)}
             </div>
           </div>
         </div>
@@ -73,8 +78,19 @@ const ArticleDetailPage = () => {
         </div>
       </header>
 
+      {/* YouTube Video */}
+      {article.youtubeUrl && (
+        <div className="mb-12">
+          <YouTubeEmbed 
+            url={article.youtubeUrl} 
+            title={article.title}
+            className="shadow-lg"
+          />
+        </div>
+      )}
+
       {/* Hero Video */}
-      {article.video && (
+      {!article.youtubeUrl && article.video && (
         <div className="aspect-video w-full overflow-hidden rounded-lg mb-12 shadow-lg">
           <video 
             src={article.video}
@@ -87,8 +103,8 @@ const ArticleDetailPage = () => {
         </div>
       )}
 
-      {/* Hero Image (only if no video) */}
-      {!article.video && article.image && (
+      {/* Hero Image (only if no video or YouTube) */}
+      {!article.youtubeUrl && !article.video && article.image && (
         <div className="aspect-video w-full overflow-hidden rounded-lg mb-12 shadow-lg">
           <img 
             src={article.image} 

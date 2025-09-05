@@ -148,27 +148,90 @@ const BookDetailPage = () => {
         </TabsList>
         
         <TabsContent value="overview" className="mt-8">
-          <Card>
-            <CardHeader>
-              <CardTitle>Book Details</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              {book.isbn && (
-                <div>
-                  <strong>ISBN:</strong> {book.isbn}
+          <div className="space-y-6">
+            {/* Book Cover and Details */}
+            <div className="flex flex-col md:flex-row gap-8">
+              {/* Cover Image */}
+              <div className="md:w-64 flex-shrink-0">
+                <div className="aspect-[3/4] relative overflow-hidden rounded-lg bg-muted/30">
+                  {book.coverImage ? (
+                    <img
+                      src={book.coverImage}
+                      alt={`${book.title} cover`}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        const fallback = target.nextElementSibling as HTMLElement;
+                        target.style.display = 'none';
+                        if (fallback) fallback.style.display = 'flex';
+                      }}
+                    />
+                  ) : null}
+                  {/* Fallback */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-muted/50 to-muted" 
+                       style={{ display: book.coverImage ? 'none' : 'flex' }}>
+                    <BookOpen className="w-16 h-16 text-muted-foreground mb-4" />
+                    <h3 className="font-serif font-bold text-lg mb-2 text-foreground">
+                      {book.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      {book.author}
+                    </p>
+                  </div>
                 </div>
-              )}
-              <div>
-                <strong>Genre:</strong> {book.genre}
               </div>
-              <div>
-                <strong>Status:</strong> {formatStatus(book.readingStatus)}
+
+              {/* Book Details */}
+              <div className="flex-1">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Book Details</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    {book.isbn && (
+                      <div>
+                        <strong>ISBN:</strong> {book.isbn}
+                      </div>
+                    )}
+                    <div>
+                      <strong>Genre:</strong> {book.genre}
+                    </div>
+                    <div>
+                      <strong>Status:</strong> {formatStatus(book.readingStatus)}
+                    </div>
+                    <div>
+                      <strong>Total Chapters:</strong> {book.chapters.length}
+                    </div>
+                    {book.downloadUrl && (
+                      <div className="pt-4 border-t">
+                        <strong>Download:</strong>
+                        <div className="mt-2">
+                          <a 
+                            href={book.downloadUrl === "# Add your download link here" ? "#" : book.downloadUrl}
+                            className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                              book.downloadUrl === "# Add your download link here" 
+                                ? "bg-muted text-muted-foreground cursor-not-allowed" 
+                                : "bg-primary text-primary-foreground hover:bg-primary/90"
+                            }`}
+                            target={book.downloadUrl === "# Add your download link here" ? undefined : "_blank"}
+                            rel="noopener noreferrer"
+                          >
+                            <BookOpen className="w-4 h-4" />
+                            {book.downloadUrl === "# Add your download link here" ? "Download link not set" : "Download Book"}
+                          </a>
+                          {book.downloadUrl === "# Add your download link here" && (
+                            <p className="text-xs text-muted-foreground mt-1">
+                              To add a download link, edit the book data and replace "# Add your download link here" with the actual URL
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
               </div>
-              <div>
-                <strong>Total Chapters:</strong> {book.chapters.length}
-              </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </TabsContent>
         
         <TabsContent value="chapters" className="mt-8">
