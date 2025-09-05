@@ -27,16 +27,14 @@ export interface Book {
 export const books: Book[] = [
   {
     id: "1",
-    title: "The Design of Everyday Things",
-    author: "Don Norman",
+    title: "The Midnight Library",
+    author: "Matt Haig",
     isbn: "9780465050659",
     publishedYear: 2013,
-    genre: "Design",
+    genre: "#",
     description: "A powerful primer on how to design for users and understand the psychology behind everyday objects.",
     coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1442460745i/840.jpg",
     readingStatus: "completed",
-    startedDate: "2024-01-15",
-    completedDate: "2024-02-20",
     personalComments: "This book completely changed how I think about user experience and design. The principles are timeless and applicable beyond just physical objects - they apply to digital interfaces, processes, and systems. Norman's insights about affordances and signifiers are particularly valuable.",
     downloadUrl: "# Add your download link here",
     chapters: [
@@ -128,6 +126,98 @@ export const books: Book[] = [
     description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
     coverImage: "https://pictures.abebooks.com/isbn/9781501187513-us.jpg",
     readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "3",
+    title: "Deep Work",
+    author: "Cal Newport",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://pictures.abebooks.com/isbn/9781501187513-us.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "3",
+    title: "The 4-Hour Work-week",
+    author: "Timothy Ferriss",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://pictures.abebooks.com/isbn/9781501187513-us.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "3",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://pictures.abebooks.com/isbn/9781501187513-us.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "3",
+    title: "The Storyteller: Ready trilogy",
+    author: "Traci Chee",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://utopia-state-of-mind.com/wp-content/uploads/2018/10/the-storyteller-by-traci-chee.jpg",
+    readingStatus: "completed",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
     downloadUrl: "# Add your download link here",
     chapters: [

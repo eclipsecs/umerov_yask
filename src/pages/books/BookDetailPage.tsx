@@ -83,7 +83,7 @@ const BookDetailPage = () => {
               
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 {book.publishedYear && (
-                  <div className="text-blue-600 font-bold text-xs">
+                  <div className="text-pink-500 font-bold text-xs">
                     {book.publishedYear}
                   </div>
                 )}
@@ -117,12 +117,12 @@ const BookDetailPage = () => {
             {(book.startedDate || book.completedDate) && (
               <div className="flex flex-col sm:flex-row gap-4 text-sm text-muted-foreground">
                 {book.startedDate && (
-                  <div className="text-blue-600 font-bold text-xs">
+                  <div className="text-pink-500 font-bold text-xs">
                     {formatDate(book.startedDate)}
                   </div>
                 )}
                 {book.completedDate && (
-                  <div className="text-blue-600 font-bold text-xs">
+                  <div className="text-pink-500 font-bold text-xs">
                     {formatDate(book.completedDate)}
                   </div>
                 )}

@@ -3,6 +3,7 @@ import { FileText, PenTool, BookOpen, ArrowRight, Book } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { GooeyText } from '@/components/ui/gooey-text-morphing';
+import RoughNotation from '@/components/RoughNotation';
 
 const HomePage = () => {
   return (
@@ -92,9 +93,11 @@ const HomePage = () => {
                 <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">over 1 year ago</span>
                 <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">5 min read</span>
               </div>
-              <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
-                CS degree vs AI
-              </h3>
+              <RoughNotation type="underline" onHover={true}>
+                <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
+                  CS degree vs AI
+                </h3>
+              </RoughNotation>
               <p className="text-muted-foreground leading-relaxed">
                 My personal opinion about majoring in computer science while AI is taking over literally everything...
               </p>
@@ -107,9 +110,11 @@ const HomePage = () => {
                 <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">over 1 year ago</span>
                 <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">3 min read</span>
               </div>
-              <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
-                DITL: Marketing or comparison tool?
-              </h3>
+              <RoughNotation type="underline" onHover={true}>
+                <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
+                  DITL: Marketing or comparison tool?
+                </h3>
+              </RoughNotation>
               <p className="text-muted-foreground leading-relaxed">
                 Day in the life videos are popular but not always. Read my opinion on this trending format...
               </p>
@@ -122,9 +127,11 @@ const HomePage = () => {
                 <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">10 months ago</span>
                 <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">4 min read</span>
               </div>
-              <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
-                If blue-collar job sucks. Why do them?
-              </h3>
+              <RoughNotation type="underline" onHover={true}>
+                <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
+                  If blue-collar job sucks. Why do them?
+                </h3>
+              </RoughNotation>
               <p className="text-muted-foreground leading-relaxed">
                 Blue-collar - a labor that does not require working in an office. If you didn't know it...
               </p>
@@ -137,9 +144,11 @@ const HomePage = () => {
                 <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">10 months ago</span>
                 <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">6 min read</span>
               </div>
-              <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
-                Writing in the Digital Age
-              </h3>
+              <RoughNotation type="underline" onHover={true}>
+                <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
+                  Writing in the Digital Age
+                </h3>
+              </RoughNotation>
               <p className="text-muted-foreground leading-relaxed">
                 How technology has transformed the way we write and communicate in the modern world...
               </p>
