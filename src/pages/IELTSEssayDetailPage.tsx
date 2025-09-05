@@ -29,9 +29,9 @@ const IELTSEssayDetailPage = () => {
       {/* Back Button */}
       <Link 
         to={`/ielts-essays?tab=${essay.task}`} 
-        className="inline-flex items-center mb-8 text-muted-foreground hover:text-foreground transition-colors"
+        className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors"
       >
-        <ArrowLeft className="w-4 h-4 mr-2" />
+        <ArrowLeft className="w-4 h-4 mr-2 dark:text-pink-500 font-bold" />
         Back to IELTS Essays
       </Link>
 
@@ -46,16 +46,16 @@ const IELTSEssayDetailPage = () => {
             IELTS {essay.task.toUpperCase()}
           </Badge>
           
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground text-pink-500 dark:text-pink-500 font-bold">
             <div className="flex items-center">
               <Clock className="w-4 h-4 mr-1" />
               {essay.writingTime}
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center text-pink-500 dark:text-pink-500 font-bold">
               <FileText className="w-4 h-4 mr-1" />
               {essay.wordCount} words
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center text-pink-500 dark:text-pink-500 font-bold">
               <Award className="w-4 h-4 mr-1" />
               Band {essay.bandScore}
             </div>
