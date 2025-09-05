@@ -33,8 +33,8 @@ const HomePage = () => {
                     "שלום", // Hebrew
                     "Namaste" // Hindi
                   ]}
-                  morphTime={0.8}
-                  cooldownTime={1.5}
+                  morphTime={0.3}
+                  cooldownTime={1.0}
                   className="font-bold"
                 />
               </h1>
@@ -64,16 +64,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-          </div>
-          
-          {/* Right Side - Placeholder for future profile image */}
-          <div className="lg:w-80">
-            <div className="bg-gradient-to-br from-muted/30 to-muted/60 rounded-2xl p-8 text-center">
-              <p className="text-sm text-muted-foreground italic">
-                "Writing is thinking on paper"
-              </p>
-            </div>
-          </div>
+          </div>         
         </div>
       </section>
 
@@ -114,7 +105,7 @@ const HomePage = () => {
                 className="group block p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
               >
                 <div className="flex justify-between items-start mb-3">
-                  <span className="text-sm text-muted-foreground">over 1 year ago</span>
+                  <span className="text-sm text-muted-foreground font-bold color-pink">over 1 year ago</span>
                   <span className="text-sm font-bold text-accent-pink">3 min read</span>
                 </div>
                 <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-accent-pink transition-colors">
