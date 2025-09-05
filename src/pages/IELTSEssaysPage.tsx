@@ -20,10 +20,20 @@ const IELTSEssaysPage = () => {
       <Tabs value={activeTab} className="mb-8">
         <TabsList className="grid w-full grid-cols-2 mb-8 max-w-md mx-auto">
           <TabsTrigger value="task1" asChild>
-            <Link to="/ielts-essays?tab=task1">Task 1</Link>
+            <Link
+              to="/ielts-essays?tab=task1"
+              className="text-pink-500 dark:text-pink-500 font-extrabold text-center transition-colors duration-200 hover:text-pink-600"
+            >
+              Task 1
+            </Link>
           </TabsTrigger>
           <TabsTrigger value="task2" asChild>
-            <Link to="/ielts-essays?tab=task2">Task 2</Link>
+            <Link
+              to="/ielts-essays?tab=task2"
+              className="text-pink-500 dark:text-pink-500 font-extrabold text-center transition-colors duration-200 hover:text-pink-600"
+            >
+              Task 2
+            </Link>
           </TabsTrigger>
         </TabsList>
         
@@ -32,7 +42,7 @@ const IELTSEssaysPage = () => {
             <Link
               to={`/ielts-essay/${essay.id}`}
               key={essay.id}
-              className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300 border border-border/30"
+              className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300"
             >
               <div className="flex justify-between items-start mb-4 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
                 <div className="flex items-center gap-3 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
@@ -41,12 +51,12 @@ const IELTSEssaysPage = () => {
                 </div>
                 <span className="text-pink-500 dark:text-pink-500 font-bold">{`Band ${essay.bandScore}`}</span>
               </div>
-              <RoughNotation type="underline" onHover={true}>
-                <h2 className="text-xl font-serif font-bold mb-3 text-foreground">
+              <RoughNotation type="underline" onHover={true} color="#ec4899" animationDuration={250}>
+                <h2 className="text-2xl font-serif font-bold mb-3 text-pink-500 dark:text-pink-500">
                   {essay.title}
                 </h2>
               </RoughNotation>
-              <p className="text-muted-foreground text-sm mb-4 line-clamp-2 text-center leading-relaxed">
+              <p className="text-muted-foreground text-sm mb-4 line-clamp-2 leading-relaxed">
                 {essay.question}
               </p>
               
@@ -59,7 +69,7 @@ const IELTSEssaysPage = () => {
             <Link
               to={`/ielts-essay/${essay.id}`}
               key={essay.id}
-              className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300 border border-border/30"
+              className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300"
             >
               <div className="flex justify-between items-start mb-4 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
                 <div className="flex items-center gap-3 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
@@ -68,12 +78,12 @@ const IELTSEssaysPage = () => {
                 </div>
                 <span className="text-pink-500 dark:text-pink-500 font-bold">{`Band ${essay.bandScore}`}</span>
               </div>
-              <RoughNotation type="underline" onHover={true}>
-                <h2 className="text-xl font-serif font-bold mb-3 text-foreground">
+              <RoughNotation type="underline" onHover={true} color="#ec4899" animationDuration={250}>
+                <h2 className="text-2xl font-serif font-bold mb-3 text-pink-500 dark:text-pink-500">
                   {essay.title}
                 </h2>
               </RoughNotation>
-              <p className="text-muted-foreground text-sm mb-4 line-clamp-2 text-center leading-relaxed">
+              <p className="text-muted-foreground text-sm mb-4 line-clamp-2 leading-relaxed">
                 {essay.question}
               </p>
               

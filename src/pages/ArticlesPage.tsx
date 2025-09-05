@@ -21,7 +21,7 @@ const ArticlesPage = () => {
             <div className="space-y-4">
               <div className="flex justify-between items-center mb-4">
                 <RoughNotation type="underline" onHover={true}>
-                  <h2 className="text-xl font-serif font-bold mb-0 text-foreground">
+                  <h2 className="text-2xl font-serif font-bold mb-0 text-foreground">
                     {article.title}
                   </h2>
                 </RoughNotation>
@@ -29,7 +29,7 @@ const ArticlesPage = () => {
                   {article.readTime} min read
                 </span>
               </div>
-              <p className="text-muted-foreground text-sm mb-4 line-clamp-2 text-left leading-relaxed">
+              <p className="text-lg text-muted-foreground mb-4 line-clamp-2 text-left leading-relaxed">
                 {article.excerpt}
               </p>
             </div>

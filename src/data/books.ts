@@ -117,7 +117,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "3",
+    id: "4",
     title: "Maddox: F@#$ You",
     author: "Daniel Kahneman",
     isbn: "9780374533557",
@@ -140,15 +140,15 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "3",
+    id: "5",
     title: "Deep Work",
     author: "Cal Newport",
     isbn: "9780374533557",
     publishedYear: 2011,
     genre: "Psychology",
     description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
-    coverImage: "https://pictures.abebooks.com/isbn/9781501187513-us.jpg",
-    readingStatus: "reading",
+    coverImage: "https://m.media-amazon.com/images/I/71pqZChaJkL.jpg",
+    readingStatus: "completed",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
     downloadUrl: "# Add your download link here",
     chapters: [
@@ -163,14 +163,14 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "3",
+    id: "6",
     title: "The 4-Hour Work-week",
     author: "Timothy Ferriss",
     isbn: "9780374533557",
     publishedYear: 2011,
     genre: "Psychology",
     description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
-    coverImage: "https://pictures.abebooks.com/isbn/9781501187513-us.jpg",
+    coverImage: "https://m.media-amazon.com/images/I/6142S0D-PiL._UF1000,1000_QL80_.jpg",
     readingStatus: "reading",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
     downloadUrl: "# Add your download link here",
@@ -186,14 +186,14 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "3",
+    id: "7",
     title: "The Dead Zone",
     author: "Stephen King",
     isbn: "9780374533557",
     publishedYear: 2011,
     genre: "Psychology",
     description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
-    coverImage: "https://pictures.abebooks.com/isbn/9781501187513-us.jpg",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
     readingStatus: "reading",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
     downloadUrl: "# Add your download link here",
@@ -209,7 +209,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "3",
+    id: "8",
     title: "The Storyteller: Ready trilogy",
     author: "Traci Chee",
     isbn: "9780374533557",
@@ -230,5 +230,397 @@ export const books: Book[] = [
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
-  }
+  },
+  {
+    id: "9",
+    title: "Influence: The Psychology of Persuasion",
+    author: "Robert B. Cialdini",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/419pbSB7PdL._UF1000,1000_QL80_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "10",
+    title: "Hopeless",
+    author: "Collen Hover",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1666362713i/62967897.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "11",
+    title: "The Testaments",
+    author: "Margaret Atwood",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549292344l/42975172.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "12",
+    title: "Grit: Why passion and resilience are the secrets to success",
+    author: "Angela Duckworth",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/91fmmjCP6FL.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "13",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "14",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "15",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "16",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "17",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "18",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "19",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "20",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "21",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "22",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "23",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "24",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "25",
+    title: "The Dead Zone",
+    author: "Stephen King",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://m.media-amazon.com/images/I/51IP+552f5L._SL500_.jpg",
+    readingStatus: "reading",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+
 ];
