@@ -15,7 +15,7 @@ const IELTSEssaysPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
-      <h1 className="text-3xl font-serif font-bold text-center mb-16">IELTS Essays</h1>
+      <h1 className="text-5xl font-serif font-bold text-center mb-16">IELTS Essays</h1>
       
       <Tabs value={activeTab} className="mb-8">
         <TabsList className="grid w-full grid-cols-2 mb-8 max-w-md mx-auto">
@@ -34,16 +34,12 @@ const IELTSEssaysPage = () => {
               key={essay.id}
               className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300 border border-border/30"
             >
-              <div className="flex justify-between items-start mb-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                    <Target className="w-4 h-4 text-primary" />
-                  </div>
-                  <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
-                    {essay.task.toUpperCase()}
-                  </span>
+              <div className="flex justify-between items-start mb-4 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+                <div className="flex items-center gap-3 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+                  <Target className="w-4 h-4 text-primary" />
+                  <span>Task 1</span>
                 </div>
-                <span className="text-muted-foreground text-xs">Band {essay.bandScore}</span>
+                <span className="text-pink-500 dark:text-pink-500 font-bold">{`Band ${essay.bandScore}`}</span>
               </div>
               <RoughNotation type="underline" onHover={true}>
                 <h2 className="text-xl font-serif font-bold mb-3 text-foreground">
@@ -53,13 +49,7 @@ const IELTSEssaysPage = () => {
               <p className="text-muted-foreground text-sm mb-4 line-clamp-2 text-center leading-relaxed">
                 {essay.question}
               </p>
-              <div className="flex flex-wrap gap-1 justify-center">
-                {essay.tags.slice(0, 3).map((tag) => (
-                  <span key={tag} className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              
             </Link>
           ))}
         </TabsContent>
@@ -71,32 +61,22 @@ const IELTSEssaysPage = () => {
               key={essay.id}
               className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300 border border-border/30"
             >
-              <div className="flex justify-between items-start mb-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                    <FileText className="w-4 h-4 text-primary" />
-                  </div>
-                  <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
-                    {essay.task.toUpperCase()}
-                  </span>
+              <div className="flex justify-between items-start mb-4 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+                <div className="flex items-center gap-3 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+                  <FileText className="w-4 h-4 text-primary" />
+                  <span>Task 2</span>
                 </div>
-                <span className="text-muted-foreground text-xs">Band {essay.bandScore}</span>
+                <span className="text-pink-500 dark:text-pink-500 font-bold">{`Band ${essay.bandScore}`}</span>
               </div>
               <RoughNotation type="underline" onHover={true}>
-                <h2 className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+                <h2 className="text-xl font-serif font-bold mb-3 text-foreground">
                   {essay.title}
                 </h2>
               </RoughNotation>
               <p className="text-muted-foreground text-sm mb-4 line-clamp-2 text-center leading-relaxed">
                 {essay.question}
               </p>
-              <div className="flex flex-wrap gap-1 justify-center">
-                {essay.tags.slice(0, 3).map((tag) => (
-                  <span key={tag} className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              
             </Link>
           ))}
         </TabsContent>

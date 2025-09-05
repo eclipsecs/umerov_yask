@@ -29,7 +29,7 @@ const RoughNotation: React.FC<RoughNotationProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   const { theme } = useTheme();
   
-  const defaultColor = color || (theme === 'dark' ? '#fb099aff' : '#0116f8ff');
+  const defaultColor = color || (theme === 'dark' ? '#fb099aff' : '#fb099aff');
 
   useEffect(() => {
     if (!elementRef.current) return;

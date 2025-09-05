@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Book, Calendar, Tag, BookOpen, Clock, ArrowRight } from 'lucide-react';
+import { Book, Calendar, Tag, BookOpen, Clock, ArrowRight, CheckCircle, Bookmark } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { books } from '@/data/books';
@@ -39,7 +39,7 @@ const BooksPage = () => {
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-3xl font-serif font-bold mb-4 text-foreground">
+        <h1 className="text-5xl font-serif font-bold mb-4 text-foreground">
           Library
         </h1>
         <p className="text-muted-foreground max-w-xl mx-auto">
@@ -50,28 +50,28 @@ const BooksPage = () => {
       {/* Stats */}
       <div className="flex justify-center items-center gap-6 mb-8 text-sm text-muted-foreground">
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-emerald-500"></div>
-          <span>{completedBooks} completed</span>
+          <CheckCircle className="w-4 h-4 text-emerald-500" />
+          <span className="font-bold">{completedBooks} completed</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-blue-500"></div>
-          <span>{readingBooks} reading</span>
+          <Book className="w-4 h-4 text-blue-500" />
+          <span className="font-bold">{readingBooks} reading</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-slate-400"></div>
-          <span>{toReadBooks} to read</span>
+          <Bookmark className="w-4 h-4 text-slate-400" />
+          <span className="font-bold">{toReadBooks} to read</span>
         </div>
       </div>
 
       {/* Books Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
         {books.map((book) => (
           <Link 
             key={book.id} 
             to={`/book/${book.id}`}
             className="group block"
           >
-            <div className="border border-border/20 rounded-lg overflow-hidden hover:border-border/40 hover:shadow-md transition-all duration-300 bg-background">
+            <div className="border border-border/20 rounded-lg overflow-hidden hover:border-border/40 hover:shadow-md transition-all duration-300 bg-background scale-95 hover:scale-100">
               {/* Book Cover */}
               <div className="aspect-[3/4] relative overflow-hidden bg-muted/20">
                 {book.coverImage ? (
@@ -122,16 +122,6 @@ const BooksPage = () => {
                   <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
                     {book.description}
                   </p>
-                </div>
-
-                {/* Tags */}
-                <div className="flex flex-wrap gap-1">
-                  <Badge variant="outline" className="text-xs bg-muted/30">
-                    {book.genre}
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    {book.chapters.length} chapters
-                  </Badge>
                 </div>
               </div>
             </div>

@@ -39,7 +39,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-pink-500 font-semibold text-sm"
+                className="text-black hover:text-pink-500 dark:text-pink-500 dark:hover:text-pink-500 font-semibold text-sm"
               >
                 {item.label}
               </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-pink-500 font-semibold text-xs"
+                className="text-black hover:text-pink-500 dark:text-pink-500 dark:hover:text-pink-500 font-semibold text-xs"
               >
                 {item.label}
               </Link>

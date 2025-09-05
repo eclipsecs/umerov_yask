@@ -111,12 +111,6 @@ const BookDetailPage = () => {
               <Badge variant="outline" className="text-sm">
                 {book.genre}
               </Badge>
-              {book.tags.map((tag) => (
-                <Badge key={tag} variant="secondary" className="text-sm">
-                  <Tag className="w-3 h-3 mr-1" />
-                  {tag}
-                </Badge>
-              ))}
             </div>
 
             {/* Reading Dates */}
