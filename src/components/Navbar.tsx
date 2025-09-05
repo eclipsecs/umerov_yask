@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="font-serif font-bold text-xl tracking-tight">Y</span>
+            <span className="font-serif font-semibold text-xl tracking-tight">Y</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -30,19 +30,16 @@ const Navbar = () => {
               href="https://www.youtube.com/@javokhirsielts" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-accent-pink transition-colors"
+              className="flex items-center gap-2 text-pink-500 font-light"
             >
-              <Youtube className="w-5 h-5" />
-              <span className="text-sm font-medium">YouTube</span>
+              <Youtube className="w-5 h-5 text-pink-500" />
+              <span className="text-sm font-semibold text-pink-500">YouTube</span>
             </a>
             {navItems.slice(1).map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={cn(
-                  'text-muted-foreground hover:text-foreground transition-colors text-sm font-medium',
-                  location.pathname === item.path && 'text-accent-pink'
-                )}
+                className="text-pink-500 font-semibold text-sm"
               >
                 {item.label}
               </Link>
@@ -69,19 +66,16 @@ const Navbar = () => {
               href="https://www.youtube.com/@javokhirsielts" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-1 text-muted-foreground hover:text-accent-pink transition-colors"
+              className="flex items-center gap-1 text-red-500 font-light"
             >
-              <Youtube className="w-4 h-4" />
-              <span className="text-xs font-medium">YT</span>
+              <Youtube className="w-4 h-4 text-pink-500" />
+              <span className="text-xs font-semibold text-pink-500">YT</span>
             </a>
             {navItems.slice(1).map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={cn(
-                  'text-muted-foreground hover:text-foreground transition-colors text-xs',
-                  location.pathname === item.path && 'text-accent-pink'
-                )}
+                className="text-pink-500 font-semibold text-xs"
               >
                 {item.label}
               </Link>

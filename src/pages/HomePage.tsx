@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 max-w-4xl">
+      <section className="container mx-auto px-1 py-20 max-w-4xl">
         <div className="flex flex-col lg:flex-row items-start gap-12">
           {/* Left Content */}
           <div className="flex-1 space-y-8">
@@ -86,13 +86,13 @@ const HomePage = () => {
             <div className="space-y-4">
               <Link
                 to="/articles"
-                className="group block p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
+                className="group block p-6 rounded-xl hover:bg-accent-pink/10 transition-all duration-300"
               >
                 <div className="flex justify-between items-start mb-3">
-                  <span className="text-sm text-muted-foreground">over 1 year ago</span>
-                  <span className="text-sm font-bold text-accent-pink">3 min read</span>
+                  <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">over 1 year ago</span>
+                  <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">5 min read</span>
                 </div>
-                <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-accent-pink transition-colors">
+                <h3 className="text-xl font-serif font-bold mb-2 text-foreground text-accent-pink transition-colors">
                   CS degree vs AI
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -102,13 +102,13 @@ const HomePage = () => {
               
               <Link
                 to="/article/2"
-                className="group block p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
+                className="group block p-6 rounded-xl hover:bg-accent-pink/10 transition-all duration-300"
               >
                 <div className="flex justify-between items-start mb-3">
-                  <span className="text-sm text-muted-foreground font-bold color-pink">over 1 year ago</span>
-                  <span className="text-sm font-bold text-accent-pink">3 min read</span>
+                  <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">over 1 year ago</span>
+                  <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">3 min read</span>
                 </div>
-                <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-accent-pink transition-colors">
+                <h3 className="text-xl font-serif font-bold mb-2 text-foreground text-accent-pink transition-colors">
                   DITL: Marketing or comparison tool?
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -118,13 +118,13 @@ const HomePage = () => {
               
               <Link
                 to="/article/3"
-                className="group block p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
+                className="group block p-6 rounded-xl hover:bg-accent-pink/10 transition-all duration-300"
               >
                 <div className="flex justify-between items-start mb-3">
-                  <span className="text-sm text-muted-foreground">10 months ago</span>
-                  <span className="text-sm font-bold text-accent-pink">4 min read</span>
+                  <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">10 months ago</span>
+                  <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">4 min read</span>
                 </div>
-                <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-accent-pink transition-colors">
+                <h3 className="text-xl font-serif font-bold mb-2 text-foreground text-accent-pink transition-colors">
                   If blue-collar job sucks. Why do them?
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -134,13 +134,13 @@ const HomePage = () => {
               
               <Link
                 to="/article/4"
-                className="group block p-6 rounded-xl border border-border/40 hover:border-border/80 hover:bg-muted/30 transition-all duration-300"
+                className="group block p-6 rounded-xl hover:bg-accent-pink/10 transition-all duration-300"
               >
                 <div className="flex justify-between items-start mb-3">
-                  <span className="text-sm text-muted-foreground">10 months ago</span>
-                  <span className="text-sm font-bold text-accent-pink">6 min read</span>
+                  <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">10 months ago</span>
+                  <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">6 min read</span>
                 </div>
-                <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-accent-pink transition-colors">
+                <h3 className="text-xl font-serif font-bold mb-2 text-foreground text-accent-pink transition-colors">
                   Writing in the Digital Age
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">

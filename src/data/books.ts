@@ -73,7 +73,7 @@ export const books: Book[] = [
     genre: "Self-Development",
     description: "An easy and proven way to build good habits and break bad ones through tiny changes that lead to remarkable results.",
     coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1535115320i/40121378.jpg",
-    readingStatus: "reading",
+    readingStatus: "completed",
     startedDate: "2024-08-01",
     personalComments: "Currently reading this one. The 1% better every day concept is compelling, though some examples feel repetitive. The habit stacking technique is something I'm actively trying to implement.",
     downloadUrl: "# Add your download link here",
@@ -105,6 +105,29 @@ export const books: Book[] = [
     description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
     coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1317793965i/11468377.jpg",
     readingStatus: "to-read",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "3",
+    title: "Maddox: F@#$ You",
+    author: "Daniel Kahneman",
+    isbn: "9780374533557",
+    publishedYear: 2011,
+    genre: "Psychology",
+    description: "A groundbreaking tour of the mind and explains the two systems that drive the way we think.",
+    coverImage: "https://pictures.abebooks.com/isbn/9781501187513-us.jpg",
+    readingStatus: "reading",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
     downloadUrl: "# Add your download link here",
     chapters: [

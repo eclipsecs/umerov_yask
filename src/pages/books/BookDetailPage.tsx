@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Tag, BookOpen, Clock, User, CheckCircle } from 'lucide-react';
+import { ArrowLeft, Tag, BookOpen, Clock, User, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -83,8 +83,7 @@ const BookDetailPage = () => {
               
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 {book.publishedYear && (
-                  <div className="flex items-center">
-                    <Calendar className="w-4 h-4 mr-1" />
+                  <div className="text-blue-600 font-bold text-xs">
                     {book.publishedYear}
                   </div>
                 )}
@@ -124,13 +123,13 @@ const BookDetailPage = () => {
             {(book.startedDate || book.completedDate) && (
               <div className="flex flex-col sm:flex-row gap-4 text-sm text-muted-foreground">
                 {book.startedDate && (
-                  <div>
-                    <strong>Started:</strong> {formatDate(book.startedDate)}
+                  <div className="text-blue-600 font-bold text-xs">
+                    {formatDate(book.startedDate)}
                   </div>
                 )}
                 {book.completedDate && (
-                  <div>
-                    <strong>Completed:</strong> {formatDate(book.completedDate)}
+                  <div className="text-blue-600 font-bold text-xs">
+                    {formatDate(book.completedDate)}
                   </div>
                 )}
               </div>

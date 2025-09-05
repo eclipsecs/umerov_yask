@@ -83,7 +83,7 @@ const IELTSEssaysPage = () => {
                 <span className="text-muted-foreground text-xs">Band {essay.bandScore}</span>
               </div>
               <RoughNotation type="underline" onHover={true}>
-                <h2 className="text-xl font-serif font-bold mb-3 text-foreground">
+                <h2 className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
                   {essay.title}
                 </h2>
               </RoughNotation>

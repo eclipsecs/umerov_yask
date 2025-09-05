@@ -16,23 +16,15 @@ const ArticlesPage = () => {
           <Link
             to={`/article/${article.id}`}
             key={article.id}
-            className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300 border border-border/30"
+            className="block bg-transparent rounded-lg p-6 transition-all duration-300 shadow-none outline-none"
           >
             <div className="space-y-4">
               <div className="flex justify-between items-start mb-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                    <FileText className="w-4 h-4 text-primary" />
-                  </div>
-                  <Badge variant="secondary" className="bg-accent-pink/10 text-accent-pink">
-                    {new Date(article.publishedAt).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'short',
-                      day: 'numeric'
-                    })}
-                  </Badge>
                 </div>
-                <Clock className="w-4 h-4 text-primary/70" />
+                <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+                  {article.readTime} min read
+                </span>
               </div>
               <RoughNotation type="underline" onHover={true}>
                 <h2 className="text-xl font-serif font-bold mb-3 text-foreground">

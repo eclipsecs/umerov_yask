@@ -49,14 +49,12 @@ const ArticleDetailPage = () => {
       <header className="mb-12">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <div className="flex items-center">
-              <Calendar className="w-4 h-4 mr-1" />
+            <span className="font-bold text-pink-500">
               {formatDate(article.publishedAt)}
-            </div>
-            <div className="flex items-center">
-              <Clock className="w-4 h-4 mr-1" />
+            </span>
+            <span className="font-bold text-pink-500">
               {formatReadTime(readTime)}
-            </div>
+            </span>
           </div>
         </div>
         
