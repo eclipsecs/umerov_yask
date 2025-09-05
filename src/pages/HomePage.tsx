@@ -11,7 +11,8 @@ const HomePage = () => {
       <section className="container mx-auto px-4 sm:px-6 lg:px-0 py-20 max-w-4xl"> {/* Adjust px-0 to control left positioning */}
         <div className="flex flex-col lg:flex-row items-start gap-6 sm:gap-8 lg:gap-10"> {/* Adjust gap-10 to control spacing */}
           {/* Left Content */}
-          <div className="mx-auto"> {/* Center the block horizontally */}
+          {/* Center the block horizontally */}
+          <div className="mx-auto flex justify-center"> {/* Centered horizontally */}
             <div className="text-left w-full"> {/* Text aligned left */}
               <div className="flex-1 space-y-8 mx-auto"> {/* Adjust horizontal positioning if needed */}
                 <div className="space-y-6">
