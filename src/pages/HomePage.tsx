@@ -95,7 +95,7 @@ const HomePage = () => {
               </div>
               <RoughNotation type="underline" onHover={true}>
                 <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
-                  CS degree vs AI
+                  Computer science major in an almost AI world
                 </h3>
               </RoughNotation>
               <p className="text-muted-foreground leading-relaxed">

@@ -4,8 +4,10 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import YouTubeEmbed from '@/components/YouTubeEmbed';
-import { articles } from '@/data/articles';
+import { articles } from './../data/articles';
 import { calculateReadTime, formatReadTime } from '@/utils/readTime';
+import RoughNotation from '@/components/RoughNotation';
+
 
 const ArticleDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -25,37 +27,62 @@ const ArticleDetailPage = () => {
     );
   }
 
-  const formatDate = (dateString: string) => {
+  // Returns relative date in format like "1 YEAR AGO", "10 MONTHS AGO", "3 DAYS AGO", "JUST NOW"
+  const formatRelativeDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
+    const now = new Date();
+    const diffMs = now.getTime() - date.getTime();
+    const diffSeconds = Math.floor(diffMs / 1000);
+    const diffMinutes = Math.floor(diffSeconds / 60);
+    const diffHours = Math.floor(diffMinutes / 60);
+    const diffDays = Math.floor(diffHours / 24);
+    const diffMonths = Math.floor(diffDays / 30);
+    const diffYears = Math.floor(diffDays / 365);
+    if (diffYears >= 1) {
+      return `${diffYears} YEAR${diffYears > 1 ? 'S' : ''} AGO`;
+    } else if (diffMonths >= 1) {
+      return `${diffMonths} MONTH${diffMonths > 1 ? 'S' : ''} AGO`;
+    } else if (diffDays >= 1) {
+      return `${diffDays} DAY${diffDays > 1 ? 'S' : ''} AGO`;
+    } else if (diffHours >= 1) {
+      return `${diffHours} HOUR${diffHours > 1 ? 'S' : ''} AGO`;
+    } else if (diffMinutes >= 1) {
+      return `${diffMinutes} MINUTE${diffMinutes > 1 ? 'S' : ''} AGO`;
+    } else {
+      return 'JUST NOW';
+    }
   };
 
   // Calculate read time if not provided
   const readTime = article.readTime || calculateReadTime(article.content);
 
+  // Find the index of the current article
+  const currentIndex = articles.findIndex(a => a.id === id);
+  // Next article in sequence, or null if at end
+  const nextArticle =
+    currentIndex >= 0 && currentIndex < articles.length - 1
+      ? articles[currentIndex + 1]
+      : null;
+  const prevArticle =
+    currentIndex > 0 ? articles[currentIndex - 1] : null;
+
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Back Button */}
-      <Link to="/articles" className="inline-flex items-center mb-8 text-muted-foreground hover:text-foreground transition-colors">
-        <ArrowLeft className="w-4 h-4 mr-2" />
+      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors">
+        <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
         Back to Articles
       </Link>
 
       {/* Article Header */}
       <header className="mb-12">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span className="font-bold text-pink-500">
-              {formatDate(article.publishedAt)}
-            </span>
-            <span className="font-bold text-pink-500">
-              {formatReadTime(readTime)}
-            </span>
-          </div>
+        <div className="flex justify-between items-center gap-4 mb-6">
+          <span className="font-bold text-pink-500 uppercase text-sm">
+            {formatRelativeDate(article.publishedAt)}
+          </span>
+          <span className="font-bold text-pink-500 uppercase text-sm">
+            {formatReadTime(readTime)}
+          </span>
         </div>
         
         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-foreground leading-tight">
@@ -66,14 +93,6 @@ const ArticleDetailPage = () => {
           {article.excerpt}
         </p>
         
-        <div className="flex flex-wrap gap-2">
-          {article.tags.map((tag) => (
-            <Badge key={tag} variant="secondary" className="text-sm">
-              <Tag className="w-3 h-3 mr-1" />
-              {tag}
-            </Badge>
-          ))}
-        </div>
       </header>
 
       {/* YouTube Video */}
@@ -113,21 +132,35 @@ const ArticleDetailPage = () => {
       )}
 
       {/* Article Content */}
-      <article className="prose prose-lg max-w-none">
+      <article className="prose max-w-none text-lg md:text-xl leading-relaxed md:leading-loose lg:leading-[2] font-hanken tracking-wide font-medium">
         <MarkdownRenderer content={article.content} />
       </article>
 
-      {/* Footer */}
-      <footer className="mt-16 pt-8 border-t border-border">
-        <div className="text-center">
-          <Link to="/articles">
-            <Button variant="outline">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to All Articles
-            </Button>
-          </Link>
+      {/* Next Up Section */}
+      <section className="mt-16">
+        <div className="flex justify-between gap-12 items-start">
+          {prevArticle && (
+            <div className="flex flex-col items-start text-left">
+              <span className="text-2xl font-bold text-muted-foreground mb-3">Previous Article</span>
+              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-hanken font-semibold">
+                <RoughNotation type="underline" onHover={true}>
+                  <span>{prevArticle.title}</span>
+                </RoughNotation>
+              </Link>
+            </div>
+          )}
+          {nextArticle && (
+            <div className="flex flex-col items-start text-left">
+              <span className="text-2xl font-bold text-muted-foreground mb-3">Next Up</span>
+              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-hanken font-semibold">
+                <RoughNotation type="underline" onHover={true}>
+                  <span>{nextArticle.title}</span>
+                </RoughNotation>
+              </Link>
+            </div>
+          )}
         </div>
-      </footer>
+      </section>
     </div>
   );
 };
