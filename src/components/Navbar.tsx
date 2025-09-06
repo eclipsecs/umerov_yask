@@ -13,7 +13,6 @@ const Navbar = () => {
     { path: '/articles', label: 'Articles' },
     { path: '/ielts-essays', label: 'IELTS Essays' },
     { path: '/books', label: 'Books' },
-    { path: '/books/courses', label: 'Courses' },
   ];
 
   return (

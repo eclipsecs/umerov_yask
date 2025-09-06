@@ -67,9 +67,9 @@ const ArticleDetailPage = () => {
     currentIndex > 0 ? articles[currentIndex - 1] : null;
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl">
+    <div className="container mx-auto px-4 py-16 max-w-4xl">
       {/* Back Button */}
-      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors">
+      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
         <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
         Back to Articles
       </Link>
@@ -77,19 +77,19 @@ const ArticleDetailPage = () => {
       {/* Article Header */}
       <header className="mb-12">
         <div className="flex justify-between items-center gap-4 mb-6">
-          <span className="font-bold text-pink-500 uppercase text-sm">
+          <span className="font-bold text-pink-500 uppercase text-sm" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
             {formatRelativeDate(article.publishedAt)}
           </span>
-          <span className="font-bold text-pink-500 uppercase text-sm">
+          <span className="font-bold text-pink-500 uppercase text-sm" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
             {formatReadTime(readTime)}
           </span>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-foreground leading-tight">
+        <h1 className="text-6xl md:text-7xl font-bold mb-6 text-foreground leading-tight" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
           {article.title}
         </h1>
         
-        <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+        <p className="text-3xl md:text-[1.75rem] text-muted-foreground leading-8 md:leading-9 mb-10" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 400, fontStyle: 'normal' }}>
           {article.excerpt}
         </p>
         
@@ -132,7 +132,19 @@ const ArticleDetailPage = () => {
       )}
 
       {/* Article Content */}
-      <article className="prose max-w-none text-lg md:text-xl leading-relaxed md:leading-loose lg:leading-[2] font-hanken tracking-wide font-medium">
+      <article
+        className="mt-10 prose dark:prose-invert max-w-4xl mx-auto font-normal
+        prose-p:text-[1.25rem] md:prose-p:text-[1.35rem] prose-p:leading-8 md:prose-p:leading-9
+        prose-headings:font-bold prose-headings:tracking-tight
+        prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3
+        prose-ul:my-4 prose-ol:my-4 prose-li:my-1.5
+        prose-blockquote:border-l-2 prose-blockquote:border-pink-300 prose-blockquote:pl-4 prose-blockquote:italic
+        prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md
+        prose-pre:rounded-lg prose-pre:p-4
+        prose-img:rounded-lg prose-img:shadow-md
+        text-gray-800 dark:text-gray-200"
+        style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 400, fontStyle: 'normal' }}
+      >
         <MarkdownRenderer content={article.content} />
       </article>
 
@@ -141,8 +153,8 @@ const ArticleDetailPage = () => {
         <div className="flex justify-between gap-12 items-start">
           {prevArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-muted-foreground mb-3">Previous Article</span>
-              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-hanken font-semibold">
+              <span className="text-2xl font-bold text-muted-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous Article</span>
+              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
                 <RoughNotation type="underline" onHover={true}>
                   <span>{prevArticle.title}</span>
                 </RoughNotation>
@@ -151,8 +163,8 @@ const ArticleDetailPage = () => {
           )}
           {nextArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-muted-foreground mb-3">Next Up</span>
-              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-hanken font-semibold">
+              <span className="text-2xl font-bold text-muted-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Up</span>
+              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
                 <RoughNotation type="underline" onHover={true}>
                   <span>{nextArticle.title}</span>
                 </RoughNotation>
