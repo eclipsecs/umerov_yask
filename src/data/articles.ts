@@ -54,7 +54,7 @@ If I were to join the trend myself, I would use it not to showcase perfection, b
   },
   {
     id: '2',
-    title: 'Computer science major in an almost AI world',
+    title: '🎓 Computer science major in an almost AI world',
     excerpt: 'This is my personal opinion about majoring in computer science while AI is taking over literally everything from performing human tasks to coding itself.',
     publishedAt: '2023-02-12',
     readTime: 3,
@@ -78,7 +78,7 @@ Just a few years ago, when Ai was just considered to be a joke, I was wholly dif
   },
   {
     id: '3',
-    title: 'Annoying Day in the Life videos',
+    title: '🚨 Annoying Day in the Life videos',
     excerpt: 'Day in the life videos are popular but not always. Read my opinion',
     publishedAt: '2023-03-10',
     readTime: 3,
@@ -103,7 +103,7 @@ If I were to join the trend myself, I would use it not to showcase perfection, b
   },
   {
     id: '4',
-    title: 'If blue-collar job sucks. Why do them?',
+    title: '⚙️ If blue-collar job sucks. Why do them?',
     excerpt: 'Blue-collar - a labor that does not require working in an office. If you didn’t know it',
     publishedAt: '2024-01-20',
     readTime: 4,
@@ -193,7 +193,7 @@ The future of writing lies not in choosing between traditional and digital appro
   },
   {
     id: '6',
-    title: 'Reading Walkthroughs: YouTube',
+    title: '🎬 Reading Walkthroughs: YouTube',
     excerpt: 'How technology has transformed the way we write and communicate in the modern world.',
     publishedAt: '2024-01-25',
     readTime: 6,

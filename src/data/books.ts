@@ -1012,5 +1012,166 @@ export const books: Book[] = [
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "43",
+    title: "48 Laws of Power",
+    author: "Robert Greene",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://m.media-amazon.com/images/I/61J3Uu4jOLL.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "44",
+    title: "Strategy of Antifragile",
+    author: "Hewlett Packard",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://arminehslibrary.am/images/content/25-09-2023/hewlett-packard-strategia-antihrupkosti_gf_iC.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "45",
+    title: "Will",
+    author: "Will Smith",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1624126289l/58375739.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "46",
+    title: "Millionaire Expat",
+    author: "Hallam",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1515309359i/37846172.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "47",
+    title: "Bygone Days",
+    author: "Abdullah Qodiriy",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://m.media-amazon.com/images/I/61fq6IE2h9L._UF1000,1000_QL80_.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "48",
+    title: "To Live",
+    author: "Yu Hua",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://images.uzum.uz/cv65oclpb7f9qcngdr8g/original.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "49",
+    title: "7 Habits of Highly Effective People",
+    author: "Stephen Covey",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://m.media-amazon.com/images/I/71Koyhv2bML.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
   }
 ];
