@@ -4,6 +4,13 @@ import { GooeyText } from '@/components/ui/gooey-text-morphing';
 import RoughNotation from '@/components/RoughNotation';
 import { articles } from '@/data/articles';
 
+const getRelativeTime = (dateString: string) => {
+  const publishedDate = new Date(dateString);
+  const now = new Date();
+  const diffInYears = Math.floor((now.getTime() - publishedDate.getTime()) / (1000 * 60 * 60 * 24 * 365));
+  return diffInYears === 0 ? 'this year' : diffInYears === 1 ? '1 year ago' : `${diffInYears} years ago`;
+};
+
 const HomePage = () => {
   return (
     <div className="min-h-screen">
@@ -26,7 +33,7 @@ const HomePage = () => {
                       className="font-bold"
                     />
                   </h1>
-                  <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-2xl">
+                  <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-2xl font-bold">
                     <p>
                       I love sharing thoughts and ideas through writing. This is where I store my ramblings
                       about technology, education, and life observations.
@@ -70,7 +77,7 @@ const HomePage = () => {
                 >
                   <div className="flex justify-between items-start mb-3">
                     <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
-                      {article.publishedAt}
+                      {getRelativeTime(article.publishedAt)}
                     </span>
                     <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
                       {article.readTime} min read

@@ -29,7 +29,7 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: '1',
-    title: 'Coming up article',
+    title: '🔰 Coming up article',
     excerpt: 'Day in the life videos are popular but not always. Read my opinion',
     publishedAt: '2025-03-10',
     readTime: 3,
@@ -143,7 +143,7 @@ Just write naturally and use these formatting tricks when you need them!`
   },
   {
     id: '5',
-    title: 'Should parents decide the babys trait',
+    title: '🍼 Should parents decide the babys trait',
     excerpt: 'How technology has transformed the way we write and communicate in the modern world.',
     publishedAt: '2024-01-25',
     readTime: 6,
