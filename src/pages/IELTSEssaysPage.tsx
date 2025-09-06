@@ -9,7 +9,7 @@ import { ieltsEssays } from '@/data/ieltsEssays';
 
 const IELTSEssaysPage = () => {
   const [searchParams] = useSearchParams();
-  const activeTab = searchParams.get('tab') || 'task2';
+  const activeTab = searchParams.get('tab') || 'task1';
   const task1Essays = ieltsEssays.filter(essay => essay.task === 'task1');
   const task2Essays = ieltsEssays.filter(essay => essay.task === 'task2');
 

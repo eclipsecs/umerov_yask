@@ -8,6 +8,8 @@ import Layout from "@/components/Layout";
 import HomePage from "./pages/HomePage";
 import ArticlesPage from "./pages/ArticlesPage";
 import ArticleDetailPage from "./pages/ArticleDetailPage";
+import TeachingsPage from "./pages/TeachingsPage";
+import TeachingDetailPage from "./pages/TeachingDetailPage";
 import IELTSEssaysPage from "./pages/IELTSEssaysPage";
 import IELTSEssayDetailPage from "./pages/IELTSEssayDetailPage";
 import BooksPage from "./pages/books/BooksPage";
@@ -28,6 +30,8 @@ const App = () => (
               <Route path="/" element={<HomePage />} />
               <Route path="/articles" element={<ArticlesPage />} />
               <Route path="/article/:id" element={<ArticleDetailPage />} />
+              <Route path="/teachings" element={<TeachingsPage />} />
+              <Route path="/teaching/:id" element={<TeachingDetailPage />} />
               <Route path="/ielts-essays" element={<IELTSEssaysPage />} />
               <Route path="/ielts-essay/:id" element={<IELTSEssayDetailPage />} />
               <Route path="/books" element={<BooksPage />} />
