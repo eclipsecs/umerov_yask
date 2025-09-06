@@ -85,11 +85,11 @@ const ArticleDetailPage = () => {
           </span>
         </div>
         
-        <h1 className="text-6xl md:text-7xl font-bold mb-6 text-foreground leading-tight" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
+        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-foreground leading-tight" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
           {article.title}
-        </h1>
+        </h1> {/* You can adjust the title size here */}
         
-        <p className="text-3xl md:text-[1.75rem] text-muted-foreground leading-8 md:leading-9 mb-10" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 400, fontStyle: 'normal' }}>
+        <p className="text-xl md:text-2xl text-muted-foreground leading-8 md:leading-9 mb-4" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 400, fontStyle: 'normal' }}>
           {article.excerpt}
         </p>
         
@@ -134,7 +134,7 @@ const ArticleDetailPage = () => {
       {/* Article Content */}
       <article
         className="mt-10 prose dark:prose-invert max-w-4xl mx-auto font-normal
-        prose-p:text-[1.25rem] md:prose-p:text-[1.35rem] prose-p:leading-8 md:prose-p:leading-9
+        prose-p:text-[1.35rem] md:prose-p:text-[1.5rem] prose-p:leading-8 md:prose-p:leading-9
         prose-headings:font-bold prose-headings:tracking-tight
         prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3
         prose-ul:my-4 prose-ol:my-4 prose-li:my-1.5
@@ -143,7 +143,7 @@ const ArticleDetailPage = () => {
         prose-pre:rounded-lg prose-pre:p-4
         prose-img:rounded-lg prose-img:shadow-md
         text-gray-800 dark:text-gray-200"
-        style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 400, fontStyle: 'normal' }}
+        style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem' }} // slightly bolder and larger font
       >
         <MarkdownRenderer content={article.content} />
       </article>
