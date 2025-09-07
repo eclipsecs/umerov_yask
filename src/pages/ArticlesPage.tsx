@@ -19,13 +19,13 @@ const ArticlesPage = () => {
             className="block bg-transparent rounded-lg p-6 transition-all duration-300 shadow-none outline-none"
           >
             <div className="space-y-4">
-              <div className="flex justify-between items-center mb-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-2">
                 <RoughNotation type="underline" onHover={true}>
-                  <h2 className="text-2xl font-serif font-bold mb-0 text-foreground">
+                  <h2 className="text-2xl font-serif font-bold text-foreground">
                     {article.title}
                   </h2>
                 </RoughNotation>
-                <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+                <span className="text-pink-500 text-sm font-bold uppercase">
                   {article.readTime} min read
                 </span>
               </div>
