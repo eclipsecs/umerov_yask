@@ -149,47 +149,16 @@ Just write naturally and use these formatting tricks when you need them!`
     readTime: 6,
     tags: ['Technology', 'Writing', 'Communication'],
     // Example YouTube URL - replace with actual video URL when you have one
-    youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Example YouTube URL
-    content: `# Writing in the Digital Age
+    youtubeUrl: "https://youtu.be/SgtdVWEBXOM?feature=shared", // Example YouTube URL
+    content: `# Modifying baby's genetics
 
-Technology has fundamentally changed how we approach writing. From typewriters to word processors to AI assistants, each evolution has shaped not just our tools, but our thinking processes.
+Genes are the instruction code for all of an individual features. And, genetic modification (altering the genes in the organism) has been debated for centuries.
 
-## The Evolution of Writing Tools
+Understanding how genes work or their structure can help us understand to treat medical conditions, and also shape how a particular person develop. Although this has been a rare chance to see in real life, the movie "Gattaca" depicts a world where characteristics can be selected before birth. However, modern-day companies are able to modify genetic data using a computer or a technology that is made for this. CRISPR, for example, where therapeutics cure various diseases like hemoglobinopathis, cancer, and disease of the liver, lung and muscle. Therefore, its important to consider the ethics of such modification occurring in the modern world to point which this might causes severe issues, or a future goal for businesses and research.
 
-The journey from pen and paper to digital documents represents more than just technological progress—it's a transformation in how we think about and approach writing itself.
+**To be continued...**
 
-### Traditional Writing
-- Deliberate and careful
-- Limited editing capabilities  
-- Physical connection to words
-- Slower pace encouraged deeper thought
-
-### Digital Revolution
-- Infinite editing possibilities
-- Real-time collaboration
-- Instant publication
-- Speed over reflection
-
-## Modern Challenges
-
-While digital tools have democratized publishing and made writing more accessible, they've also introduced new challenges:
-
-**Information Overload**: With so much content available, standing out requires exceptional quality and unique perspective.
-
-**Attention Economy**: Writers must compete with endless distractions for readers' limited attention spans.
-
-**AI Assistance**: As AI becomes more sophisticated, the line between human and machine-generated content blurs.
-
-## Finding Balance
-
-The key isn't to reject technology or embrace it blindly, but to use it intentionally:
-
-1. Use digital tools for efficiency, not as a crutch
-2. Maintain the human element in your voice
-3. Focus on quality over quantity
-4. Preserve time for deep, uninterrupted thinking
-
-The future of writing lies not in choosing between traditional and digital approaches, but in thoughtfully combining the best of both worlds.`
+`
   },
   {
     id: '6',
