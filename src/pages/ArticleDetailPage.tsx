@@ -156,7 +156,7 @@ const ArticleDetailPage = () => {
             <div className="flex flex-col items-start text-left">
               <span className="text-2xl font-bold text-muted-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous Article</span>
               <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
-                <RoughNotation type="underline" onHover={true}>
+                <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{prevArticle.title}</span>
                 </RoughNotation>
               </Link>
@@ -166,7 +166,7 @@ const ArticleDetailPage = () => {
             <div className="flex flex-col items-start text-left">
               <span className="text-2xl font-bold text-muted-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Up</span>
               <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
-                <RoughNotation type="underline" onHover={true}>
+                <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{nextArticle.title}</span>
                 </RoughNotation>
               </Link>

@@ -79,7 +79,7 @@ const HomePage = () => {
 
           <div className="space-y-4">
             {[...articles]
-              .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+              .sort((a, b) => Number(b.id) - Number(a.id))
               .slice(0, 4)
               .map(article => (
                 <Link
