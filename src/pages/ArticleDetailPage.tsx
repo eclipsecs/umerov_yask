@@ -39,7 +39,8 @@ const ArticleDetailPage = () => {
     const diffMonths = Math.floor(diffDays / 30);
     const diffYears = Math.floor(diffDays / 365);
     if (diffYears >= 1) {
-      return `${diffYears} YEAR${diffYears > 1 ? 'S' : ''} AGO`;
+      const remainingMonths = diffMonths % 12;
+      return `${diffYears} YEAR${diffYears > 1 ? 'S' : ''}${remainingMonths > 0 ? ` ${remainingMonths} MONTH${remainingMonths > 1 ? 'S' : ''}` : ''} AGO`;
     } else if (diffMonths >= 1) {
       return `${diffMonths} MONTH${diffMonths > 1 ? 'S' : ''} AGO`;
     } else if (diffDays >= 1) {
