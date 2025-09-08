@@ -52,29 +52,29 @@ const BooksPage = () => {
       </div>
 
       {/* Navigation Filters - styled as navbar */}
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-6 overflow-x-auto sm:flex-wrap">
         <div className="bg-muted/10 dark:bg-muted/20 rounded-xl px-4 py-2 flex gap-4 shadow-sm">
           <button
             onClick={() => setFilter('all')}
-            className={`px-5 py-2 font-bold transition-colors duration-200 ${filter === 'all' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
+            className={`px-3 sm:px-5 py-2 font-bold transition-colors duration-200 ${filter === 'all' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
           >
             All
           </button>
           <button
             onClick={() => setFilter('reading')}
-            className={`px-5 py-2 font-bold transition-colors duration-200 ${filter === 'reading' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
+            className={`px-3 sm:px-5 py-2 font-bold transition-colors duration-200 ${filter === 'reading' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
           >
             Currently Reading
           </button>
           <button
             onClick={() => setFilter('to-read')}
-            className={`px-5 py-2 font-bold transition-colors duration-200 ${filter === 'to-read' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
+            className={`px-3 sm:px-5 py-2 font-bold transition-colors duration-200 ${filter === 'to-read' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
           >
             To Read
           </button>
           <button
             onClick={() => setFilter('completed')}
-            className={`px-5 py-2 font-bold transition-colors duration-200 ${filter === 'completed' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
+            className={`px-3 sm:px-5 py-2 font-bold transition-colors duration-200 ${filter === 'completed' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
           >
             Completed
           </button>
