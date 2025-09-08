@@ -7,8 +7,20 @@ import { articles } from '@/data/articles';
 const getRelativeTime = (dateString: string) => {
   const publishedDate = new Date(dateString);
   const now = new Date();
-  const diffInYears = Math.floor((now.getTime() - publishedDate.getTime()) / (1000 * 60 * 60 * 24 * 365));
-  return diffInYears === 0 ? 'this year' : diffInYears === 1 ? '1 year ago' : `${diffInYears} years ago`;
+  const diffInMs = now.getTime() - publishedDate.getTime();
+  const diffInMonths = Math.floor(diffInMs / (1000 * 60 * 60 * 24 * 30));
+  const years = Math.floor(diffInMonths / 12);
+  const months = diffInMonths % 12;
+
+  if (years > 0 && months > 0) {
+    return `${years} year${years > 1 ? 's' : ''} ${months} month${months > 1 ? 's' : ''} ago`;
+  } else if (years > 0) {
+    return `${years} year${years > 1 ? 's' : ''} ago`;
+  } else if (months > 0) {
+    return `${months} month${months > 1 ? 's' : ''} ago`;
+  } else {
+    return 'this month';
+  }
 };
 
 const HomePage = () => {
