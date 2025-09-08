@@ -20,9 +20,9 @@ export interface Teaching {
 export const teachings: Teaching[] = [
   {
     id: 't1',
-    title: '🔰 Coming up teaching',
-    excerpt: 'Day in the life videos are popular but not always. Read my opinion',
-    publishedAt: '2025-03-10',
+    title: 'Newcomers with almost to no knowledge of English language',
+    excerpt: 'Do newcomers to English courses what they are signed up for?',
+    publishedAt: '2024-03-10',
     readTime: 3,
     tags: ['YouTube', 'Trend', 'Trap'],
     image: dayinthelife,
