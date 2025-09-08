@@ -1,284 +1,175 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Tag, BookOpen, Clock, User, CheckCircle } from 'lucide-react';
+import { ArrowLeft, Tag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import MarkdownRenderer from '@/components/MarkdownRenderer';
-import { books } from '@/data/books';
+import RoughNotation from '@/components/RoughNotation';
 
-const BookDetailPage = () => {
+import { articles } from '@/data/readings';
+
+const ArticleDetailPage = () => {
   const { id } = useParams<{ id: string }>();
-  const book = books.find(b => b.id === id);
+  const article = articles.find(a => a.id === id);
+  const currentIndex = articles.findIndex(a => a.id === id);
+  const nextArticle =
+    currentIndex >= 0 && currentIndex < articles.length - 1
+      ? articles[currentIndex + 1]
+      : null;
+  const prevArticle =
+    currentIndex > 0 ? articles[currentIndex - 1] : null;
 
-  if (!book) {
+  const formatRelativeTime = (dateString: string) => {
+    const date = new Date(dateString);
+    const now = new Date();
+    let years = now.getFullYear() - date.getFullYear();
+    let months = now.getMonth() - date.getMonth();
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+    if (years > 0 && months > 0) return `${years} year${years > 1 ? 's' : ''} ${months} month${months > 1 ? 's' : ''} ago`;
+    if (years > 0) return `${years} year${years > 1 ? 's' : ''} ago`;
+    if (months > 0) return `${months} month${months > 1 ? 's' : ''} ago`;
+    const days = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+    return `${days} day${days !== 1 ? 's' : ''} ago`;
+  };
+
+  if (!article) {
     return (
       <div className="container mx-auto px-4 py-12 max-w-4xl text-center">
-        <h1 className="text-3xl font-bold mb-4">Book Not Found</h1>
+        <h1 className="text-3xl font-bold mb-4">Article Not Found</h1>
         <p className="text-muted-foreground mb-8">
-          The book you're looking for doesn't exist or has been moved.
+          The article you're looking for doesn't exist or has been moved.
         </p>
-        <Link to="/books">
-          <Button>Back to Books</Button>
+        <Link to="/readings">
+          <Button>Back to Readings</Button>
         </Link>
       </div>
     );
   };
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'completed':
-        return 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-950 dark:text-emerald-300 dark:border-emerald-800';
-      case 'reading':
-        return 'bg-blue-50 text-blue-700 border-blue-200 dark:bg-blue-950 dark:text-blue-300 dark:border-blue-800';
-      case 'to-read':
-        return 'bg-slate-50 text-slate-700 border-slate-200 dark:bg-slate-950 dark:text-slate-300 dark:border-slate-800';
-      default:
-        return 'bg-slate-50 text-slate-700 border-slate-200 dark:bg-slate-950 dark:text-slate-300 dark:border-slate-800';
-    }
-  };
-
-  const formatStatus = (status: string) => {
-    switch (status) {
-      case 'to-read':
-        return 'To Read';
-      case 'reading':
-        return 'Currently Reading';
-      case 'completed':
-        return 'Completed';
-      default:
-        return status;
-    }
-  };
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-  };
-
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Back Button */}
-      <Link to="/books" className="inline-flex items-center mb-8 text-muted-foreground hover:text-foreground transition-colors">
-        <ArrowLeft className="w-4 h-4 mr-2" />
-        Back to Books
+      <Link
+        to="/readings"
+        className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors"
+      >
+        <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
+        Back to Readings
       </Link>
 
-      {/* Book Header */}
+      {/* Article Header */}
       <header className="mb-12">
-        <div className="flex flex-col lg:flex-row gap-8">
-          <div className="flex-1">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-              <Badge 
-                variant="outline" 
-                className={`w-fit text-sm font-medium border ${getStatusColor(book.readingStatus)}`}
-              >
-                {book.readingStatus === 'completed' && <CheckCircle className="w-4 h-4 mr-2" />}
-                {formatStatus(book.readingStatus)}
-              </Badge>
-              
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                {book.publishedYear && (
-                  <div className="text-pink-500 font-bold text-xs">
-                    {book.publishedYear}
-                  </div>
-                )}
-                <div className="flex items-center">
-                  <BookOpen className="w-4 h-4 mr-1" />
-                  {book.chapters.length} chapters
-                </div>
-              </div>
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground leading-tight">
-              {book.title}
-            </h1>
-            
-            <div className="flex items-center gap-2 mb-6 text-xl text-muted-foreground">
-              <User className="w-5 h-5" />
-              <span>by {book.author}</span>
-            </div>
-            
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              {book.description}
-            </p>
-            
-            <div className="flex flex-wrap gap-2 mb-6">
-              <Badge variant="outline" className="text-sm">
-                {book.genre}
-              </Badge>
-            </div>
+        <div className="flex flex-col gap-8">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground leading-tight">
+            {article.title}
+          </h1>
 
-            {/* Reading Dates */}
-            {(book.startedDate || book.completedDate) && (
-              <div className="flex flex-col sm:flex-row gap-4 text-sm text-muted-foreground">
-                {book.startedDate && (
-                  <div className="text-pink-500 font-bold text-xs">
-                    {formatDate(book.startedDate)}
-                  </div>
-                )}
-                {book.completedDate && (
-                  <div className="text-pink-500 font-bold text-xs">
-                    {formatDate(book.completedDate)}
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
+          {article.dateRead && (
+            <p className="text-sm text-pink-500 uppercase font-bold">
+              {formatRelativeTime(article.dateRead)}
+            </p>
+          )}
+
+          {article.image && (
+            <img src={article.image} alt={article.title} className="w-full max-h-96 object-cover rounded-md mb-6" />
+          )}
+
+          {article.tags && article.tags.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-6">
+              {article.tags.map((tag, index) => (
+                <Badge key={index} variant="outline" className="text-sm">
+                  <Tag className="w-4 h-4 mr-1 inline" />
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          )}
         </div>
       </header>
 
-      {/* Book Content */}
-      <Tabs defaultValue="overview" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="overview">Overview</TabsTrigger>
-          <TabsTrigger value="chapters">Chapters</TabsTrigger>
-          <TabsTrigger value="comments">My Comments</TabsTrigger>
-        </TabsList>
-        
-        <TabsContent value="overview" className="mt-8">
-          <div className="space-y-6">
-            {/* Book Cover and Details */}
-            <div className="flex flex-col md:flex-row gap-8">
-              {/* Cover Image */}
-              <div className="md:w-64 flex-shrink-0">
-                <div className="aspect-[3/4] relative overflow-hidden rounded-lg bg-muted/30">
-                  {book.coverImage ? (
-                    <img
-                      src={book.coverImage}
-                      alt={`${book.title} cover`}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        const fallback = target.nextElementSibling as HTMLElement;
-                        target.style.display = 'none';
-                        if (fallback) fallback.style.display = 'flex';
-                      }}
-                    />
-                  ) : null}
-                  {/* Fallback */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-muted/50 to-muted" 
-                       style={{ display: book.coverImage ? 'none' : 'flex' }}>
-                    <BookOpen className="w-16 h-16 text-muted-foreground mb-4" />
-                    <h3 className="font-serif font-bold text-lg mb-2 text-foreground">
-                      {book.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      {book.author}
-                    </p>
-                  </div>
-                </div>
-              </div>
+      {/* Vocabulary Section */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-6">Vocabulary</h2>
+        {article.vocabularies && article.vocabularies.length > 0 ? (
+          <table className="w-full border border-border rounded-md overflow-hidden">
+            <thead>
+              <tr className="bg-muted">
+                <th className="text-left px-4 py-2">Word</th>
+                <th className="text-left px-4 py-2">Definition</th>
+              </tr>
+            </thead>
+            <tbody>
+              {article.vocabularies.map((vocab, index) => (
+                <tr key={index} className="border-t border-border">
+                  <td className="px-4 py-2 font-medium">{vocab.word}</td>
+                  <td className="px-4 py-2 text-muted-foreground">{vocab.definition}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : (
+          <p className="text-muted-foreground">No vocabulary available.</p>
+        )}
+      </section>
 
-              {/* Book Details */}
-              <div className="flex-1">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Book Details</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    {book.isbn && (
-                      <div>
-                        <strong>ISBN:</strong> {book.isbn}
-                      </div>
-                    )}
-                    <div>
-                      <strong>Genre:</strong> {book.genre}
-                    </div>
-                    <div>
-                      <strong>Status:</strong> {formatStatus(book.readingStatus)}
-                    </div>
-                    <div>
-                      <strong>Total Chapters:</strong> {book.chapters.length}
-                    </div>
-                    {book.downloadUrl && (
-                      <div className="pt-4 border-t">
-                        <strong>Download:</strong>
-                        <div className="mt-2">
-                          <a 
-                            href={book.downloadUrl === "# Add your download link here" ? "#" : book.downloadUrl}
-                            className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                              book.downloadUrl === "# Add your download link here" 
-                                ? "bg-muted text-muted-foreground cursor-not-allowed" 
-                                : "bg-primary text-primary-foreground hover:bg-primary/90"
-                            }`}
-                            target={book.downloadUrl === "# Add your download link here" ? undefined : "_blank"}
-                            rel="noopener noreferrer"
-                          >
-                            <BookOpen className="w-4 h-4" />
-                            {book.downloadUrl === "# Add your download link here" ? "Download link not set" : "Download Book"}
-                          </a>
-                          {book.downloadUrl === "# Add your download link here" && (
-                            <p className="text-xs text-muted-foreground mt-1">
-                              To add a download link, edit the book data and replace "# Add your download link here" with the actual URL
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
+      {/* Interesting Sentences Section */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-6">Interesting Sentences</h2>
+        {article.interestingSentences && article.interestingSentences.length > 0 ? (
+          <div className="space-y-4">
+            {article.interestingSentences.map((sentence, index) => (
+              <div
+                key={index}
+                className="p-3 rounded-md bg-pink-50 dark:bg-pink-900/30 text-foreground shadow-sm"
+              >
+                {sentence}
               </div>
-            </div>
-          </div>
-        </TabsContent>
-        
-        <TabsContent value="chapters" className="mt-8">
-          <div className="space-y-6">
-            {book.chapters.map((chapter) => (
-              <Card key={chapter.id}>
-                <CardHeader>
-                  <CardTitle className="text-lg">
-                    Chapter {chapter.chapterNumber}: {chapter.title}
-                  </CardTitle>
-                  <CardDescription>
-                    {chapter.content}
-                  </CardDescription>
-                </CardHeader>
-                {chapter.notes && (
-                  <CardContent>
-                    <div className="bg-muted/30 p-4 rounded-lg">
-                      <h4 className="font-medium mb-2">My Notes:</h4>
-                      <MarkdownRenderer content={chapter.notes} />
-                    </div>
-                  </CardContent>
-                )}
-              </Card>
             ))}
           </div>
-        </TabsContent>
-        
-        <TabsContent value="comments" className="mt-8">
-          <Card>
-            <CardHeader>
-              <CardTitle>Personal Comments & Reflections</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="prose prose-lg max-w-none">
-                <MarkdownRenderer content={book.personalComments} />
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-      </Tabs>
+        ) : (
+          <p className="text-muted-foreground">No interesting sentences available.</p>
+        )}
+      </section>
 
-      {/* Footer */}
-      <footer className="mt-16 pt-8 border-t border-border">
-        <div className="text-center">
-          <Link to="/books">
-            <Button variant="outline">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to All Books
-            </Button>
-          </Link>
+      {/* Previous/Next Section */}
+      <section className="mt-16">
+        <div className="flex justify-between gap-12 items-start">
+          {prevArticle && (
+            <div className="flex flex-col items-start text-left">
+              <span className="text-2xl font-bold text-muted-foreground mb-3">
+                Previous Reading
+              </span>
+              <Link
+                to={`/readings/${prevArticle.id}`}
+                className="text-pink-500 text-base md:text-lg font-semibold"
+              >
+                <RoughNotation type="underline" onHover={true} color="#ec4899">
+                  <span>{prevArticle.title}</span>
+                </RoughNotation>
+              </Link>
+            </div>
+          )}
+          {nextArticle && (
+            <div className="flex flex-col items-start text-left">
+              <span className="text-2xl font-bold text-muted-foreground mb-3">
+                Next Up
+              </span>
+              <Link
+                to={`/readings/${nextArticle.id}`}
+                className="text-pink-500 text-base md:text-lg font-semibold"
+              >
+                <RoughNotation type="underline" onHover={true} color="#ec4899">
+                  <span>{nextArticle.title}</span>
+                </RoughNotation>
+              </Link>
+            </div>
+          )}
         </div>
-      </footer>
+      </section>
+
     </div>
   );
 };
 
-export default BookDetailPage;
+export default ArticleDetailPage;

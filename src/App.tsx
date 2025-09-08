@@ -38,8 +38,8 @@ const App = () => (
               <Route path="/ielts-essay/:id" element={<IELTSEssayDetailPage />} />
               <Route path="/books" element={<BooksPage />} />
               <Route path="/book/:id" element={<BookDetailPage />} />
-              <Route path="/reading" element={<ReadingPage />} />
-              <Route path="/reading/:id" element={<ReadingPageDetail />} />
+              <Route path="/readings" element={<ReadingPage />} />
+              <Route path="/readings/:id" element={<ReadingPageDetail />} />
                                           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

@@ -9,10 +9,10 @@ const ReadingPage = () => {
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-5xl font-serif font-bold mb-4 text-foreground">
-          Articles 
+          Readings 
         </h1>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Collection of articles I have read. Each article consists of words I have learnt, and the context in which I have learnt them.
+          Collection of journals I have read. Each article consists of words I have learnt, and the context in which I have learnt them.
         </p>
       </div>
 
@@ -25,14 +25,14 @@ const ReadingPage = () => {
       </div>
 
       {/* Articles Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {articles.map((article) => (
           <Link 
             key={article.id} 
-            to={`/article/${article.id}`}
+            to={`/readings/${article.id}`}
             className="group block border border-border rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 bg-background"
           >
-            <div className="aspect-[4/3] relative overflow-hidden bg-muted/20">
+            <div className="aspect-[3/4] relative overflow-hidden bg-muted/20 scale-95">
               {article.image ? (
                 <img
                   src={typeof article.image === 'string' ? article.image : article.image}
