@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import { ieltsEssays } from '@/data/ieltsEssays';
-import { RoughNotation } from 'react-rough-notation';
+import RoughNotation from '@/components/RoughNotation';
 
 const IELTSEssayDetailPage = () => {
   const { id } = useParams<{ id: string }>();
