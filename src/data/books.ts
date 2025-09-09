@@ -26,41 +26,27 @@ export interface Book {
 
 export const books: Book[] = [
   {
-    id: "1",
-    title: "The Midnight Library",
-    author: "Matt Haig",
-    isbn: "9780465050659",
-    publishedYear: 2020,
-    genre: "Contemporary Fiction",
-    description: "A novel about Nora Seed, who finds herself in a magical library between life and death, where she can explore all the possible lives she could have lived and search for meaning, regret, and hope.",
-    coverImage: "https://m.media-amazon.com/images/I/71ls-I6A5KL._UF1000,1000_QL80_.jpg",
+    id: "49",
+    title: "7 Habits of Highly Effective People",
+    author: "Stephen Covey",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://m.media-amazon.com/images/I/71Koyhv2bML.jpg",
     readingStatus: "completed",
-    personalComments: "This book completely changed how I think about user experience and design. The principles are timeless and applicable beyond just physical objects - they apply to digital interfaces, processes, and systems. Norman's insights about affordances and signifiers are particularly valuable.",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
     downloadUrl: "# Add your download link here",
     chapters: [
       {
         id: "ch1",
         chapterNumber: 1,
-        title: "The Psychopathology of Everyday Things",
-        content: "Introduction to design problems in everyday objects",
-        notes: "Great examples of doors that confuse people. The Norman Door concept is introduced here."
-      },
-      {
-        id: "ch2", 
-        chapterNumber: 2,
-        title: "The Psychology of Everyday Actions",
-        content: "How people interact with objects and the mental models they form",
-        notes: "The seven stages of action framework is crucial for understanding user behavior."
-      },
-      {
-        id: "ch3",
-        chapterNumber: 3,
-        title: "Knowledge in the Head and in the World",
-        content: "How we use both internal knowledge and external cues to navigate the world",
-        notes: "The distinction between knowledge in the head vs. in the world is fundamental to good design."
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
       }
     ],
-    tags: ["design", "psychology", "UX", "usability"]
+    tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
     id: "2",
@@ -1152,26 +1138,40 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "49",
-    title: "7 Habits of Highly Effective People",
-    author: "Stephen Covey",
-    isbn: "9780718197032",
-    publishedYear: 2014,
-    genre: "Nonfiction",
-    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
-    coverImage: "https://m.media-amazon.com/images/I/71Koyhv2bML.jpg",
+    id: "1",
+    title: "The Midnight Library",
+    author: "Matt Haig",
+    isbn: "9780465050659",
+    publishedYear: 2020,
+    genre: "Contemporary Fiction",
+    description: "A novel about Nora Seed, who finds herself in a magical library between life and death, where she can explore all the possible lives she could have lived and search for meaning, regret, and hope.",
+    coverImage: "https://m.media-amazon.com/images/I/71ls-I6A5KL._UF1000,1000_QL80_.jpg",
     readingStatus: "completed",
-    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    personalComments: "This book completely changed how I think about user experience and design. The principles are timeless and applicable beyond just physical objects - they apply to digital interfaces, processes, and systems. Norman's insights about affordances and signifiers are particularly valuable.",
     downloadUrl: "# Add your download link here",
     chapters: [
       {
         id: "ch1",
         chapterNumber: 1,
-        title: "The Characters of the Story",
-        content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        title: "The Psychopathology of Everyday Things",
+        content: "Introduction to design problems in everyday objects",
+        notes: "Great examples of doors that confuse people. The Norman Door concept is introduced here."
+      },
+      {
+        id: "ch2", 
+        chapterNumber: 2,
+        title: "The Psychology of Everyday Actions",
+        content: "How people interact with objects and the mental models they form",
+        notes: "The seven stages of action framework is crucial for understanding user behavior."
+      },
+      {
+        id: "ch3",
+        chapterNumber: 3,
+        title: "Knowledge in the Head and in the World",
+        content: "How we use both internal knowledge and external cues to navigate the world",
+        notes: "The distinction between knowledge in the head vs. in the world is fundamental to good design."
       }
     ],
-    tags: ["psychology", "decision-making", "cognitive-science"]
+    tags: ["design", "psychology", "UX", "usability"]
   }
 ];
