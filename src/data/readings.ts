@@ -15,7 +15,7 @@ export const articles: Article[] = [
   {
     id: '10',
     title: 'Urban Farming: Growing Food in Cities',
-    image: 'https://media.guim.co.uk/2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b/0_0_3100_1900/500.jpg',
+    image: 'https://ia902804.us.archive.org/BookReader/BookReaderImages.php?zip=/0/items/newscientist_202002/New_Scientist_-_19_March_2016_jp2.zip&file=New_Scientist_-_19_March_2016_jp2/New_Scientist_-_19_March_2016_0000.jp2&id=newscientist_202002&scale=8&rotate=0',
     tags: ['Agriculture', 'Sustainability'],
     vocabularies: [
       { word: 'Hydroponics', definition: 'Definition of Hydroponics' },
@@ -31,7 +31,7 @@ export const articles: Article[] = [
   {
     id: '9',
     title: 'Advances in Cancer Research and Treatment',
-    image: 'https://images.newscientist.com/wp-content/uploads/2024/01/cancer-research.jpg',
+    image: 'https://ia802804.us.archive.org/BookReader/BookReaderImages.php?zip=/0/items/newscientist_202002/New_Scientist_-_12_December_2015_jp2.zip&file=New_Scientist_-_12_December_2015_jp2/New_Scientist_-_12_December_2015_0000.jp2&id=newscientist_202002&scale=8&rotate=0',
     tags: ['Health', 'Science'],
     vocabularies: [
       { word: 'Immunotherapy', definition: 'Definition of Immunotherapy' },
@@ -47,7 +47,7 @@ export const articles: Article[] = [
   {
     id: '8',
     title: 'The Plastic Pollution Crisis and Solutions',
-    image: 'https://media.guim.co.uk/7d8c4f6a1e2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d/0_0_2800_1600/500.jpg',
+    image: 'https://ia902804.us.archive.org/BookReader/BookReaderImages.php?zip=/0/items/newscientist_202002/New_Scientist_-_14_November_2015_ebook3000_jp2.zip&file=New_Scientist_-_14_November_2015_ebook3000_jp2/New_Scientist_-_14_November_2015_ebook3000_0000.jp2&id=newscientist_202002&scale=8&rotate=0',
     tags: ['Environment', 'Pollution'],
     vocabularies: [
       { word: 'Microplastics', definition: 'Definition of Microplastics' },
@@ -63,7 +63,7 @@ export const articles: Article[] = [
   {
     id: '7',
     title: 'Mars Missions: What We’ve Learned So Far',
-    image: 'https://images.newscientist.com/wp-content/uploads/2023/02/mars-missions.jpg',
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/07/23172632/SEI_259658871.jpg?width=628',
     tags: ['Space', 'Mars'],
     vocabularies: [
       { word: 'Rover', definition: 'Definition of Rover' },
@@ -79,7 +79,7 @@ export const articles: Article[] = [
   {
     id: '6',
     title: 'Protecting Biodiversity in a Changing Climate',
-    image: 'https://media.guim.co.uk/9f7b3c1c6a5e4d7c9b3a2d1e5f6a7b8c9d0e1f2a/0_0_3200_2000/500.jpg',
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/07/30171354/SEI_260450841.jpg?width=628',
     tags: ['Biodiversity', 'Climate'],
     vocabularies: [
       { word: 'Habitat Loss', definition: 'Definition of Habitat Loss' },
@@ -95,7 +95,7 @@ export const articles: Article[] = [
   {
     id: '5',
     title: 'The Rise of Quantum Computing',
-    image: 'https://images.newscientist.com/wp-content/uploads/2023/06/quantum-computing.jpg',
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/08/06170804/SEI_261176007.jpg?width=628',
     tags: ['Technology', 'Quantum'],
     vocabularies: [
       { word: 'Qubit', definition: 'Definition of Qubit' },
@@ -111,7 +111,7 @@ export const articles: Article[] = [
   {
     id: '4',
     title: 'How Renewable Energy is Changing the World',
-    image: 'https://media.guim.co.uk/3d4c6e8a5f9a7d4f1c6e8f3a7d4b8c9e0b2a1c3d/0_0_3000_1800/500.jpg',
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/08/13160206/SEI_261830348.jpg?width=628',
     tags: ['Energy', 'Environment'],
     vocabularies: [
       { word: 'Solar Power', definition: 'Definition of Solar Power' },
@@ -127,7 +127,7 @@ export const articles: Article[] = [
   {
     id: '3',
     title: 'Exploring the Universe: Latest Discoveries',
-    image: 'https://images.newscientist.com/wp-content/uploads/2023/04/19123045/universe-discoveries.jpg',
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/08/20173704/SEI_262545464.jpg?width=628',
     tags: ['Space', 'Science'],
     vocabularies: [
       { word: 'Cosmology', definition: 'Definition of Cosmology' },
