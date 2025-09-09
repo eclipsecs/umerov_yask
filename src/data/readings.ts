@@ -14,8 +14,8 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: '13',
-    title: 'Advances in Cancer Research and Treatment',
-    image: 'https://ia802804.us.archive.org/BookReader/BookReaderImages.php?zip=/0/items/newscientist_202002/New_Scientist_-_12_December_2015_jp2.zip&file=New_Scientist_-_12_December_2015_jp2/New_Scientist_-_12_December_2015_0000.jp2&id=newscientist_202002&scale=8&rotate=0',
+    title: 'Cancers secret weapon ',
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/06/11164103/SEI_255139465.jpg?width=628',
     tags: ['Health', 'Science'],
     vocabularies: [
       { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
@@ -31,7 +31,7 @@ export const articles: Article[] = [
   {
     id: '12',
     title: 'Advances in Cancer Research and Treatment',
-    image: 'https://ia802804.us.archive.org/BookReader/BookReaderImages.php?zip=/0/items/newscientist_202002/New_Scientist_-_12_December_2015_jp2.zip&file=New_Scientist_-_12_December_2015_jp2/New_Scientist_-_12_December_2015_0000.jp2&id=newscientist_202002&scale=8&rotate=0',
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/06/18170934/SEI_255755061.jpg?width=628',
     tags: ['Health', 'Science'],
     vocabularies: [
       { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
@@ -47,7 +47,7 @@ export const articles: Article[] = [
   {
     id: '11',
     title: 'Advances in Cancer Research and Treatment',
-    image: 'https://ia802804.us.archive.org/BookReader/BookReaderImages.php?zip=/0/items/newscientist_202002/New_Scientist_-_12_December_2015_jp2.zip&file=New_Scientist_-_12_December_2015_jp2/New_Scientist_-_12_December_2015_0000.jp2&id=newscientist_202002&scale=8&rotate=0',
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/06/25170758/SEI_256555803.jpg?width=628',
     tags: ['Health', 'Science'],
     vocabularies: [
       { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
@@ -63,7 +63,7 @@ export const articles: Article[] = [
   {
     id: '10',
     title: 'Urban Farming: Growing Food in Cities',
-    image: 'https://ia902804.us.archive.org/BookReader/BookReaderImages.php?zip=/0/items/newscientist_202002/New_Scientist_-_19_March_2016_jp2.zip&file=New_Scientist_-_19_March_2016_jp2/New_Scientist_-_19_March_2016_0000.jp2&id=newscientist_202002&scale=8&rotate=0',
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/07/02172327/SEI_257425914.jpg?width=628',
     tags: ['Agriculture', 'Sustainability'],
     vocabularies: [
       { word: 'Hydroponics', definition: 'Definition of Hydroponics', explanation: 'Explanation of Hydroponics' },
