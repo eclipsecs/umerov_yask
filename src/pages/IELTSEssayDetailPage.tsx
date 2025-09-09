@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import { ieltsEssays } from '@/data/ieltsEssays';
-import RoughNotation from '@/components/RoughNotation';
+import { RoughNotation } from 'react-rough-notation';
 
 const IELTSEssayDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -155,7 +155,7 @@ const IELTSEssayDetailPage = () => {
             <div className="flex flex-col items-start text-left">
               <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous Essay</span>
               <Link
-                to={`/ielts-essay/${prevEssay.id}`}
+                to={`/ielts-essays/${prevEssay.id}`}
                 onMouseEnter={() => setHoveredPrev(true)}
                 onMouseLeave={() => setHoveredPrev(false)}
                 className="text-pink-500 text-base md:text-lg font-semibold"
@@ -171,7 +171,7 @@ const IELTSEssayDetailPage = () => {
             <div className="flex flex-col items-start text-left">
               <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Essay</span>
               <Link
-                to={`/ielts-essay/${nextEssay.id}`}
+                to={`/ielts-essays/${nextEssay.id}`}
                 onMouseEnter={() => setHoveredNext(true)}
                 onMouseLeave={() => setHoveredNext(false)}
                 className="text-pink-500 text-base md:text-lg font-semibold"

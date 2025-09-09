@@ -138,7 +138,7 @@ const ArticleDetailPage = () => {
         <div className="flex justify-between gap-12 items-start">
           {prevArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-muted-foreground mb-3">
+              <span className="text-2xl font-bold text-foreground mb-3">
                 Previous Reading
               </span>
               <Link
@@ -153,7 +153,7 @@ const ArticleDetailPage = () => {
           )}
           {nextArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-muted-foreground mb-3">
+              <span className="text-2xl font-bold text-foreground mb-3">
                 Next Up
               </span>
               <Link

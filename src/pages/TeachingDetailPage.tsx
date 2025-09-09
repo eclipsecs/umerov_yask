@@ -148,7 +148,7 @@ const TeachingDetailPage = () => {
         <div className="flex justify-between gap-12 items-start">
           {prevTeaching && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-muted-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous</span>
+              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous</span>
               <Link to={`/teaching/${prevTeaching.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
                 <RoughNotation type="underline" onHover={true}>
                   <span>{prevTeaching.title}</span>
@@ -158,7 +158,7 @@ const TeachingDetailPage = () => {
           )}
           {nextTeaching && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-muted-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Up</span>
+              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Up</span>
               <Link to={`/teaching/${nextTeaching.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
                 <RoughNotation type="underline" onHover={true}>
                   <span>{nextTeaching.title}</span>

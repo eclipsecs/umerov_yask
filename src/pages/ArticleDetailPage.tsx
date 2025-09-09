@@ -154,7 +154,7 @@ const ArticleDetailPage = () => {
         <div className="flex justify-between gap-12 items-start">
           {prevArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-muted-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous Article</span>
+              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous Article</span>
               <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
                 <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{prevArticle.title}</span>
@@ -164,7 +164,7 @@ const ArticleDetailPage = () => {
           )}
           {nextArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-muted-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Up</span>
+              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Up</span>
               <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
                 <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{nextArticle.title}</span>
