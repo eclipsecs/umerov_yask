@@ -97,6 +97,7 @@ const ArticleDetailPage = () => {
               <tr className="bg-muted">
                 <th className="text-left px-4 py-2">Word</th>
                 <th className="text-left px-4 py-2">Definition</th>
+                <th className="text-left px-4 py-2">Explanation</th>
               </tr>
             </thead>
             <tbody>
@@ -104,6 +105,7 @@ const ArticleDetailPage = () => {
                 <tr key={index} className="border-t border-border">
                   <td className="px-4 py-2 font-medium">{vocab.word}</td>
                   <td className="px-4 py-2 text-muted-foreground">{vocab.definition}</td>
+                  <td className="px-4 py-2 text-muted-foreground">{vocab.explanation || '-'}</td>
                 </tr>
               ))}
             </tbody>
@@ -117,16 +119,15 @@ const ArticleDetailPage = () => {
       <section>
         <h2 className="text-2xl font-semibold mb-6">Interesting Sentences</h2>
         {article.interestingSentences && article.interestingSentences.length > 0 ? (
-          <div className="space-y-4">
-            {article.interestingSentences.map((sentence, index) => (
-              <div
-                key={index}
-                className="p-3 rounded-md bg-pink-50 dark:bg-pink-900/30 text-foreground shadow-sm"
-              >
-                {sentence}
-              </div>
-            ))}
-          </div>
+          <RoughNotation type="bracket" brackets="left" color="#ec4899">
+            <div className="space-y-4">
+              {article.interestingSentences.map((sentence, index) => (
+                <div key={index} className="p-3 rounded-md bg-pink-50 dark:bg-pink-900/30 text-foreground shadow-sm">
+                  <span className="font-medium">{sentence}</span>
+                </div>
+              ))}
+            </div>
+          </RoughNotation>
         ) : (
           <p className="text-muted-foreground">No interesting sentences available.</p>
         )}
