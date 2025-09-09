@@ -35,7 +35,7 @@ const App = () => (
               <Route path="/teachings" element={<TeachingsPage />} />
               <Route path="/teaching/:id" element={<TeachingDetailPage />} />
               <Route path="/ielts-essays" element={<IELTSEssaysPage />} />
-              <Route path="/ielts-essay/:id" element={<IELTSEssayDetailPage />} />
+              <Route path="/ielts-essay/:task/:id" element={<IELTSEssayDetailPage />} />              
               <Route path="/books" element={<BooksPage />} />
               <Route path="/book/:id" element={<BookDetailPage />} />
               <Route path="/readings" element={<ReadingPage />} />

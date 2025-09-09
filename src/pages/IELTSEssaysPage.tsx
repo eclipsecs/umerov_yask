@@ -5,13 +5,12 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import RoughNotation from '@/components/RoughNotation';
-import { ieltsEssays } from '@/data/ieltsEssays';
+import { task1Essays } from '@/data/ieltsTask1Essays';
+import { task2Essays } from '@/data/ieltsTask2Essays';
 
 const IELTSEssaysPage = () => {
   const [searchParams] = useSearchParams();
   const activeTab = searchParams.get('tab') || 'task1';
-  const task1Essays = ieltsEssays.filter(essay => essay.task === 'task1');
-  const task2Essays = ieltsEssays.filter(essay => essay.task === 'task2');
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
@@ -40,7 +39,7 @@ const IELTSEssaysPage = () => {
         <TabsContent value="task1" className="space-y-6 max-w-3xl mx-auto">
           {task1Essays.map((essay) => (
             <Link
-              to={`/ielts-essay/${essay.id}`}
+              to={`/ielts-essay/${essay.task}/${essay.id}`}
               key={essay.id}
               className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300"
             >
@@ -67,7 +66,7 @@ const IELTSEssaysPage = () => {
         <TabsContent value="task2" className="space-y-6 max-w-3xl mx-auto">
           {task2Essays.map((essay) => (
             <Link
-              to={`/ielts-essay/${essay.id}`}
+              to={`/ielts-essay/${essay.task}/${essay.id}`}
               key={essay.id}
               className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300"
             >

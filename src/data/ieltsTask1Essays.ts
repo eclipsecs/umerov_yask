@@ -20,7 +20,29 @@ export interface IELTSEssay {
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 1 of 100
   {
-    id: '2',
+    id: '101',
+    task: 'task1',
+    title: 'Process Chart: 100 of 100',
+    question: 
+    `The diagram below shows how one type of coal is used to produce electricity. \n
+    Summarize the information by selecting and reporting the main features, and make comparisons where relevant.`,
+    bandScore: 8.5,
+    writingTime: '20 minutes',
+    wordCount: 172,
+    tags: ['Process Chart'],
+    image: chart_1_1, // Add your image here when available
+    content: `# Energy generation from coal
+
+The **flow chart** illustrates the process of generating electricity from coal, beginning with coal extraction and ending with the distribution of electricity to households and industrial grids. Overall, electricity production involves multiple stages, starting from coal mining and crushing, followed by gasification and purification of the gas, before it is finally converted into electricity. Throughout the process, byproducts such as waste heat are released and managed accordingly.
+
+The process begins with coal being mined and **subsequently** passed through a crusher, where it is broken down into smaller pieces to facilitate handling. The crushed coal is then transported to a gasifier, in which it is subjected to intense heat to produce synthetic gas.
+
+This gas is then channeled to a cooling unit to reduce its temperature and remove waste heat. Following this, it enters a cleaning facility, where impurities are filtered out. The refined gas is fed into a gas-powered plant, where it is used to generate electricity. The final stage involves distributing the produces electricity to residential homes and large-scale electricity grids.
+
+`
+  },
+  {
+    id: '102',
     task: 'task1',
     title: 'Process Chart: 1 of 100',
     question: 
@@ -43,7 +65,7 @@ This gas is then channeled to a cooling unit to reduce its temperature and remov
   },
   // Task 1 - Part 2 of 100
   {
-    id: '3',
+    id: '103',
     task: 'task1', 
     title: 'Bar Chart: 2 of 100',
     question: 'The bar chart shows the proportion of men and women aged 60-64 employed in four different countries in 1997 and 2000. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
@@ -63,7 +85,7 @@ In contrast, Belgium in the women's category has the lowest employment rate, ran
   },
   // Task 1 - Part 3 of 100
   {
-    id: '4',
+    id: '104',
     task: 'task1', 
     title: 'Line Graph: 3 of 100',
     question: 'The line graph shows the prison population in a European country between 1911 and 2011. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
@@ -85,7 +107,7 @@ Turning to female group, between 3.000 to 3.500 female were in locked in cell. A
   },
   // Task 1 - Part 4 of 100
   {
-    id: '5',
+    id: '105',
     task: 'task1',
     title: 'Process Diagram: 4 of 100',
     question: 'The diagram below shows how coal is used to produce electricity. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
