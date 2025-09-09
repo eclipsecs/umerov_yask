@@ -1,14 +1,23 @@
 import { useParams, Link } from 'react-router-dom';
+import { useState } from 'react';
 import { ArrowLeft, Clock, Award, FileText, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import { ieltsEssays } from '@/data/ieltsEssays';
+import { RoughNotation } from 'react-rough-notation';
 
 const IELTSEssayDetailPage = () => {
   const { id } = useParams<{ id: string }>();
   const essay = ieltsEssays.find(e => e.id === id);
+
+  const currentIndex = ieltsEssays.findIndex(e => e.id === id);
+  const prevEssay = currentIndex > 0 ? ieltsEssays[currentIndex - 1] : null;
+  const nextEssay = currentIndex < ieltsEssays.length - 1 ? ieltsEssays[currentIndex + 1] : null;
+
+  const [hoveredPrev, setHoveredPrev] = useState(false);
+  const [hoveredNext, setHoveredNext] = useState(false);
 
   if (!essay) {
     return (
@@ -26,14 +35,6 @@ const IELTSEssayDetailPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
-      {/* Back Button */}
-      <Link 
-        to={`/ielts-essays?tab=${essay.task}`} 
-        className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors"
-      >
-        <ArrowLeft className="w-4 h-4 mr-2 dark:text-pink-500 font-bold" />
-        Back to IELTS Essays
-      </Link>
 
       {/* Essay Header */}
       <header className="mb-12">
@@ -147,6 +148,43 @@ const IELTSEssayDetailPage = () => {
           </div>
         </CardContent>
       </Card>
+
+      <section className="mt-16">
+        <div className="flex justify-between gap-12 items-start">
+          {prevEssay && (
+            <div className="flex flex-col items-start text-left">
+              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous Essay</span>
+              <Link
+                to={`/ielts-essays/${prevEssay.id}`}
+                onMouseEnter={() => setHoveredPrev(true)}
+                onMouseLeave={() => setHoveredPrev(false)}
+                className="text-pink-500 text-base md:text-lg font-semibold"
+                style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}
+              >
+                <RoughNotation type="underline" show={hoveredPrev} color="#ec4899" strokeWidth={4} animationDuration={500}>
+                  <span>{prevEssay.title}</span>
+                </RoughNotation>
+              </Link>
+            </div>
+          )}
+          {nextEssay && (
+            <div className="flex flex-col items-start text-left">
+              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Essay</span>
+              <Link
+                to={`/ielts-essays/${nextEssay.id}`}
+                onMouseEnter={() => setHoveredNext(true)}
+                onMouseLeave={() => setHoveredNext(false)}
+                className="text-pink-500 text-base md:text-lg font-semibold"
+                style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}
+              >
+                <RoughNotation type="underline" show={hoveredNext} color="#ec4899" strokeWidth={4} animationDuration={500}>
+                  <span>{nextEssay.title}</span>
+                </RoughNotation>
+              </Link>
+            </div>
+          )}
+        </div>
+      </section>
     </div>
   );
 };
