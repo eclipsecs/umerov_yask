@@ -147,18 +147,6 @@ const IELTSEssayDetailPage = () => {
           </div>
         </CardContent>
       </Card>
-
-      {/* Footer */}
-      <footer className="mt-16 pt-8 border-t border-border">
-        <div className="text-center">
-          <Link to={`/ielts-essays?tab=${essay.task}`}>
-            <Button variant="outline">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to All Essays
-            </Button>
-          </Link>
-        </div>
-      </footer>
     </div>
   );
 };
