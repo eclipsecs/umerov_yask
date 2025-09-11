@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Tag } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import RoughNotation from '@/components/RoughNotation';
@@ -61,9 +61,14 @@ const ArticleDetailPage = () => {
       {/* Article Header */}
       <header className="mb-12">
         <div className="flex flex-col gap-8">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground leading-tight">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground leading-tight mb-0">
             {article.title}
           </h1>
+          {article.subheading && (
+            <h2 className="text-xl md:text-2xl font-serif text-muted-foreground mt-0">
+              {article.subheading}
+            </h2>
+          )}
 
           {article.dateRead && (
             <p className="text-sm text-pink-500 uppercase font-bold">
@@ -73,17 +78,6 @@ const ArticleDetailPage = () => {
 
           {article.image && (
             <img src={article.image} alt={article.title} className="w-full max-h-96 object-cover rounded-md mb-6" />
-          )}
-
-          {article.tags && article.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-6">
-              {article.tags.map((tag, index) => (
-                <Badge key={index} variant="outline" className="text-sm">
-                  <Tag className="w-4 h-4 mr-1 inline" />
-                  {tag}
-                </Badge>
-              ))}
-            </div>
           )}
         </div>
       </header>

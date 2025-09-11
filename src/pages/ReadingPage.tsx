@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Tag, FileText } from 'lucide-react';
+import { FileText } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { articles } from '@/data/readings';
 
@@ -49,15 +49,6 @@ const ReadingPage = () => {
               <h2 className="font-serif font-bold text-lg group-hover:text-accent-pink transition-colors line-clamp-2">
                 {article.title}
               </h2>
-              {article.tags && article.tags.length > 0 && (
-                <div className="flex flex-wrap gap-2">
-                  {article.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="text-xs font-medium">
-                      <Tag className="w-3 h-3 mr-1 inline" /> {tag}
-                    </Badge>
-                  ))}
-                </div>
-              )}
             </div>
           </Link>
         ))}

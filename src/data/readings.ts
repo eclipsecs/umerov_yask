@@ -3,8 +3,8 @@
 export interface Article {
   id: string;
   title: string;
+  subheading?: string; // optional subheading
   image?: string; // Can be a local import or external URL
-  tags?: string[];
   vocabularies?: { word: string; definition: string; explanation: string }[]; // Optional vocabularies for detail display with explanation
   interestingSentences?: string[]; // Optional interesting sentences for detail display
   dateRead?: string; // ISO date string of when the article was read
@@ -15,8 +15,8 @@ export const articles: Article[] = [
   {
     id: '13',
     title: 'Cancers secret weapon ',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/06/11164103/SEI_255139465.jpg?width=628',
-    tags: ['Health', 'Science'],
     vocabularies: [
       { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
       { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
@@ -31,8 +31,8 @@ export const articles: Article[] = [
   {
     id: '12',
     title: 'Advances in Cancer Research and Treatment',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/06/18170934/SEI_255755061.jpg?width=628',
-    tags: ['Health', 'Science'],
     vocabularies: [
       { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
       { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
@@ -47,8 +47,8 @@ export const articles: Article[] = [
   {
     id: '11',
     title: 'Advances in Cancer Research and Treatment',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/06/25170758/SEI_256555803.jpg?width=628',
-    tags: ['Health', 'Science'],
     vocabularies: [
       { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
       { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
@@ -63,8 +63,8 @@ export const articles: Article[] = [
   {
     id: '10',
     title: 'Urban Farming: Growing Food in Cities',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/02172327/SEI_257425914.jpg?width=628',
-    tags: ['Agriculture', 'Sustainability'],
     vocabularies: [
       { word: 'Hydroponics', definition: 'Definition of Hydroponics', explanation: 'Explanation of Hydroponics' },
       { word: 'Vertical Farming', definition: 'Definition of Vertical Farming', explanation: 'Explanation of Vertical Farming' },
@@ -79,8 +79,8 @@ export const articles: Article[] = [
   {
     id: '9',
     title: 'Advances in Cancer Research and Treatment',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/09171201/SEI_258168805.jpg?width=628',
-    tags: ['Health', 'Science'],
     vocabularies: [
       { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
       { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
@@ -95,8 +95,8 @@ export const articles: Article[] = [
   {
     id: '8',
     title: 'The Plastic Pollution Crisis and Solutions',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/16170506/SEI_259008744.jpg?width=628',
-    tags: ['Environment', 'Pollution'],
     vocabularies: [
       { word: 'Microplastics', definition: 'Definition of Microplastics', explanation: 'Explanation of Microplastics' },
       { word: 'Waste Management', definition: 'Definition of Waste Management', explanation: 'Explanation of Waste Management' },
@@ -111,8 +111,8 @@ export const articles: Article[] = [
   {
     id: '7',
     title: 'Mars Missions: What We’ve Learned So Far',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/23172632/SEI_259658871.jpg?width=628',
-    tags: ['Space', 'Mars'],
     vocabularies: [
       { word: 'Rover', definition: 'Definition of Rover', explanation: 'Explanation of Rover' },
       { word: 'Mars Atmosphere', definition: 'Definition of Mars Atmosphere', explanation: 'Explanation of Mars Atmosphere' },
@@ -127,8 +127,8 @@ export const articles: Article[] = [
   {
     id: '6',
     title: 'Protecting Biodiversity in a Changing Climate',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/30171354/SEI_260450841.jpg?width=628',
-    tags: ['Biodiversity', 'Climate'],
     vocabularies: [
       { word: 'Habitat Loss', definition: 'Definition of Habitat Loss', explanation: 'Explanation of Habitat Loss' },
       { word: 'Conservation', definition: 'Definition of Conservation', explanation: 'Explanation of Conservation' },
@@ -143,8 +143,8 @@ export const articles: Article[] = [
   {
     id: '5',
     title: 'The Rise of Quantum Computing',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/08/06170804/SEI_261176007.jpg?width=628',
-    tags: ['Technology', 'Quantum'],
     vocabularies: [
       { word: 'Qubit', definition: 'Definition of Qubit', explanation: 'Explanation of Qubit' },
       { word: 'Superposition', definition: 'Definition of Superposition', explanation: 'Explanation of Superposition' },
@@ -159,8 +159,8 @@ export const articles: Article[] = [
   {
     id: '4',
     title: 'How Renewable Energy is Changing the World',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/08/13160206/SEI_261830348.jpg?width=628',
-    tags: ['Energy', 'Environment'],
     vocabularies: [
       { word: 'Solar Power', definition: 'Definition of Solar Power', explanation: 'Explanation of Solar Power' },
       { word: 'Wind Energy', definition: 'Definition of Wind Energy', explanation: 'Explanation of Wind Energy' },
@@ -175,8 +175,8 @@ export const articles: Article[] = [
   {
     id: '3',
     title: 'Exploring the Universe: Latest Discoveries',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/08/20173704/SEI_262545464.jpg?width=628',
-    tags: ['Space', 'Science'],
     vocabularies: [
       { word: 'Cosmology', definition: 'Definition of Cosmology', explanation: 'Explanation of Cosmology' },
       { word: 'Dark Matter', definition: 'Definition of Dark Matter', explanation: 'Explanation of Dark Matter' },
@@ -190,9 +190,9 @@ export const articles: Article[] = [
   },
   {
     id: '2',
-    title: 'Climate Change and Its Impact on Oceans',
+    title: 'A New Human Specices',
+    subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/08/27165302/SEI_263382812.jpg?width=628',
-    tags: ['Environment', 'Climate'],
     vocabularies: [
       { word: 'Global Warming', definition: 'Definition of Global Warming', explanation: 'Explanation of Global Warming' },
       { word: 'Ocean Acidification', definition: 'Definition of Ocean Acidification', explanation: 'Explanation of Ocean Acidification' },
@@ -206,9 +206,9 @@ export const articles: Article[] = [
   },
   {
     id: '1',
-    title: 'The Future of AI in Everyday Life',
+    title: 'Your Brains Balancing act',
+    subheading: 'Something about brain',
     image: 'https://images.newscientist.com/wp-content/uploads/2025/09/03173025/SEI_264253367.jpg?width=628',
-    tags: ['AI', 'Technology'],
     vocabularies: [
       { word: 'Artificial Intelligence', definition: 'Definition of Artificial Intelligence', explanation: 'Explanation of Artificial Intelligence' },
       { word: 'Automation', definition: 'Definition of Automation', explanation: 'Explanation of Automation' },
