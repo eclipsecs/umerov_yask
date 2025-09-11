@@ -86,24 +86,29 @@ const ArticleDetailPage = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">Vocabulary</h2>
         {article.vocabularies && article.vocabularies.length > 0 ? (
-          <table className="w-full border border-border rounded-md overflow-hidden">
-            <thead>
-              <tr className="bg-muted">
-                <th className="text-left px-4 py-2">Word</th>
-                <th className="text-left px-4 py-2">Definition</th>
-                <th className="text-left px-4 py-2">Explanation</th>
-              </tr>
-            </thead>
-            <tbody>
-              {article.vocabularies.map((vocab, index) => (
-                <tr key={index} className="border-t border-border">
-                  <td className="px-4 py-2 font-medium">{vocab.word}</td>
-                  <td className="px-4 py-2 text-muted-foreground">{vocab.definition}</td>
-                  <td className="px-4 py-2 text-muted-foreground">{vocab.explanation || '-'}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          article.vocabularies.map((unit, unitIndex) => (
+            <div key={unitIndex} className="mb-8">
+              <h3 className="text-xl font-semibold mb-4">{unit.unit}</h3>
+              <table className="w-full border border-border rounded-md overflow-hidden">
+                <thead>
+                  <tr className="bg-muted">
+                    <th className="text-left px-4 py-2">Word</th>
+                    <th className="text-left px-4 py-2">Definition</th>
+                    <th className="text-left px-4 py-2">Explanation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {unit.vocabularies.map((vocab, index) => (
+                    <tr key={index} className="border-t border-border">
+                      <td className="px-4 py-2 font-medium">{vocab.word}</td>
+                      <td className="px-4 py-2 text-muted-foreground">{vocab.definition}</td>
+                      <td className="px-4 py-2 text-muted-foreground">{vocab.explanation || '-'}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ))
         ) : (
           <p className="text-muted-foreground">No vocabulary available.</p>
         )}

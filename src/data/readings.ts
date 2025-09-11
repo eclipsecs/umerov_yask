@@ -5,7 +5,10 @@ export interface Article {
   title: string;
   subheading?: string; // optional subheading
   image?: string; // Can be a local import or external URL
-  vocabularies?: { word: string; definition: string; explanation: string }[]; // Optional vocabularies for detail display with explanation
+  vocabularies?: {
+    unit: string;
+    vocabularies: { word: string; definition: string; explanation: string }[];
+  }[]; // Optional vocabularies for detail display with explanation, grouped by unit
   interestingSentences?: string[]; // Optional interesting sentences for detail display
   dateRead?: string; // ISO date string of when the article was read
 }
@@ -18,9 +21,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/06/11164103/SEI_255139465.jpg?width=628',
     vocabularies: [
-      { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
-      { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
-      { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
+          { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
+          { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ]
+      }
     ],
     interestingSentences: [
       'New therapies are improving survival rates for many types of cancer.',
@@ -34,9 +42,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/06/18170934/SEI_255755061.jpg?width=628',
     vocabularies: [
-      { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
-      { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
-      { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
+          { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
+          { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ]
+      }
     ],
     interestingSentences: [
       'New therapies are improving survival rates for many types of cancer.',
@@ -50,9 +63,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/06/25170758/SEI_256555803.jpg?width=628',
     vocabularies: [
-      { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
-      { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
-      { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
+          { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
+          { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ]
+      }
     ],
     interestingSentences: [
       'New therapies are improving survival rates for many types of cancer.',
@@ -66,9 +84,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/02172327/SEI_257425914.jpg?width=628',
     vocabularies: [
-      { word: 'Hydroponics', definition: 'Definition of Hydroponics', explanation: 'Explanation of Hydroponics' },
-      { word: 'Vertical Farming', definition: 'Definition of Vertical Farming', explanation: 'Explanation of Vertical Farming' },
-      { word: 'Food Security', definition: 'Definition of Food Security', explanation: 'Explanation of Food Security' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Hydroponics', definition: 'Definition of Hydroponics', explanation: 'Explanation of Hydroponics' },
+          { word: 'Vertical Farming', definition: 'Definition of Vertical Farming', explanation: 'Explanation of Vertical Farming' },
+          { word: 'Food Security', definition: 'Definition of Food Security', explanation: 'Explanation of Food Security' }
+        ]
+      }
     ],
     interestingSentences: [
       'Urban farming is transforming how cities produce and consume food.',
@@ -82,9 +105,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/09171201/SEI_258168805.jpg?width=628',
     vocabularies: [
-      { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
-      { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
-      { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
+          { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
+          { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ]
+      }
     ],
     interestingSentences: [
       'New therapies are improving survival rates for many types of cancer.',
@@ -98,9 +126,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/16170506/SEI_259008744.jpg?width=628',
     vocabularies: [
-      { word: 'Microplastics', definition: 'Definition of Microplastics', explanation: 'Explanation of Microplastics' },
-      { word: 'Waste Management', definition: 'Definition of Waste Management', explanation: 'Explanation of Waste Management' },
-      { word: 'Recycling', definition: 'Definition of Recycling', explanation: 'Explanation of Recycling' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Microplastics', definition: 'Definition of Microplastics', explanation: 'Explanation of Microplastics' },
+          { word: 'Waste Management', definition: 'Definition of Waste Management', explanation: 'Explanation of Waste Management' },
+          { word: 'Recycling', definition: 'Definition of Recycling', explanation: 'Explanation of Recycling' }
+        ]
+      }
     ],
     interestingSentences: [
       'Plastic pollution poses a serious threat to marine and terrestrial ecosystems.',
@@ -114,9 +147,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/23172632/SEI_259658871.jpg?width=628',
     vocabularies: [
-      { word: 'Rover', definition: 'Definition of Rover', explanation: 'Explanation of Rover' },
-      { word: 'Mars Atmosphere', definition: 'Definition of Mars Atmosphere', explanation: 'Explanation of Mars Atmosphere' },
-      { word: 'Geology', definition: 'Definition of Geology', explanation: 'Explanation of Geology' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Rover', definition: 'Definition of Rover', explanation: 'Explanation of Rover' },
+          { word: 'Mars Atmosphere', definition: 'Definition of Mars Atmosphere', explanation: 'Explanation of Mars Atmosphere' },
+          { word: 'Geology', definition: 'Definition of Geology', explanation: 'Explanation of Geology' }
+        ]
+      }
     ],
     interestingSentences: [
       'Mars rovers have provided valuable data about the planet’s surface and atmosphere.',
@@ -130,9 +168,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/07/30171354/SEI_260450841.jpg?width=628',
     vocabularies: [
-      { word: 'Habitat Loss', definition: 'Definition of Habitat Loss', explanation: 'Explanation of Habitat Loss' },
-      { word: 'Conservation', definition: 'Definition of Conservation', explanation: 'Explanation of Conservation' },
-      { word: 'Species Extinction', definition: 'Definition of Species Extinction', explanation: 'Explanation of Species Extinction' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Habitat Loss', definition: 'Definition of Habitat Loss', explanation: 'Explanation of Habitat Loss' },
+          { word: 'Conservation', definition: 'Definition of Conservation', explanation: 'Explanation of Conservation' },
+          { word: 'Species Extinction', definition: 'Definition of Species Extinction', explanation: 'Explanation of Species Extinction' }
+        ]
+      }
     ],
     interestingSentences: [
       'Climate change is accelerating the loss of biodiversity globally.',
@@ -146,9 +189,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/08/06170804/SEI_261176007.jpg?width=628',
     vocabularies: [
-      { word: 'Qubit', definition: 'Definition of Qubit', explanation: 'Explanation of Qubit' },
-      { word: 'Superposition', definition: 'Definition of Superposition', explanation: 'Explanation of Superposition' },
-      { word: 'Quantum Algorithm', definition: 'Definition of Quantum Algorithm', explanation: 'Explanation of Quantum Algorithm' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Qubit', definition: 'Definition of Qubit', explanation: 'Explanation of Qubit' },
+          { word: 'Superposition', definition: 'Definition of Superposition', explanation: 'Explanation of Superposition' },
+          { word: 'Quantum Algorithm', definition: 'Definition of Quantum Algorithm', explanation: 'Explanation of Quantum Algorithm' }
+        ]
+      }
     ],
     interestingSentences: [
       'Quantum computers have the potential to solve problems beyond the reach of classical machines.',
@@ -162,9 +210,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/08/13160206/SEI_261830348.jpg?width=628',
     vocabularies: [
-      { word: 'Solar Power', definition: 'Definition of Solar Power', explanation: 'Explanation of Solar Power' },
-      { word: 'Wind Energy', definition: 'Definition of Wind Energy', explanation: 'Explanation of Wind Energy' },
-      { word: 'Sustainability', definition: 'Definition of Sustainability', explanation: 'Explanation of Sustainability' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Solar Power', definition: 'Definition of Solar Power', explanation: 'Explanation of Solar Power' },
+          { word: 'Wind Energy', definition: 'Definition of Wind Energy', explanation: 'Explanation of Wind Energy' },
+          { word: 'Sustainability', definition: 'Definition of Sustainability', explanation: 'Explanation of Sustainability' }
+        ]
+      }
     ],
     interestingSentences: [
       'Renewable energy sources are becoming more cost-effective and widespread.',
@@ -178,9 +231,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/08/20173704/SEI_262545464.jpg?width=628',
     vocabularies: [
-      { word: 'Cosmology', definition: 'Definition of Cosmology', explanation: 'Explanation of Cosmology' },
-      { word: 'Dark Matter', definition: 'Definition of Dark Matter', explanation: 'Explanation of Dark Matter' },
-      { word: 'Exoplanet', definition: 'Definition of Exoplanet', explanation: 'Explanation of Exoplanet' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Cosmology', definition: 'Definition of Cosmology', explanation: 'Explanation of Cosmology' },
+          { word: 'Dark Matter', definition: 'Definition of Dark Matter', explanation: 'Explanation of Dark Matter' },
+          { word: 'Exoplanet', definition: 'Definition of Exoplanet', explanation: 'Explanation of Exoplanet' }
+        ]
+      }
     ],
     interestingSentences: [
       'New telescopes have revealed previously unseen phenomena in distant galaxies.',
@@ -194,9 +252,14 @@ export const articles: Article[] = [
     subheading: "Placeholder subheading",
     image: 'https://images.newscientist.com/wp-content/uploads/2025/08/27165302/SEI_263382812.jpg?width=628',
     vocabularies: [
-      { word: 'Global Warming', definition: 'Definition of Global Warming', explanation: 'Explanation of Global Warming' },
-      { word: 'Ocean Acidification', definition: 'Definition of Ocean Acidification', explanation: 'Explanation of Ocean Acidification' },
-      { word: 'Ecosystem', definition: 'Definition of Ecosystem', explanation: 'Explanation of Ecosystem' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Global Warming', definition: 'Definition of Global Warming', explanation: 'Explanation of Global Warming' },
+          { word: 'Ocean Acidification', definition: 'Definition of Ocean Acidification', explanation: 'Explanation of Ocean Acidification' },
+          { word: 'Ecosystem', definition: 'Definition of Ecosystem', explanation: 'Explanation of Ecosystem' }
+        ]
+      }
     ],
     interestingSentences: [
       'Rising temperatures are causing significant changes to ocean ecosystems worldwide.',
@@ -207,12 +270,24 @@ export const articles: Article[] = [
   {
     id: '1',
     title: 'Your Brains Balancing act',
-    subheading: 'Something about brain',
+    subheading: 'From intelligence to creativity, how your mind works best on the edge of chaos',
     image: 'https://images.newscientist.com/wp-content/uploads/2025/09/03173025/SEI_264253367.jpg?width=628',
     vocabularies: [
-      { word: 'Artificial Intelligence', definition: 'Definition of Artificial Intelligence', explanation: 'Explanation of Artificial Intelligence' },
-      { word: 'Automation', definition: 'Definition of Automation', explanation: 'Explanation of Automation' },
-      { word: 'Machine Learning', definition: 'Definition of Machine Learning', explanation: 'Explanation of Machine Learning' }
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Artificial Intelligence', definition: 'Definition of Artificial Intelligence', explanation: 'Explanation of Artificial Intelligence' },
+          { word: 'Automation', definition: 'Definition of Automation', explanation: 'Explanation of Automation' },
+          { word: 'Machine Learning', definition: 'Definition of Machine Learning', explanation: 'Explanation of Machine Learning' }
+        ]
+      },
+      {
+        unit: "Unit 2 - Human Species", // Example additional unit
+        vocabularies: [
+          { word: 'Homo sapiens', definition: 'Modern human species', explanation: 'The only surviving species of the genus Homo' },
+          { word: 'Evolution', definition: 'Gradual change in species', explanation: 'The process that led to modern humans' }
+        ]
+      }
     ],
     interestingSentences: [
       'AI is transforming the way we live and work, making everyday tasks more efficient.',
