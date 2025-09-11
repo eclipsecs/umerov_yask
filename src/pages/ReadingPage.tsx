@@ -12,7 +12,7 @@ const ReadingPage = () => {
           Readings 
         </h1>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Collection of journals I have read. Each article consists of words I have learnt, and the context in which I have learnt them.
+          Collection of journals I have read. Each article consists of words and interesting sentences with usage.
         </p>
       </div>
 

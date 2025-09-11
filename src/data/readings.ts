@@ -8,8 +8,8 @@ export interface Article {
   vocabularies?: {
     unit: string;
     vocabularies: { word: string; definition: string; explanation: string }[];
+    interestingSentences?: { sentence: string; usage: string }[];
   }[]; // Optional vocabularies for detail display with explanation, grouped by unit
-  interestingSentences?: string[]; // Optional interesting sentences for detail display
   dateRead?: string; // ISO date string of when the article was read
 }
 
@@ -27,12 +27,12 @@ export const articles: Article[] = [
           { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
           { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
           { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ],
+        interestingSentences: [
+          { sentence: 'New therapies are improving survival rates for many types of cancer.', usage: 'Writing Task 2' },
+          { sentence: 'Genetic research is leading to more personalized treatment approaches.', usage: 'Speaking' }
         ]
       }
-    ],
-    interestingSentences: [
-      'New therapies are improving survival rates for many types of cancer.',
-      'Genetic research is leading to more personalized treatment approaches.'
     ],
     dateRead: "2023-07-14" // July 14, 2023
   },
@@ -48,12 +48,12 @@ export const articles: Article[] = [
           { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
           { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
           { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ],
+        interestingSentences: [
+          { sentence: 'New therapies are improving survival rates for many types of cancer.', usage: 'Writing Task 2' },
+          { sentence: 'Genetic research is leading to more personalized treatment approaches.', usage: 'Speaking' }
         ]
       }
-    ],
-    interestingSentences: [
-      'New therapies are improving survival rates for many types of cancer.',
-      'Genetic research is leading to more personalized treatment approaches.'
     ],
     dateRead: "2023-07-14" // July 14, 2023
   },
@@ -69,12 +69,12 @@ export const articles: Article[] = [
           { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
           { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
           { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ],
+        interestingSentences: [
+          { sentence: 'New therapies are improving survival rates for many types of cancer.', usage: 'Writing Task 2' },
+          { sentence: 'Genetic research is leading to more personalized treatment approaches.', usage: 'Speaking' }
         ]
       }
-    ],
-    interestingSentences: [
-      'New therapies are improving survival rates for many types of cancer.',
-      'Genetic research is leading to more personalized treatment approaches.'
     ],
     dateRead: "2023-07-14" // July 14, 2023
   },
@@ -90,12 +90,12 @@ export const articles: Article[] = [
           { word: 'Hydroponics', definition: 'Definition of Hydroponics', explanation: 'Explanation of Hydroponics' },
           { word: 'Vertical Farming', definition: 'Definition of Vertical Farming', explanation: 'Explanation of Vertical Farming' },
           { word: 'Food Security', definition: 'Definition of Food Security', explanation: 'Explanation of Food Security' }
+        ],
+        interestingSentences: [
+          { sentence: 'Urban farming is transforming how cities produce and consume food.', usage: 'Reading Comprehension' },
+          { sentence: 'Innovative techniques allow for efficient food production in limited spaces.', usage: 'Discussion' }
         ]
       }
-    ],
-    interestingSentences: [
-      'Urban farming is transforming how cities produce and consume food.',
-      'Innovative techniques allow for efficient food production in limited spaces.'
     ],
     dateRead: "2023-12-21" // December 21, 2023
   },
@@ -111,12 +111,12 @@ export const articles: Article[] = [
           { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
           { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
           { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ],
+        interestingSentences: [
+          { sentence: 'New therapies are improving survival rates for many types of cancer.', usage: 'Writing Task 2' },
+          { sentence: 'Genetic research is leading to more personalized treatment approaches.', usage: 'Speaking' }
         ]
       }
-    ],
-    interestingSentences: [
-      'New therapies are improving survival rates for many types of cancer.',
-      'Genetic research is leading to more personalized treatment approaches.'
     ],
     dateRead: "2023-07-14" // July 14, 2023
   },
@@ -132,12 +132,12 @@ export const articles: Article[] = [
           { word: 'Microplastics', definition: 'Definition of Microplastics', explanation: 'Explanation of Microplastics' },
           { word: 'Waste Management', definition: 'Definition of Waste Management', explanation: 'Explanation of Waste Management' },
           { word: 'Recycling', definition: 'Definition of Recycling', explanation: 'Explanation of Recycling' }
+        ],
+        interestingSentences: [
+          { sentence: 'Plastic pollution poses a serious threat to marine and terrestrial ecosystems.', usage: 'Environmental Science' },
+          { sentence: 'Innovative recycling methods are being developed to tackle plastic waste.', usage: 'Policy Discussion' }
         ]
       }
-    ],
-    interestingSentences: [
-      'Plastic pollution poses a serious threat to marine and terrestrial ecosystems.',
-      'Innovative recycling methods are being developed to tackle plastic waste.'
     ],
     dateRead: "2024-02-11" // February 11, 2024
   },
@@ -153,12 +153,12 @@ export const articles: Article[] = [
           { word: 'Rover', definition: 'Definition of Rover', explanation: 'Explanation of Rover' },
           { word: 'Mars Atmosphere', definition: 'Definition of Mars Atmosphere', explanation: 'Explanation of Mars Atmosphere' },
           { word: 'Geology', definition: 'Definition of Geology', explanation: 'Explanation of Geology' }
+        ],
+        interestingSentences: [
+          { sentence: 'Mars rovers have provided valuable data about the planet’s surface and atmosphere.', usage: 'Science Report' },
+          { sentence: 'Understanding Mars’ geology helps inform future human exploration.', usage: 'Presentation' }
         ]
       }
-    ],
-    interestingSentences: [
-      'Mars rovers have provided valuable data about the planet’s surface and atmosphere.',
-      'Understanding Mars’ geology helps inform future human exploration.'
     ],
     dateRead: "2024-04-03" // April 3, 2024
   },
@@ -174,12 +174,12 @@ export const articles: Article[] = [
           { word: 'Habitat Loss', definition: 'Definition of Habitat Loss', explanation: 'Explanation of Habitat Loss' },
           { word: 'Conservation', definition: 'Definition of Conservation', explanation: 'Explanation of Conservation' },
           { word: 'Species Extinction', definition: 'Definition of Species Extinction', explanation: 'Explanation of Species Extinction' }
+        ],
+        interestingSentences: [
+          { sentence: 'Climate change is accelerating the loss of biodiversity globally.', usage: 'Environmental Studies' },
+          { sentence: 'Effective conservation strategies are needed to protect vulnerable species.', usage: 'Policy Making' }
         ]
       }
-    ],
-    interestingSentences: [
-      'Climate change is accelerating the loss of biodiversity globally.',
-      'Effective conservation strategies are needed to protect vulnerable species.'
     ],
     dateRead: "2023-09-27" // September 27, 2023
   },
@@ -195,12 +195,12 @@ export const articles: Article[] = [
           { word: 'Qubit', definition: 'Definition of Qubit', explanation: 'Explanation of Qubit' },
           { word: 'Superposition', definition: 'Definition of Superposition', explanation: 'Explanation of Superposition' },
           { word: 'Quantum Algorithm', definition: 'Definition of Quantum Algorithm', explanation: 'Explanation of Quantum Algorithm' }
+        ],
+        interestingSentences: [
+          { sentence: 'Quantum computers have the potential to solve problems beyond the reach of classical machines.', usage: 'Tech Talk' },
+          { sentence: 'Research in quantum algorithms is rapidly advancing the field.', usage: 'Academic Paper' }
         ]
       }
-    ],
-    interestingSentences: [
-      'Quantum computers have the potential to solve problems beyond the reach of classical machines.',
-      'Research in quantum algorithms is rapidly advancing the field.'
     ],
     dateRead: "2023-10-19" // October 19, 2023
   },
@@ -216,12 +216,12 @@ export const articles: Article[] = [
           { word: 'Solar Power', definition: 'Definition of Solar Power', explanation: 'Explanation of Solar Power' },
           { word: 'Wind Energy', definition: 'Definition of Wind Energy', explanation: 'Explanation of Wind Energy' },
           { word: 'Sustainability', definition: 'Definition of Sustainability', explanation: 'Explanation of Sustainability' }
+        ],
+        interestingSentences: [
+          { sentence: 'Renewable energy sources are becoming more cost-effective and widespread.', usage: 'Policy Report' },
+          { sentence: 'Transitioning to renewables is essential for reducing carbon emissions.', usage: 'Debate' }
         ]
       }
-    ],
-    interestingSentences: [
-      'Renewable energy sources are becoming more cost-effective and widespread.',
-      'Transitioning to renewables is essential for reducing carbon emissions.'
     ],
     dateRead: "2024-01-29" // January 29, 2024
   },
@@ -237,12 +237,12 @@ export const articles: Article[] = [
           { word: 'Cosmology', definition: 'Definition of Cosmology', explanation: 'Explanation of Cosmology' },
           { word: 'Dark Matter', definition: 'Definition of Dark Matter', explanation: 'Explanation of Dark Matter' },
           { word: 'Exoplanet', definition: 'Definition of Exoplanet', explanation: 'Explanation of Exoplanet' }
+        ],
+        interestingSentences: [
+          { sentence: 'New telescopes have revealed previously unseen phenomena in distant galaxies.', usage: 'Science Article' },
+          { sentence: 'Understanding dark matter remains one of the biggest challenges in astrophysics.', usage: 'Lecture' }
         ]
       }
-    ],
-    interestingSentences: [
-      'New telescopes have revealed previously unseen phenomena in distant galaxies.',
-      'Understanding dark matter remains one of the biggest challenges in astrophysics.'
     ],
     dateRead: "2023-08-08" // August 8, 2023
   },
@@ -258,12 +258,12 @@ export const articles: Article[] = [
           { word: 'Global Warming', definition: 'Definition of Global Warming', explanation: 'Explanation of Global Warming' },
           { word: 'Ocean Acidification', definition: 'Definition of Ocean Acidification', explanation: 'Explanation of Ocean Acidification' },
           { word: 'Ecosystem', definition: 'Definition of Ecosystem', explanation: 'Explanation of Ecosystem' }
+        ],
+        interestingSentences: [
+          { sentence: 'Rising temperatures are causing significant changes to ocean ecosystems worldwide.', usage: 'Research Paper' },
+          { sentence: 'Mitigating climate change is crucial to preserving marine biodiversity.', usage: 'Presentation' }
         ]
       }
-    ],
-    interestingSentences: [
-      'Rising temperatures are causing significant changes to ocean ecosystems worldwide.',
-      'Mitigating climate change is crucial to preserving marine biodiversity.'
     ],
     dateRead: "2023-12-04" // December 4, 2023
   },
@@ -279,6 +279,10 @@ export const articles: Article[] = [
           { word: 'Artificial Intelligence', definition: 'Definition of Artificial Intelligence', explanation: 'Explanation of Artificial Intelligence' },
           { word: 'Automation', definition: 'Definition of Automation', explanation: 'Explanation of Automation' },
           { word: 'Machine Learning', definition: 'Definition of Machine Learning', explanation: 'Explanation of Machine Learning' }
+        ],
+        interestingSentences: [
+          { sentence: '...has helped relieve people of previously untreatable pain', usage: 'Case Study' },
+          { sentence: 'The integration of AI into daily life raises both opportunities and ethical concerns.', usage: 'Discussion' }
         ]
       },
       {
@@ -286,12 +290,12 @@ export const articles: Article[] = [
         vocabularies: [
           { word: 'Homo sapiens', definition: 'Modern human species', explanation: 'The only surviving species of the genus Homo' },
           { word: 'Evolution', definition: 'Gradual change in species', explanation: 'The process that led to modern humans' }
+        ],
+        interestingSentences: [
+          { sentence: 'Humans have evolved unique cognitive abilities over time.', usage: 'Anthropology Lecture' },
+          { sentence: 'Evolutionary theory explains the diversity of life.', usage: 'Science Textbook' }
         ]
       }
-    ],
-    interestingSentences: [
-      'AI is transforming the way we live and work, making everyday tasks more efficient.',
-      'The integration of AI into daily life raises both opportunities and ethical concerns.'
     ],
     dateRead: "2024-03-30" // March 30, 2024
   }

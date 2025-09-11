@@ -84,11 +84,13 @@ const ArticleDetailPage = () => {
 
       {/* Vocabulary Section */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-6">Vocabulary</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center text-pink-700 dark:text-pink-300">
+          📝 Vocabularies and Interesting Sentences
+        </h2>
         {article.vocabularies && article.vocabularies.length > 0 ? (
           article.vocabularies.map((unit, unitIndex) => (
             <div key={unitIndex} className="mb-8">
-              <h3 className="text-xl font-semibold mb-4">{unit.unit}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-pink-700 dark:text-pink-300">{unit.unit}</h3>
               <table className="w-full border border-border rounded-md overflow-hidden">
                 <thead>
                   <tr className="bg-muted">
@@ -107,28 +109,25 @@ const ArticleDetailPage = () => {
                   ))}
                 </tbody>
               </table>
+              {unit.interestingSentences && unit.interestingSentences.length > 0 && (
+                <div className="mt-6">
+                  <h4 className="text-lg font-semibold mb-3 text-pink-600 dark:text-pink-400">
+                    Interesting Sentences
+                  </h4>
+                  <div className="divide-y divide-border rounded-md overflow-hidden border border-pink-200 dark:border-pink-800 bg-pink-50 dark:bg-pink-900/10">
+                    {unit.interestingSentences.map((item, i) => (
+                      <div key={i} className="grid grid-cols-2 gap-4 p-4">
+                        <p className="font-medium">{item.sentence}</p>
+                        <p className="text-sm text-muted-foreground">Usage: {item.usage}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           ))
         ) : (
           <p className="text-muted-foreground">No vocabulary available.</p>
-        )}
-      </section>
-
-      {/* Interesting Sentences Section */}
-      <section>
-        <h2 className="text-2xl font-semibold mb-6">Interesting Sentences</h2>
-        {article.interestingSentences && article.interestingSentences.length > 0 ? (
-          <RoughNotation type="bracket" brackets="left" color="#ec4899">
-            <div className="space-y-4">
-              {article.interestingSentences.map((sentence, index) => (
-                <div key={index} className="p-3 rounded-md bg-pink-50 dark:bg-pink-900/30 text-foreground shadow-sm">
-                  <span className="font-medium">{sentence}</span>
-                </div>
-              ))}
-            </div>
-          </RoughNotation>
-        ) : (
-          <p className="text-muted-foreground">No interesting sentences available.</p>
         )}
       </section>
 
