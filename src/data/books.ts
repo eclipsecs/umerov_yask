@@ -26,6 +26,98 @@ export interface Book {
 
 export const books: Book[] = [
   {
+    id: "53",
+    title: "Tafsir Ibn Kathir",
+    author: "Shaykh Safiur Rahman Mubarakpuri",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://m.media-amazon.com/images/I/41EnRRiRetL._UF1000,1000_QL80_.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the main concepts of the book."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "52",
+    title: "Clear thinking",
+    author: "Shane Parrish",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://m.media-amazon.com/images/I/81hmO-IVMjL._UF1000,1000_QL80_.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the main concepts of the book."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "51",
+    title: "Words of my father",
+    author: "Yousef Bashir",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677837399i/41595606.jpg",
+    readingStatus: "completed",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the main concepts of the book."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
+    id: "50",
+    title: "In front of your nose",
+    author: "George Orwell",
+    isbn: "9780718197032",
+    publishedYear: 2014,
+    genre: "Nonfiction",
+    description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
+    coverImage: "https://m.media-amazon.com/images/I/71uDHglnpCL._UF1000,1000_QL80_.jpg",
+    readingStatus: "to-read",
+    personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
+    downloadUrl: "# Add your download link here",
+    chapters: [
+      {
+        id: "ch1",
+        chapterNumber: 1,
+        title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the main concepts of the book."
+      }
+    ],
+    tags: ["psychology", "decision-making", "cognitive-science"]
+  },
+  {
     id: "49",
     title: "7 Habits of Highly Effective People",
     author: "Stephen Covey",
@@ -43,7 +135,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the two modes of thinking."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -67,14 +159,14 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Surprising Power of Atomic Habits",
         content: "How small changes compound over time",
-        notes: "The 1% improvement principle - small habits compound into significant results over time."
+        notes: "The 1% improvement principle - small habits compound into significant results over time. This chapter sets the foundation for the book's approach to habit change."
       },
       {
         id: "ch2",
         chapterNumber: 2,
         title: "How Your Habits Shape Your Identity",
         content: "The relationship between habits and identity formation",
-        notes: "Every action is a vote for the type of person you wish to become."
+        notes: "Every action is a vote for the type of person you wish to become. This chapter connects habits to personal identity."
       }
     ],
     tags: ["habits", "productivity", "self-improvement"]
@@ -97,7 +189,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the book's core psychological framework."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -120,7 +212,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The opening chapter sets the stage for the book's unique humor and perspective."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -143,7 +235,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This first chapter introduces the importance of deep, focused work."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -166,7 +258,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. An introduction to lifestyle design and unconventional approaches to work."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -189,7 +281,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The first chapter introduces Johnny's awakening and his psychic abilities."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -212,7 +304,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the final struggle in the trilogy."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -235,7 +327,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The opening chapter explores key psychological triggers for persuasion."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -258,7 +350,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Sky's journey begins with hints of her mysterious past."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -281,7 +373,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Introduces the world of Gilead and the three main characters."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -304,7 +396,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The opening chapter explains the concept of grit and its importance."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -327,7 +419,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the 80/20 rule and its applications."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -350,7 +442,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The basics of nonverbal communication are introduced."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -373,7 +465,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The power of self-image is introduced in this chapter."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -396,7 +488,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Dalio introduces his life philosophy and the importance of principles."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -419,7 +511,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The first chapter introduces Sun Tzu's philosophy of strategy."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -442,7 +534,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Taleb introduces the concept of antifragility."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -465,7 +557,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Greene introduces the nature of human drives and behaviors."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -488,7 +580,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The journey toward mastery begins with the stories of masters."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -511,7 +603,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Peterson introduces the concept of order and chaos."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -534,7 +626,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter explores the problem of noise in human judgment."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -557,7 +649,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Winston Smith's world and the oppressive regime are introduced."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -580,7 +672,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The principle of extreme ownership is introduced."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -603,7 +695,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The benefits of waking up early and morning routines are introduced."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -626,7 +718,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Explores the cultural significance of the TV show 'Friends.'"
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -649,7 +741,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Introduces the main laws of success and how networks matter."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -672,7 +764,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The author embarks on his journey into the world of memory championships."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -695,7 +787,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Bolton provides an insider's perspective on White House decision-making."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -718,7 +810,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Lakhiani introduces his framework for questioning societal rules."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -741,7 +833,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Godin encourages readers to become indispensable."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -764,7 +856,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The story begins with a life-changing secret."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -787,7 +879,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Pink introduces the right-brain skills needed for the future."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -810,7 +902,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Bernstein introduces the idea of trusting the universe."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -833,7 +925,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Ekman introduces the concept of detecting lies."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -856,7 +948,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Collins lays out the framework for turning good companies into great ones."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -879,7 +971,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The Theory of Constraints is introduced in a business context."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -902,7 +994,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Covey introduces the concept of the 8th habit."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -925,7 +1017,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Lee Kuan Yew recounts Singapore's transformation journey."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -948,7 +1040,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Chang challenges conventional economic wisdom in this chapter."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -971,7 +1063,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. John Green reviews the human impact on the planet."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -994,7 +1086,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Greene introduces the first law of power."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -1017,7 +1109,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Hewlett Packard introduces strategies for antifragility."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -1040,7 +1132,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Will Smith begins his journey of self-discovery and fame."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -1063,7 +1155,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. Hallam introduces the basics of expat investing."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -1086,7 +1178,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The story opens with the world of 19th-century Uzbekistan."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -1109,7 +1201,7 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Characters of the Story",
         content: "Introduction to System 1 and System 2 thinking",
-        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical."
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. The novel begins with Fugui's fortunes and family life."
       }
     ],
     tags: ["psychology", "decision-making", "cognitive-science"]
@@ -1155,21 +1247,21 @@ export const books: Book[] = [
         chapterNumber: 1,
         title: "The Psychopathology of Everyday Things",
         content: "Introduction to design problems in everyday objects",
-        notes: "Great examples of doors that confuse people. The Norman Door concept is introduced here."
+        notes: "Great examples of doors that confuse people. The Norman Door concept is introduced here. This chapter highlights the importance of intuitive design."
       },
       {
         id: "ch2", 
         chapterNumber: 2,
         title: "The Psychology of Everyday Actions",
         content: "How people interact with objects and the mental models they form",
-        notes: "The seven stages of action framework is crucial for understanding user behavior."
+        notes: "The seven stages of action framework is crucial for understanding user behavior. This chapter explains how users approach and complete tasks."
       },
       {
         id: "ch3",
         chapterNumber: 3,
         title: "Knowledge in the Head and in the World",
         content: "How we use both internal knowledge and external cues to navigate the world",
-        notes: "The distinction between knowledge in the head vs. in the world is fundamental to good design."
+        notes: "The distinction between knowledge in the head vs. in the world is fundamental to good design. This chapter explores how design can support memory."
       }
     ],
     tags: ["design", "psychology", "UX", "usability"]

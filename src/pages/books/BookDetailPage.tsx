@@ -232,18 +232,18 @@ const BookDetailPage = () => {
             {book.chapters.map((chapter) => (
               <Card key={chapter.id}>
                 <CardHeader>
-                  <CardTitle className="text-lg">
+                  <CardTitle className="text-lg text-pink-500">
                     Chapter {chapter.chapterNumber}: {chapter.title}
                   </CardTitle>
-                  <CardDescription>
+                  <CardDescription className="text-foreground">
                     {chapter.content}
                   </CardDescription>
                 </CardHeader>
                 {chapter.notes && (
                   <CardContent>
                     <div className="bg-muted/30 p-4 rounded-lg">
-                      <h4 className="font-medium mb-2">My Notes:</h4>
-                      <MarkdownRenderer content={chapter.notes} />
+                      <h4 className="font-bold mb-2 text-pink-500">My Notes & Highlights</h4>
+                      <MarkdownRenderer content={chapter.notes} className="text-foreground" />
                     </div>
                   </CardContent>
                 )}
