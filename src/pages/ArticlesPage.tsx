@@ -21,7 +21,7 @@ const ArticlesPage = () => {
             <div className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-2">
                 <RoughNotation type="underline" onHover={true}>
-                  <h2 className="text-2xl font-serif font-bold text-foreground">
+                  <h2 className="text-2xl font-serif font-bold" style={{ color: '#1E2024' }}>
                     {article.title}
                   </h2>
                 </RoughNotation>
