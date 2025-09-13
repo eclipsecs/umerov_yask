@@ -84,6 +84,10 @@ const BooksPage = () => {
       {/* Stats */}
       <div className="flex justify-center items-center gap-6 mb-8 text-sm text-muted-foreground">
         <div className="flex items-center gap-2">
+          <span className="text-xl">🗂️</span>
+          <span className="font-bold">{books.length} All</span>
+        </div>
+        <div className="flex items-center gap-2">
           <CheckCircle className="w-4 h-4 text-emerald-500" />
           <span className="font-bold">{completedBooks} completed</span>
         </div>

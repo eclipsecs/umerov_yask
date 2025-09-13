@@ -66,7 +66,7 @@ export const books: Book[] = [
     coverImage: "https://m.media-amazon.com/images/I/81hmO-IVMjL._UF1000,1000_QL80_.jpg",
     readingStatus: "completed",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
-    downloadUrl: "# Add your download link here",
+    downloadUrl: "https://vk.com/doc399904795_667905728?hash=yxNEATmitjv9ZfailpS6SiYqzZW80ukZVdc5L4tXjkk&api=1&no_preview=1",
     chapters: [
       {
         id: "ch1",
@@ -89,7 +89,7 @@ export const books: Book[] = [
     coverImage: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677837399i/41595606.jpg",
     readingStatus: "completed",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
-    downloadUrl: "# Add your download link here",
+    downloadUrl: "https://libgen.li/edition.php?id=138118916",
     chapters: [
       {
         id: "ch1",
@@ -112,7 +112,7 @@ export const books: Book[] = [
     coverImage: "https://m.media-amazon.com/images/I/71uDHglnpCL._UF1000,1000_QL80_.jpg",
     readingStatus: "to-read",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
-    downloadUrl: "# Add your download link here",
+    downloadUrl: "https://libgen.li/edition.php?id=136554437",
     chapters: [
       {
         id: "ch1",
@@ -135,7 +135,7 @@ export const books: Book[] = [
     coverImage: "https://m.media-amazon.com/images/I/71Koyhv2bML.jpg",
     readingStatus: "completed",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
-    downloadUrl: "# Add your download link here",
+    downloadUrl: "https://lrc.wiut.uz/Content/Uploads/Ckeditor/fd199c0f-6612-4e28-9229-b7286bfe1ae21590810411_the-7-habits-of-highly-effective-people.pdf",
     chapters: [
       {
         id: "ch1",
@@ -148,7 +148,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "2",
+    id: "48",
     title: "Atomic Habits",
     author: "James Clear",
     isbn: "9780735211292",
@@ -159,7 +159,7 @@ export const books: Book[] = [
     readingStatus: "completed",
     startedDate: "2024-08-01",
     personalComments: "Currently reading this one. The 1% better every day concept is compelling, though some examples feel repetitive. The habit stacking technique is something I'm actively trying to implement.",
-    downloadUrl: "# Add your download link here",
+    downloadUrl: "https://dn790007.ca.archive.org/0/items/atomic-habits-pdfdrive/Atomic%20habits%20%28%20PDFDrive%20%29.pdf",
     chapters: [
       {
         id: "ch1",
@@ -179,7 +179,7 @@ export const books: Book[] = [
     tags: ["habits", "productivity", "self-improvement"]
   },
   {
-    id: "3",
+    id: "47",
     title: "Thinking, Fast and Slow",
     author: "Daniel Kahneman",
     isbn: "9780374533557",
@@ -202,7 +202,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "4",
+    id: "46",
     title: "F*ck Whales: Petty Essays from a Brilliant Mind",
     author: "Maddox",
     isbn: "9781501187513",
@@ -225,7 +225,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "5",
+    id: "45",
     title: "Deep Work",
     author: "Cal Newport",
     isbn: "9781455586691",
@@ -248,7 +248,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "6",
+    id: "44",
     title: "The 4-Hour Workweek",
     author: "Timothy Ferriss",
     isbn: "9780307465351",
@@ -271,7 +271,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "7",
+    id: "43",
     title: "The Dead Zone",
     author: "Stephen King",
     isbn: "9780451155758",
@@ -294,7 +294,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "8",
+    id: "42",
     title: "The Storyteller (Sea of Ink and Gold #3)",
     author: "Traci Chee",
     isbn: "9780399176796",
@@ -317,7 +317,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "9",
+    id: "41",
     title: "Influence: The Psychology of Persuasion",
     author: "Robert B. Cialdini",
     isbn: "9780061241895",
@@ -340,7 +340,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "10",
+    id: "40",
     title: "Hopeless",
     author: "Colleen Hoover",
     isbn: "9781476718722",
@@ -363,7 +363,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "11",
+    id: "39",
     title: "The Testaments",
     author: "Margaret Atwood",
     isbn: "9780385543781",
@@ -386,7 +386,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "12",
+    id: "38",
     title: "Grit: The Power of Passion and Perseverance",
     author: "Angela Duckworth",
     isbn: "9781501111105",
@@ -409,7 +409,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "13",
+    id: "37",
     title: "The 80/20 Principle",
     author: "Richard Koch",
     isbn: "9780385491747",
@@ -432,7 +432,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "14",
+    id: "36",
     title: "Why Nations Fail",
     author: "Daron Acemoglu & James A. Robinson",
     isbn: "9780307719225",
@@ -455,7 +455,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "15",
+    id: "35",
     title: "The Definitive Book of Body Language",
     author: "Allan & Barbara Pease",
     isbn: "9780553804720",
@@ -478,7 +478,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "16",
+    id: "34",
     title: "Psycho-Cybernetics",
     author: "Maxwell Maltz",
     isbn: "9780399176130",
@@ -501,7 +501,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "17",
+    id: "33",
     title: "Principles",
     author: "Ray Dalio",
     isbn: "9781501124020",
@@ -524,7 +524,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "18",
+    id: "32",
     title: "The Art of War",
     author: "Sun Tzu",
     isbn: "9781599869773",
@@ -547,7 +547,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "19",
+    id: "31",
     title: "Antifragile",
     author: "Nassim Nicholas Taleb",
     isbn: "9781400067824",
@@ -570,7 +570,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "20",
+    id: "30",
     title: "The Laws of Human Nature",
     author: "Robert Greene",
     isbn: "9780525428145",
@@ -593,7 +593,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "21",
+    id: "29",
     title: "Mastery",
     author: "Robert Greene",
     isbn: "9780143124177",
@@ -616,7 +616,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "22",
+    id: "28",
     title: "Beyond Order: 12 More Rules for Life",
     author: "Jordan Peterson",
     isbn: "9780593084649",
@@ -639,7 +639,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "23",
+    id: "27",
     title: "Noise: A Flaw in Human Judgment",
     author: "Daniel Kahneman, Olivier Sibony, Cass R. Sunstein",
     isbn: "9780316451406",
@@ -662,7 +662,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "24",
+    id: "26",
     title: "1984",
     author: "George Orwell",
     isbn: "9780451524935",
@@ -708,7 +708,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
  {
-    id: "26",
+    id: "24",
     title: "The 5AM Club",
     author: "Robin Sharma",
     isbn: "9781443456623",
@@ -731,7 +731,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "27",
+    id: "23",
     title: "I'll Be There for You: The One about Friends",
     author: "Kelsey Miller",
     isbn: "9781488098642",
@@ -754,7 +754,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "28",
+    id: "22",
     title: "The Formula: The Universal Laws of Success",
     author: "Albert-László Barabási",
     isbn: "9780316505499",
@@ -777,7 +777,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "29",
+    id: "21",
     title: "Moonwalking with Einstein",
     author: "Joshua Foer",
     isbn: "9780143120537",
@@ -800,7 +800,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "30",
+    id: "20",
     title: "The Room Where It Happened",
     author: "John Bolton",
     isbn: "9781982148034",
@@ -823,7 +823,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "31",
+    id: "19",
     title: "The Code of the Extraordinary Mind",
     author: "Vishen Lakhiani",
     isbn: "9781623367084",
@@ -846,7 +846,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "32",
+    id: "18",
     title: "Linchpin",
     author: "Seth Godin",
     isbn: "9781591844099",
@@ -869,7 +869,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "33",
+    id: "17",
     title: "The Husband's Secret",
     author: "Liane Moriarty",
     isbn: "9780399159348",
@@ -892,7 +892,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "34",
+    id: "16",
     title: "A Whole New Mind",
     author: "Daniel H. Pink",
     isbn: "9781594481710",
@@ -915,7 +915,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "35",
+    id: "15",
     title: "The Universe Has Your Back",
     author: "Gabrielle Bernstein",
     isbn: "9781401946548",
@@ -938,7 +938,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "36",
+    id: "14",
     title: "Telling Lies: Clues to Deceit in the Marketplace, Politics, and Marriage",
     author: "Paul Ekman",
     isbn: "9780393321888",
@@ -961,7 +961,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "37",
+    id: "13",
     title: "Good to Great",
     author: "Jim Collins",
     isbn: "9780066620992",
@@ -984,7 +984,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "38",
+    id: "12",
     title: "The Goal",
     author: "Eliyahu M. Goldratt",
     isbn: "9780884271956",
@@ -1007,7 +1007,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "39",
+    id: "11",
     title: "The 8th Habit",
     author: "Stephen Covey",
     isbn: "9780743287937",
@@ -1030,7 +1030,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "40",
+    id: "10",
     title: "From Third World to First: The Singapore Story: 1965-2000",
     author: "Lee Kuan Yew",
     isbn: "9780060197764",
@@ -1053,7 +1053,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
    {
-    id: "41",
+    id: "9",
     title: "Economics: The User's Guide",
     author: "Ha-Joon Chang",
     isbn: "9780718197032",
@@ -1076,7 +1076,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "42",
+    id: "8",
     title: "The Anthropocene Reviewed",
     author: "John Green",
     isbn: "9780718197032",
@@ -1099,7 +1099,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "43",
+    id: "7",
     title: "48 Laws of Power",
     author: "Robert Greene",
     isbn: "9780718197032",
@@ -1122,7 +1122,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "44",
+    id: "6",
     title: "Strategy of Antifragile",
     author: "Hewlett Packard",
     isbn: "9780718197032",
@@ -1145,7 +1145,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "45",
+    id: "5",
     title: "Will",
     author: "Will Smith",
     isbn: "9780718197032",
@@ -1168,7 +1168,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "46",
+    id: "4",
     title: "Millionaire Expat",
     author: "Hallam",
     isbn: "9780718197032",
@@ -1191,7 +1191,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "47",
+    id: "3",
     title: "Bygone Days",
     author: "Abdullah Qodiriy",
     isbn: "9780718197032",
@@ -1214,7 +1214,7 @@ export const books: Book[] = [
     tags: ["psychology", "decision-making", "cognitive-science"]
   },
   {
-    id: "48",
+    id: "2",
     title: "To Live",
     author: "Yu Hua",
     isbn: "9780718197032",
@@ -1247,7 +1247,7 @@ export const books: Book[] = [
     coverImage: "https://m.media-amazon.com/images/I/71ls-I6A5KL._UF1000,1000_QL80_.jpg",
     readingStatus: "completed",
     personalComments: "This book completely changed how I think about user experience and design. The principles are timeless and applicable beyond just physical objects - they apply to digital interfaces, processes, and systems. Norman's insights about affordances and signifiers are particularly valuable.",
-    downloadUrl: "# Add your download link here",
+    downloadUrl: "https://libgen.li/ads.php?md5=1b8c3c1c7877cc2223990f3f8ead5590",
     chapters: [
       {
         id: "ch1",

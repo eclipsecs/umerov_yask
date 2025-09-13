@@ -147,6 +147,9 @@ const ArticleDetailPage = () => {
         style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem' }} // slightly bolder and larger font
       >
         <MarkdownRenderer content={article.content} />
+        <div className="mt-6 text-base font-bold text-gray-900 dark:text-gray-100 tracking-wide">
+          {article.content.split(/\s+/).filter(Boolean).length} WORDS
+        </div>
       </article>
 
       {/* Next Up Section */}
