@@ -38,7 +38,7 @@ const HomePage = () => {
                       texts={[
                         "Hi there", "Hola", "Bonjour", "Hallo", "Ciao", 
                         "こんにちは", "안녕하세요", "你好", "Привет", "Olá", 
-                        "Hej", "Hoi", "Γεια σας", "مرحبا", "שלום", "Namaste"
+                        "Hej", "Hoi", "Γεια σας", "مرحبا", "שלום", "Namaste", "Assalomu Aleykum"
                       ]}
                       morphTime={0.3}
                       cooldownTime={1.0}
