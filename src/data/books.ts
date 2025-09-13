@@ -36,12 +36,19 @@ export const books: Book[] = [
     coverImage: "https://m.media-amazon.com/images/I/41EnRRiRetL._UF1000,1000_QL80_.jpg",
     readingStatus: "completed",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
-    downloadUrl: "# Add your download link here",
+    downloadUrl: "https://www.alim.org/tafsir/ibn-kathir/?surah=1&ayah=0",
     chapters: [
       {
         id: "ch1",
         chapterNumber: 1,
         title: "The Characters of the Story",
+        content: "Introduction to System 1 and System 2 thinking",
+        notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the main concepts of the book."
+      },
+      {
+        id: "ch2",
+        chapterNumber: 2,
+        title: "Chapter Number 2",
         content: "Introduction to System 1 and System 2 thinking",
         notes: "System 1 is fast, intuitive, and emotional. System 2 is slow, deliberate, and logical. This chapter introduces the main concepts of the book."
       }
