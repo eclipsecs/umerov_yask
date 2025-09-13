@@ -35,7 +35,7 @@ export const articles: Article[] = [
     title: 'SAMSIFL - an institution giving only nightmares',
     excerpt: 'My honest experience studying at SAMSIFL and the challenges I faced over four years.',
     publishedAt: '2024-04-21',
-    readTime: 6,
+    readTime: 8,
     tags: ['InYaz', 'Comments', 'Hate'],
     // Example YouTube URL - replace with actual video URL when you have one
     image: nightmare_institute, // Example YouTube URL
@@ -68,7 +68,7 @@ As I move on to the next chapter, I carry with me a sense of realism about what 
     title: 'Learning from articles',
     excerpt: 'How reading articles helps me learn, think critically, and see the world differently.',
     publishedAt: '2024-04-21',
-    readTime: 6,
+    readTime: 9,
     tags: ['Travelling', 'Lex Fridman', 'Advice'],
     youtubeUrl: "https://www.youtube.com/watch?v=AaGWZBWaUzc",
     content: `
@@ -113,7 +113,7 @@ So I keep reading, article by article, trusting that each one will leave its mar
     title: 'Should I travel or explore through papers',
     excerpt: 'Comparing traveling in real life and learning through books or research papers.',
     publishedAt: '2024-04-21',
-    readTime: 6,
+    readTime: 7,
     tags: ['Travelling', 'Lex Fridman', 'Advice'],
     // Example YouTube URL - replace with actual video URL when you have one
     youtubeUrl: "https://www.youtube.com/watch?v=bGbHTFN_54s", // Example YouTube URL
@@ -166,7 +166,7 @@ Traveling fills us with real moments and emotions; reading gives us context, per
     title: 'Reading Walkthroughs: YouTube',
     excerpt: 'Creating IELTS Reading walkthroughs on YouTube and what I learned from it.',
     publishedAt: '2024-04-25',
-    readTime: 3,
+    readTime: 9,
     tags: ['Technology', 'Writing', 'Communication'],
     // Example YouTube URL - replace with actual video URL when you have one
     image: youtube, // Example YouTube URL
@@ -219,7 +219,7 @@ Continuing to make these walkthroughs feels meaningful because it keeps me conne
     title: 'Should parents decide the baby\'s traits',
     excerpt: 'The ethical questions around parents choosing traits for their children.',
     publishedAt: '2024-04-26',
-    readTime: 3,
+    readTime: 9,
     tags: ['Baby', 'Parenting', 'Genetics'],
     // Example YouTube URL - replace with actual video URL when you have one
     youtubeUrl: "https://youtu.be/SgtdVWEBXOM?feature=shared", // Example YouTube URL
@@ -279,7 +279,7 @@ In the end, the question is not simply whether parents should decide the baby's 
     title: 'If blue-collar job sucks. Why do them?',
     excerpt: 'Why people work blue-collar jobs and the value behind them.',
     publishedAt: '2024-04-27',
-    readTime: 4,
+    readTime: 11,
     tags: ['Hierarchy', 'Jobs'],
     youtubeUrl: "https://www.youtube.com/watch?v=I-hyT3Dw2eo",
     content: `
@@ -347,7 +347,7 @@ Looking back, I’m grateful I had the chance to experience both the factory flo
     title: 'Annoying Day in the Life videos',
     excerpt: 'My thoughts on Day in the Life videos and how they affect viewers.',
     publishedAt: '2024-04-29',
-    readTime: 5,
+    readTime: 8,
     tags: ['YouTube', 'Trend', 'Trap'],
     // Example: This article would have a video with thumbnail
     // video: codingDemoVideo, // <-- Add video here when you have one
@@ -409,7 +409,7 @@ Maybe the best trend we could start is one of kindness: to ourselves, and to oth
     title: 'Computer science major in an almost AI world',
     excerpt: 'My experience studying computer science while AI is changing coding jobs.',
     publishedAt: '2024-05-03',
-    readTime: 3,
+    readTime: 8,
     tags: ['AI', 'Coding', 'Opinion'],
     video: oop_sucks,
     image: thumbnail1_1, // <-- Link your imported image here

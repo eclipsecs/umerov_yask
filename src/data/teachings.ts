@@ -21,7 +21,7 @@ export const teachings: Teaching[] = [
    {
     id: 't17',
     title: 'Doing great things and being a human',
-    excerpt: 'Do newcomers to English courses what they are signed up for?',
+    excerpt: 'Doing everything you can to help, but also forgetting the small parts',
     publishedAt: '2024-03-10',
     readTime: 3,
     tags: ['YouTube', 'Trend', 'Trap'],
@@ -43,8 +43,8 @@ If I were to join the trend myself, I would use it not to showcase perfection, b
   },
   {
     id: 't16',
-    title: 'Selecting a teacher',
-    excerpt: 'Do newcomers to English courses know what they are signing up for?',
+    title: 'Are you a teacher?',
+    excerpt: 'Do you have the guts to be one?',
     publishedAt: '2024-03-10',
     readTime: 3,
     tags: ['YouTube', 'Trend', 'Trap'],
@@ -66,8 +66,8 @@ If I were to join the trend myself, I would use it not to showcase perfection, b
   },
   {
     id: 't15',
-    title: '🎓 Learning in an AI world',
-    excerpt: 'Thoughts on studying effectively when AI is everywhere.',
+    title: 'Love-hate reationship with ChatGPT',
+    excerpt: 'I love ChatGPT, but I hate how it makes me feel sometimes.',
     publishedAt: '2023-02-12',
     readTime: 3,
     tags: ['AI', 'Learning', 'Opinion'],
@@ -84,8 +84,8 @@ AI is accelerating everything, but intentional learning still matters. Use AI as
   },
   {
     id: 't14',
-    title: '🚨 Annoying Day in the Life videos',
-    excerpt: 'Day in the life videos are popular but not always. Read my opinion',
+    title: 'How did I improve my reading score.',
+    excerpt: 'One person that transformed my reading skills.',
     publishedAt: '2023-03-10',
     readTime: 3,
     tags: ['YouTube', 'Trend', 'Trap'],
@@ -107,8 +107,8 @@ If I were to join the trend myself, I would use it not to showcase perfection, b
   },
   {
     id: 't13',
-    title: '⚙️ Purposeful work vs easy work',
-    excerpt: 'Notes on meaningful effort and balance.',
+    title: 'Results or salary?',
+    excerpt: 'Which one to chase in between? Salary or results?.',
     publishedAt: '2024-01-20',
     readTime: 4,
     tags: ['Work', 'Mindset'],
@@ -118,8 +118,8 @@ Short, actionable lessons will live here. Use markdown as needed.`
   },
   {
     id: 't12',
-    title: '🍼 Should parents decide the baby\'s traits?',
-    excerpt: 'Ethics of choice and technology.',
+    title: 'When should start learning a language',
+    excerpt: 'Choosing the right moment. Although, there is no such thing.',
     publishedAt: '2024-01-25',
     readTime: 6,
     tags: ['Ethics', 'Technology'],
@@ -130,8 +130,8 @@ Balance tools with values.`
   },
   {
     id: 't11',
-    title: 'Mastering English Communication',
-    excerpt: 'Practical tips to improve your English speaking and writing skills.',
+    title: 'American accent',
+    excerpt: 'How did learn to speak like Americans. Or am I an American now?',
     publishedAt: '2025-09-01',
     readTime: 5,
     tags: ['English', 'Communication', 'Skills'],
@@ -147,7 +147,7 @@ Remember, making mistakes is part of the learning process. Embrace feedback and 
   },
   {
     id: 't10',
-    title: 'IELTS Writing: Strategies for Success',
+    title: 'Task 1 is a mix of madness and precision',
     excerpt: 'How to approach IELTS writing tasks with confidence and structure.',
     publishedAt: '2025-09-05',
     readTime: 6,
@@ -164,8 +164,8 @@ Practice timed writing to improve your speed and accuracy. Reviewing model essay
   },
   {
     id: 't9',
-    title: 'Grammar Essentials for Everyday Use',
-    excerpt: 'Key grammar rules to enhance your English accuracy.',
+    title: 'Articles are like steroids',
+    excerpt: 'Can reading articles help to grow vocabulary?.',
     publishedAt: '2025-09-10',
     readTime: 4,
     tags: ['Grammar', 'English', 'Basics'],
@@ -181,8 +181,8 @@ Don’t hesitate to consult grammar references or seek feedback to clarify doubt
   },
   {
     id: 't8',
-    title: 'Staying Motivated in Language Learning',
-    excerpt: 'Tips to keep your motivation high throughout your learning journey.',
+    title: 'Always chasing language',
+    excerpt: 'What did I acquire while teaching a language.',
     publishedAt: '2025-09-15',
     readTime: 3,
     tags: ['Motivation', 'Learning', 'Mindset'],
@@ -198,8 +198,8 @@ Remember why you started and visualize the benefits of mastering the language to
   },
   {
     id: 't7',
-    title: 'Truths About Learning Centres',
-    excerpt: 'What to expect and how to make the most of your learning centre experience.',
+    title: 'Telegram courses',
+    excerpt: 'My opinion about marathons, courses: and a slight honesty.',
     publishedAt: '2025-09-20',
     readTime: 5,
     tags: ['Learning Centre', 'Education', 'Tips'],
@@ -215,8 +215,8 @@ Be proactive in seeking feedback and practicing outside of scheduled sessions to
   },
   {
     id: 't6',
-    title: 'The Big Picture: Overall Teaching Philosophy',
-    excerpt: 'Insights into effective teaching and lifelong learning.',
+    title: 'Language teaching is easy? Lets debate...',
+    excerpt: 'Uncovering all the nonsense you might have heard.',
     publishedAt: '2025-09-25',
     readTime: 6,
     tags: ['Teaching', 'Philosophy', 'Learning'],
@@ -232,8 +232,8 @@ Lifelong learning is a continuous journey; fostering a growth mindset helps lear
   },
   {
     id: 't5',
-    title: 'Teaching English in Real Life',
-    excerpt: 'Tips for using English in daily conversations.',
+    title: 'Teaching English to anyone',
+    excerpt: 'Dealing with people from all social backgrounds.',
     publishedAt: '2025-10-01',
     readTime: 4,
     tags: ['English', 'Teaching', 'Conversation'],
@@ -249,8 +249,8 @@ Remember, making mistakes is part of learning. Celebrate small wins and keep the
   },
   {
     id: 't4',
-    title: 'Fun Ways to Teach Grammar',
-    excerpt: 'Making grammar practice enjoyable.',
+    title: 'Grammar multiplied by infinity',
+    excerpt: 'Why Grammar is dull and important simultaneously.',
     publishedAt: '2025-10-05',
     readTime: 3,
     tags: ['Grammar', 'Teaching', 'Fun'],
@@ -266,8 +266,8 @@ Mix up your lessons with quizzes and group work to keep the energy high and the 
   },
   {
     id: 't3',
-    title: 'Motivating Students Without Pressure',
-    excerpt: 'How to keep learners engaged.',
+    title: 'Ensuring a student thinks clearly',
+    excerpt: 'Spoonfeeding student brains in the right way.',
     publishedAt: '2025-10-10',
     readTime: 4,
     tags: ['Motivation', 'Teaching', 'Mindset'],
@@ -283,8 +283,8 @@ Create a supportive environment where mistakes are okay and learning feels safe 
   },
   {
     id: 't2',
-    title: 'Common Myths About Learning Centres',
-    excerpt: 'Things students should know before joining.',
+    title: 'How to choose a tutor',
+    excerpt: 'I dont mean to hate, just an opinion debunking about bull***t.',
     publishedAt: '2025-10-15',
     readTime: 3,
     tags: ['Learning Centre', 'Myths', 'Education'],
@@ -313,6 +313,8 @@ Break writing into small steps: start with simple sentences, then move to paragr
 Use examples and show how to organize ideas clearly. Encourage students to write about things they care about — it makes the process more enjoyable.
 
 Give gentle feedback focusing on improvement, not perfection. Writing gets easier with practice!
+
+**This is a prompt**
     `
   }
 ];
