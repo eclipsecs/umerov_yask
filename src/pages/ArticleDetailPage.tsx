@@ -15,7 +15,7 @@ const ArticleDetailPage = () => {
 
   if (!article) {
     return (
-      <div className="container mx-auto px-4 py-12 max-w-4xl text-center">
+      <div className="container mx-auto px-4 py-12 max-w-4xl text-center font-sans">
         <h1 className="text-3xl font-bold mb-4">Article Not Found</h1>
         <p className="text-muted-foreground mb-8">
           The article you're looking for doesn't exist or has been moved.
@@ -68,9 +68,9 @@ const ArticleDetailPage = () => {
     currentIndex > 0 ? articles[currentIndex - 1] : null;
 
   return (
-    <div className="container mx-auto px-4 py-16 max-w-4xl">
+    <div className="container mx-auto px-4 py-16 max-w-4xl font-sans">
       {/* Back Button */}
-      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
+      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors" style={{ fontWeight: 700 }}>
         <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
         Back to Articles
       </Link>
@@ -78,19 +78,19 @@ const ArticleDetailPage = () => {
       {/* Article Header */}
       <header className="mb-12">
         <div className="flex justify-between items-center gap-4 mb-6">
-          <span className="font-bold text-pink-500 uppercase text-sm" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
+          <span className="font-bold text-pink-500 uppercase text-sm" style={{ fontWeight: 700 }}>
             {formatRelativeDate(article.publishedAt)}
           </span>
-          <span className="font-bold text-pink-500 uppercase text-sm" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
+          <span className="font-bold text-pink-500 uppercase text-sm" style={{ fontWeight: 700 }}>
             {formatReadTime(readTime)}
           </span>
         </div>
         
-        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-foreground leading-tight" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
+        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-foreground leading-tight" style={{ fontWeight: 700 }}>
           {article.title}
         </h1> {/* You can adjust the title size here */}
         
-        <p className="text-xl md:text-2xl text-muted-foreground leading-8 md:leading-9 mb-4" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 400, fontStyle: 'normal' }}>
+        <p className="text-xl md:text-2xl text-muted-foreground leading-8 md:leading-9 mb-4" style={{ fontWeight: 400, fontStyle: 'normal' }}>
           {article.excerpt}
         </p>
         
@@ -134,7 +134,7 @@ const ArticleDetailPage = () => {
 
       {/* Article Content */}
       <article
-        className="mt-10 prose dark:prose-invert max-w-4xl mx-auto font-normal
+        className="mt-10 prose dark:prose-invert max-w-4xl mx-auto font-normal font-sans
         prose-p:text-[1.35rem] md:prose-p:text-[1.5rem] prose-p:leading-8 md:prose-p:leading-9
         prose-headings:font-bold prose-headings:tracking-tight
         prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3
@@ -144,7 +144,7 @@ const ArticleDetailPage = () => {
         prose-pre:rounded-lg prose-pre:p-4
         prose-img:rounded-lg prose-img:shadow-md
         text-gray-800 dark:text-gray-200"
-        style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem' }} // slightly bolder and larger font
+        style={{ fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem' }} // slightly bolder and larger font
       >
         <MarkdownRenderer content={article.content} />
         <div className="mt-6 text-base font-bold text-gray-900 dark:text-gray-100 tracking-wide">
@@ -157,8 +157,8 @@ const ArticleDetailPage = () => {
         <div className="flex justify-between gap-12 items-start">
           {prevArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous Article</span>
-              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
+              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontWeight: 700 }}>Previous Article</span>
+              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold font-sans" style={{ fontWeight: 700 }}>
                 <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{prevArticle.title}</span>
                 </RoughNotation>
@@ -167,8 +167,8 @@ const ArticleDetailPage = () => {
           )}
           {nextArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Up</span>
-              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
+              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontWeight: 700 }}>Next Up</span>
+              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold font-sans" style={{ fontWeight: 700 }}>
                 <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{nextArticle.title}</span>
                 </RoughNotation>

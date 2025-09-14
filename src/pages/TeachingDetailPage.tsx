@@ -19,7 +19,7 @@ const TeachingDetailPage = () => {
           The teaching you're looking for doesn't exist or has been moved.
         </p>
         <Link to="/teachings">
-          <Button>Back to The teachings</Button>
+          <Button>Back to The careering</Button>
         </Link>
       </div>
     );
@@ -51,6 +51,7 @@ const TeachingDetailPage = () => {
   };
 
   const readTime = teaching.readTime || calculateReadTime(teaching.content);
+  const wordCount = teaching.content.split(/\s+/).length;
 
   const currentIndex = teachings.findIndex(a => a.id === id);
   const nextTeaching =
@@ -65,7 +66,7 @@ const TeachingDetailPage = () => {
       {/* Back Button */}
       <Link to="/teachings" className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
         <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
-        Back to The teachings
+        Back to The careering
       </Link>
 
       {/* Header */}
@@ -79,11 +80,11 @@ const TeachingDetailPage = () => {
           </span>
         </div>
         
-        <h1 className="text-2xl md:text-3xl font-bold mb-6 text-foreground leading-tight" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
+        <h1 className="font-sans font-bold text-4xl md:text-5xl leading-tight mb-6 text-foreground" style={{ fontWeight: 700 }}>
           {teaching.title}
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground leading-8 md:leading-9 mb-10" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 400, fontStyle: 'normal' }}>
+        <p className="font-sans text-lg md:text-xl text-muted-foreground leading-relaxed mb-10">
           {teaching.excerpt}
         </p>
         
@@ -127,7 +128,7 @@ const TeachingDetailPage = () => {
 
       {/* Content */}
       <article
-        className="mt-10 prose dark:prose-invert max-w-4xl mx-auto font-normal
+        className="mt-10 prose dark:prose-invert max-w-4xl mx-auto font-sans
         prose-p:text-[1.35rem] md:prose-p:text-[1.5rem] prose-p:leading-8 md:prose-p:leading-9 prose-p:font-medium
         prose-li:text-[1.35rem] md:prose-li:text-[1.5rem] prose-li:leading-8 md:prose-li:leading-9 prose-li:font-medium
         prose-headings:font-bold prose-headings:tracking-tight
@@ -138,10 +139,16 @@ const TeachingDetailPage = () => {
         prose-pre:rounded-lg prose-pre:p-4
         prose-img:rounded-lg prose-img:shadow-md
         text-gray-800 dark:text-gray-200"
-        style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 400, fontStyle: 'normal' }}
+        style={{ fontWeight: 400, fontStyle: 'normal' }}
       >
         <MarkdownRenderer content={teaching.content} />
       </article>
+
+      <div className="mt-6 text-left">
+        <span className="font-bold text-gray-900 dark:text-gray-100 text-base md:text-lg uppercase" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>
+          {wordCount} WORDS
+        </span>
+      </div>
 
       {/* Next Up Section */}
       <section className="mt-16">

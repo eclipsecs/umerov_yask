@@ -13,8 +13,8 @@ const IELTSEssaysPage = () => {
   const activeTab = searchParams.get('tab') || 'task1';
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl">
-      <h1 className="text-5xl font-serif font-bold text-center mb-16">IELTS Essays</h1>
+    <div className="container mx-auto px-4 py-12 max-w-4xl font-sans">
+      <h1 className="text-5xl font-sans font-bold text-center mb-16">IELTS Essays</h1>
       
       <Tabs value={activeTab} className="mb-8">
         <TabsList className="grid w-full grid-cols-2 mb-8 max-w-md mx-auto">
@@ -51,7 +51,7 @@ const IELTSEssaysPage = () => {
                 <span className="text-pink-500 dark:text-pink-500 font-bold">{`Band ${essay.bandScore}`}</span>
               </div>
               <RoughNotation type="underline" onHover={true} color="#ec4899" animationDuration={250}>
-                <h2 className="text-2xl font-serif font-bold mb-3 text-pink-500 dark:text-pink-500">
+                <h2 className="text-2xl font-sans font-bold mb-3 text-pink-500 dark:text-pink-500">
                   {essay.title}
                 </h2>
               </RoughNotation>
@@ -78,7 +78,7 @@ const IELTSEssaysPage = () => {
                 <span className="text-pink-500 dark:text-pink-500 font-bold">{`Band ${essay.bandScore}`}</span>
               </div>
               <RoughNotation type="underline" onHover={true} color="#ec4899" animationDuration={250}>
-                <h2 className="text-2xl font-serif font-bold mb-3 text-pink-500 dark:text-pink-500">
+                <h2 className="text-2xl font-sans font-bold mb-3 text-pink-500 dark:text-pink-500">
                   {essay.title}
                 </h2>
               </RoughNotation>

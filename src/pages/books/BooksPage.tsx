@@ -43,7 +43,7 @@ const BooksPage = () => {
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif font-bold mb-4 text-foreground">
+        <h1 className="text-5xl font-sans font-bold mb-4 text-foreground">
           Library
         </h1>
         <p className="text-muted-foreground max-w-xl mx-auto">
@@ -146,7 +146,7 @@ const BooksPage = () => {
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-gradient-to-br from-muted/30 to-muted/50" 
                        style={{ display: book.coverImage ? 'none' : 'flex' }}>
                     <BookOpen className="w-8 h-8 text-muted-foreground mb-3" />
-                    <h3 className="font-serif font-bold text-sm mb-1 text-foreground">
+                    <h3 className="font-sans font-bold text-sm mb-1 text-foreground">
                       {book.title}
                     </h3>
                     <p className="text-xs text-muted-foreground">
@@ -168,7 +168,7 @@ const BooksPage = () => {
                 {/* Book Info */}
                 <div className="p-4 space-y-3">
                   <div>
-                    <h2 className="font-serif font-bold text-base mb-1 group-hover:text-accent-pink transition-colors line-clamp-2">
+                    <h2 className="font-sans font-bold text-base mb-1 group-hover:text-accent-pink transition-colors line-clamp-2">
                       {book.title}
                     </h2>
                     <p className="text-muted-foreground text-xs mb-2">

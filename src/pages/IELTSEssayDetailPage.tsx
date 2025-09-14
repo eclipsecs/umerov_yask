@@ -112,7 +112,7 @@ const IELTSEssayDetailPage = () => {
       </article>
 
       {/* Essay Analysis */}
-      <Card className="mt-12">
+      <Card className="mt-12 border-none shadow-none">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Award className="w-5 h-5 text-pink-500 dark:text-pink-500 font-bold" />
@@ -122,26 +122,26 @@ const IELTSEssayDetailPage = () => {
         <CardContent>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="text-2xl text-pink-500 dark:text-pink-500 font-bold mb-2">
+              <div className="text-lg text-pink-500 dark:text-pink-500 font-bold mb-2">
                 {essay.bandScore}
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-xs text-foreground font-bold">
                 Estimated Band Score
               </div>
             </div>
             <div className="text-center">
-              <div className="text-2xl text-pink-500 dark:text-pink-500 font-bold mb-2">
+              <div className="text-lg text-pink-500 dark:text-pink-500 font-bold mb-2">
                 {essay.wordCount}
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-xs text-foreground font-bold">
                 Word Count
               </div>
             </div>
             <div className="text-center">
-              <div className="text-2xl text-pink-500 dark:text-pink-500 font-bold mb-2">
+              <div className="text-lg text-pink-500 dark:text-pink-500 font-bold mb-2">
                 {essay.writingTime}
               </div>
-              <div className="text-sm text-muted-foreground">
+              <div className="text-xs text-foreground font-bold">
                 Writing Time
               </div>
             </div>

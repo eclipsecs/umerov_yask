@@ -8,8 +8,8 @@ const ReadingPage = () => {
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-5xl font-serif font-bold mb-4 text-foreground">
-          Readings 
+        <h1 className="text-5xl font-sans font-bold mb-4 text-foreground">
+          Journals 
         </h1>
         <p className="text-muted-foreground max-w-xl mx-auto">
           Collection of journals I have read. Each article consists of words and interesting sentences with usage.
@@ -46,7 +46,7 @@ const ReadingPage = () => {
               )}
             </div>
             <div className="p-4 space-y-2">
-              <h2 className="font-serif font-bold text-lg group-hover:text-accent-pink transition-colors line-clamp-2">
+              <h2 className="font-sans font-bold text-lg group-hover:text-accent-pink transition-colors line-clamp-2">
                 {article.title}
               </h2>
             </div>

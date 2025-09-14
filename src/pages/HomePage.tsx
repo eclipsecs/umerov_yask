@@ -33,7 +33,7 @@ const HomePage = () => {
             <div className="text-left w-full">
               <div className="flex-1 space-y-8 mx-auto">
                 <div className="space-y-6">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight mx-auto">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans font-bold text-foreground leading-tight mx-auto">
                     <GooeyText
                       texts={[
                         "Hi there", "Hola", "Bonjour", "Hallo", "Ciao", 
@@ -67,7 +67,7 @@ const HomePage = () => {
         <div className="space-y-6">
           <div className="ml-6 sm:ml-6">
             <div className="flex items-center justify-between">
-              <h2 className="text-2xl font-serif font-bold">Latest Writing 📝</h2>
+              <h2 className="text-2xl font-sans font-bold">Latest Writing 📝</h2>
               <Link 
                 to="/articles" 
                 className="text-pink-500 dark:text-pink-500 font-bold flex items-center gap-1"
@@ -96,7 +96,7 @@ const HomePage = () => {
                     </span>
                   </div>
                   <RoughNotation type="underline" onHover={true}>
-                    <h3 className="text-xl font-serif font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
+                    <h3 className="text-xl font-sans font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
                       {article.title}
                     </h3>
                   </RoughNotation>

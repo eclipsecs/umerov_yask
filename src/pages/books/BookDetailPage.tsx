@@ -94,7 +94,7 @@ const BookDetailPage = () => {
               </div>
             </div>
             
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground leading-tight">
+            <h1 className="text-4xl md:text-5xl font-sans font-bold mb-4 text-foreground leading-tight">
               {book.title}
             </h1>
             
@@ -164,7 +164,7 @@ const BookDetailPage = () => {
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-muted/50 to-muted" 
                        style={{ display: book.coverImage ? 'none' : 'flex' }}>
                     <BookOpen className="w-16 h-16 text-muted-foreground mb-4" />
-                    <h3 className="font-serif font-bold text-lg mb-2 text-foreground">
+                    <h3 className="font-sans font-bold text-lg mb-2 text-foreground">
                       {book.title}
                     </h3>
                     <p className="text-sm text-muted-foreground">

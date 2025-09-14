@@ -9,7 +9,7 @@ import { articles } from '@/data/articles';
 const ArticlesPage = () => {
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
-      <h1 className="text-5xl font-serif font-bold text-center mb-16">Articles</h1>
+      <h1 className="text-5xl font-sans font-bold text-center mb-16">Articles</h1>
       
       <div className="space-y-8 max-w-3xl mx-auto">
         {articles.map((article) => (
@@ -21,7 +21,7 @@ const ArticlesPage = () => {
             <div className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-2">
                 <RoughNotation type="underline" onHover={true}>
-                  <h2 className="text-2xl font-serif font-bold" style={{ color: '#1E2024' }}>
+                  <h2 className="text-2xl font-sans font-bold" style={{ color: '#1E2024' }}>
                     {article.title}
                   </h2>
                 </RoughNotation>
