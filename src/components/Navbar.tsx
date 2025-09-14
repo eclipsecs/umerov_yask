@@ -13,7 +13,7 @@ const Navbar = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/articles', label: 'Articles' },
-    { path: '/teachings', label: 'Teachings' },
+    { path: '/teachings', label: 'Career' },
     { path: '/readings', label: 'Journals' },
     { path: '/ielts-essays', label: 'IELTS Essays' },
     { path: '/books', label: 'Books' },
@@ -53,7 +53,7 @@ const Navbar = () => {
                 <span className="text-sm font-semibold text-pink-500">YouTube</span>
               </a>
               <a
-                href="https://www.buymeacoffee.com/yourusername"
+                href="https://www.buymeacoffee.com/umerovjavokhir"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-yellow-500 font-light"
@@ -128,7 +128,7 @@ const Navbar = () => {
                 <span className="text-sm">YouTube</span>
               </a>
               <a
-                href="https://www.buymeacoffee.com/yourusername"
+                href="https://www.buymeacoffee.com/umerovjavokhir"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors"
