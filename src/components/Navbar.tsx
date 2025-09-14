@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Moon, Sun, Youtube, Menu } from 'lucide-react';
+import { Moon, Sun, Youtube, Menu, Coffee } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -25,35 +25,49 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className="font-serif font-semibold text-xl tracking-tight">Y</span>
+            <span className="font-serif font-bold text-xl tracking-tight">Y</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a 
-              href="https://www.youtube.com/@javokhirsielts" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-pink-500 font-light"
-            >
-              <Youtube className="w-5 h-5 text-pink-500" />
-              <span className="text-sm font-semibold text-pink-500">YouTube</span>
-            </a>
-            {navItems.slice(1).map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className="text-black hover:text-pink-500 dark:text-pink-500 dark:hover:text-pink-500 font-semibold text-sm"
+          <div className="hidden md:flex items-center">
+            <div className="flex items-center space-x-4">
+              {navItems.slice(1).map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className="text-black hover:text-pink-500 dark:text-pink-500 dark:hover:text-pink-500 font-semibold text-sm"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+            <div className="w-px h-5 bg-border mx-3" />
+            <div className="flex items-center space-x-4">
+              <a 
+                href="https://www.youtube.com/@javokhirsielts" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-pink-500 font-light"
               >
-                {item.label}
-              </Link>
-            ))}
+                <Youtube className="w-5 h-5 text-pink-500" />
+                <span className="text-sm font-semibold text-pink-500">YouTube</span>
+              </a>
+              <a
+                href="https://www.buymeacoffee.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-yellow-500 font-light"
+              >
+                <Coffee className="w-5 h-5 text-yellow-500" />
+                <span className="text-sm font-semibold text-yellow-500">Buy me a coffee</span>
+              </a>
+            </div>
             {/* Theme Toggle */}
             <Button
               variant="ghost"
               size="icon"
               onClick={toggleTheme}
-              className="h-8 w-8 hover:bg-muted/50"
+              className="h-8 w-8 hover:bg-muted/50 ml-4"
             >
               {theme === 'light' ? (
                 <Moon className="w-4 h-4" />
@@ -92,15 +106,7 @@ const Navbar = () => {
                 isMenuOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
               )}
             >
-              <a
-                href="https://www.youtube.com/@javokhirsielts"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-red-500 font-semibold hover:text-pink-500 transition-colors"
-              >
-                <Youtube className="w-5 h-5" />
-                <span className="text-sm">YouTube</span>
-              </a>
+              <div className="text-xs uppercase tracking-wide text-muted-foreground">Navigation</div>
               {navItems.slice(1).map((item) => (
                 <Link
                   key={item.path}
@@ -111,6 +117,25 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
+              <div className="text-xs uppercase tracking-wide text-muted-foreground mt-3">External</div>
+              <a
+                href="https://www.youtube.com/@javokhirsielts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-red-500 font-semibold hover:text-pink-500 transition-colors"
+              >
+                <Youtube className="w-5 h-5" />
+                <span className="text-sm">YouTube</span>
+              </a>
+              <a
+                href="https://www.buymeacoffee.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors"
+              >
+                <Coffee className="w-5 h-5 text-yellow-500" />
+                <span className="text-sm">Buy me a coffee</span>
+              </a>
             </div>
           </div>
         </div>
