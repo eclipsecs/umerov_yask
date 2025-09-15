@@ -14,6 +14,20 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '12',
+    task: 'task2',
+    title: 'Task two: 12 of 100 - Independence and Dependence',
+    question: 'Some people think that individuals today are more dependent on each other. Others believe people have become more independent. Discuss both views and give your own opinion.',
+    bandScore: 8,
+    writingTime: '31 minutes',
+    wordCount: 344,
+    tags: ['Independence', 'Dependence', 'Society'],
+    content: `
+
+Writing...
+`
+  },
+  {
     id: '11',
     task: 'task2',
     title: 'Task two: 11 of 100 - Space Exploration',
