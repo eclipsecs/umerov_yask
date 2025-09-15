@@ -10,6 +10,7 @@ import chart_1_6 from '@/assets/ielts-task1-images/chart_1_6.png';
 import chart_1_7 from '@/assets/ielts-task1-images/chart_1_7.png';
 import chart_1_8 from '@/assets/ielts-task1-images/chart_1_8.png';
 import chart_1_9 from '@/assets/ielts-task1-images/chart_1_9.png';
+import chart_1_10 from '@/assets/ielts-task1-images/chart_1_10.png';
 
 export interface IELTSEssay {
   id: string;
@@ -26,6 +27,28 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
+  {
+    id: '110',
+    task: 'task1',
+    title: 'Task One: 10 of 100: Bar Chart',
+    question: 'The chart shows the total distance travelled by passengers on five types of transport in the UK between 1990 and 2000. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 8.0,
+    writingTime: '23 minutes',
+    wordCount: 162,
+    tags: ['Bar Chart'],
+    image: chart_1_10, // Add your image here when available
+    content: `
+
+The bar chart illustrates the total distance, in billions of kilometres, travelled by passengers using five different modes of transport in 1990 and 2000 in the UK.
+
+Overall, the total distance covered increased slightly over the decade, with bus and rail consistently accounting for the largest share. In contrast, bicycle, motorbike, and air travel contributed far fewer passenger kilometres, although air transport showed a modest rise.
+
+In 1990, passengers travelled about 47 billion kilometres by bus, rising slightly to nearly 50 billion in 2000. Rail travel followed a similar pattern, increasing from 46 billion kilometres to match the bus figure at around 50 billion by the end of the period.
+
+By contrast, bicycle and motorbike use both stood at roughly 15 billion kilometres in 1990 but fell slightly below that level by 2000. Air travel, on the other hand, rose marginally above 15 billion kilometres. Altogether, the total distance travelled increased from just over 100 billion kilometres in 1990 to approximately 115 billion in 2000.
+
+`
+  },
   {
     id: '109',
     task: 'task1',
