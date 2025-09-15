@@ -4,6 +4,7 @@ import oop_sucks from '@/assets/article-videos/oop_sucks.mp4';
 import dayinthelife from "@/assets/article-images/dayinthelife.jpg"
 import youtube from "@/assets/article-images/youtube.png"
 import nightmare_institute from "@/assets/article-images/nightmare_institute.jpg"
+import dp_generation from "@/assets/article-images/dp_generation.jpg"
 
 // Add more images like this:
 // import myImage from '@/assets/article-images/my-image.png';
@@ -27,9 +28,27 @@ export interface Article {
   image?: string; // Optional image for articles
   video?: string; // Optional video for articles
   youtubeUrl?: string; // Optional YouTube URL instead of video file
+  links?: { title?: string; url: string }[]; // ✅ New property for external references
 }
 
 export const articles: Article[] = [
+  {
+    id: '10',
+    title: 'The dependant generation. ',
+    excerpt: 'Generation that is dependent to each other, particularly parents.',
+    publishedAt: '2024-06-11',
+    readTime: 8,
+    tags: ['Generation', 'Society', 'Comments'],
+    links: [
+    { title: "The Guardian", url: "https://www.theguardian.com/society/2014/mar/24/dependent-generation-half-young-european-adults-live-parents" },
+    //{ title: "Nature", url: "https://www.nature.com/" }
+  ],
+    // Example YouTube URL - replace with actual video URL when you have one
+    image: dp_generation, // Example YouTube URL
+    content: `
+Writing...
+`
+  },
   {
     id: '9',
     title: 'SAMSIFL - an institution giving only nightmares',
@@ -37,6 +56,10 @@ export const articles: Article[] = [
     publishedAt: '2024-04-21',
     readTime: 8,
     tags: ['InYaz', 'Comments', 'Hate'],
+    links: [
+    //{ title: "New Scientist", url: "https://www.newscientist.com/" },
+    //{ title: "Nature", url: "https://www.nature.com/" }
+  ],
     // Example YouTube URL - replace with actual video URL when you have one
     image: nightmare_institute, // Example YouTube URL
     content: `

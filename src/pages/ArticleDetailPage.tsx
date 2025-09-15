@@ -150,6 +150,27 @@ const ArticleDetailPage = () => {
         <div className="mt-6 text-base font-bold text-gray-900 dark:text-gray-100 tracking-wide">
           {article.content.split(/\s+/).filter(Boolean).length} WORDS
         </div>
+
+        {/* References / External Links */}
+        {article.links && article.links.length > 0 && (
+          <div className="flex flex-col gap-1 mt-6">
+            <span className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-1 font-sans">References</span>
+            {article.links.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-500 text-base md:text-lg font-semibold font-sans"
+                style={{ color: '#ec4899' }}
+              >
+                <RoughNotation type="underline" onHover={true} color="#ec4899">
+                  <span>{link.title || link.url}</span>
+                </RoughNotation>
+              </a>
+            ))}
+          </div>
+        )}
       </article>
 
       {/* Next Up Section */}
@@ -157,8 +178,8 @@ const ArticleDetailPage = () => {
         <div className="flex justify-between gap-12 items-start">
           {prevArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontWeight: 700 }}>Previous Article</span>
-              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold font-sans" style={{ fontWeight: 700 }}>
+              <span className="text-2xl font-bold text-foreground mb-3 font-sans">Previous Article</span>
+              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold font-sans">
                 <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{prevArticle.title}</span>
                 </RoughNotation>
@@ -167,8 +188,8 @@ const ArticleDetailPage = () => {
           )}
           {nextArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontWeight: 700 }}>Next Up</span>
-              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold font-sans" style={{ fontWeight: 700 }}>
+              <span className="text-2xl font-bold text-foreground mb-3 font-sans">Next Up</span>
+              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold font-sans">
                 <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{nextArticle.title}</span>
                 </RoughNotation>
