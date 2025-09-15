@@ -274,22 +274,32 @@ export const articles: Article[] = [
     image: 'https://images.newscientist.com/wp-content/uploads/2025/09/03173025/SEI_264253367.jpg?width=628',
     vocabularies: [
       {
-        unit: "Unit 1 - Placeholder",
+        unit: "Brain implants relieve chronic pain", // Example unit
         vocabularies: [
-          { word: 'Artificial Intelligence', definition: 'Definition of Artificial Intelligence', explanation: 'Explanation of Artificial Intelligence' },
-          { word: 'Automation', definition: 'Definition of Automation', explanation: 'Explanation of Automation' },
-          { word: 'Machine Learning', definition: 'Definition of Machine Learning', explanation: 'Explanation of Machine Learning' }
+          { word: 'Affects up', definition: 'To have an impact on; influences a particular number or group.', explanation: 'Shows how many people or things are influenced. Useful for IELTS Writing Task 1 or 2 when describing statistics.' },
+          { word: 'Fundamental changes', definition: 'Basic and important alterations that have a significant impact.', explanation: 'Means big and basic changes. Good for IELTS Writing Task 2 or Speaking about progress or new ideas.' },
+          { word: 'Standard therapies', definition: 'Commonly accepted treatments that are widely used in the medical community.', explanation: 'Refers to usual or common medical treatments. Use in IELTS Writing Task 1 or 2 when comparing treatments.' },
+          { word: 'one-size-fits-all approach', definition: 'A method or solution that is applied uniformly to all cases, without individual adaptation.', explanation: 'Describes a method that is not personalized. Useful for IELTS Writing Task 2 when criticizing general solutions.' },
+          { word: 'bespoke', definition: 'Custom-made or tailored to the needs of an individual.', explanation: 'Means made for a specific person. Good for IELTS Speaking or Writing Task 2 about personalized solutions.' },
+          { word: 'underwent', definition: 'Experienced or was subjected to (a process or treatment).', explanation: 'Means someone had or experienced something. Useful in IELTS Writing Task 1 (process) or Task 2 (personal experience).' },
+          { word: 'fine-tuning', definition: 'Making small adjustments to improve performance or effectiveness.', explanation: 'Means making small changes to improve something. Can be used in IELTS Writing Task 2 or Speaking about improvements.' },
+          { word: 'interfere', definition: 'To get in the way of or prevent something from happening smoothly.', explanation: 'Means to stop or disturb something. Useful for IELTS Writing Task 2 about problems or obstacles.' },
+          { word: 'leverage', definition: 'To use something to maximum advantage.', explanation: 'Means to use something effectively. Good for IELTS Writing Task 2 or Speaking about using resources or technology.' },
+          { word: 'invasive methods', definition: 'Medical procedures that involve entering the body, often by cutting or inserting instruments.', explanation: 'Means medical treatments that go inside the body. Use in IELTS Writing Task 1 or 2 when comparing medical techniques.' }
         ],
         interestingSentences: [
-          { sentence: '...has helped relieve people of previously untreatable pain', usage: 'Case Study' },
-          { sentence: 'The integration of AI into daily life raises both opportunities and ethical concerns.', usage: 'Discussion' }
+          { sentence: '...has helped relieve people of previously untreatable pain', usage: 'Task 2' },
+          { sentence: 'another challenge will be economics and scaling of this', usage: 'Task 2' }
         ]
       },
       {
-        unit: "Unit 2 - Human Species", // Example additional unit
+        unit: "Ligh-based AI can generate images without huge energy consumption", // Example additional unit
         vocabularies: [
-          { word: 'Homo sapiens', definition: 'Modern human species', explanation: 'The only surviving species of the genus Homo' },
-          { word: 'Evolution', definition: 'Gradual change in species', explanation: 'The process that led to modern humans' }
+          { word: 'conventional', definition: 'Based on or in accordance with what is generally done or believed; traditional.', explanation: 'Means traditional or usual. Useful in IELTS Writing Task 1 or 2 when comparing old and new ways.' },
+          { word: 'encodes', definition: 'To convert information into a particular form, especially for processing or storage.', explanation: 'Means to change information into another form. Good for IELTS Writing Task 2 or Speaking about technology.' },
+          { word: 'a set of', definition: 'A group or collection of things that belong together or are used together.', explanation: 'Means a group of things. Useful for IELTS Writing Task 1 (data groups) or Task 2 (listing factors).' },
+          { word: 'coherent image', definition: 'An image that is logical, consistent, and forms a unified whole.', explanation: 'Means a clear and connected image or idea. Can be used in IELTS Writing Task 2 or Speaking about communication.' },
+          { word: 'a beam of light', definition: 'A narrow stream of light particles (photons) traveling in the same direction.', explanation: 'Means a narrow line of light. Good for IELTS Writing Task 1 (process diagrams) or Task 2 (science topics).' }
         ],
         interestingSentences: [
           { sentence: 'Humans have evolved unique cognitive abilities over time.', usage: 'Anthropology Lecture' },
