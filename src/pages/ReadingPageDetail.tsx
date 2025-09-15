@@ -65,7 +65,7 @@ const ArticleDetailPage = () => {
             {article.title}
           </h1>
           {article.subheading && (
-            <h2 className="text-xl md:text-2xl font-serif text-muted-foreground mt-0">
+            <h2 className="text-xl md:text-2xl font-serif text-muted-foreground mt-1">
               {article.subheading}
             </h2>
           )}
@@ -96,15 +96,13 @@ const ArticleDetailPage = () => {
                   <tr className="bg-muted">
                     <th className="text-left px-4 py-2">Word</th>
                     <th className="text-left px-4 py-2">Definition</th>
-                    <th className="text-left px-4 py-2">Explanation</th>
                   </tr>
                 </thead>
                 <tbody>
                   {unit.vocabularies.map((vocab, index) => (
                     <tr key={index} className="border-t border-border">
-                      <td className="px-4 py-2 font-medium">{vocab.word}</td>
-                      <td className="px-4 py-2 text-muted-foreground">{vocab.definition}</td>
-                      <td className="px-4 py-2 text-muted-foreground">{vocab.explanation || '-'}</td>
+                      <td className="px-4 py-2 font-bold text-pink-600 border-r border-border align-top">{vocab.word}</td>
+                      <td className="px-4 py-2 text-muted-foreground align-top">{vocab.definition}</td>
                     </tr>
                   ))}
                 </tbody>
