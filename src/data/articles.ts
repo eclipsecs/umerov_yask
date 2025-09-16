@@ -29,6 +29,7 @@ export interface Article {
   video?: string; // Optional video for articles
   youtubeUrl?: string; // Optional YouTube URL instead of video file
   links?: { title?: string; url: string }[]; // ✅ New property for external references
+  quotes?: string[]; // Optional array of quotes for the article
 }
 
 export const articles: Article[] = [
@@ -40,14 +41,17 @@ export const articles: Article[] = [
     readTime: 8,
     tags: ['Generation', 'Society', 'Comments'],
     links: [
-    { title: "The Guardian", url: "https://www.theguardian.com/society/2014/mar/24/dependent-generation-half-young-european-adults-live-parents" },
-    //{ title: "Nature", url: "https://www.nature.com/" }
-  ],
+      { title: "The Guardian", url: "https://www.theguardian.com/society/2014/mar/24/dependent-generation-half-young-european-adults-live-parents" },
+      //{ title: "Nature", url: "https://www.nature.com/" }
+    ],
     // Example YouTube URL - replace with actual video URL when you have one
     image: dp_generation, // Example YouTube URL
     content: `
 Writing...
-`
+`,
+    quotes: [
+      "Living with parents longer reflects both economic challenges and cultural comfort."
+    ]
   },
   {
     id: '9',

@@ -147,6 +147,22 @@ const ArticleDetailPage = () => {
         style={{ fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem' }} // slightly bolder and larger font
       >
         <MarkdownRenderer content={article.content} />
+        {/* Quotes Section */}
+        {article.quotes && article.quotes.length > 0 && (
+          <section className="mt-10">
+            <h2 className="text-xl font-bold text-pink-500 mb-4 font-sans"></h2> {/*/ quotes section*/}
+            <div className="space-y-6">
+              {article.quotes.map((quote, index) => (
+                <blockquote
+                  key={index}
+                  className="border-l-4 border-pink-500 pl-4 italic text-lg text-muted-foreground bg-muted/30 rounded-md py-2"
+                >
+                  “{quote}”
+                </blockquote>
+              ))}
+            </div>
+          </section>
+        )}
         <div className="mt-6 text-base font-bold text-gray-900 dark:text-gray-100 tracking-wide">
           {article.content.split(/\s+/).filter(Boolean).length} WORDS
         </div>
