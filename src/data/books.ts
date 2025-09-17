@@ -33,8 +33,8 @@ export const books: Book[] = [
     publishedYear: 2014,
     genre: "Nonfiction",
     description: "The Anthropocene is the current geological age, in which human activity has profoundly shaped the planet and its biodiversity.",
-    coverImage: "https://m.media-amazon.com/images/I/41EnRRiRetL._UF1000,1000_QL80_.jpg",
-    readingStatus: "completed",
+    coverImage: "https://m.media-amazon.com/images/I/81Ce51P9NEL.jpg",
+    readingStatus: "to-read",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
     downloadUrl: "https://www.alim.org/tafsir/ibn-kathir/?surah=1&ayah=0",
     chapters: [
