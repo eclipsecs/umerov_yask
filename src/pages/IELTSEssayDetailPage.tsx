@@ -107,7 +107,7 @@ const IELTSEssayDetailPage = () => {
       )}
 
       {/* Essay Content */}
-      <article className="prose prose-lg max-w-none" style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 500 }}>
+      <article className="prose text-[18px] max-w-none" style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 500 }}>
         <MarkdownRenderer content={essay.content} />
       </article>
 
