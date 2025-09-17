@@ -21,7 +21,7 @@ const IELTSEssayDetailPage = () => {
 
   if (!essay) {
     return (
-      <div className="container mx-auto px-4 py-12 max-w-4xl text-center">
+      <div className="container mx-auto px-4 py-12 max-w-4xl text-center" style={{ fontFamily: 'Aptos, sans-serif' }}>
         <h1 className="text-3xl font-bold mb-4">Essay Not Found</h1>
         <p className="text-muted-foreground mb-8">
           The essay you're looking for doesn't exist or has been moved.
@@ -34,7 +34,7 @@ const IELTSEssayDetailPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl">
+    <div className="container mx-auto px-4 py-12 max-w-4xl" style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 500 }}>
 
       {/* Essay Header */}
       <header className="mb-12">
@@ -63,13 +63,13 @@ const IELTSEssayDetailPage = () => {
           </div>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-foreground leading-tight">
+        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-foreground leading-tight" style={{ fontFamily: 'Aptos, sans-serif' }}>
           {essay.title}
         </h1>
         
         <Card className="mb-6">
           <CardHeader>
-            <CardTitle className="text-lg">Task Question</CardTitle>
+            <CardTitle className="text-lg" style={{ fontFamily: 'Aptos, sans-serif' }}>Task Question</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-foreground/90 leading-relaxed">
@@ -91,7 +91,7 @@ const IELTSEssayDetailPage = () => {
       {essay.task === 'task1' && essay.image && (
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-lg">Task 1 Visual</CardTitle>
+            <CardTitle className="text-lg" style={{ fontFamily: 'Aptos, sans-serif' }}>Task 1 Visual</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex justify-center">
@@ -107,14 +107,14 @@ const IELTSEssayDetailPage = () => {
       )}
 
       {/* Essay Content */}
-      <article className="prose prose-lg max-w-none">
+      <article className="prose prose-lg max-w-none" style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 500 }}>
         <MarkdownRenderer content={essay.content} />
       </article>
 
       {/* Essay Analysis */}
       <Card className="mt-12 border-none shadow-none">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
+          <CardTitle className="flex items-center gap-2" style={{ fontFamily: 'Aptos, sans-serif' }}>
             <Award className="w-5 h-5 text-pink-500 dark:text-pink-500 font-bold" />
             Essay Analysis
           </CardTitle>
@@ -153,13 +153,13 @@ const IELTSEssayDetailPage = () => {
         <div className="flex justify-between gap-12 items-start">
           {prevEssay && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Previous Essay</span>
+              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 700 }}>Previous Essay</span>
               <Link
                 to={`/ielts-essays/${prevEssay.id}`}
                 onMouseEnter={() => setHoveredPrev(true)}
                 onMouseLeave={() => setHoveredPrev(false)}
                 className="text-pink-500 text-base md:text-lg font-semibold"
-                style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}
+                style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 700 }}
               >
                 <RoughNotation type="underline" show={hoveredPrev} color="#ec4899" strokeWidth={4} animationDuration={500}>
                   <span>{prevEssay.title}</span>
@@ -169,13 +169,13 @@ const IELTSEssayDetailPage = () => {
           )}
           {nextEssay && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}>Next Essay</span>
+              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 700 }}>Next Essay</span>
               <Link
                 to={`/ielts-essays/${nextEssay.id}`}
                 onMouseEnter={() => setHoveredNext(true)}
                 onMouseLeave={() => setHoveredNext(false)}
                 className="text-pink-500 text-base md:text-lg font-semibold"
-                style={{ fontFamily: 'ui-sans-serif, system-ui, sans-serif', fontWeight: 700 }}
+                style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 700 }}
               >
                 <RoughNotation type="underline" show={hoveredNext} color="#ec4899" strokeWidth={4} animationDuration={500}>
                   <span>{nextEssay.title}</span>
