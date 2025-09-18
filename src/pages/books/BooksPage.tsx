@@ -48,7 +48,7 @@ const BooksPage = () => {
           Library
         </h1>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          A curated collection of books with personal reflections and insights
+          A curated collection of books with personal reflections and insights.
         </p>
       </div>
 
@@ -131,7 +131,10 @@ const BooksPage = () => {
                 return true;
             }
           })
-          .filter(book => book.title.toLowerCase().includes(searchQuery.toLowerCase()))
+          .filter(book => 
+            book.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            book.author.toLowerCase().includes(searchQuery.toLowerCase())
+          )
           .sort((a, b) => b.id.localeCompare(a.id)) // Newest books on top
           .map((book) => (
             <Link 

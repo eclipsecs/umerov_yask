@@ -55,7 +55,7 @@ const ArticleDetailPage = () => {
         className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors"
       >
         <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
-        Back to Readings
+        Back to Journals
       </Link>
 
       {/* Article Header */}
