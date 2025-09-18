@@ -1254,7 +1254,7 @@ export const books: Book[] = [
     coverImage: "https://images.uzum.uz/cv65oclpb7f9qcngdr8g/original.jpg",
     readingStatus: "completed",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
-    downloadUrl: "# Add your download link here",
+    downloadUrl: "# https://libgen.li/index.php?req=to+live+yu+hua&columns%5B%5D=t&columns%5B%5D=a&columns%5B%5D=s&columns%5B%5D=y&columns%5B%5D=p&columns%5B%5D=i&objects%5B%5D=f&objects%5B%5D=e&objects%5B%5D=s&objects%5B%5D=a&objects%5B%5D=p&objects%5B%5D=w&topics%5B%5D=l&topics%5B%5D=c&topics%5B%5D=f&topics%5B%5D=a&topics%5B%5D=m&topics%5B%5D=r&topics%5B%5D=s&res=100&filesuns=all",
     chapters: [
       {
         id: "ch1",

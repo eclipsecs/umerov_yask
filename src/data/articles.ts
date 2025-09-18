@@ -37,7 +37,7 @@ export const articles: Article[] = [
     id: '10',
     title: 'The dependant generation. ',
     excerpt: 'Generation that is dependent to each other, particularly parents.',
-    publishedAt: '2024-06-11',
+    publishedAt: '2024-05-12',
     readTime: 8,
     tags: ['Generation', 'Society', 'Comments'],
     links: [
@@ -57,7 +57,7 @@ Writing...
     id: '9',
     title: 'SAMSIFL - an institution giving only nightmares',
     excerpt: 'My honest experience studying at SAMSIFL and the challenges I faced over four years.',
-    publishedAt: '2024-04-21',
+    publishedAt: '2024-04-11',
     readTime: 8,
     tags: ['InYaz', 'Comments', 'Hate'],
     links: [
@@ -94,7 +94,7 @@ As I move on to the next chapter, I carry with me a sense of realism about what 
     id: '8',
     title: 'Learning from articles',
     excerpt: 'How reading articles helps me learn, think critically, and see the world differently.',
-    publishedAt: '2024-04-21',
+    publishedAt: '2024-03-29',
     readTime: 9,
     tags: ['Travelling', 'Lex Fridman', 'Advice'],
     youtubeUrl: "https://www.youtube.com/watch?v=AaGWZBWaUzc",
@@ -139,7 +139,7 @@ So I keep reading, article by article, trusting that each one will leave its mar
     id: '7',
     title: 'Should I travel or explore through papers',
     excerpt: 'Comparing traveling in real life and learning through books or research papers.',
-    publishedAt: '2024-04-21',
+    publishedAt: '2024-03-27',
     readTime: 7,
     tags: ['Travelling', 'Lex Fridman', 'Advice'],
     // Example YouTube URL - replace with actual video URL when you have one
@@ -192,7 +192,7 @@ Traveling fills us with real moments and emotions; reading gives us context, per
     id: '6',
     title: 'Reading Walkthroughs: YouTube',
     excerpt: 'Creating IELTS Reading walkthroughs on YouTube and what I learned from it.',
-    publishedAt: '2024-04-25',
+    publishedAt: '2024-03-24',
     readTime: 9,
     tags: ['Technology', 'Writing', 'Communication'],
     // Example YouTube URL - replace with actual video URL when you have one
@@ -245,7 +245,7 @@ Continuing to make these walkthroughs feels meaningful because it keeps me conne
     id: '5',
     title: 'Should parents decide the baby\'s traits',
     excerpt: 'The ethical questions around parents choosing traits for their children.',
-    publishedAt: '2024-04-26',
+    publishedAt: '2024-03-21',
     readTime: 9,
     tags: ['Baby', 'Parenting', 'Genetics'],
     // Example YouTube URL - replace with actual video URL when you have one
@@ -305,7 +305,7 @@ In the end, the question is not simply whether parents should decide the baby's 
     id: '4',
     title: 'If blue-collar job sucks. Why do them?',
     excerpt: 'Why people work blue-collar jobs and the value behind them.',
-    publishedAt: '2024-04-27',
+    publishedAt: '2024-03-19',
     readTime: 11,
     tags: ['Hierarchy', 'Jobs'],
     youtubeUrl: "https://www.youtube.com/watch?v=I-hyT3Dw2eo",
@@ -373,7 +373,7 @@ Looking back, I’m grateful I had the chance to experience both the factory flo
     id: '3',
     title: 'Annoying Day in the Life videos',
     excerpt: 'My thoughts on Day in the Life videos and how they affect viewers.',
-    publishedAt: '2024-04-29',
+    publishedAt: '2024-03-15',
     readTime: 8,
     tags: ['YouTube', 'Trend', 'Trap'],
     // Example: This article would have a video with thumbnail
@@ -435,7 +435,7 @@ Maybe the best trend we could start is one of kindness: to ourselves, and to oth
     id: '2',
     title: 'Computer science major in an almost AI world',
     excerpt: 'My experience studying computer science while AI is changing coding jobs.',
-    publishedAt: '2024-05-03',
+    publishedAt: '2024-03-03',
     readTime: 8,
     tags: ['AI', 'Coding', 'Opinion'],
     video: oop_sucks,
@@ -488,8 +488,8 @@ In the end, I’m grateful to be studying computer science at such a pivotal mom
     id: '1',
     title: 'How to have consistency',
     excerpt: 'Why is it so hard to stay consistent?',
-    publishedAt: '2024-05-05',
-    readTime: 3,
+    publishedAt: '2024-03-01',
+    readTime: 5,
     tags: ['YouTube', 'Trend', 'Trap'],
     // Example: This article would have a video with thumbnail
     // video: codingDemoVideo, // <-- Add video here when you have one

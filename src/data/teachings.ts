@@ -22,7 +22,7 @@ export const teachings: Teaching[] = [
     id: 't17',
     title: 'Doing great things and being a human',
     excerpt: 'Doing everything you can to help, but also forgetting the small parts',
-    publishedAt: '2024-03-10',
+    publishedAt: '2024-02-16',
     readTime: 3,
     tags: ['YouTube', 'Trend', 'Trap'],
     image: dayinthelife,
@@ -45,7 +45,7 @@ If I were to join the trend myself, I would use it not to showcase perfection, b
     id: 't16',
     title: 'Are you a teacher?',
     excerpt: 'Do you have the guts to be one?',
-    publishedAt: '2024-03-10',
+    publishedAt: '2025-02-14',
     readTime: 3,
     tags: ['YouTube', 'Trend', 'Trap'],
     image: dayinthelife,
@@ -68,7 +68,7 @@ If I were to join the trend myself, I would use it not to showcase perfection, b
     id: 't15',
     title: 'Love-hate reationship with ChatGPT',
     excerpt: 'I love ChatGPT, but I hate how it makes me feel sometimes.',
-    publishedAt: '2023-02-12',
+    publishedAt: '2025-02-12',
     readTime: 3,
     tags: ['AI', 'Learning', 'Opinion'],
     video: oop_sucks,
@@ -86,7 +86,7 @@ AI is accelerating everything, but intentional learning still matters. Use AI as
     id: 't14',
     title: 'How did I improve my reading score.',
     excerpt: 'One person that transformed my reading skills.',
-    publishedAt: '2023-03-10',
+    publishedAt: '2025-02-10',
     readTime: 3,
     tags: ['YouTube', 'Trend', 'Trap'],
     image: dayinthelife,
@@ -109,7 +109,7 @@ If I were to join the trend myself, I would use it not to showcase perfection, b
     id: 't13',
     title: 'Results or salary?',
     excerpt: 'Which one to chase in between? Salary or results?.',
-    publishedAt: '2024-01-20',
+    publishedAt: '2025-02-06',
     readTime: 4,
     tags: ['Work', 'Mindset'],
     content: `# Purpose and work
@@ -120,7 +120,7 @@ Short, actionable lessons will live here. Use markdown as needed.`
     id: 't12',
     title: 'When should start learning a language',
     excerpt: 'Choosing the right moment. Although, there is no such thing.',
-    publishedAt: '2024-01-25',
+    publishedAt: '2025-02-03',
     readTime: 6,
     tags: ['Ethics', 'Technology'],
     youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
@@ -132,7 +132,7 @@ Balance tools with values.`
     id: 't11',
     title: 'American accent',
     excerpt: 'How did learn to speak like Americans. Or am I an American now?',
-    publishedAt: '2025-09-01',
+    publishedAt: '2025-01-29',
     readTime: 5,
     tags: ['English', 'Communication', 'Skills'],
     content: `
@@ -149,7 +149,7 @@ Remember, making mistakes is part of the learning process. Embrace feedback and 
     id: 't10',
     title: 'Task 1 is a mix of madness and precision',
     excerpt: 'How to approach IELTS writing tasks with confidence and structure.',
-    publishedAt: '2025-09-05',
+    publishedAt: '2025-01-27',
     readTime: 6,
     tags: ['IELTS', 'Writing', 'Exam'],
     content: `
@@ -166,7 +166,7 @@ Practice timed writing to improve your speed and accuracy. Reviewing model essay
     id: 't9',
     title: 'Articles are like steroids',
     excerpt: 'Can reading articles help to grow vocabulary?.',
-    publishedAt: '2025-09-10',
+    publishedAt: '2025-01-25',
     readTime: 4,
     tags: ['Grammar', 'English', 'Basics'],
     content: `
@@ -183,7 +183,7 @@ Don’t hesitate to consult grammar references or seek feedback to clarify doubt
     id: 't8',
     title: 'Always chasing language',
     excerpt: 'What did I acquire while teaching a language.',
-    publishedAt: '2025-09-15',
+    publishedAt: '2025-01-22',
     readTime: 3,
     tags: ['Motivation', 'Learning', 'Mindset'],
     content: `
@@ -200,7 +200,7 @@ Remember why you started and visualize the benefits of mastering the language to
     id: 't7',
     title: 'Telegram courses',
     excerpt: 'My opinion about marathons, courses: and a slight honesty.',
-    publishedAt: '2025-09-20',
+    publishedAt: '2025-01-18',
     readTime: 5,
     tags: ['Learning Centre', 'Education', 'Tips'],
     content: `
@@ -217,7 +217,7 @@ Be proactive in seeking feedback and practicing outside of scheduled sessions to
     id: 't6',
     title: 'Language teaching is easy? Lets debate...',
     excerpt: 'Uncovering all the nonsense you might have heard.',
-    publishedAt: '2025-09-25',
+    publishedAt: '2025-01-15',
     readTime: 6,
     tags: ['Teaching', 'Philosophy', 'Learning'],
     content: `
@@ -234,7 +234,7 @@ Lifelong learning is a continuous journey; fostering a growth mindset helps lear
     id: 't5',
     title: 'Teaching English to anyone',
     excerpt: 'Dealing with people from all social backgrounds.',
-    publishedAt: '2025-10-01',
+    publishedAt: '2025-01-13',
     readTime: 4,
     tags: ['English', 'Teaching', 'Conversation'],
     content: `
@@ -251,7 +251,7 @@ Remember, making mistakes is part of learning. Celebrate small wins and keep the
     id: 't4',
     title: 'Grammar multiplied by infinity',
     excerpt: 'Why Grammar is dull and important simultaneously.',
-    publishedAt: '2025-10-05',
+    publishedAt: '2025-01-10',
     readTime: 3,
     tags: ['Grammar', 'Teaching', 'Fun'],
     content: `
@@ -268,7 +268,7 @@ Mix up your lessons with quizzes and group work to keep the energy high and the 
     id: 't3',
     title: 'Ensuring a student thinks clearly',
     excerpt: 'Spoonfeeding student brains in the right way.',
-    publishedAt: '2025-10-10',
+    publishedAt: '2025-01-08',
     readTime: 4,
     tags: ['Motivation', 'Teaching', 'Mindset'],
     content: `
@@ -285,7 +285,7 @@ Create a supportive environment where mistakes are okay and learning feels safe 
     id: 't2',
     title: 'How to choose a tutor',
     excerpt: 'I dont mean to hate, just an opinion debunking about bull***t.',
-    publishedAt: '2025-10-15',
+    publishedAt: '2025-01-05',
     readTime: 3,
     tags: ['Learning Centre', 'Myths', 'Education'],
     content: `
@@ -302,19 +302,14 @@ Knowing the facts can help you choose the right place and get the most out of yo
     id: 't1',
     title: 'Writing is fun but not always',
     excerpt: 'How enjoying its gets when you teach writing, but the challenges to deal with too.',
-    publishedAt: '2025-10-20',
+    publishedAt: '2025-01-03',
     readTime: 5,
     tags: ['Writing', 'Teaching', 'Skills'],
     content: `
-# How to Teach Writing Easily
+## The impact writing had and has on my life.
 
-Break writing into small steps: start with simple sentences, then move to paragraphs.
+**Writing...**
 
-Use examples and show how to organize ideas clearly. Encourage students to write about things they care about — it makes the process more enjoyable.
-
-Give gentle feedback focusing on improvement, not perfection. Writing gets easier with practice!
-
-**This is a prompt**
     `
   }
 ];
