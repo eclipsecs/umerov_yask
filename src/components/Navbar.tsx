@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Moon, Sun, Youtube, Menu, Coffee } from 'lucide-react';
+import { Moon, Sun, Youtube, Menu } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -56,10 +56,14 @@ const Navbar = () => {
                 href="https://www.buymeacoffee.com/umerovjavokhir"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-yellow-500 font-light"
+                className="flex items-center gap-2 font-light"
               >
-                <Coffee className="w-5 h-5 text-yellow-500" />
-                <span className="text-sm font-semibold text-yellow-500">Buy me a coffee</span>
+                <img
+                  src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+                  alt="Buy me a coffee"
+                  className="w-5 h-5 filter dark:brightness-0 dark:invert"
+                />
+                <span className="text-black dark:text-yellow-500 font-semibold text-sm">Buy me a coffee</span>
               </a>
             </div>
             {/* Theme Toggle */}
@@ -131,10 +135,14 @@ const Navbar = () => {
                 href="https://www.buymeacoffee.com/umerovjavokhir"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-yellow-500 font-semibold hover:text-yellow-600 transition-colors"
+                className="flex items-center gap-2 font-semibold hover:text-yellow-600 transition-colors"
               >
-                <Coffee className="w-5 h-5 text-yellow-500" />
-                <span className="text-sm">Buy me a coffee</span>
+                <img
+                  src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+                  alt="Buy me a coffee"
+                  className="w-5 h-5 filter dark:brightness-0 dark:invert"
+                />
+                <span className="text-black dark:text-yellow-500 font-semibold text-sm">Buy me a coffee</span>
               </a>
             </div>
           </div>
