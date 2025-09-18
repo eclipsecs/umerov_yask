@@ -45,7 +45,7 @@ const HomePage = () => {
                       className="font-bold"
                     />
                   </h1>
-                  <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-2xl font-bold">
+                  <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-2xl font-sans font-medium">
                     <p>
                       I love sharing thoughts and ideas through writing. This is where I store my ramblings
                       about technology, education, and life observations.
