@@ -50,7 +50,7 @@ const Navbar = () => {
                 className="flex items-center gap-2 text-pink-500 font-light"
               >
                 <Youtube className="w-5 h-5 text-pink-500" />
-                <span className="text-sm font-semibold text-pink-500">YouTube</span>
+                <span className="text-sm font-medium text-black">YouTube</span>
               </a>
               <a
                 href="https://www.buymeacoffee.com/umerovjavokhir"
@@ -63,7 +63,22 @@ const Navbar = () => {
                   alt="Buy me a coffee"
                   className="w-5 h-5 filter dark:brightness-0 dark:invert"
                 />
-                <span className="text-black dark:text-yellow-500 font-semibold text-sm">Buy me a coffee</span>
+                <span className="text-black dark:text-yellow-500 font-medium text-sm">Buy me a coffee</span>
+              </a>
+              <a
+                href="https://t.me/yaskielts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 font-light"
+              >
+                <img
+                  src="https://images.seeklogo.com/logo-png/29/2/telegram-minimal-logo-png_seeklogo-296204.png"
+                  alt="Telegram"
+                  className="w-5 h-5"
+                  style={{ background: 'transparent', display: 'inline-block' }}
+                  aria-hidden="true"
+                />
+                <span className="text-sm font-medium font-bold text-black">Telegram</span>
               </a>
             </div>
             {/* Theme Toggle */}
@@ -129,7 +144,7 @@ const Navbar = () => {
                 className="flex items-center gap-2 text-red-500 font-semibold hover:text-pink-500 transition-colors"
               >
                 <Youtube className="w-5 h-5" />
-                <span className="text-sm">YouTube</span>
+                <span className="text-sm font-medium text-black">YouTube</span>
               </a>
               <a
                 href="https://www.buymeacoffee.com/umerovjavokhir"
@@ -142,7 +157,22 @@ const Navbar = () => {
                   alt="Buy me a coffee"
                   className="w-5 h-5 filter dark:brightness-0 dark:invert"
                 />
-                <span className="text-black dark:text-yellow-500 font-semibold text-sm">Buy me a coffee</span>
+                <span className="text-black dark:text-yellow-500 font-medium text-sm">Buy me a coffee</span>
+              </a>
+              <a
+                href="https://t.me/yaskielts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 font-semibold hover:text-pink-600 transition-colors"
+              >
+                <img
+                  src="https://images.seeklogo.com/logo-png/29/2/telegram-minimal-logo-png_seeklogo-296204.png"
+                  alt="Telegram"
+                  className="w-1 h-5"
+                  style={{ background: 'transparent', display: 'inline-block' }}
+                  aria-hidden="true"
+                />
+                <span className="text-sm font-medium font-bold text-black">Telegram</span>
               </a>
             </div>
           </div>
