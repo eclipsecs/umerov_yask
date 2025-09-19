@@ -106,6 +106,18 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-feature-settings: 'rlig' 1, 'calt' 1;
+    /* More visible square grid, 40x40px, slightly darker neutral gray lines */
+    background-image:
+      linear-gradient(to right, rgba(0,0,0,0.012) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(0,0,0,0.012) 2px, transparent 2px);
+    background-size: 40px 40px;
+  }
+
+  .dark body {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.012) 2px, transparent 2px),
+      linear-gradient(to bottom, rgba(255,255,255,0.012) 2px, transparent 2px);
+    background-size: 40px 40px;
   }
   
   /* Typography Scale */

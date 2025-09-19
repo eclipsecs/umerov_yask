@@ -1,12 +1,28 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Moon, Sun, Youtube, Menu } from 'lucide-react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/contexts/ThemeContext';
 import { cn } from '@/lib/utils';
 
-const Navbar = () => {
+const ThemeSwitch = () => {
   const { theme, toggleTheme } = useTheme();
+  const isLight = theme === 'light';
+
+  return (
+    <button
+      onClick={toggleTheme}
+      aria-label="Toggle theme"
+      className="w-9 h-9 flex items-center justify-center rounded-md border bg-muted hover:bg-muted/80 transition"
+    >
+      {isLight ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+    </button>
+  );
+};
+
+const Navbar = () => {
+  const { theme } = useTheme();
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,27 +46,26 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center justify-center space-x-6 flex-grow">
               {navItems.slice(1).map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="text-black hover:text-pink-500 dark:text-pink-500 dark:hover:text-pink-500 font-semibold text-sm"
+                  className="text-black dark:text-white font-semibold text-sm hover:text-pink-500 dark:hover:text-pink-500"
                 >
                   {item.label}
                 </Link>
               ))}
             </div>
-            <div className="w-px h-5 bg-border mx-3" />
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 ml-12">
               <a 
                 href="https://www.youtube.com/@javokhirsielts" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-pink-500 font-light"
+                className="flex items-center gap-2 font-light"
               >
                 <Youtube className="w-5 h-5 text-pink-500" />
-                <span className="text-sm font-medium text-black">YouTube</span>
+                <span className="text-sm font-medium text-black dark:text-white">YouTube</span>
               </a>
               <a
                 href="https://www.buymeacoffee.com/umerovjavokhir"
@@ -63,53 +78,18 @@ const Navbar = () => {
                   alt="Buy me a coffee"
                   className="w-5 h-5 filter dark:brightness-0 dark:invert"
                 />
-                <span className="text-black dark:text-yellow-500 font-medium text-sm">Buy me a coffee</span>
-              </a>
-              <a
-                href="https://t.me/yaskielts"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 font-light"
-              >
-                <img
-                  src="https://images.seeklogo.com/logo-png/29/2/telegram-minimal-logo-png_seeklogo-296204.png"
-                  alt="Telegram"
-                  className="w-5 h-5"
-                  style={{ background: 'transparent', display: 'inline-block' }}
-                  aria-hidden="true"
-                />
-                <span className="text-sm font-medium font-bold text-black">Telegram</span>
+                <span className="text-sm font-medium text-black dark:text-white">Buy me a coffee</span>
               </a>
             </div>
             {/* Theme Toggle */}
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              className="h-8 w-8 hover:bg-muted/50 ml-4"
-            >
-              {theme === 'light' ? (
-                <Moon className="w-4 h-4" />
-              ) : (
-                <Sun className="w-4 h-4" />
-              )}
-            </Button>
+            <div className="ml-6">
+              <ThemeSwitch />
+            </div>
           </div>
 
           {/* Mobile Navigation */}
           <div className="md:hidden flex items-center">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              className="h-8 w-8 hover:bg-muted/50"
-            >
-              {theme === 'light' ? (
-                <Moon className="w-4 h-4" />
-              ) : (
-                <Sun className="w-4 h-4" />
-              )}
-            </Button>
+            <ThemeSwitch />
             <Button
               variant="ghost"
               size="icon"
@@ -130,7 +110,7 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="block text-pink-500 font-semibold text-base hover:text-pink-600 transition-colors"
+                  className="block font-semibold text-base text-black dark:text-white hover:text-pink-600 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -141,10 +121,10 @@ const Navbar = () => {
                 href="https://www.youtube.com/@javokhirsielts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-red-500 font-semibold hover:text-pink-500 transition-colors"
+                className="flex items-center gap-2 font-semibold hover:text-pink-500 transition-colors"
               >
-                <Youtube className="w-5 h-5" />
-                <span className="text-sm font-medium text-black">YouTube</span>
+                <Youtube className="w-5 h-5 text-red-500" />
+                <span className="text-sm font-medium text-black dark:text-white">YouTube</span>
               </a>
               <a
                 href="https://www.buymeacoffee.com/umerovjavokhir"
@@ -157,22 +137,7 @@ const Navbar = () => {
                   alt="Buy me a coffee"
                   className="w-5 h-5 filter dark:brightness-0 dark:invert"
                 />
-                <span className="text-black dark:text-yellow-500 font-medium text-sm">Buy me a coffee</span>
-              </a>
-              <a
-                href="https://t.me/yaskielts"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 font-semibold hover:text-pink-600 transition-colors"
-              >
-                <img
-                  src="https://images.seeklogo.com/logo-png/29/2/telegram-minimal-logo-png_seeklogo-296204.png"
-                  alt="Telegram"
-                  className="w-1 h-5"
-                  style={{ background: 'transparent', display: 'inline-block' }}
-                  aria-hidden="true"
-                />
-                <span className="text-sm font-medium font-bold text-black">Telegram</span>
+                <span className="text-sm font-medium text-black dark:text-white">Buy me a coffee</span>
               </a>
             </div>
           </div>
