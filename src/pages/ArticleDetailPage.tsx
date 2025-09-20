@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Tag, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
@@ -70,7 +70,7 @@ const ArticleDetailPage = () => {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl" style={{ fontFamily: 'Aptos, sans-serif' }}>
       {/* Back Button */}
-      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif' }}>
+      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors no-underline hover:no-underline" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
         <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
         Back to Articles
       </Link>
@@ -134,29 +134,31 @@ const ArticleDetailPage = () => {
 
       {/* Article Content */}
       <article
-        className="mt-10 prose prose-pink dark:prose-invert max-w-4xl mx-auto font-normal
-        prose-p:text-[1.35rem] md:prose-p:text-[1.5rem] prose-p:leading-8 md:prose-p:leading-9
-        prose-headings:font-bold prose-headings:tracking-tight
-        prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3
-        prose-ul:my-4 prose-ol:my-4 prose-li:my-1.5
-        prose-blockquote:border-l-2 prose-blockquote:border-pink-400 prose-blockquote:pl-4 prose-blockquote:italic
-        prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md
-        prose-pre:rounded-lg prose-pre:p-4
-        prose-img:rounded-lg prose-img:shadow-md
-        text-gray-800 dark:text-gray-200"
-        style={{ fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem', fontFamily: 'Aptos, sans-serif' }} // slightly bolder and larger font
+        className={
+          "mt-10 prose prose-pink dark:prose-invert max-w-4xl mx-auto font-normal " +
+          "prose-p:text-[1.35rem] md:prose-p:text-[1.5rem] prose-p:leading-8 md:prose-p:leading-9 " +
+          "prose-headings:font-bold prose-headings:tracking-tight " +
+          "prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3 " +
+          "prose-ul:my-4 prose-ol:my-4 prose-li:my-1.5 " +
+          "prose-blockquote:border-l-2 prose-blockquote:border-pink-400 prose-blockquote:pl-4 " +
+          "prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md " +
+          "prose-pre:rounded-lg prose-pre:p-4 " +
+          "prose-img:rounded-lg prose-img:shadow-md " +
+          "text-gray-800 dark:text-gray-200"
+        }
+        style={{ fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem', fontFamily: 'Aptos, sans-serif' }}
       >
         <MarkdownRenderer content={article.content} />
         {/* Quotes Section */}
         {article.quotes && article.quotes.length > 0 && (
           <section className="mt-10">
-            <h2 className="text-xl font-bold text-pink-500 mb-4" style={{ fontFamily: 'Aptos, sans-serif' }}></h2> {/*/ quotes section*/}
-            <div className="space-y-6">
+            <h2 className="text-xl font-bold text-pink-500 mb-2 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Quotes</h2>
+            <div className="space-y-4">
               {article.quotes.map((quote, index) => (
                 <blockquote
                   key={index}
-                  className="border-l-4 border-green-500 pl-4 text-lg text-dark-900 dark:text-green-100 font-medium bg-muted/30 rounded-md py-2"
-                  style={{ fontFamily: 'Aptos, sans-serif' }}
+                  className="border-l-4 border-pink-400 pl-4 text-lg text-gray-900 dark:text-gray-100 font-medium bg-muted/30 rounded-md py-2"
+                  style={{ fontFamily: 'Aptos, sans-serif', fontStyle: 'normal' }}
                 >
                   “{quote}”
                 </blockquote>
@@ -164,39 +166,68 @@ const ArticleDetailPage = () => {
             </div>
           </section>
         )}
-        <div className="mt-6 text-base font-bold text-gray-900 dark:text-gray-100 tracking-wide" style={{ fontFamily: 'Aptos, sans-serif' }}>
+        <div className="mt-6 text-lg font-bold text-gray-900 dark:text-gray-100 tracking-wide text-left" style={{ fontFamily: 'Aptos, sans-serif' }}>
           {article.content.split(/\s+/).filter(Boolean).length} WORDS
         </div>
 
         {/* References / External Links */}
         {article.links && article.links.length > 0 && (
-          <div className="flex flex-col gap-1 mt-6">
-            <span className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-1" style={{ fontFamily: 'Aptos, sans-serif' }}>References</span>
-            {article.links.map((link, index) => (
-              <a
-                key={index}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-pink-500 text-base md:text-lg font-semibold"
-                style={{ color: '#ec4899', fontFamily: 'Aptos, sans-serif' }}
-              >
-                <RoughNotation type="underline" onHover={true} color="#ec4899">
-                  <span>{link.title || link.url}</span>
-                </RoughNotation>
-              </a>
-            ))}
+          <div className="mt-6">
+            <h2 className="text-2xl font-bold text-foreground mb-1 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>References</h2>
+            <ul className="space-y-2">
+              {article.links.map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-pink-500 text-base md:text-lg font-semibold no-underline hover:no-underline font-sans"
+                    style={{ color: '#ec4899', fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}
+                  >
+                    <RoughNotation type="underline" onHover={true} color="#ec4899">
+                      <span>{link.title || link.url}</span>
+                    </RoughNotation>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
       </article>
+
+      {/* Enjoyed Reading Section */}
+      <section className="mt-16">
+        <div
+          className="bg-gray-100 dark:bg-gray-600 rounded-lg p-6 flex flex-row items-center justify-between gap-4 border border-gray-300 dark:border-gray-600"
+          style={{ fontFamily: 'Aptos, sans-serif' }}
+        >
+          <div className="flex flex-col items-start gap-2">
+            <div className="text-4xl font-bold text-gray-900 dark:text-gray-100">
+              Enjoyed reading?
+            </div>
+            <div className="text-foreground/90 text-lg">
+              Feel free to connect with me or explore more insights on my pages.
+            </div>
+          </div>
+          <a
+            href="https://twitter.com/yourhandle"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2 rounded-md font-semibold text-white bg-black dark:bg-pink-600 hover:bg-pink-700 dark:hover:bg-pink-500 transition-colors"
+            style={{ fontFamily: 'Aptos, sans-serif' }}
+          >
+            Follow Me
+          </a>
+        </div>
+      </section>
 
       {/* Next Up Section */}
       <section className="mt-16">
         <div className="flex justify-between gap-12 items-start">
           {prevArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'Aptos, sans-serif' }}>Previous Article</span>
-              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'Aptos, sans-serif' }}>
+              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Previous Article</span>
+              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
                 <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{prevArticle.title}</span>
                 </RoughNotation>
@@ -205,8 +236,8 @@ const ArticleDetailPage = () => {
           )}
           {nextArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'Aptos, sans-serif' }}>Next Up</span>
-              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold" style={{ fontFamily: 'Aptos, sans-serif' }}>
+              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Next Up</span>
+              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
                 <RoughNotation type="underline" onHover={true} color="#ec4899">
                   <span>{nextArticle.title}</span>
                 </RoughNotation>

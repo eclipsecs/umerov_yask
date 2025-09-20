@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Compita";
+  src: url("/src/assets/fonts/Compita-Medium.woff2") format("woff2"),
+       url("/src/assets/fonts/Compita-Medium.woff") format("woff"),
+       url("/src/assets/fonts/Compita-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,7 +53,7 @@
     --ring: 220 90% 50%;
     
     /* Typography Scale */
-    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-sans: 'Compita', system-ui, sans-serif;
     --font-serif: 'Merriweather', Georgia, serif;
     
     /* Spacing & Layout */
