@@ -11,6 +11,7 @@ import chart_1_7 from '@/assets/ielts-task1-images/chart_1_7.png';
 import chart_1_8 from '@/assets/ielts-task1-images/chart_1_8.png';
 import chart_1_9 from '@/assets/ielts-task1-images/chart_1_9.png';
 import chart_1_10 from '@/assets/ielts-task1-images/chart_1_10.png';
+import chart_1_11 from '@/assets/ielts-task1-images/chart_1_11.png';
 
 export interface IELTSEssay {
   id: string;
@@ -27,6 +28,28 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
+  {
+    id: '111',
+    task: 'task1',
+    title: 'Task One: 11 of 100: Bar Chart',
+    question: 'The chart below shows the percentage of people accessing news via different media in one country in 2013, 2015, and 2017. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 8.0,
+    writingTime: '10 minutes',
+    wordCount: 176,
+    tags: ['Bar Chart'],
+    image: chart_1_11, // Add your image here when available
+    content: `
+
+The bar chart compares the proportion of people using four types of media to watch news in a particular country in three different years: 2013, 2015, and 2017.
+
+Overall, television topped the list as the most popular source of news. While the internet showed a consistent rise over the years, both printed newspapers and radio remained the least preferred ways to access news.
+
+In 2013, almost 80% of people accessed news via television, a figure that fell to just below 70% in 2015 before rising slightly to over 70% in 2017. As for the internet, just over 30% of people used this platform in 2013. This proportion increased by 10%, reaching slightly more than 40% in 2015, and rose significantly in 2017 to approximately 80%.
+
+Usage of printed newspapers declined steadily, from just over 40% in 2013 to 30% in 2015, and then to nearly 20% in 2017. In contrast, just over 30% of people preferred to access news via radio in 2013, and this figure remained stable at exactly 30% in both 2015 and 2017.
+
+`
+  },
   {
     id: '110',
     task: 'task1',
