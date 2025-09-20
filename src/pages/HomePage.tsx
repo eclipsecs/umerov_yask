@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { GooeyText } from '@/components/ui/gooey-text-morphing';
 import RoughNotation from '@/components/RoughNotation';
 import { articles } from '@/data/articles';
 
@@ -28,24 +27,15 @@ const HomePage = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-0 py-20 max-w-4xl">
-        <div className="flex flex-col lg:flex-row items-start gap-6 sm:gap-8 lg:gap-10">
+        <div className="flex flex-col lg:flex-row items-center text-center gap-6 sm:gap-8 lg:gap-10">
           <div className="mx-auto flex justify-center">
-            <div className="text-left w-full">
+            <div className="w-full">
               <div className="flex-1 space-y-8 mx-auto">
                 <div className="space-y-6">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-sans font-bold text-foreground leading-tight mx-auto">
-                    <GooeyText
-                      texts={[
-                        "Hi there", "Hola", "Bonjour", "Hallo", "Ciao", 
-                        "こんにちは", "안녕하세요", "你好", "Привет", "Olá", 
-                        "Hej", "Hoi", "Γεια σας", "مرحبا", "שלום", "Namaste", "Assalomu Aleykum"
-                      ]}
-                      morphTime={0.3}
-                      cooldownTime={1.0}
-                      className="font-bold"
-                    />
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-serif text-gray-900 leading-tight text-left">
+                    Hi, I'm Umerov
                   </h1>
-                  <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-2xl font-sans font-medium">
+                  <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-2xl font-sans font-medium mx-auto text-left">
                     <p>
                       I love sharing thoughts and ideas through writing. This is where I store my ramblings
                       about technology, education, and life observations.
