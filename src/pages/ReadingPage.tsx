@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { FileText } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 import { articles } from '@/data/readings';
 
 const ReadingPage = () => {
@@ -29,7 +28,7 @@ const ReadingPage = () => {
         {articles.map((article) => (
           <Link 
             key={article.id} 
-            to={`/readings/${article.id}`}
+            to={`${article.id}`}
             className="group block border border-border rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 bg-background"
           >
             <div className="aspect-[3/4] relative overflow-hidden bg-muted/20 scale-95">
@@ -52,6 +51,11 @@ const ReadingPage = () => {
             </div>
           </Link>
         ))}
+      </div>
+
+      {/* Outlet for selected article detail */}
+      <div className="mt-6">
+        <Outlet />
       </div>
     </div>
   );

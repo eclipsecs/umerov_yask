@@ -10,7 +10,7 @@ const TeachingsPage = () => {
       <div className="space-y-8 max-w-3xl mx-auto">
         {teachings.map((teaching) => (
           <Link
-            to={`/teaching/${teaching.id}`}
+            to={`/teachings/${teaching.id}`}
             key={teaching.id}
             className="block bg-transparent rounded-lg p-6 transition-all duration-300 shadow-none outline-none"
           >
