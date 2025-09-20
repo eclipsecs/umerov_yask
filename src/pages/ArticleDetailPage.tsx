@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Clock, Tag, Twitter } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, Tag, Twitter, Youtube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
@@ -206,16 +206,17 @@ const ArticleDetailPage = () => {
               Enjoyed reading?
             </div>
             <div className="text-foreground/90 text-lg">
-              Feel free to connect with me or explore more insights on my pages.
+              Now follow me on <span className="font-bold text-pink-500">YouTube</span> before I disappear!
             </div>
           </div>
           <a
-            href="https://twitter.com/yourhandle"
+            href="https://www.youtube.com/@javokhirsielts"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-2 rounded-md font-semibold text-white bg-black dark:bg-pink-600 hover:bg-pink-700 dark:hover:bg-pink-500 transition-colors"
+            className="px-6 py-3 rounded-md font-semibold text-lg flex items-center text-white bg-black dark:bg-pink-600 hover:bg-pink-700 dark:hover:bg-pink-500 transition-colors"
             style={{ fontFamily: 'Aptos, sans-serif' }}
           >
+            <Youtube className="w-6 h-6 mr-2 flex-shrink-0" />
             Follow Me
           </a>
         </div>

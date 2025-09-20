@@ -65,7 +65,7 @@ const Navbar = () => {
                 className="flex items-center gap-2 font-light"
               >
                 <Youtube className="w-5 h-5 text-pink-500" />
-                <span className="text-sm font-medium text-black dark:text-white">YouTube</span>
+                <span className="text-sm font-bold text-black dark:text-white">YouTube</span>
               </a>
               <a
                 href="https://www.buymeacoffee.com/umerovjavokhir"
@@ -78,7 +78,7 @@ const Navbar = () => {
                   alt="Buy me a coffee"
                   className="w-5 h-5 filter dark:brightness-0 dark:invert"
                 />
-                <span className="text-sm font-medium text-black dark:text-white">Buy me a coffee</span>
+                <span className="text-sm font-bold text-black dark:text-white">Buy me a coffee</span>
               </a>
             </div>
             {/* Theme Toggle */}
@@ -124,7 +124,7 @@ const Navbar = () => {
                 className="flex items-center gap-2 font-semibold hover:text-pink-500 transition-colors"
               >
                 <Youtube className="w-5 h-5 text-red-500" />
-                <span className="text-sm font-medium text-black dark:text-white">YouTube</span>
+                <span className="text-sm font-bold text-black dark:text-white">YouTube</span>
               </a>
               <a
                 href="https://www.buymeacoffee.com/umerovjavokhir"
@@ -137,7 +137,7 @@ const Navbar = () => {
                   alt="Buy me a coffee"
                   className="w-5 h-5 filter dark:brightness-0 dark:invert"
                 />
-                <span className="text-sm font-medium text-black dark:text-white">Buy me a coffee</span>
+                <span className="text-sm font-bold text-black dark:text-white">Buy me a coffee</span>
               </a>
             </div>
           </div>

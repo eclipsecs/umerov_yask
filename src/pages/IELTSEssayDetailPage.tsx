@@ -120,28 +120,29 @@ const IELTSEssayDetailPage = () => {
           </CardTitle>
         </CardHeader>
         <CardContent>
+          {/* Essay Analysis numbers and labels - edit sizes here */}
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="text-lg text-pink-500 dark:text-pink-500 font-bold mb-2">
+              <div className="text-xl md:text-2xl text-pink-500 dark:text-pink-500 font-bold mb-2">
                 {essay.bandScore}
               </div>
-              <div className="text-xs text-foreground font-bold">
+              <div className="text-xs md:text-sm text-foreground font-bold">
                 Estimated Band Score
               </div>
             </div>
             <div className="text-center">
-              <div className="text-lg text-pink-500 dark:text-pink-500 font-bold mb-2">
+              <div className="text-xl md:text-2xl text-pink-500 dark:text-pink-500 font-bold mb-2">
                 {essay.wordCount}
               </div>
-              <div className="text-xs text-foreground font-bold">
+              <div className="text-xs md:text-sm text-foreground font-bold">
                 Word Count
               </div>
             </div>
             <div className="text-center">
-              <div className="text-lg text-pink-500 dark:text-pink-500 font-bold mb-2">
+              <div className="text-xl md:text-2xl text-pink-500 dark:text-pink-500 font-bold mb-2">
                 {essay.writingTime}
               </div>
-              <div className="text-xs text-foreground font-bold">
+              <div className="text-xs md:text-sm text-foreground font-bold">
                 Writing Time
               </div>
             </div>

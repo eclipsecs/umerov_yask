@@ -32,7 +32,7 @@ const HomePage = () => {
             <div className="w-full">
               <div className="flex-1 space-y-8 mx-auto">
                 <div className="space-y-6">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-serif text-gray-900 leading-tight text-left">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-serif leading-tight text-gray-900 dark:text-white text-left">
                     Hi, I'm Umerov
                   </h1>
                   <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-2xl font-sans font-medium mx-auto text-left">

@@ -139,7 +139,7 @@ const BooksPage = () => {
           .map((book) => (
             <Link 
               key={book.id} 
-              to={`/book/${book.id}`}
+              to={`/books/${book.id}`}
               className="group block"
             >
               <div className="border border-border/20 rounded-lg overflow-hidden hover:border-border/40 hover:shadow-md transition-all duration-300 bg-background scale-95 hover:scale-100">
