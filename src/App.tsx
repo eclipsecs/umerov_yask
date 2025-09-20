@@ -18,6 +18,7 @@ import EssayDetailPage from "./pages/IELTSEssayDetailPage";
 import BooksPage from "./pages/books/BooksPage";
 import BookDetailPage from "./pages/books/BookDetailPage";
 import NotFound from "./pages/NotFound";
+import TeachingDetailPage from './pages/TeachingDetailPage';
 
 const queryClient = new QueryClient();
 
@@ -35,7 +36,7 @@ const App: React.FC = () => {
                 <Route path="/articles" element={<ArticlesPage />} />
                 <Route path="/article/:id" element={<ArticleDetailPage />} />
                 <Route path="/teachings" element={<TeachingsPage />} />
-                <Route path="/teachings/:id" element={<ArticleDetailPage />} />
+                <Route path="/teachings/:id" element={<TeachingDetailPage />} />
                 <Route path="/readings" element={<JournalsPage />} />
                 <Route path="/readings/:id" element={<ReadingPageDetail />} />
                 <Route path="/ielts-essays" element={<IELTSEssaysPage />} />
