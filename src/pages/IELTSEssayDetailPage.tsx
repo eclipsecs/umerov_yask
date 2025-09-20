@@ -155,7 +155,7 @@ const IELTSEssayDetailPage = () => {
             <div className="flex flex-col items-start text-left">
               <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 700 }}>Previous Essay</span>
               <Link
-                to={`/ielts-essays/${prevEssay.id}`}
+                to={`/ielts-essay/${prevEssay.task}/${prevEssay.id}`}
                 onMouseEnter={() => setHoveredPrev(true)}
                 onMouseLeave={() => setHoveredPrev(false)}
                 className="text-pink-500 text-base md:text-lg font-semibold"
@@ -171,7 +171,7 @@ const IELTSEssayDetailPage = () => {
             <div className="flex flex-col items-start text-left">
               <span className="text-2xl font-bold text-foreground mb-3" style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 700 }}>Next Essay</span>
               <Link
-                to={`/ielts-essays/${nextEssay.id}`}
+                to={`/ielts-essay/${nextEssay.task}/${nextEssay.id}`}
                 onMouseEnter={() => setHoveredNext(true)}
                 onMouseLeave={() => setHoveredNext(false)}
                 className="text-pink-500 text-base md:text-lg font-semibold"
