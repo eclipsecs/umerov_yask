@@ -19,12 +19,21 @@ export const task2Essays: IELTSEssay[] = [
     title: 'Task two: 12 of 100 - Independence and Dependence',
     question: 'Some people think that individuals today are more dependent on each other. Others believe people have become more independent. Discuss both views and give your own opinion.',
     bandScore: 8.5,
-    writingTime: '31 minutes',
-    wordCount: 344,
+    writingTime: '37 minutes',
+    wordCount: 363,
     tags: ['Independence', 'Dependence', 'Society'],
     content: `
 
-Writing...
+In modern societies, the degree to which individuals rely on one another has become a subject of debate. While some argue that people today are more dependent on others than in the past, others claim that advances in technology and social change have fostered greater independence. I believe that although people may appear more autonomous in daily decisions, their lives are ultimately more interdependent than ever.
+
+On the one hand, it is reasonable to suggest that people have become more independent. The digital revolution has allowed individuals to complete tasks that previously required assistance. For instance, online banking enables people to manage their finances without visiting a bank clerk, while remote work allows employees to operate from home rather than relying on physical offices. Moreover, modern education systems encourage independent thinking, urging students to pursue their own research and make informed choices. From this perspective, individuals have greater control over their professional and personal lives compared with earlier generations.
+
+On the other hand, growing complexity in social and economic systems has made individuals highly dependent on one another. Daily conveniences such as electricity, healthcare, and transport rely on vast networks of professionals and institutions. For example, while a person may shop independently through a mobile application, that process still depends on software developers, delivery staff, and logistical infrastructure. In addition, the emotional dimension of human life remains unchanged: people continue to depend on friends and family for companionship and support, especially in times of crisis. Therefore, even apparent independence is underpinned by invisible forms of reliance.
+
+In my view, modern life has created an illusion of independence while reinforcing underlying interdependence. People may no longer need neighbors to borrow tools or ask for directions, yet they are more reliant on complex systems and expertise than ever before. Rather than being purely independent or dependent, individuals today live in a state of mutual reliance, where autonomy in small matters is balanced by deep connections to society at large.
+
+In conclusion, while individuals today enjoy more freedom in daily decision-making, their dependence on social, economic, and technological systems has only intensified. Acknowledging this interdependence is essential for building resilient communities in an increasingly interconnected world.
+
 `
   },
   {
