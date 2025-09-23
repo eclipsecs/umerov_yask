@@ -22,11 +22,26 @@ export const articles: Article[] = [
     image: 'https://images.newscientist.com/wp-content/uploads/2025/09/17170605/SEI_266220138.jpg?width=628',
     vocabularies: [
       {
-        unit: "Unit 1 - Placeholder",
+        unit: "The race to 100 is often rigged",
         vocabularies: [
-          { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
-          { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
-          { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+          { word: 'Stalling', definition: 'Delaying progress or making something stop moving forward.', explanation: 'Verb/Noun — used to describe slowing down or stopping progress.' },
+          { word: 'Motive', definition: 'The reason why someone does something.', explanation: 'Noun — used to talk about intentions or reasons behind actions.' },
+          { word: 'Milestone', definition: 'An important stage or event in life or progress.', explanation: 'Noun — used to describe a significant achievement or stage.' },
+          { word: 'Hitting it', definition: 'Reaching or achieving something, like a goal or age.', explanation: 'Phrase/verb — informal way of saying you reached something.' },
+          { word: 'Well within reach', definition: 'Easily achievable or possible.', explanation: 'Phrase — used to say something is very possible.' },
+          { word: 'Centenarians', definition: 'People who are 100 years old or more.', explanation: 'Noun — refers to very old people aged 100+.' },
+          { word: 'Even so', definition: 'Despite what was just said.', explanation: 'Phrase — used for contrast, similar to "nevertheless".' },
+          { word: 'Widening the gap', definition: 'Making the difference between two groups bigger.', explanation: 'Phrase/verb — used when inequality increases.' },
+          { word: 'Lifespan', definition: 'The total length of time a person or organism lives.', explanation: 'Noun — duration of life.' },
+          { word: 'Healthspan', definition: 'The period of life spent in good health.', explanation: 'Noun — healthy part of someone’s life.' },
+          { word: 'Disparity', definition: 'A big difference or inequality between groups.', explanation: 'Noun — shows inequality or difference.' },
+          { word: 'Longest living demographic', definition: 'The group of people who live the longest.', explanation: 'Noun phrase — refers to population group.' },
+          { word: 'Fuelled a chasm', definition: 'Made a huge division or gap bigger.', explanation: 'Phrase/verb — describes worsening inequality.' },
+          { word: 'Most and the least advantaged', definition: 'The people who have the most benefits and those with the least.', explanation: 'Noun phrase — comparing rich/poor or privileged/unprivileged groups.' },
+          { word: 'Nutritious food', definition: 'Food that is healthy and gives the body what it needs.', explanation: 'Noun phrase — refers to healthy diet.' },
+          { word: 'Safe housing', definition: 'Homes that are secure and not dangerous to live in.', explanation: 'Noun phrase — refers to safe living conditions.' },
+          { word: 'Inoculation', definition: 'The act of giving someone a vaccine to protect against disease.', explanation: 'Noun — medical term for vaccination.' },
+          { word: 'Stem', definition: 'To stop or limit something from spreading or growing.', explanation: 'Verb — used when talking about controlling or stopping something.' }
         ],
         interestingSentences: [
           { sentence: 'New therapies are improving survival rates for many types of cancer.', usage: 'Writing Task 2' },

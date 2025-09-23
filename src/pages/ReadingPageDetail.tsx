@@ -91,18 +91,20 @@ const ArticleDetailPage = () => {
           article.vocabularies.map((unit, unitIndex) => (
             <div key={unitIndex} className="mb-8">
               <h3 className="text-2xl font-bold mb-4 text-pink-700 dark:text-pink-300">{unit.unit}</h3>
-              <table className="w-full border border-border rounded-md overflow-hidden">
+              <table className="w-full border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden border-collapse shadow-md bg-white/90 dark:bg-gray-800/60 backdrop-blur-sm">
                 <thead>
                   <tr className="bg-muted">
-                    <th className="text-left px-4 py-2">Word</th>
-                    <th className="text-left px-4 py-2">Definition</th>
+                    <th className="text-left px-4 py-3 font-semibold text-gray-700 dark:text-gray-200 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/40">Word</th>
+                    <th className="text-left px-4 py-3 font-semibold text-gray-700 dark:text-gray-200 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/40">Definition</th>
+                    <th className="text-left px-4 py-3 font-semibold text-gray-700 dark:text-gray-200 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/40">Explanation</th>
                   </tr>
                 </thead>
                 <tbody>
                   {unit.vocabularies.map((vocab, index) => (
                     <tr key={index} className="border-t border-border">
-                      <td className="px-4 py-2 font-bold text-pink-600 border-r border-border align-top">{vocab.word}</td>
-                      <td className="px-4 py-2 text-muted-foreground align-top">{vocab.definition}</td>
+                      <td className="px-4 py-3 text-gray-700 dark:text-gray-300 align-top border-b border-gray-200 dark:border-gray-700">{vocab.word}</td>
+                      <td className="px-4 py-3 text-gray-700 dark:text-gray-300 align-top border-b border-gray-200 dark:border-gray-700">{vocab.definition}</td>
+                      <td className="px-4 py-3 text-gray-700 dark:text-gray-300 align-top border-b border-gray-200 dark:border-gray-700">{vocab.explanation}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -112,14 +114,30 @@ const ArticleDetailPage = () => {
                   <h4 className="text-lg font-semibold mb-3 text-pink-600 dark:text-pink-400">
                     Interesting Sentences
                   </h4>
-                  <div className="divide-y divide-border rounded-md overflow-hidden border border-pink-200 dark:border-pink-800 bg-pink-50 dark:bg-pink-900/10">
-                    {unit.interestingSentences.map((item, i) => (
-                      <div key={i} className="grid grid-cols-2 gap-4 p-4">
-                        <p className="font-medium">{item.sentence}</p>
-                        <p className="text-sm text-muted-foreground">Usage: {item.usage}</p>
-                      </div>
-                    ))}
-                  </div>
+                  <table className="w-full border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden border-collapse shadow-md bg-white/90 dark:bg-gray-800/60 backdrop-blur-sm">
+                    <thead>
+                      <tr className="bg-muted">
+                        <th className="text-left px-4 py-3 font-semibold text-gray-700 dark:text-gray-200 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/40">
+                          Sentence
+                        </th>
+                        <th className="text-left px-4 py-3 font-semibold text-gray-700 dark:text-gray-200 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/40">
+                          Usage
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {unit.interestingSentences.map((item, i) => (
+                        <tr key={i} className="border-t border-border">
+                          <td className="px-4 py-3 text-gray-700 dark:text-gray-300 align-top border-b border-gray-200 dark:border-gray-700">
+                            {item.sentence}
+                          </td>
+                          <td className="px-4 py-3 text-gray-700 dark:text-gray-300 align-top border-b border-gray-200 dark:border-gray-700">
+                            {item.usage}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               )}
             </div>
