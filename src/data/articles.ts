@@ -34,6 +34,24 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    id: '11',
+    title: 'My first step into having my own family',
+    excerpt: 'Getting married and how does it feel to boost responsibility.',
+    publishedAt: '2025-09-23',
+    readTime: 8,
+    tags: ['Generation', 'Society', 'Comments'],
+    links: [
+      { title: "The Guardian", url: "https://www.theguardian.com/society/2014/mar/24/dependent-generation-half-young-european-adults-live-parents" },
+      //{ title: "Nature", url: "https://www.nature.com/" }
+    ],
+    // Example YouTube URL - replace with actual video URL when you have one
+    image: dp_generation, // Example YouTube URL
+    content: `
+
+    
+`
+  },
+  {
     id: '10',
     title: 'The dependant generation. ',
     excerpt: 'Generation that is dependent to each other, particularly parents.',
