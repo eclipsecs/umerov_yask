@@ -16,6 +16,48 @@ export interface Article {
 // Articles you have read (expand as needed)
 export const articles: Article[] = [
   {
+    id: '15',
+    title: 'How to live to 100',
+    subheading: "New Scientist - September 20, 2025",
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/09/17170605/SEI_266220138.jpg?width=628',
+    vocabularies: [
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
+          { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
+          { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ],
+        interestingSentences: [
+          { sentence: 'New therapies are improving survival rates for many types of cancer.', usage: 'Writing Task 2' },
+          { sentence: 'Genetic research is leading to more personalized treatment approaches.', usage: 'Speaking' }
+        ]
+      }
+    ],
+    dateRead: "2023-07-14" // July 14, 2023
+  },
+  {
+    id: '14',
+    title: 'Secret landscape of a quantum realm',
+    subheading: "New Scienist, September 13, 2025",
+    image: 'https://images.newscientist.com/wp-content/uploads/2025/09/10170827/SEI_265246270.jpg?width=628',
+    vocabularies: [
+      {
+        unit: "Unit 1 - Placeholder",
+        vocabularies: [
+          { word: 'Immunotherapy', definition: 'Definition of Immunotherapy', explanation: 'Explanation of Immunotherapy' },
+          { word: 'Genetics', definition: 'Definition of Genetics', explanation: 'Explanation of Genetics' },
+          { word: 'Oncology', definition: 'Definition of Oncology', explanation: 'Explanation of Oncology' }
+        ],
+        interestingSentences: [
+          { sentence: 'New therapies are improving survival rates for many types of cancer.', usage: 'Writing Task 2' },
+          { sentence: 'Genetic research is leading to more personalized treatment approaches.', usage: 'Speaking' }
+        ]
+      }
+    ],
+    dateRead: "2023-07-14" // July 14, 2023
+  },
+  {
     id: '13',
     title: 'Cancers secret weapon ',
     subheading: "Placeholder subheading",

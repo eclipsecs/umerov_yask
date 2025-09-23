@@ -35,13 +35,14 @@ export interface Article {
 export const articles: Article[] = [
   {
     id: '11',
-    title: 'My first step into having my own family',
+    title: 'Changing my marital status',
     excerpt: 'Getting married and how does it feel to boost responsibility.',
     publishedAt: '2025-09-23',
     readTime: 8,
     tags: ['Generation', 'Society', 'Comments'],
     links: [
-      { title: "The Guardian", url: "https://www.theguardian.com/society/2014/mar/24/dependent-generation-half-young-european-adults-live-parents" },
+      { title: "Marital status", url: "https://www.theguardian.com/lifeandstyle/2024/nov/29/i-want-to-end-my-stifling-marriage-but-cant-bear-how-much-hurt-id-cause" },
+      { title: "How does marriage affect the creation of success", url: "https://news.ycombinator.com/item?id=1620335" },
       //{ title: "Nature", url: "https://www.nature.com/" }
     ],
     // Example YouTube URL - replace with actual video URL when you have one
