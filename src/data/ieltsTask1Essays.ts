@@ -12,6 +12,8 @@ import chart_1_8 from '@/assets/ielts-task1-images/chart_1_8.png';
 import chart_1_9 from '@/assets/ielts-task1-images/chart_1_9.png';
 import chart_1_10 from '@/assets/ielts-task1-images/chart_1_10.png';
 import chart_1_11 from '@/assets/ielts-task1-images/chart_1_11.png';
+import chart_1_12 from '@/assets/ielts-task1-images/chart_1_12.png';
+
 
 export interface IELTSEssay {
   id: string;
@@ -28,6 +30,30 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
+  {
+    id: '111',
+    task: 'task1',
+    title: 'Task One: 12 of 100: Bar Chart',
+    question: 'The bar chart below shows the percentage of adults by age group in the UK who used the internet every day in the years 2003-2006. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 7.5,
+    writingTime: '13 minutes',
+    wordCount: 254,
+    tags: ['Bar Chart'],
+    image: chart_1_12, // Add your image here when available
+    content: `
+
+TThe bar chart compares the proportion of people who used the internet on a daily basis, broken down into age categories, between 2003 and 2006.
+
+Overall, young adults and middle-aged groups spent more time using the internet every day compared with other age categories. In contrast, seniors spent the least time across the period given, particularly in 2003.
+
+Between 2003 and 2004, 80% of young adults aged 16–24 used the internet every day. However, this figure reached almost 90% in 2005 before declining slightly in 2006. As for middle-aged adults aged 25–44, just over 70% of people used the internet on a daily basis in 2003 and 2004. In addition, internet usage in this group rose to almost 80% in 2005, a figure that remained the same in 2006.
+
+The 45–54 age group accounted for 55% of daily users in 2003. Although the percentage rose to about 70% in both 2004 and 2006, there was a slight dip in 2005 when just over 60% of people in this group used the internet each day. In contrast, more than 30% of those aged 55–64 used the internet in 2003. Moreover, this figure grew steadily, exceeding 40% in 2005 before reaching 55% in 2006.
+
+In terms of those aged 65 and over, the lowest proportion of people used the internet daily in 2003, but this figure rose dramatically to nearly 20% in 2004. A similar level was observed in 2006 at almost 20%, despite a minor increase in 2005 to exactly 20%.
+
+`
+  },
   {
     id: '111',
     task: 'task1',
