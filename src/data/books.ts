@@ -36,7 +36,7 @@ export const books: Book[] = [
     coverImage: "https://m.media-amazon.com/images/I/81Ce51P9NEL.jpg",
     readingStatus: "to-read",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
-    downloadUrl: "https://www.alim.org/tafsir/ibn-kathir/?surah=1&ayah=0",
+    downloadUrl: "https://psihologija.ff.uns.ac.rs/akves/Shallows.pdf",
     chapters: [
       {
         id: "ch1",
