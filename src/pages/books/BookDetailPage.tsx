@@ -228,27 +228,33 @@ const BookDetailPage = () => {
         </TabsContent>
         
         <TabsContent value="chapters" className="mt-8">
-          <div className="space-y-6">
-            {book.chapters.map((chapter) => (
-              <Card key={chapter.id}>
-                <CardHeader>
-                  <CardTitle className="text-lg text-pink-500">
-                    Chapter {chapter.chapterNumber}: {chapter.title}
-                  </CardTitle>
-                  <CardDescription className="text-foreground">
-                    {chapter.content}
-                  </CardDescription>
-                </CardHeader>
-                {chapter.notes && (
-                  <CardContent>
-                    <div className="bg-muted/30 p-4 rounded-lg">
-                      <h4 className="font-bold mb-2 text-pink-500">My Notes & Highlights</h4>
-                      <MarkdownRenderer content={chapter.notes} className="text-foreground" />
-                    </div>
-                  </CardContent>
-                )}
-              </Card>
-            ))}
+          <div>
+            <table className="w-full border-collapse text-sm table-auto">
+              <thead className="bg-muted/50 font-semibold">
+                <tr>
+                  <th className="text-left px-3 py-2 rounded-tl-md rounded-bl-md border-b border-muted">Chapter</th>
+                  <th className="text-left px-3 py-2 border-b border-muted">Title</th>
+                  <th className="text-left px-3 py-2 border-b border-muted">Content</th>
+                  <th className="text-left px-3 py-2 rounded-tr-md rounded-br-md border-b border-muted">My Notes &amp; Highlights</th>
+                </tr>
+              </thead>
+              <tbody>
+                {book.chapters.map((chapter) => (
+                  <tr key={chapter.id} className="border-b border-muted even:bg-muted/30 hover:bg-muted/50 transition-colors">
+                    <td className="px-3 py-2 align-top whitespace-pre-wrap">{chapter.chapterNumber}</td>
+                    <td className="px-3 py-2 align-top font-bold whitespace-pre-wrap">{chapter.title}</td>
+                    <td className="px-3 py-2 align-top text-muted-foreground whitespace-pre-wrap">{chapter.content}</td>
+                    <td className="px-3 py-2 align-top whitespace-pre-wrap">
+                      {chapter.notes ? (
+                        <MarkdownRenderer content={chapter.notes} className="text-muted-foreground" />
+                      ) : (
+                        <span className="text-muted-foreground">–</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </TabsContent>
         
