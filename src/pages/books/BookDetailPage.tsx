@@ -63,7 +63,7 @@ const BookDetailPage = () => {
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Back Button */}
-      <Link to="/books" className="inline-flex items-center mb-8 text-muted-foreground hover:text-foreground transition-colors">
+      <Link to="/books" className="inline-flex items-center mb-8 text-gray-800 hover:text-gray-600 transition-colors">
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to Books
       </Link>
@@ -241,10 +241,10 @@ const BookDetailPage = () => {
       </Tabs>
 
       {/* Footer */}
-      <footer className="mt-16 pt-8 border-t border-border">
+      <footer className="mt-16 pt-8">
         <div className="text-center">
           <Link to="/books">
-            <Button variant="outline">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-semibold shadow-md transition-transform hover:scale-105">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to All Books
             </Button>

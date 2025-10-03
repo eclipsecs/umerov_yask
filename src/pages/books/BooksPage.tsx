@@ -53,8 +53,8 @@ const BooksPage = () => {
       </div>
 
       {/* Navigation Filters - redesigned as smaller, colorful cards with icons */}
-      <div className="flex justify-center mb-8">
-        <div className="inline-flex rounded-lg border bg-muted/30 shadow-sm p-1 gap-0">
+      <div className="flex flex-wrap justify-center gap-2 max-w-full mb-8">
+        <div className="inline-flex rounded-lg border bg-muted/30 shadow-sm p-1 gap-0 flex-wrap justify-center gap-2 max-w-full">
           {[
             { key: 'all', label: 'All', icon: BookOpen, color: 'purple' },
             { key: 'completed', label: 'Completed', icon: CheckCircle, color: 'green' },
@@ -97,33 +97,23 @@ const BooksPage = () => {
               <button
                 key={key}
                 onClick={() => setFilter(key as typeof filter)}
-                className={`flex flex-row items-center justify-center px-4 py-2 rounded-full gap-2 transition-transform duration-300 cursor-pointer
+                className={`flex flex-row items-center justify-center rounded-full gap-2 transition-transform duration-300 cursor-pointer
                   ${isSelected
                     ? `${colors.bg} ${colors.text} ${colors.shadow} scale-105`
                     : `text-muted-foreground ${colors.hoverText}`
                   }
                   shadow-sm
-                  ${index !== 0 ? 'ml-2' : ''}
+                  ${index !== 0 ? 'ml-0 sm:ml-2' : ''}
+                  px-2 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm
                 `}
                 aria-pressed={isSelected}
               >
-                <Icon className={`w-4 h-4 ${isSelected ? 'text-white' : colors.textDefault}`} />
-                <span className="text-sm font-semibold">{label}</span>
+                <Icon className={`${isSelected ? 'text-white' : colors.textDefault} w-4 h-4 sm:w-6 sm:h-6`} />
+                <span className="font-semibold">{label}</span>
               </button>
             );
           })}
         </div>
-      </div>
-
-      {/* Search Input */}
-      <div className="flex justify-center mb-6">
-        <input
-          type="text"
-          placeholder="Search books..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full max-w-md rounded-md border border-gray-300 dark:border-gray-700 px-4 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500 dark:bg-background dark:text-foreground transition"
-        />
       </div>
 
       {/* Books Grid */}
