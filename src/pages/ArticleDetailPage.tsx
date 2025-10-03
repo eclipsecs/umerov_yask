@@ -182,9 +182,9 @@ const ArticleDetailPage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-pink-500 text-base md:text-lg font-semibold no-underline hover:no-underline font-sans"
-                    style={{ color: '#635e69ff', fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}
+                    style={{ color: '#ec4899', fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}
                   >
-                    <RoughNotation type="underline" onHover={true} color="#1be1fbff">
+                    <RoughNotation type="underline" onHover={true} color="#ec4899">
                       <span>{link.title || link.url}</span>
                     </RoughNotation>
                   </a>
