@@ -52,46 +52,66 @@ const BooksPage = () => {
         </p>
       </div>
 
-      {/* Navigation Filters - styled as navbar */}
-      <div className="flex justify-center mb-8 overflow-x-auto sm:flex-wrap">
-        <div className="bg-muted/20 dark:bg-muted/30 rounded-lg p-1 flex gap-2 shadow-sm border border-border/30 backdrop-blur-sm">
+      {/* Navigation Filters - redesigned as smaller, colorful cards with icons */}
+      <div className="flex justify-center mb-8">
+        <div className="inline-flex rounded-lg border bg-muted/30 shadow-sm p-1 gap-0">
           {[
-            { key: 'all', label: 'All' },
-            { key: 'reading', label: 'Currently Reading' },
-            { key: 'to-read', label: 'To Read' },
-            { key: 'completed', label: 'Completed' }
-          ].map(({ key, label }) => (
-            <button
-              key={key}
-              onClick={() => setFilter(key as typeof filter)}
-              className={`px-4 sm:px-6 py-2 rounded-md font-semibold text-sm transition-all duration-200
-                ${filter === key 
-                  ? 'bg-muted-foreground text-background shadow-sm' 
-                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/40'}`}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Stats */}
-      <div className="flex justify-center items-center gap-6 mb-8 text-sm text-muted-foreground">
-        <div className="flex items-center gap-2">
-          <span className="text-xl">🗂️</span>
-          <span className="font-bold">{books.length} All</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <CheckCircle className="w-4 h-4 text-emerald-500" />
-          <span className="font-bold">{completedBooks} completed</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Book className="w-4 h-4 text-blue-500" />
-          <span className="font-bold">{readingBooks} reading</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Bookmark className="w-4 h-4 text-slate-400" />
-          <span className="font-bold">{toReadBooks} to read</span>
+            { key: 'all', label: 'All', icon: BookOpen, color: 'purple' },
+            { key: 'completed', label: 'Completed', icon: CheckCircle, color: 'green' },
+            { key: 'reading', label: 'Currently Reading', icon: Clock, color: 'blue' },
+            { key: 'to-read', label: 'To Read', icon: Bookmark, color: 'orange' }
+          ].map(({ key, label, icon: Icon, color }, index) => {
+            const isSelected = filter === key;
+            const baseColors = {
+              purple: {
+                bg: 'bg-purple-600',
+                text: 'text-white',
+                shadow: 'shadow-purple-400',
+                hoverText: 'hover:text-purple-600',
+                textDefault: 'text-purple-600',
+              },
+              green: {
+                bg: 'bg-emerald-600',
+                text: 'text-white',
+                shadow: 'shadow-emerald-400',
+                hoverText: 'hover:text-emerald-600',
+                textDefault: 'text-emerald-600',
+              },
+              blue: {
+                bg: 'bg-blue-600',
+                text: 'text-white',
+                shadow: 'shadow-blue-400',
+                hoverText: 'hover:text-blue-600',
+                textDefault: 'text-blue-600',
+              },
+              orange: {
+                bg: 'bg-orange-600',
+                text: 'text-white',
+                shadow: 'shadow-orange-400',
+                hoverText: 'hover:text-orange-600',
+                textDefault: 'text-orange-600',
+              }
+            };
+            const colors = baseColors[color];
+            return (
+              <button
+                key={key}
+                onClick={() => setFilter(key as typeof filter)}
+                className={`flex flex-row items-center justify-center px-4 py-2 rounded-full gap-2 transition-transform duration-300 cursor-pointer
+                  ${isSelected
+                    ? `${colors.bg} ${colors.text} ${colors.shadow} scale-105`
+                    : `text-muted-foreground ${colors.hoverText}`
+                  }
+                  shadow-sm
+                  ${index !== 0 ? 'ml-2' : ''}
+                `}
+                aria-pressed={isSelected}
+              >
+                <Icon className={`w-4 h-4 ${isSelected ? 'text-white' : colors.textDefault}`} />
+                <span className="text-sm font-semibold">{label}</span>
+              </button>
+            );
+          })}
         </div>
       </div>
 
