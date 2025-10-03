@@ -5,6 +5,7 @@ import dayinthelife from "@/assets/article-images/dayinthelife.jpg"
 import youtube from "@/assets/article-images/youtube.png"
 import nightmare_institute from "@/assets/article-images/nightmare_institute.jpg"
 import dp_generation from "@/assets/article-images/dp_generation.jpg"
+import marriage from "@/assets/article-images/marriage.png"
 
 // Add more images like this:
 // import myImage from '@/assets/article-images/my-image.png';
@@ -46,7 +47,7 @@ export const articles: Article[] = [
       //{ title: "Nature", url: "https://www.nature.com/" }
     ],
     // Example YouTube URL - replace with actual video URL when you have one
-    image: "https://illustrations.popsy.co/violet/bride-and-groom.svg", // Illustrative image representing marital status
+    image: marriage, // Illustrative image representing marital status
     content: `
 Changing my marital status has been one of the most profound transitions of my life—a shift that, though anticipated and celebrated, brought with it a cascade of emotions, responsibilities, and realizations I never fully expected. Marriage, with all its rituals and symbolism, is often portrayed as a single event: a wedding day, vows exchanged, rings slipped onto fingers. But in reality, changing your marital status is less about a moment and more about the unfolding of a new chapter, one that is written day by day, in small gestures and big decisions, in shared joys and inevitable challenges.
 

@@ -22,6 +22,7 @@ export interface Book {
   chapters: BookChapter[];
   tags: string[];
   downloadUrl?: string; // Link to download the book
+  progress?: number; // added for tracking reading percentage
 }
 
 export const books: Book[] = [
@@ -473,6 +474,7 @@ export const books: Book[] = [
     readingStatus: "reading",
     personalComments: "Looking forward to diving into this classic on cognitive psychology and decision-making.",
     downloadUrl: "# Add your download link here",
+    progress: 50,
     chapters: [
       {
         id: "ch1",

@@ -45,7 +45,7 @@ const ReadingPage = () => {
               )}
             </div>
             <div className="p-4 space-y-2">
-              <h2 className="font-sans font-bold text-lg group-hover:text-accent-pink transition-colors line-clamp-2">
+              <h2 className="font-sans font-bold text-lg group-hover:text-muted-foreground transition-colors line-clamp-2">
                 {article.title}
               </h2>
             </div>

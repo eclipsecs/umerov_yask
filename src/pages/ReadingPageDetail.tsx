@@ -52,7 +52,7 @@ const ArticleDetailPage = () => {
       {/* Back Button */}
       <Link
         to="/readings"
-        className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors"
+        className="inline-flex items-center mb-8 font-bold text-muted-foreground uppercase text-sm hover:text-foreground transition-colors"
       >
         <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
         Back to Journals
@@ -71,7 +71,7 @@ const ArticleDetailPage = () => {
           )}
 
           {article.dateRead && (
-            <p className="text-sm text-pink-500 uppercase font-bold">
+            <p className="text-sm text-muted-foreground uppercase font-bold">
               {formatRelativeTime(article.dateRead)}
             </p>
           )}
@@ -84,13 +84,13 @@ const ArticleDetailPage = () => {
 
       {/* Vocabulary Section */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-center text-pink-700 dark:text-pink-300">
+        <h2 className="text-3xl font-bold mb-6 text-center text-muted-foreground">
           📝 Vocabularies and Interesting Sentences
         </h2>
         {article.vocabularies && article.vocabularies.length > 0 ? (
           article.vocabularies.map((unit, unitIndex) => (
             <div key={unitIndex} className="mb-8">
-              <h3 className="text-2xl font-bold mb-4 text-pink-700 dark:text-pink-300">{unit.unit}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-muted-foreground">{unit.unit}</h3>
               <table className="w-full border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden border-collapse shadow-md bg-white/90 dark:bg-gray-800/60 backdrop-blur-sm">
                 <thead>
                   <tr className="bg-muted">
@@ -111,7 +111,7 @@ const ArticleDetailPage = () => {
               </table>
               {unit.interestingSentences && unit.interestingSentences.length > 0 && (
                 <div className="mt-6">
-                  <h4 className="text-lg font-semibold mb-3 text-pink-600 dark:text-pink-400">
+                  <h4 className="text-lg font-semibold mb-3 text-muted-foreground">
                     Interesting Sentences
                   </h4>
                   <table className="w-full border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden border-collapse shadow-md bg-white/90 dark:bg-gray-800/60 backdrop-blur-sm">
@@ -157,9 +157,9 @@ const ArticleDetailPage = () => {
               </span>
               <Link
                 to={`/readings/${prevArticle.id}`}
-                className="text-pink-500 text-base md:text-lg font-semibold"
+                className="text-muted-foreground text-base md:text-lg font-semibold"
               >
-                <RoughNotation type="underline" onHover={true} color="#ec4899">
+                <RoughNotation type="underline" onHover={true} color="currentColor">
                   <span>{prevArticle.title}</span>
                 </RoughNotation>
               </Link>
@@ -172,9 +172,9 @@ const ArticleDetailPage = () => {
               </span>
               <Link
                 to={`/readings/${nextArticle.id}`}
-                className="text-pink-500 text-base md:text-lg font-semibold"
+                className="text-muted-foreground text-base md:text-lg font-semibold"
               >
-                <RoughNotation type="underline" onHover={true} color="#ec4899">
+                <RoughNotation type="underline" onHover={true} color="currentColor">
                   <span>{nextArticle.title}</span>
                 </RoughNotation>
               </Link>

@@ -41,22 +41,22 @@ const IELTSEssayDetailPage = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
           <Badge 
             variant="outline" 
-            className="text-accent-pink border-accent-pink w-fit"
+            className="text-muted-foreground border-muted-foreground w-fit"
           >
             <Target className="w-4 h-4 mr-2" />
             IELTS {essay.task.toUpperCase()}
           </Badge>
           
-          <div className="flex items-center gap-4 text-sm text-muted-foreground text-pink-500 dark:text-pink-500 font-bold">
-            <div className="flex items-center">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground font-bold">
+            <div className="flex items-center text-muted-foreground font-bold">
               <Clock className="w-4 h-4 mr-1" />
               {essay.writingTime}
             </div>
-            <div className="flex items-center text-pink-500 dark:text-pink-500 font-bold">
+            <div className="flex items-center text-muted-foreground font-bold">
               <FileText className="w-4 h-4 mr-1" />
               {essay.wordCount} words
             </div>
-            <div className="flex items-center text-pink-500 dark:text-pink-500 font-bold">
+            <div className="flex items-center text-muted-foreground font-bold">
               <Award className="w-4 h-4 mr-1" />
               Band {essay.bandScore}
             </div>
@@ -115,7 +115,7 @@ const IELTSEssayDetailPage = () => {
       <Card className="mt-12 border-none shadow-none">
         <CardHeader>
           <CardTitle className="flex items-center gap-2" style={{ fontFamily: 'Aptos, sans-serif' }}>
-            <Award className="w-5 h-5 text-pink-500 dark:text-pink-500 font-bold" />
+            <Award className="w-5 h-5 text-muted-foreground font-bold" />
             Essay Analysis
           </CardTitle>
         </CardHeader>
@@ -123,7 +123,7 @@ const IELTSEssayDetailPage = () => {
           {/* Essay Analysis numbers and labels - edit sizes here */}
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="text-xl md:text-2xl text-pink-500 dark:text-pink-500 font-bold mb-2">
+              <div className="text-xl md:text-2xl text-muted-foreground font-bold mb-2">
                 {essay.bandScore}
               </div>
               <div className="text-xs md:text-sm text-foreground font-bold">
@@ -131,7 +131,7 @@ const IELTSEssayDetailPage = () => {
               </div>
             </div>
             <div className="text-center">
-              <div className="text-xl md:text-2xl text-pink-500 dark:text-pink-500 font-bold mb-2">
+              <div className="text-xl md:text-2xl text-muted-foreground font-bold mb-2">
                 {essay.wordCount}
               </div>
               <div className="text-xs md:text-sm text-foreground font-bold">
@@ -139,7 +139,7 @@ const IELTSEssayDetailPage = () => {
               </div>
             </div>
             <div className="text-center">
-              <div className="text-xl md:text-2xl text-pink-500 dark:text-pink-500 font-bold mb-2">
+              <div className="text-xl md:text-2xl text-muted-foreground font-bold mb-2">
                 {essay.writingTime}
               </div>
               <div className="text-xs md:text-sm text-foreground font-bold">
@@ -159,10 +159,10 @@ const IELTSEssayDetailPage = () => {
                 to={`/ielts-essay/${prevEssay.task}/${prevEssay.id}`}
                 onMouseEnter={() => setHoveredPrev(true)}
                 onMouseLeave={() => setHoveredPrev(false)}
-                className="text-pink-500 text-base md:text-lg font-semibold"
+                className="text-muted-foreground text-base md:text-lg font-semibold"
                 style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 700 }}
               >
-                <RoughNotation type="underline" show={hoveredPrev} color="#ec4899" strokeWidth={4} animationDuration={500}>
+                <RoughNotation type="underline" show={hoveredPrev} color="currentColor" strokeWidth={4} animationDuration={500}>
                   <span>{prevEssay.title}</span>
                 </RoughNotation>
               </Link>
@@ -175,10 +175,10 @@ const IELTSEssayDetailPage = () => {
                 to={`/ielts-essay/${nextEssay.task}/${nextEssay.id}`}
                 onMouseEnter={() => setHoveredNext(true)}
                 onMouseLeave={() => setHoveredNext(false)}
-                className="text-pink-500 text-base md:text-lg font-semibold"
+                className="text-muted-foreground text-base md:text-lg font-semibold"
                 style={{ fontFamily: 'Aptos, sans-serif', fontWeight: 700 }}
               >
-                <RoughNotation type="underline" show={hoveredNext} color="#ec4899" strokeWidth={4} animationDuration={500}>
+                <RoughNotation type="underline" show={hoveredNext} color="currentColor" strokeWidth={4} animationDuration={500}>
                   <span>{nextEssay.title}</span>
                 </RoughNotation>
               </Link>

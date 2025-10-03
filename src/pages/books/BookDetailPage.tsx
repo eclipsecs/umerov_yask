@@ -83,14 +83,10 @@ const BookDetailPage = () => {
               
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 {book.publishedYear && (
-                  <div className="text-pink-500 font-bold text-xs">
+                  <div className="text-foreground font-bold text-sm">
                     {book.publishedYear}
                   </div>
                 )}
-                <div className="flex items-center">
-                  <BookOpen className="w-4 h-4 mr-1" />
-                  {book.chapters.length} chapters
-                </div>
               </div>
             </div>
             
@@ -117,12 +113,12 @@ const BookDetailPage = () => {
             {(book.startedDate || book.completedDate) && (
               <div className="flex flex-col sm:flex-row gap-4 text-sm text-muted-foreground">
                 {book.startedDate && (
-                  <div className="text-pink-500 font-bold text-xs">
+                  <div className="text-muted-foreground font-bold text-xs">
                     {formatDate(book.startedDate)}
                   </div>
                 )}
                 {book.completedDate && (
-                  <div className="text-pink-500 font-bold text-xs">
+                  <div className="text-muted-foreground font-bold text-xs">
                     {formatDate(book.completedDate)}
                   </div>
                 )}
@@ -134,137 +130,109 @@ const BookDetailPage = () => {
 
       {/* Book Content */}
       <Tabs defaultValue="overview" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
+        <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="overview">Overview</TabsTrigger>
-          <TabsTrigger value="chapters">Chapters</TabsTrigger>
           <TabsTrigger value="comments">My Comments</TabsTrigger>
         </TabsList>
         
         <TabsContent value="overview" className="mt-8">
-          <div className="space-y-6">
-            {/* Book Cover and Details */}
-            <div className="flex flex-col md:flex-row gap-8">
-              {/* Cover Image */}
-              <div className="md:w-64 flex-shrink-0">
-                <div className="aspect-[3/4] relative overflow-hidden rounded-lg bg-muted/30">
-                  {book.coverImage ? (
-                    <img
-                      src={book.coverImage}
-                      alt={`${book.title} cover`}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.currentTarget;
-                        const fallback = target.nextElementSibling as HTMLElement;
-                        target.style.display = 'none';
-                        if (fallback) fallback.style.display = 'flex';
-                      }}
-                    />
-                  ) : null}
-                  {/* Fallback */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-muted/50 to-muted" 
-                       style={{ display: book.coverImage ? 'none' : 'flex' }}>
-                    <BookOpen className="w-16 h-16 text-muted-foreground mb-4" />
-                    <h3 className="font-sans font-bold text-lg mb-2 text-foreground">
-                      {book.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      {book.author}
-                    </p>
+          <Card>
+            <CardHeader>
+              <CardTitle>Overview</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col md:flex-row gap-8">
+                {/* Cover Image */}
+                <div className="md:w-64 flex-shrink-0">
+                  <div className="aspect-[3/4] relative overflow-hidden rounded-lg bg-muted/30">
+                    {book.coverImage ? (
+                      <img
+                        src={book.coverImage}
+                        alt={`${book.title} cover`}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          const fallback = target.nextElementSibling as HTMLElement;
+                          target.style.display = 'none';
+                          if (fallback) fallback.style.display = 'flex';
+                        }}
+                      />
+                    ) : null}
+                    {/* Fallback */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-muted/50 to-muted" 
+                         style={{ display: book.coverImage ? 'none' : 'flex' }}>
+                      <BookOpen className="w-16 h-16 text-muted-foreground mb-4" />
+                      <h3 className="font-sans font-bold text-lg mb-2 text-foreground">
+                        {book.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        {book.author}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Book Details */}
-              <div className="flex-1">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Book Details</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    {book.isbn && (
-                      <div>
-                        <strong>ISBN:</strong> {book.isbn}
-                      </div>
-                    )}
-                    <div>
-                      <strong>Genre:</strong> {book.genre}
-                    </div>
-                    <div>
-                      <strong>Status:</strong> {formatStatus(book.readingStatus)}
-                    </div>
-                    <div>
-                      <strong>Total Chapters:</strong> {book.chapters.length}
-                    </div>
-                    {book.downloadUrl && (
-                      <div className="pt-4 border-t">
-                        <strong>Download:</strong>
-                        <div className="mt-2">
-                          <a 
-                            href={book.downloadUrl === "# Add your download link here" ? "#" : book.downloadUrl}
-                            className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                              book.downloadUrl === "# Add your download link here" 
-                                ? "bg-muted text-muted-foreground cursor-not-allowed" 
-                                : "bg-primary text-primary-foreground hover:bg-primary/90"
-                            }`}
-                            target={book.downloadUrl === "# Add your download link here" ? undefined : "_blank"}
-                            rel="noopener noreferrer"
-                          >
-                            <BookOpen className="w-4 h-4" />
-                            {book.downloadUrl === "# Add your download link here" ? "Download link not set" : "Download Book"}
-                          </a>
-                          {book.downloadUrl === "# Add your download link here" && (
-                            <p className="text-xs text-muted-foreground mt-1">
-                              To add a download link, edit the book data and replace "# Add your download link here" with the actual URL
-                            </p>
-                          )}
+                {/* Book Details */}
+                <div className="flex-1">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Book Details</CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      {book.isbn && (
+                        <div>
+                          <strong>ISBN:</strong> {book.isbn}
                         </div>
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </div>
-        </TabsContent>
-        
-        <TabsContent value="chapters" className="mt-8">
-          <div>
-            <table className="w-full border-collapse text-sm table-auto">
-              <thead className="bg-muted/50 font-semibold">
-                <tr>
-                  <th className="text-left px-3 py-2 rounded-tl-md rounded-bl-md border-b border-muted">Chapter</th>
-                  <th className="text-left px-3 py-2 border-b border-muted">Title</th>
-                  <th className="text-left px-3 py-2 border-b border-muted">Content</th>
-                  <th className="text-left px-3 py-2 rounded-tr-md rounded-br-md border-b border-muted">My Notes &amp; Highlights</th>
-                </tr>
-              </thead>
-              <tbody>
-                {book.chapters.map((chapter) => (
-                  <tr key={chapter.id} className="border-b border-muted even:bg-muted/30 hover:bg-muted/50 transition-colors">
-                    <td className="px-3 py-2 align-top whitespace-pre-wrap">{chapter.chapterNumber}</td>
-                    <td className="px-3 py-2 align-top font-bold whitespace-pre-wrap">{chapter.title}</td>
-                    <td className="px-3 py-2 align-top text-muted-foreground whitespace-pre-wrap">{chapter.content}</td>
-                    <td className="px-3 py-2 align-top whitespace-pre-wrap">
-                      {chapter.notes ? (
-                        <MarkdownRenderer content={chapter.notes} className="text-muted-foreground" />
-                      ) : (
-                        <span className="text-muted-foreground">–</span>
                       )}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                      <div>
+                        <strong>Genre:</strong> {book.genre}
+                      </div>
+                      <div>
+                        <strong>Status:</strong> {formatStatus(book.readingStatus)}
+                      </div>
+                      {book.downloadUrl && (
+                        <div className="pt-4 border-t">
+                          <strong>Download:</strong>
+                          <div className="mt-2">
+                            <a 
+                              href={book.downloadUrl === "# Add your download link here" ? "#" : book.downloadUrl}
+                              className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                                book.downloadUrl === "# Add your download link here" 
+                                  ? "bg-muted text-muted-foreground cursor-not-allowed" 
+                                  : "bg-primary text-primary-foreground hover:bg-primary/90"
+                              }`}
+                              target={book.downloadUrl === "# Add your download link here" ? undefined : "_blank"}
+                              rel="noopener noreferrer"
+                            >
+                              <BookOpen className="w-4 h-4" />
+                              {book.downloadUrl === "# Add your download link here" ? "Download link not set" : "Download Book"}
+                            </a>
+                            {book.downloadUrl === "# Add your download link here" && (
+                              <p className="text-xs text-muted-foreground mt-1">
+                                To add a download link, edit the book data and replace "# Add your download link here" with the actual URL
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </TabsContent>
         
         <TabsContent value="comments" className="mt-8">
-          <Card>
+          <Card className="bg-muted/30">
             <CardHeader>
-              <CardTitle>Personal Comments & Reflections</CardTitle>
+              <CardTitle>My Thoughts</CardTitle>
+              <CardDescription>
+                Here’s where I share my take on the book — the parts I enjoyed, the lessons I picked up, and anything that really stood out.
+              </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="prose prose-lg max-w-none">
+              <div className="prose prose-lg max-w-none text-foreground/90">
                 <MarkdownRenderer content={book.personalComments} />
               </div>
             </CardContent>

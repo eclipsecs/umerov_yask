@@ -78,15 +78,15 @@ const HomePage = () => {
                   className="group block p-4 sm:p-4 lg:p-6 rounded-xl hover:bg-accent-pink/10 transition-all duration-300"
                 >
                   <div className="flex justify-between items-start mb-3">
-                    <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+                    <span className="text-muted-foreground text-sm font-bold uppercase bg-transparent">
                       {getRelativeTime(article.publishedAt)}
                     </span>
-                    <span className="text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+                    <span className="text-muted-foreground text-sm font-bold uppercase bg-transparent">
                       {article.readTime} min read
                     </span>
                   </div>
-                  <RoughNotation type="underline" onHover={true}>
-                    <h3 className="text-xl font-sans font-bold mb-2 sm:mb-3 text-foreground text-accent-pink transition-colors">
+                  <RoughNotation type="underline" onHover={true} color="currentColor">
+                    <h3 className="text-xl font-sans font-bold mb-2 sm:mb-3 text-muted-foreground transition-colors">
                       {article.title}
                     </h3>
                   </RoughNotation>

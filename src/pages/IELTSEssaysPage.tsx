@@ -21,7 +21,7 @@ const IELTSEssaysPage = () => {
           <TabsTrigger value="task1" asChild>
             <Link
               to="/ielts-essays?tab=task1"
-              className="text-pink-500 dark:text-pink-500 font-extrabold text-center transition-colors duration-200 hover:text-pink-600"
+              className="text-muted-foreground font-extrabold text-center transition-colors duration-200 hover:text-foreground"
             >
               Task 1
             </Link>
@@ -29,7 +29,7 @@ const IELTSEssaysPage = () => {
           <TabsTrigger value="task2" asChild>
             <Link
               to="/ielts-essays?tab=task2"
-              className="text-pink-500 dark:text-pink-500 font-extrabold text-center transition-colors duration-200 hover:text-pink-600"
+              className="text-muted-foreground font-extrabold text-center transition-colors duration-200 hover:text-foreground"
             >
               Task 2
             </Link>
@@ -43,15 +43,15 @@ const IELTSEssaysPage = () => {
               key={essay.id}
               className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300"
             >
-              <div className="flex justify-between items-start mb-4 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
-                <div className="flex items-center gap-3 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+              <div className="flex justify-between items-start mb-4 text-muted-foreground text-sm font-bold uppercase bg-transparent">
+                <div className="flex items-center gap-3 text-muted-foreground text-sm font-bold uppercase bg-transparent">
                   <Target className="w-4 h-4 text-primary" />
                   <span>Task 1</span>
                 </div>
-                <span className="text-pink-500 dark:text-pink-500 font-bold">{`Band ${essay.bandScore}`}</span>
+                <span className="text-muted-foreground font-bold">{`Band ${essay.bandScore}`}</span>
               </div>
-              <RoughNotation type="underline" onHover={true} color="#ec4899" animationDuration={250}>
-                <h2 className="text-2xl font-sans font-bold mb-3 text-pink-500 dark:text-pink-500">
+              <RoughNotation type="underline" onHover={true} color="currentColor" animationDuration={250}>
+                <h2 className="text-2xl font-sans font-bold mb-3 text-muted-foreground">
                   {essay.title}
                 </h2>
               </RoughNotation>
@@ -70,15 +70,15 @@ const IELTSEssaysPage = () => {
               key={essay.id}
               className="block bg-card rounded-lg p-6 hover:bg-muted/20 transition-all duration-300"
             >
-              <div className="flex justify-between items-start mb-4 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
-                <div className="flex items-center gap-3 text-pink-500 dark:text-pink-500 text-sm font-bold uppercase bg-transparent">
+              <div className="flex justify-between items-start mb-4 text-muted-foreground text-sm font-bold uppercase bg-transparent">
+                <div className="flex items-center gap-3 text-muted-foreground text-sm font-bold uppercase bg-transparent">
                   <FileText className="w-4 h-4 text-primary" />
                   <span>Task 2</span>
                 </div>
-                <span className="text-pink-500 dark:text-pink-500 font-bold">{`Band ${essay.bandScore}`}</span>
+                <span className="text-muted-foreground font-bold">{`Band ${essay.bandScore}`}</span>
               </div>
-              <RoughNotation type="underline" onHover={true} color="#ec4899" animationDuration={250}>
-                <h2 className="text-2xl font-sans font-bold mb-3 text-pink-500 dark:text-pink-500">
+              <RoughNotation type="underline" onHover={true} color="currentColor" animationDuration={250}>
+                <h2 className="text-2xl font-sans font-bold mb-3 text-muted-foreground">
                   {essay.title}
                 </h2>
               </RoughNotation>

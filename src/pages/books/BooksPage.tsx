@@ -53,32 +53,25 @@ const BooksPage = () => {
       </div>
 
       {/* Navigation Filters - styled as navbar */}
-      <div className="flex justify-center mb-6 overflow-x-auto sm:flex-wrap">
-        <div className="bg-muted/10 dark:bg-muted/20 rounded-xl px-4 py-2 flex gap-4 shadow-sm">
-          <button
-            onClick={() => setFilter('all')}
-            className={`px-3 sm:px-5 py-2 font-bold transition-colors duration-200 ${filter === 'all' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
-          >
-            All
-          </button>
-          <button
-            onClick={() => setFilter('reading')}
-            className={`px-3 sm:px-5 py-2 font-bold transition-colors duration-200 ${filter === 'reading' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
-          >
-            Currently Reading
-          </button>
-          <button
-            onClick={() => setFilter('to-read')}
-            className={`px-3 sm:px-5 py-2 font-bold transition-colors duration-200 ${filter === 'to-read' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
-          >
-            To Read
-          </button>
-          <button
-            onClick={() => setFilter('completed')}
-            className={`px-3 sm:px-5 py-2 font-bold transition-colors duration-200 ${filter === 'completed' ? 'text-pink-500' : 'text-muted-foreground hover:text-pink-500'}`}
-          >
-            Completed
-          </button>
+      <div className="flex justify-center mb-8 overflow-x-auto sm:flex-wrap">
+        <div className="bg-muted/20 dark:bg-muted/30 rounded-lg p-1 flex gap-2 shadow-sm border border-border/30 backdrop-blur-sm">
+          {[
+            { key: 'all', label: 'All' },
+            { key: 'reading', label: 'Currently Reading' },
+            { key: 'to-read', label: 'To Read' },
+            { key: 'completed', label: 'Completed' }
+          ].map(({ key, label }) => (
+            <button
+              key={key}
+              onClick={() => setFilter(key as typeof filter)}
+              className={`px-4 sm:px-6 py-2 rounded-md font-semibold text-sm transition-all duration-200
+                ${filter === key 
+                  ? 'bg-muted-foreground text-background shadow-sm' 
+                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/40'}`}
+            >
+              {label}
+            </button>
+          ))}
         </div>
       </div>
 
@@ -171,13 +164,18 @@ const BooksPage = () => {
                   </div>
                   
                   {/* Status Badge */}
-                  <div className="absolute top-2 right-2">
+                  <div className="absolute top-2 right-2 flex flex-col items-end gap-1">
                     <Badge 
                       variant="secondary" 
                       className={`text-xs font-medium border backdrop-blur-sm ${getStatusColor(book.readingStatus)}`}
                     >
                       {formatStatus(book.readingStatus)}
                     </Badge>
+                    {book.readingStatus === 'reading' && (
+                      <span className="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-300 bg-white/80 dark:bg-black/50 px-2 py-1 rounded shadow-sm">
+                        {book.progress ? `${book.progress}%` : 'In Progress'}
+                      </span>
+                    )}
                   </div>
                 </div>
 

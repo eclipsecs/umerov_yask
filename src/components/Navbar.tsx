@@ -29,8 +29,8 @@ const Navbar = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/articles', label: 'Articles' },
-    { path: '/teachings', label: 'Teachings' },
-    { path: '/readings', label: 'Readings' },
+    { path: '/teachings', label: 'Observation' },
+    { path: '/readings', label: 'Journals' },
     { path: '/ielts-essays', label: 'IELTS Essays' },
     { path: '/books', label: 'Books' },
   ];
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="text-black dark:text-white font-semibold text-sm hover:text-pink-500 dark:hover:text-pink-500"
+                  className="text-black dark:text-white font-semibold text-sm hover:text-muted-foreground dark:hover:text-gray-300"
                 >
                   {item.label}
                 </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 font-light"
               >
-                <Youtube className="w-5 h-5 text-pink-500" />
+                <Youtube className="w-5 h-5 text-red-500 dark:text-red-400" />
                 <span className="text-sm font-bold text-black dark:text-white">YouTube</span>
               </a>
               <a
@@ -110,7 +110,7 @@ const Navbar = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="block font-semibold text-base text-black dark:text-white hover:text-pink-600 transition-colors"
+                  className="block font-semibold text-base text-black dark:text-white hover:text-muted-foreground dark:hover:text-gray-300 transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -121,16 +121,16 @@ const Navbar = () => {
                 href="https://www.youtube.com/@javokhirsielts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 font-semibold hover:text-pink-500 transition-colors"
+                className="flex items-center gap-2 font-semibold hover:text-muted-foreground dark:hover:text-gray-300 transition-colors"
               >
-                <Youtube className="w-5 h-5 text-red-500" />
+                <Youtube className="w-5 h-5 text-red-500 dark:text-red-400" />
                 <span className="text-sm font-bold text-black dark:text-white">YouTube</span>
               </a>
               <a
                 href="https://www.buymeacoffee.com/umerovjavokhir"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 font-semibold hover:text-yellow-600 transition-colors"
+                className="flex items-center gap-2 font-semibold hover:text-muted-foreground dark:hover:text-gray-300 transition-colors"
               >
                 <img
                   src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"

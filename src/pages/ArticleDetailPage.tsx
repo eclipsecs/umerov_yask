@@ -70,7 +70,7 @@ const ArticleDetailPage = () => {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl" style={{ fontFamily: 'Aptos, sans-serif' }}>
       {/* Back Button */}
-      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-pink-500 uppercase text-sm hover:text-pink-600 transition-colors no-underline hover:no-underline" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
+      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-muted-foreground uppercase text-sm hover:text-foreground transition-colors no-underline hover:no-underline" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
         <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
         Back to Articles
       </Link>
@@ -78,10 +78,10 @@ const ArticleDetailPage = () => {
       {/* Article Header */}
       <header className="mb-12">
         <div className="flex justify-between items-center gap-4 mb-6">
-          <span className="font-bold text-pink-500 uppercase text-sm" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif' }}>
+          <span className="font-bold text-muted-foreground uppercase text-sm" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif' }}>
             {formatRelativeDate(article.publishedAt)}
           </span>
-          <span className="font-bold text-pink-500 uppercase text-sm" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif' }}>
+          <span className="font-bold text-muted-foreground uppercase text-sm" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif' }}>
             {formatReadTime(readTime)}
           </span>
         </div>
@@ -135,12 +135,12 @@ const ArticleDetailPage = () => {
       {/* Article Content */}
       <article
         className={
-          "mt-10 prose prose-pink dark:prose-invert max-w-4xl mx-auto font-normal " +
+          "mt-10 prose prose-muted dark:prose-invert max-w-4xl mx-auto font-normal " +
           "prose-p:text-[1.35rem] md:prose-p:text-[1.5rem] prose-p:leading-8 md:prose-p:leading-9 " +
           "prose-headings:font-bold prose-headings:tracking-tight " +
           "prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3 " +
           "prose-ul:my-4 prose-ol:my-4 prose-li:my-1.5 " +
-          "prose-blockquote:border-l-2 prose-blockquote:border-pink-400 prose-blockquote:pl-4 " +
+          "prose-blockquote:border-l-2 prose-blockquote:border-muted-foreground prose-blockquote:pl-4 " +
           "prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md " +
           "prose-pre:rounded-lg prose-pre:p-4 " +
           "prose-img:rounded-lg prose-img:shadow-md " +
@@ -152,12 +152,12 @@ const ArticleDetailPage = () => {
         {/* Quotes Section */}
         {article.quotes && article.quotes.length > 0 && (
           <section className="mt-10">
-            <h2 className="text-xl font-bold text-pink-500 mb-2 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Quotes</h2>
+            <h2 className="text-xl font-bold text-muted-foreground mb-2 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Quotes</h2>
             <div className="space-y-4">
               {article.quotes.map((quote, index) => (
                 <blockquote
                   key={index}
-                  className="border-l-4 border-pink-400 pl-4 text-lg text-gray-900 dark:text-gray-100 font-medium bg-muted/30 rounded-md py-2"
+                  className="border-l-4 border-muted-foreground pl-4 text-lg text-gray-900 dark:text-gray-100 font-medium bg-muted/30 rounded-md py-2"
                   style={{ fontFamily: 'Aptos, sans-serif', fontStyle: 'normal' }}
                 >
                   “{quote}”
@@ -172,19 +172,21 @@ const ArticleDetailPage = () => {
 
         {/* References / External Links */}
         {article.links && article.links.length > 0 && (
-          <div className="mt-6">
-            <h2 className="text-2xl font-bold text-foreground mb-1 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>References</h2>
-            <ul className="space-y-2">
+          <div className="mt-10 bg-muted/30 dark:bg-muted/20 rounded-lg p-6 border border-muted-foreground/20">
+            <h2 className="text-xl font-bold text-muted-foreground mb-4 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>
+              References & Further Reading
+            </h2>
+            <ul className="space-y-3 list-disc list-inside">
               {article.links.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-pink-500 text-base md:text-lg font-semibold no-underline hover:no-underline font-sans"
-                    style={{ color: '#ec4899', fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}
+                    className="text-foreground text-base md:text-lg font-medium no-underline font-sans"
+                    style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}
                   >
-                    <RoughNotation type="underline" onHover={true} color="#ec4899">
+                    <RoughNotation type="underline" onHover={true} color="currentColor">
                       <span>{link.title || link.url}</span>
                     </RoughNotation>
                   </a>
@@ -206,14 +208,14 @@ const ArticleDetailPage = () => {
               Enjoyed reading?
             </div>
             <div className="text-foreground/90 text-lg">
-              Now follow me on <span className="font-bold text-pink-500">YouTube</span> before I disappear!
+              Now follow me on <span className="font-bold text-muted-foreground">YouTube</span> before I disappear!
             </div>
           </div>
           <a
             href="https://www.youtube.com/@javokhirsielts"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-md font-semibold text-lg flex items-center text-white bg-black dark:bg-pink-600 hover:bg-pink-700 dark:hover:bg-pink-500 transition-colors"
+            className="px-6 py-3 rounded-md font-semibold text-lg flex items-center text-white bg-black dark:bg-muted-foreground hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors"
             style={{ fontFamily: 'Aptos, sans-serif' }}
           >
             <Youtube className="w-6 h-6 mr-2 flex-shrink-0" />
@@ -228,8 +230,8 @@ const ArticleDetailPage = () => {
           {prevArticle && (
             <div className="flex flex-col items-start text-left">
               <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Previous Article</span>
-              <Link to={`/article/${prevArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
-                <RoughNotation type="underline" onHover={true} color="#ec4899">
+              <Link to={`/article/${prevArticle.id}`} className="text-muted-foreground text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
+                <RoughNotation type="underline" onHover={true} color="currentColor">
                   <span>{prevArticle.title}</span>
                 </RoughNotation>
               </Link>
@@ -238,8 +240,8 @@ const ArticleDetailPage = () => {
           {nextArticle && (
             <div className="flex flex-col items-start text-left">
               <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Next Up</span>
-              <Link to={`/article/${nextArticle.id}`} className="text-pink-500 text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
-                <RoughNotation type="underline" onHover={true} color="#ec4899">
+              <Link to={`/article/${nextArticle.id}`} className="text-muted-foreground text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
+                <RoughNotation type="underline" onHover={true} color="currentColor">
                   <span>{nextArticle.title}</span>
                 </RoughNotation>
               </Link>

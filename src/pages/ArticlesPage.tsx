@@ -20,12 +20,12 @@ const ArticlesPage = () => {
           >
             <div className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 gap-2">
-                <RoughNotation type="underline" onHover={true}>
-                  <h2 className="text-2xl font-sans font-bold" style={{ color: '#1E2024' }}>
+                <RoughNotation type="underline" onHover={true} color="currentColor">
+                  <h2 className="text-2xl font-sans font-bold text-muted-foreground">
                     {article.title}
                   </h2>
                 </RoughNotation>
-                <span className="text-pink-500 text-sm font-bold uppercase">
+                <span className="text-muted-foreground text-sm font-bold uppercase">
                   {article.readTime} min read
                 </span>
               </div>
