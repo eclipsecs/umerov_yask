@@ -13,6 +13,8 @@ import chart_1_9 from '@/assets/ielts-task1-images/chart_1_9.png';
 import chart_1_10 from '@/assets/ielts-task1-images/chart_1_10.png';
 import chart_1_11 from '@/assets/ielts-task1-images/chart_1_11.png';
 import chart_1_12 from '@/assets/ielts-task1-images/chart_1_12.png';
+import chart_1_13 from '@/assets/ielts-task1-images/chart_1_13.png';
+import chart_1_14 from '@/assets/ielts-task1-images/chart_1_14.png';
 
 
 export interface IELTSEssay {
@@ -31,6 +33,50 @@ export interface IELTSEssay {
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
   {
+    id: '114',
+    task: 'task1',
+    title: 'Task One: 14 of 100: Table',
+    question: 'TThe table below shows information about travelling to work in one US city. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9.0,
+    writingTime: '19 minutes',
+    wordCount: 193,
+    tags: ['Table'],
+    image: chart_1_14, // Add your image here when available
+    content: `
+
+The table compares the means of transport used to travel to work in a particular US city.
+
+Overall, car travel with more than one passanger emerges as the fastest option, whereas public transport such as trains and buses tends to be slower. The least efficient means of commuting is cycling and walking.
+
+When travelling by car, a single occupant covers an average distance of 17 miles, while a car carrying multiple passengers covers a substantially longer distance of 24 miles. Despite the slightly higher speed of 34 mph for multi-passenger cars compared with 31 mph for single-occupancy cars, the former requires more time to complete the journey, taking approximately 42 minutes versus 33 minutes.
+
+Train and bus travel accounts for a journey of 23 miles in roughly 49 minutes, corresponding to an average speed of 28 mph. This places it third in terms of speed, ranking below a multi-passenger car but above cycling and walking. In contrast, cycling and walking are the slowest commuting options, covering just 4 miles in under 20 minutes. Notably, walking averages 3 mph, whereas cycling reaches 10 mph, highlighting a substantial difference in pace between these two modes.
+
+`
+  },
+  {
+    id: '113',
+    task: 'task1',
+    title: 'Task One: 13 of 100: Mixed Chart',
+    question: 'The table and bar chart below give information about travelling to work in Houston, Texas. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9.0,
+    writingTime: '11 minutes',
+    wordCount: 206,
+    tags: ['Mixed Chart'],
+    image: chart_1_13, // Add your image here when available
+    content: `
+
+The table provides a comparison of three modes of transport used for commuting to work, whereas the bar chart illustrates the CO2 emissions generated with each mode.
+
+Overall, walking and cycling account for the smallest proportion of commuters and produce significantly lower CO2 emissions compared with other modes of transport. By contrast, car with a single driver generated the highest CO2 emissions, reflecting their greater popularity among commuters.
+
+The majority of commuters, 48%, travel in cars with a single driver, with an average age of 43. This mode also generates the highest CO2 emissions, approximately 0.3 kilograms per commuter, making it the largest contributor among the four transport types. In contrast, cars with multiple passengers account for only 11% of commuters—roughly one-quarter of the single-occupancy cars—and their users have an average age of 44. This category produces around 0.1 kilograms of CO2 per person.
+
+Trains and buses are predominantly used by older commuters, with an average age of 47, representing 37% of the population. This mode also results in about 0.1 kilograms of CO2 emissions per commuter. Cycling and walking are the least popular, with only 4% of commuters, whose average age is 39, opting for this mode. Notably, this category is effectively CO2-free.
+
+`
+  },
+  {
     id: '112',
     task: 'task1',
     title: 'Task One: 12 of 100: Bar Chart',
@@ -42,7 +88,7 @@ export const task1Essays: IELTSEssay[] = [
     image: chart_1_12, // Add your image here when available
     content: `
 
-TThe bar chart compares the proportion of people who used the internet on a daily basis, broken down into age categories, between 2003 and 2006.
+The bar chart compares the proportion of people who used the internet on a daily basis, broken down into age categories, between 2003 and 2006.
 
 Overall, young adults and middle-aged groups spent more time using the internet every day compared with other age categories. In contrast, seniors spent the least time across the period given, particularly in 2003.
 
