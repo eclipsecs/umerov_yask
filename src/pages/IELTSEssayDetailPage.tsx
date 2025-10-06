@@ -113,85 +113,89 @@ const IELTSEssayDetailPage = () => {
 
       {/* Essay Analysis */}
       <section className="mt-16">
-        <h2
-          className="text-2xl font-bold mb-6 text-foreground tracking-tight"
-          style={{ fontFamily: 'Aptos, sans-serif' }}
-        >
-          Essay Analysis
-        </h2>
+        <Card className="border-border/40 shadow-sm">
+          <CardHeader className="border-b border-border/40 pb-4">
+            <CardTitle
+              className="text-2xl font-bold text-foreground tracking-tight text-center w-full"
+              style={{ fontFamily: 'Aptos, sans-serif' }}
+            >
+              Essay Analysis
+            </CardTitle>
+          </CardHeader>
 
-        {/* Unified Stats and Criteria */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-4 mb-10">
-          <div className="text-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200 col-span-2 md:col-span-1">
-            <div className="text-3xl font-extrabold text-foreground">{essay.bandScore}</div>
-            <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wide">Band</div>
-          </div>
-          <div className="text-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200 col-span-2 md:col-span-1">
-            <div className="text-3xl font-extrabold text-foreground">{essay.wordCount}</div>
-            <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wide">Words</div>
-          </div>
-          <div className="text-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200 col-span-2 md:col-span-1">
-            <div className="text-3xl font-extrabold text-foreground">{essay.writingTime}</div>
-            <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wide">Time</div>
-          </div>
+          <CardContent className="overflow-x-auto">
+            <table className="w-full border-collapse text-center mt-4">
+              <thead className="bg-muted/30">
+                <tr>
+                  <th className="p-3 text-sm font-bold text-foreground uppercase">Band</th>
+                  <th className="p-3 text-sm font-bold text-foreground uppercase">Words</th>
+                  <th className="p-3 text-sm font-bold text-foreground uppercase">Time</th>
+                  {essay.task === 'task1' ? (
+                    <>
+                      <th className="p-3 text-sm font-bold text-foreground uppercase">TA</th>
+                      <th className="p-3 text-sm font-bold text-foreground uppercase">CC</th>
+                      <th className="p-3 text-sm font-bold text-foreground uppercase">LR</th>
+                      <th className="p-3 text-sm font-bold text-foreground uppercase">GRA</th>
+                    </>
+                  ) : (
+                    <>
+                      <th className="p-3 text-sm font-bold text-foreground uppercase">TR</th>
+                      <th className="p-3 text-sm font-bold text-foreground uppercase">CC</th>
+                      <th className="p-3 text-sm font-bold text-foreground uppercase">LR</th>
+                      <th className="p-3 text-sm font-bold text-foreground uppercase">GRA</th>
+                    </>
+                  )}
+                </tr>
+              </thead>
 
-          {/* Criteria (merged) */}
-          {essay.task === 'task1' ? (
-            <>
-              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
-                <span className="text-sm font-bold text-foreground mb-1">TA</span>
-                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
-                  {essay.taskAchievement ?? '-'}
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
-                <span className="text-sm font-bold text-foreground mb-1">CC</span>
-                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
-                  {essay.coherenceCohesion ?? '-'}
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
-                <span className="text-sm font-bold text-foreground mb-1">LR</span>
-                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
-                  {essay.lexicalResource ?? '-'}
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
-                <span className="text-sm font-bold text-foreground mb-1">GRA</span>
-                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
-                  {essay.grammaticalRangeAccuracy ?? '-'}
-                </span>
-              </div>
-            </>
-          ) : (
-            <>
-              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
-                <span className="text-sm font-bold text-foreground mb-1">TR</span>
-                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
-                  {essay.taskResponse ?? '-'}
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
-                <span className="text-sm font-bold text-foreground mb-1">CC</span>
-                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
-                  {essay.coherenceCohesion ?? '-'}
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
-                <span className="text-sm font-bold text-foreground mb-1">LR</span>
-                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
-                  {essay.lexicalResource ?? '-'}
-                </span>
-              </div>
-              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
-                <span className="text-sm font-bold text-foreground mb-1">GRA</span>
-                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
-                  {essay.grammaticalRangeAccuracy ?? '-'}
-                </span>
-              </div>
-            </>
-          )}
-        </div>
+              <tbody>
+                <tr className="hover:bg-muted/10 transition-all">
+                  <td className="p-4 text-lg font-semibold text-foreground">
+                    {essay.bandScore}
+                  </td>
+                  <td className="p-4 text-lg font-semibold text-foreground">
+                    {essay.wordCount}
+                  </td>
+                  <td className="p-4 text-lg font-semibold text-foreground">
+                    {essay.writingTime}
+                  </td>
+
+                  {essay.task === 'task1' ? (
+                    <>
+                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                        {essay.taskAchievement ?? '-'}
+                      </td>
+                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                        {essay.coherenceCohesion ?? '-'}
+                      </td>
+                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                        {essay.lexicalResource ?? '-'}
+                      </td>
+                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                        {essay.grammaticalRangeAccuracy ?? '-'}
+                      </td>
+                    </>
+                  ) : (
+                    <>
+                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                        {essay.taskResponse ?? '-'}
+                      </td>
+                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                        {essay.coherenceCohesion ?? '-'}
+                      </td>
+                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                        {essay.lexicalResource ?? '-'}
+                      </td>
+                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                        {essay.grammaticalRangeAccuracy ?? '-'}
+                      </td>
+                    </>
+                  )}
+                </tr>
+              </tbody>
+            </table>
+          </CardContent>
+        </Card>
       </section>
 
       <section className="mt-16">
