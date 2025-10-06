@@ -40,6 +40,25 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
+    {
+    id: '116',
+    task: 'task1',
+    title: 'Task One: 16 of 100: Table',
+    question: 'The table gives information about water use in three sectors in six different countries. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 6,
+    taskAchievement: 6,
+    coherenceCohesion: 6,
+    lexicalResource: 6,
+    grammaticalRangeAccuracy: 6,
+    writingTime: '12 minutes',
+    wordCount: 176,
+    tags: ['Table'],
+    image: chart_1_15, // Add your image here when available
+    content: `
+
+Writing...
+`
+  },
   {
     id: '115',
     task: 'task1',
