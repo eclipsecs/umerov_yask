@@ -125,7 +125,7 @@ const IELTSEssayDetailPage = () => {
 
           <CardContent className="overflow-x-auto">
             <table className="w-full border-collapse text-center mt-4">
-              <thead className="bg-muted/30">
+              <thead className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-900 border-b border-border/40">
                 <tr>
                   <th className="p-3 text-sm font-bold text-foreground uppercase">Band</th>
                   <th className="p-3 text-sm font-bold text-foreground uppercase">Words</th>
@@ -149,7 +149,7 @@ const IELTSEssayDetailPage = () => {
               </thead>
 
               <tbody>
-                <tr className="hover:bg-muted/10 transition-all">
+                <tr className="hover:bg-muted/20 transition-all duration-200 border-t border-border/40">
                   <td className="p-4 text-lg font-semibold text-foreground">
                     {essay.bandScore}
                   </td>
@@ -162,31 +162,31 @@ const IELTSEssayDetailPage = () => {
 
                   {essay.task === 'task1' ? (
                     <>
-                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                      <td className="p-4 text-lg font-semibold text-foreground/90">
                         {essay.taskAchievement ?? '-'}
                       </td>
-                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                      <td className="p-4 text-lg font-semibold text-foreground/90">
                         {essay.coherenceCohesion ?? '-'}
                       </td>
-                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                      <td className="p-4 text-lg font-semibold text-foreground/90">
                         {essay.lexicalResource ?? '-'}
                       </td>
-                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                      <td className="p-4 text-lg font-semibold text-foreground/90">
                         {essay.grammaticalRangeAccuracy ?? '-'}
                       </td>
                     </>
                   ) : (
                     <>
-                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                      <td className="p-4 text-lg font-semibold text-foreground/90">
                         {essay.taskResponse ?? '-'}
                       </td>
-                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                      <td className="p-4 text-lg font-semibold text-foreground/90">
                         {essay.coherenceCohesion ?? '-'}
                       </td>
-                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                      <td className="p-4 text-lg font-semibold text-foreground/90">
                         {essay.lexicalResource ?? '-'}
                       </td>
-                      <td className="p-4 text-lg font-semibold text-blue-600 dark:text-blue-400">
+                      <td className="p-4 text-lg font-semibold text-foreground/90">
                         {essay.grammaticalRangeAccuracy ?? '-'}
                       </td>
                     </>
