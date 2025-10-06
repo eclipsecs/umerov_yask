@@ -15,6 +15,7 @@ import chart_1_11 from '@/assets/ielts-task1-images/chart_1_11.png';
 import chart_1_12 from '@/assets/ielts-task1-images/chart_1_12.png';
 import chart_1_13 from '@/assets/ielts-task1-images/chart_1_13.png';
 import chart_1_14 from '@/assets/ielts-task1-images/chart_1_14.png';
+import chart_1_15 from '@/assets/ielts-task1-images/chart_1_15.png';
 
 
 export interface IELTSEssay {
@@ -40,10 +41,36 @@ export interface IELTSEssay {
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
   {
+    id: '115',
+    task: 'task1',
+    title: 'Task One: 15 of 100: Table',
+    question: 'The table below shows the number of temporary migrant workers in four countries in 2003 and 2006 and the number of these workers per 1,000 people in these countries in 2006. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 8.5,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 8,
+    writingTime: '12 minutes',
+    wordCount: 176,
+    tags: ['Table'],
+    image: chart_1_15, // Add your image here when available
+    content: `
+
+The table provides comparison of the number of employees in temporary status in four various countries from 2003 to 2006, and the total number of workers per 1000 people in 2006
+
+Overall, the United States had the highest number of temporary workers in both years. However, despite employing far fewer workers in total, New Zealand recorded the greatest proportion of short-term employees per 1000 people in 2006.
+
+In detail, the number of temporary workers in the United States rose from 577,000 in 2003 to 678,000 in 2006, although this figure represented the lowest ratio of such workers per 1000 pole (2.3). Australia followed, with an increase from 152,000 to 219,000 over the same period, accounting for 10.7 temporary workers per 1000 people in 2006.
+
+In the United Kingdom, the figure almost doubled from 137,000 in 2003 to 266,000 in 2006, giving a rate of 4,4 per 1000 people. Meanwhile, New Zealand experienced a smaller absolute rise – from 65,000 to 87,000 – but it had the highest density of temporary workers, with 21.1 per 1000 people in 2006.
+
+`
+  },
+  {
     id: '114',
     task: 'task1',
     title: 'Task One: 14 of 100: Table',
-    question: 'TThe table below shows information about travelling to work in one US city. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    question: 'The table below shows information about travelling to work in one US city. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
     bandScore: 9.0,
     taskAchievement: 9,
     coherenceCohesion: 9,
