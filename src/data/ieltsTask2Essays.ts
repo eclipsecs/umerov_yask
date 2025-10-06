@@ -9,6 +9,11 @@ export interface IELTSEssay {
   wordCount: number;
   tags: string[];
   image?: string; // Optional image for Task 1 essays
+  // Manual scoring fields for Task 2 essays
+  taskResponse?: number; // TR for Task 2
+  coherenceCohesion?: number; // CC
+  lexicalResource?: number; // LR
+  grammaticalRangeAccuracy?: number; // GRA
 }
 
 export const task2Essays: IELTSEssay[] = [

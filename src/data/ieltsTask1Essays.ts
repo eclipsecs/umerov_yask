@@ -28,6 +28,13 @@ export interface IELTSEssay {
   wordCount: number;
   tags: string[];
   image?: string; // Optional image for Task 1 essays
+
+  // ✅ New fields for manual scoring (Task 1)
+  taskAchievement?: number; // TA
+  coherenceCohesion?: number; // CC
+  lexicalResource?: number; // LR
+  grammaticalRangeAccuracy?: number; // GRA
+  taskResponse?: number; // TR for Task 2
 }
 
 export const task1Essays: IELTSEssay[] = [
@@ -38,6 +45,10 @@ export const task1Essays: IELTSEssay[] = [
     title: 'Task One: 14 of 100: Table',
     question: 'TThe table below shows information about travelling to work in one US city. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
     bandScore: 9.0,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 9,
     writingTime: '19 minutes',
     wordCount: 193,
     tags: ['Table'],

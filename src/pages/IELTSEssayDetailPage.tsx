@@ -120,34 +120,104 @@ const IELTSEssayDetailPage = () => {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          {/* Essay Analysis numbers and labels - edit sizes here */}
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="text-xl md:text-2xl text-muted-foreground font-bold mb-2">
-                {essay.bandScore}
-              </div>
-              <div className="text-xs md:text-sm text-foreground font-bold">
-                Estimated Band Score
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-xl md:text-2xl text-muted-foreground font-bold mb-2">
-                {essay.wordCount}
-              </div>
-              <div className="text-xs md:text-sm text-foreground font-bold">
-                Word Count
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-xl md:text-2xl text-muted-foreground font-bold mb-2">
-                {essay.writingTime}
-              </div>
-              <div className="text-xs md:text-sm text-foreground font-bold">
-                Writing Time
-              </div>
+  {/* Summary Stats */}
+  <div className="grid md:grid-cols-3 gap-6 mb-8">
+    <div className="text-center p-3 bg-muted/20 rounded-md">
+      <div className="text-2xl font-extrabold text-foreground">{essay.bandScore}</div>
+      <div className="text-xs text-muted-foreground uppercase font-semibold tracking-wide mt-1">
+        Band Score
+      </div>
+    </div>
+    <div className="text-center p-3 bg-muted/20 rounded-md">
+      <div className="text-2xl font-extrabold text-foreground">{essay.wordCount}</div>
+      <div className="text-xs text-muted-foreground uppercase font-semibold tracking-wide mt-1">
+        Word Count
+      </div>
+    </div>
+    <div className="text-center p-3 bg-muted/20 rounded-md">
+      <div className="text-2xl font-extrabold text-foreground">{essay.writingTime}</div>
+      <div className="text-xs text-muted-foreground uppercase font-semibold tracking-wide mt-1">
+        Writing Time
+      </div>
+    </div>
+  </div>
+
+  {/* IELTS Criteria */}
+  <div className="border-t border-border/30 my-6"></div>
+
+  <div>
+    <h3 className="text-base font-bold mb-4 text-foreground flex items-center gap-2" style={{ fontFamily: 'Aptos, sans-serif' }}>
+      <Award className="w-4 h-4 text-muted-foreground" />
+      IELTS Writing Assessment Criteria
+    </h3>
+
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+      {essay.task === 'task1' ? (
+        <>
+          <div className="p-3 bg-muted/20 rounded-md">
+            <div className="text-sm font-bold text-foreground">TA</div>
+            <div className="text-[11px] text-muted-foreground mb-1">Task Achievement</div>
+            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+              {essay.taskAchievement ?? '-'}
             </div>
           </div>
-        </CardContent>
+          <div className="p-3 bg-muted/20 rounded-md">
+            <div className="text-sm font-bold text-foreground">CC</div>
+            <div className="text-[11px] text-muted-foreground mb-1">Coherence & Cohesion</div>
+            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+              {essay.coherenceCohesion ?? '-'}
+            </div>
+          </div>
+          <div className="p-3 bg-muted/20 rounded-md">
+            <div className="text-sm font-bold text-foreground">LR</div>
+            <div className="text-[11px] text-muted-foreground mb-1">Lexical Resource</div>
+            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+              {essay.lexicalResource ?? '-'}
+            </div>
+          </div>
+          <div className="p-3 bg-muted/20 rounded-md">
+            <div className="text-sm font-bold text-foreground">GRA</div>
+            <div className="text-[11px] text-muted-foreground mb-1">Grammar & Accuracy</div>
+            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+              {essay.grammaticalRangeAccuracy ?? '-'}
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="p-3 bg-muted/20 rounded-md">
+            <div className="text-sm font-bold text-foreground">TR</div>
+            <div className="text-[11px] text-muted-foreground mb-1">Task Response</div>
+            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+              {essay.taskResponse ?? '-'}
+            </div>
+          </div>
+          <div className="p-3 bg-muted/20 rounded-md">
+            <div className="text-sm font-bold text-foreground">CC</div>
+            <div className="text-[11px] text-muted-foreground mb-1">Coherence & Cohesion</div>
+            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+              {essay.coherenceCohesion ?? '-'}
+            </div>
+          </div>
+          <div className="p-3 bg-muted/20 rounded-md">
+            <div className="text-sm font-bold text-foreground">LR</div>
+            <div className="text-[11px] text-muted-foreground mb-1">Lexical Resource</div>
+            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+              {essay.lexicalResource ?? '-'}
+            </div>
+          </div>
+          <div className="p-3 bg-muted/20 rounded-md">
+            <div className="text-sm font-bold text-foreground">GRA</div>
+            <div className="text-[11px] text-muted-foreground mb-1">Grammar & Accuracy</div>
+            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
+              {essay.grammaticalRangeAccuracy ?? '-'}
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+  </div>
+</CardContent>
       </Card>
 
       <section className="mt-16">
