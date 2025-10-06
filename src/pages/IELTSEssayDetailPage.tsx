@@ -112,113 +112,87 @@ const IELTSEssayDetailPage = () => {
       </article>
 
       {/* Essay Analysis */}
-      <Card className="mt-12 border-none shadow-none">
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2" style={{ fontFamily: 'Aptos, sans-serif' }}>
-            <Award className="w-5 h-5 text-muted-foreground font-bold" />
-            Essay Analysis
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-  {/* Summary Stats */}
-  <div className="grid md:grid-cols-3 gap-6 mb-8">
-    <div className="text-center p-3 bg-muted/20 rounded-md">
-      <div className="text-2xl font-extrabold text-foreground">{essay.bandScore}</div>
-      <div className="text-xs text-muted-foreground uppercase font-semibold tracking-wide mt-1">
-        Band Score
-      </div>
-    </div>
-    <div className="text-center p-3 bg-muted/20 rounded-md">
-      <div className="text-2xl font-extrabold text-foreground">{essay.wordCount}</div>
-      <div className="text-xs text-muted-foreground uppercase font-semibold tracking-wide mt-1">
-        Word Count
-      </div>
-    </div>
-    <div className="text-center p-3 bg-muted/20 rounded-md">
-      <div className="text-2xl font-extrabold text-foreground">{essay.writingTime}</div>
-      <div className="text-xs text-muted-foreground uppercase font-semibold tracking-wide mt-1">
-        Writing Time
-      </div>
-    </div>
-  </div>
+      <section className="mt-16">
+        <h2
+          className="text-2xl font-bold mb-6 text-foreground tracking-tight"
+          style={{ fontFamily: 'Aptos, sans-serif' }}
+        >
+          Essay Analysis
+        </h2>
 
-  {/* IELTS Criteria */}
-  <div className="border-t border-border/30 my-6"></div>
+        {/* Unified Stats and Criteria */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-4 mb-10">
+          <div className="text-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200 col-span-2 md:col-span-1">
+            <div className="text-3xl font-extrabold text-foreground">{essay.bandScore}</div>
+            <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wide">Band</div>
+          </div>
+          <div className="text-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200 col-span-2 md:col-span-1">
+            <div className="text-3xl font-extrabold text-foreground">{essay.wordCount}</div>
+            <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wide">Words</div>
+          </div>
+          <div className="text-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200 col-span-2 md:col-span-1">
+            <div className="text-3xl font-extrabold text-foreground">{essay.writingTime}</div>
+            <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wide">Time</div>
+          </div>
 
-  <div>
-    <h3 className="text-base font-bold mb-4 text-foreground flex items-center gap-2" style={{ fontFamily: 'Aptos, sans-serif' }}>
-      <Award className="w-4 h-4 text-muted-foreground" />
-      IELTS Writing Assessment Criteria
-    </h3>
-
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-      {essay.task === 'task1' ? (
-        <>
-          <div className="p-3 bg-muted/20 rounded-md">
-            <div className="text-sm font-bold text-foreground">TA</div>
-            <div className="text-[11px] text-muted-foreground mb-1">Task Achievement</div>
-            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-              {essay.taskAchievement ?? '-'}
-            </div>
-          </div>
-          <div className="p-3 bg-muted/20 rounded-md">
-            <div className="text-sm font-bold text-foreground">CC</div>
-            <div className="text-[11px] text-muted-foreground mb-1">Coherence & Cohesion</div>
-            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-              {essay.coherenceCohesion ?? '-'}
-            </div>
-          </div>
-          <div className="p-3 bg-muted/20 rounded-md">
-            <div className="text-sm font-bold text-foreground">LR</div>
-            <div className="text-[11px] text-muted-foreground mb-1">Lexical Resource</div>
-            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-              {essay.lexicalResource ?? '-'}
-            </div>
-          </div>
-          <div className="p-3 bg-muted/20 rounded-md">
-            <div className="text-sm font-bold text-foreground">GRA</div>
-            <div className="text-[11px] text-muted-foreground mb-1">Grammar & Accuracy</div>
-            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-              {essay.grammaticalRangeAccuracy ?? '-'}
-            </div>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="p-3 bg-muted/20 rounded-md">
-            <div className="text-sm font-bold text-foreground">TR</div>
-            <div className="text-[11px] text-muted-foreground mb-1">Task Response</div>
-            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-              {essay.taskResponse ?? '-'}
-            </div>
-          </div>
-          <div className="p-3 bg-muted/20 rounded-md">
-            <div className="text-sm font-bold text-foreground">CC</div>
-            <div className="text-[11px] text-muted-foreground mb-1">Coherence & Cohesion</div>
-            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-              {essay.coherenceCohesion ?? '-'}
-            </div>
-          </div>
-          <div className="p-3 bg-muted/20 rounded-md">
-            <div className="text-sm font-bold text-foreground">LR</div>
-            <div className="text-[11px] text-muted-foreground mb-1">Lexical Resource</div>
-            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-              {essay.lexicalResource ?? '-'}
-            </div>
-          </div>
-          <div className="p-3 bg-muted/20 rounded-md">
-            <div className="text-sm font-bold text-foreground">GRA</div>
-            <div className="text-[11px] text-muted-foreground mb-1">Grammar & Accuracy</div>
-            <div className="text-sm font-semibold text-blue-600 dark:text-blue-400">
-              {essay.grammaticalRangeAccuracy ?? '-'}
-            </div>
-          </div>
-        </>
-      )}
-    </div>
-  </div>
-</CardContent>
-      </Card>
+          {/* Criteria (merged) */}
+          {essay.task === 'task1' ? (
+            <>
+              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
+                <span className="text-sm font-bold text-foreground mb-1">TA</span>
+                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
+                  {essay.taskAchievement ?? '-'}
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
+                <span className="text-sm font-bold text-foreground mb-1">CC</span>
+                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
+                  {essay.coherenceCohesion ?? '-'}
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
+                <span className="text-sm font-bold text-foreground mb-1">LR</span>
+                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
+                  {essay.lexicalResource ?? '-'}
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
+                <span className="text-sm font-bold text-foreground mb-1">GRA</span>
+                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
+                  {essay.grammaticalRangeAccuracy ?? '-'}
+                </span>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
+                <span className="text-sm font-bold text-foreground mb-1">TR</span>
+                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
+                  {essay.taskResponse ?? '-'}
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
+                <span className="text-sm font-bold text-foreground mb-1">CC</span>
+                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
+                  {essay.coherenceCohesion ?? '-'}
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
+                <span className="text-sm font-bold text-foreground mb-1">LR</span>
+                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
+                  {essay.lexicalResource ?? '-'}
+                </span>
+              </div>
+              <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-muted/10 hover:bg-muted/20 transition-all duration-200">
+                <span className="text-sm font-bold text-foreground mb-1">GRA</span>
+                <span className="text-base font-semibold text-blue-600 dark:text-blue-400">
+                  {essay.grammaticalRangeAccuracy ?? '-'}
+                </span>
+              </div>
+            </>
+          )}
+        </div>
+      </section>
 
       <section className="mt-16">
         <div className="flex justify-between gap-12 items-start">
