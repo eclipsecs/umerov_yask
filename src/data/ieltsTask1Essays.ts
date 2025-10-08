@@ -16,6 +16,7 @@ import chart_1_12 from '@/assets/ielts-task1-images/chart_1_12.png';
 import chart_1_13 from '@/assets/ielts-task1-images/chart_1_13.png';
 import chart_1_14 from '@/assets/ielts-task1-images/chart_1_14.png';
 import chart_1_15 from '@/assets/ielts-task1-images/chart_1_15.png';
+import chart_1_16 from '@/assets/ielts-task1-images/chart_1_16.png';
 
 
 export interface IELTSEssay {
@@ -40,23 +41,32 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
-    {
+  {
     id: '116',
     task: 'task1',
     title: 'Task One: 16 of 100: Table',
     question: 'The table gives information about water use in three sectors in six different countries. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
-    bandScore: 6,
-    taskAchievement: 6,
-    coherenceCohesion: 6,
-    lexicalResource: 6,
-    grammaticalRangeAccuracy: 6,
+    bandScore: 8.5,
+    taskAchievement: 9,
+    coherenceCohesion: 8,
+    lexicalResource: 9.0,
+    grammaticalRangeAccuracy: 8.0,
     writingTime: '12 minutes',
-    wordCount: 176,
+    wordCount: 179,
     tags: ['Table'],
-    image: chart_1_15, // Add your image here when available
+    image: chart_1_16, // Add your image here when available
     content: `
 
-Writing...
+The table compares water usage in three sectors – agriculture, industry, and households – across six countries.
+
+Overall, agricultural water consumption was significantly higher than industrial or domestic use in all countries. Canada had the highest total water usage, while China had the lowest.
+
+In detail, Russia had the highest agricultural water consumption at 1863 m³, followed by Turkey with 1482 m³ and Canada with 1238 m³. The UK used considerably less, at 810 m³, closely followed by China at 805 m³. Australia recorded the lowest agricultural usage at 741 m³.
+
+In terms of industrial water use, Canada and Turkey led with 832 m³ and 731 m³ respectively. The UK and Australia used moderate amounts, at 398 m³ and 276 m³, while China and Russia had the lowest figures, at 71 m³ and 56 m³ respectively.
+
+Regarding domestic water usage, Australia and Canada had the highest consumption, at 341 m³ and 279 m³ respectively. The remaining countries used considerably less: Russia (98 m³), Turkey (80 m³), the UK (38 m³), and China, which had the lowest domestic usage at 26 m³.
+
 `
   },
   {
