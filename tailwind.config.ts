@@ -58,8 +58,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
-				serif: ['Merriweather', 'Georgia', 'serif']
+				sans: ['Aptos', 'system-ui', 'sans-serif'],
+				serif: ['Aptos', 'system-ui', 'sans-serif']
 			},
 			maxWidth: {
 				'content': 'var(--content-width)'
