@@ -33,7 +33,9 @@ const HomePage = () => {
             <div className="w-full">
               <div className="flex-1 space-y-8 mx-auto">
                 <div className="space-y-6">
-                  <LiquidTextReveal text="Hi, I'm Umerov" />
+                  <h1 className="text-6xl sm:text-7xl font-extrabold text-center text-[#111827] dark:text-white">
+                    Hi, I'm Umerov
+                  </h1>
                   <div className="space-y-4 text-lg leading-relaxed text-muted-foreground max-w-2xl font-sans font-medium mx-auto text-left">
                     <p>
                       I love sharing thoughts and ideas through writing. This is where I store my ramblings
