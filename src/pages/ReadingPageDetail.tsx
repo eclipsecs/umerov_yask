@@ -1,10 +1,12 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowDown, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import RoughNotation from '@/components/RoughNotation';
 
 import { articles } from '@/data/readings';
+
+import { useState, useEffect } from 'react';
 
 const ArticleDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -16,6 +18,19 @@ const ArticleDetailPage = () => {
       : null;
   const prevArticle =
     currentIndex > 0 ? articles[currentIndex - 1] : null;
+
+  const [isAtBottom, setIsAtBottom] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const bottomThreshold = document.body.offsetHeight - 100;
+      setIsAtBottom(scrollPosition >= bottomThreshold);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const formatRelativeTime = (dateString: string) => {
     const date = new Date(dateString);
@@ -45,6 +60,14 @@ const ArticleDetailPage = () => {
         </Link>
       </div>
     );
+  };
+
+  const handleScrollClick = () => {
+    if (isAtBottom) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -183,6 +206,28 @@ const ArticleDetailPage = () => {
         </div>
       </section>
 
+      {/* Scroll Button */}
+      <Button
+        onClick={handleScrollClick}
+        className="fixed bottom-6 right-6 bg-muted-foreground text-white rounded-full shadow-lg hover:bg-foreground transition-all flex items-center justify-center group"
+        style={{ fontFamily: 'Aptos, sans-serif', padding: '0.75rem 1rem' }}
+      >
+        {isAtBottom ? (
+          <>
+            <ArrowUp className="w-5 h-5 transition-transform group-hover:-translate-y-1" />
+            <span className="ml-2 text-sm font-semibold opacity-80 group-hover:opacity-100 transition-opacity duration-300 text-white">
+              Scroll to Top
+            </span>
+          </>
+        ) : (
+          <>
+            <ArrowDown className="w-5 h-5 transition-transform group-hover:translate-y-1" />
+            <span className="ml-2 text-sm font-semibold opacity-80 group-hover:opacity-100 transition-opacity duration-300 text-white">
+              Scroll to Bottom
+            </span>
+          </>
+        )}
+      </Button>
     </div>
   );
 };
