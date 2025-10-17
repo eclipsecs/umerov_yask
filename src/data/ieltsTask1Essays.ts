@@ -17,6 +17,7 @@ import chart_1_13 from '@/assets/ielts-task1-images/chart_1_13.png';
 import chart_1_14 from '@/assets/ielts-task1-images/chart_1_14.png';
 import chart_1_15 from '@/assets/ielts-task1-images/chart_1_15.png';
 import chart_1_16 from '@/assets/ielts-task1-images/chart_1_16.png';
+import chart_1_17 from '@/assets/ielts-task1-images/chart_1_17.png';
 
 
 export interface IELTSEssay {
@@ -41,6 +42,32 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
+  {
+    id: '117',
+    task: 'task1',
+    title: 'Task One: 17 of 100: Bar chart',
+    question: 'The bar chart shows the average number of hours students in five different universities studied.. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 6.0,
+    taskAchievement: 9,
+    coherenceCohesion: 8,
+    lexicalResource: 9.0,
+    grammaticalRangeAccuracy: 8.0,
+    writingTime: '12 minutes',
+    wordCount: 190,
+    tags: ['Bar'],
+    image: chart_1_17, // Add your image here when available
+    content: `
+
+The bar charts provide comparison of the number of hours in average students of various universities studied in weekdays and weekends.
+
+Overall, all universities studied almost the same number of hours on weekdays with University C showing the greatest number of hours studied across other universities, however on weekends, university A recorded the greatest number of hours, while still remaining below University C’s weekday total.
+
+The average number of hours studied by students from university C stood at 10.6. A close pattern can be observed for university B and E, where students from both of these universities contribute about 10.1 hours on average on weekdays. Meanwhile, university E constituted 10 hours on average for studying, university A spends 9.8 hours – showing a mild difference in between.
+
+In contrast, on the weekends, the university that showed the greatest number of hours spent for studying is A at 9 hours on average. University B followed, which spends 8.6 hours on average. While students from university C study 7.8 hours on average, university E does so for 6.2 hours. It is university D that experienced the least number of hours spent on studying on weekends.
+
+`
+  },
   {
     id: '116',
     task: 'task1',
