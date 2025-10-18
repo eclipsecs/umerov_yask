@@ -100,7 +100,13 @@ const ArticleDetailPage = () => {
           )}
 
           {article.image && (
-            <img src={article.image} alt={article.title} className="w-full max-h-96 object-cover rounded-md mb-6" />
+            <div className="w-full flex justify-center items-center bg-gradient-to-br from-muted/10 via-muted/20 to-muted/10 rounded-xl p-4 mb-10 shadow-md">
+              <img
+                src={article.image}
+                alt={article.title}
+                className="w-full max-h-[30rem] object-contain rounded-lg transition-transform duration-500 hover:scale-[1.03]"
+              />
+            </div>
           )}
         </div>
       </header>
