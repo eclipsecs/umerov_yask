@@ -54,7 +54,7 @@ const BooksPage = () => {
 
       {/* Navigation Filters - redesigned as smaller, colorful cards with icons */}
       <div className="flex flex-wrap justify-center gap-2 max-w-full mb-8">
-        <div className="inline-flex rounded-lg border bg-muted/30 shadow-sm p-1 gap-0 flex-wrap justify-center gap-2 max-w-full">
+        <div className="inline-flex rounded-lg border bg-muted/30 p-1 gap-2 max-w-full justify-center flex-wrap">
           {[
             { key: 'all', label: 'All', icon: BookOpen, color: 'purple' },
             { key: 'completed', label: 'Completed', icon: CheckCircle, color: 'green' },
@@ -64,32 +64,28 @@ const BooksPage = () => {
             const isSelected = filter === key;
             const baseColors = {
               purple: {
-                bg: 'bg-purple-600',
-                text: 'text-white',
-                shadow: 'shadow-purple-400',
-                hoverText: 'hover:text-purple-600',
-                textDefault: 'text-purple-600',
+                bgLight: 'bg-purple-100 dark:bg-purple-900',
+                text: 'text-purple-700 dark:text-purple-300',
+                border: 'border-purple-300 dark:border-purple-700',
+                hoverBg: 'hover:bg-purple-200 dark:hover:bg-purple-800',
               },
               green: {
-                bg: 'bg-emerald-600',
-                text: 'text-white',
-                shadow: 'shadow-emerald-400',
-                hoverText: 'hover:text-emerald-600',
-                textDefault: 'text-emerald-600',
+                bgLight: 'bg-emerald-100 dark:bg-emerald-900',
+                text: 'text-emerald-700 dark:text-emerald-300',
+                border: 'border-emerald-300 dark:border-emerald-700',
+                hoverBg: 'hover:bg-emerald-200 dark:hover:bg-emerald-800',
               },
               blue: {
-                bg: 'bg-blue-600',
-                text: 'text-white',
-                shadow: 'shadow-blue-400',
-                hoverText: 'hover:text-blue-600',
-                textDefault: 'text-blue-600',
+                bgLight: 'bg-blue-100 dark:bg-blue-900',
+                text: 'text-blue-700 dark:text-blue-300',
+                border: 'border-blue-300 dark:border-blue-700',
+                hoverBg: 'hover:bg-blue-200 dark:hover:bg-blue-800',
               },
               orange: {
-                bg: 'bg-orange-600',
-                text: 'text-white',
-                shadow: 'shadow-orange-400',
-                hoverText: 'hover:text-orange-600',
-                textDefault: 'text-orange-600',
+                bgLight: 'bg-orange-100 dark:bg-orange-900',
+                text: 'text-orange-700 dark:text-orange-300',
+                border: 'border-orange-300 dark:border-orange-700',
+                hoverBg: 'hover:bg-orange-200 dark:hover:bg-orange-800',
               }
             };
             const colors = baseColors[color];
@@ -97,18 +93,15 @@ const BooksPage = () => {
               <button
                 key={key}
                 onClick={() => setFilter(key as typeof filter)}
-                className={`flex flex-row items-center justify-center rounded-full gap-2 transition-transform duration-300 cursor-pointer
+                className={`flex items-center justify-center rounded-full border px-3 py-1 gap-1 transition-colors duration-200 cursor-pointer text-xs sm:text-sm
                   ${isSelected
-                    ? `${colors.bg} ${colors.text} ${colors.shadow} scale-105`
-                    : `text-muted-foreground ${colors.hoverText}`
+                    ? `${colors.bgLight} ${colors.text} ${colors.border}`
+                    : `border-transparent text-muted-foreground ${colors.hoverBg}`
                   }
-                  shadow-sm
-                  ${index !== 0 ? 'ml-0 sm:ml-2' : ''}
-                  px-2 py-1 text-xs sm:px-4 sm:py-2 sm:text-sm
                 `}
                 aria-pressed={isSelected}
               >
-                <Icon className={`${isSelected ? 'text-white' : colors.textDefault} w-4 h-4 sm:w-6 sm:h-6`} />
+                <Icon className={`w-4 h-4 ${isSelected ? colors.text : 'text-muted-foreground'}`} />
                 <span className="font-semibold">{label}</span>
               </button>
             );
