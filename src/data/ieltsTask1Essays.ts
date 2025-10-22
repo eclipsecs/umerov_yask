@@ -47,6 +47,34 @@ export interface IELTSEssay {
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
   {
+    id: '120',
+    task: 'task1',
+    title: 'Task One: 20 of 100: Table',
+    question: 'The diagram shows how chocolate is produced. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '18 minutes',
+    wordCount: 242,
+    tags: ['Process'],
+    image: chart_1_20, // Add your image here when available
+    content: `
+
+The image illustrates the process through which chocolate is made.
+
+Overall, the process consists of 9 consecutive steps, which can be divided into three main stages: starting with planting cocoa beans, followed by the preparation of beans, and finally processing chocolate into edible portions. Notably, the procedure requires both human intervention and natural processes. 
+
+The process commences with the plantation of seeds for potential cocoa trees. These are usually grown in tropical countries, and once ripe red pods fully mature, they are harvested. The cocoa beans inside these pods are then extracted—which serve as the vital ingredient for chocolate. 
+
+The second stage also involves biological processes, as the extracted beans are fermented for about 2-10 days to develop flavor. Following this, the fermented beans are spread out and left to dry under the sun and are regularly turned upside down to ensure full exposure to sunlight. These are then roasted at high temperatures (120-150°C), enhancing their flavor and giving them a crispy texture. 
+
+After the roasting process, the third stage begins. Initially, the outer shells of the beans are removed, and they subsequently undergo crushing and conching, when the inner part of the beans is pressed to form chocolate in the form of dough. This mixture is carefully melted and cooled—a process called tempering—to ensure a smooth surface and consistent texture. Lastly, the chocolate liquid is poured into molds to form bars and other shapes, culminating the whole process.
+
+`
+  },
+  {
     id: '119',
     task: 'task1',
     title: 'Task One: 19 of 100: Table',
@@ -58,7 +86,7 @@ export const task1Essays: IELTSEssay[] = [
     grammaticalRangeAccuracy: 9,
     writingTime: '22 minutes',
     wordCount: 240,
-    tags: ['Bar'],
+    tags: ['Table'],
     image: chart_1_19, // Add your image here when available
     content: `
 
