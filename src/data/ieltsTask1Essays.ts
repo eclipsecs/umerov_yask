@@ -47,6 +47,32 @@ export interface IELTSEssay {
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
   {
+    id: '119',
+    task: 'task1',
+    title: 'Task One: 19 of 100: Table',
+    question: 'The table shows the prices of a cup of coffee in 6 cities in Australia in 2010 and 2014. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '22 minutes',
+    wordCount: 240,
+    tags: ['Bar'],
+    image: chart_1_19, // Add your image here when available
+    content: `
+
+The table compares the price of a cup of coffee in different Australian cities in 2010 and 2014, with their percentage changes.
+
+Overall, all cities in question witnessed an increase of varying degrees in their coffee prices, with the exception of Brisbane that saw no change at all. Although Melbourne experienced the most pronounced growth, it was Sydney where coffee was expensive in both years. Notably, the remaining urban areas had somewhat comparable figures, though Canberra generally offered coffee at a lower cost. 
+
+Sydney and especially Melbourne increased their coffee prices dramatically within four years. The former city stood out by charging the most for a cup of coffee, at $2.8, which rose to $3.17 by 2014, recording a change of 13.2%. However, it was in Melbourne where the biggest change of 20.8% occurred, with the prices hiking from $2.4 in 2010 to $2.9 in 2014, becoming the second city in Australia where coffee was expensive.  
+
+The remaining urban areas, on the other hand, boasted more or less the same price tags. Among those, Perth, Adelaide and Canberra experienced a sharp rise, with the prices for coffee escalating from $2.1, $1.87, and $1.6 to $2.25, $2, and $1.7, respectively. The percentage changes of these cities ranged from 7.1% to 6.25%. Conversely, the only city where coffee prices remained unchanged was Brisbane, which charged $2.25 for a cup of coffee in both years - similar amount registered in Perth in 2014. 
+
+`
+  },
+  {
     id: '118',
     task: 'task1',
     title: 'Task One: 18 of 100: Bar chart',
@@ -56,7 +82,7 @@ export const task1Essays: IELTSEssay[] = [
     coherenceCohesion: 9,
     lexicalResource: 9,
     grammaticalRangeAccuracy: 9,
-    writingTime: '12 minutes',
+    writingTime: '19 minutes',
     wordCount: 195,
     tags: ['Bar'],
     image: chart_1_18, // Add your image here when available
@@ -84,7 +110,7 @@ By contrast, computer programmers made up the smallest group, starting at 3 thou
     coherenceCohesion: 9,
     lexicalResource: 8.0,
     grammaticalRangeAccuracy: 8.0,
-    writingTime: '12 minutes',
+    writingTime: '19 minutes',
     wordCount: 190,
     tags: ['Bar'],
     image: chart_1_17, // Add your image here when available
@@ -110,7 +136,7 @@ In contrast, on the weekends, the university that showed the greatest number of 
     coherenceCohesion: 8,
     lexicalResource: 9.0,
     grammaticalRangeAccuracy: 8.0,
-    writingTime: '12 minutes',
+    writingTime: '16 minutes',
     wordCount: 179,
     tags: ['Table'],
     image: chart_1_16, // Add your image here when available
