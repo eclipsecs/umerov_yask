@@ -23,6 +23,7 @@ import chart_1_19 from '@/assets/ielts-task1-images/chart_1_19.png';
 import chart_1_20 from '@/assets/ielts-task1-images/chart_1_20.png';
 import chart_1_21 from '@/assets/ielts-task1-images/chart_1_21.png';
 import chart_1_22 from '@/assets/ielts-task1-images/chart_1_22.png';
+import chart_1_23 from '@/assets/ielts-task1-images/chart_1_23.png';
 
 
 export interface IELTSEssay {
@@ -48,6 +49,32 @@ export interface IELTSEssay {
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
    {
+    id: '123',
+    task: 'task1',
+    title: 'Task One: 23 of 100: Pie Chart ',
+    question: 'The charts show the percentage of volunteers by organizations in 2008-2014. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '21 minutes',
+    wordCount: 235,
+    tags: ['Pie'],
+    image: chart_1_23, // Add your image here when available
+    content: `
+
+The pie charts show the percentage of volunteers in different organizations in 2008 and 2014.
+
+Overall, the proportion of volunteers in environmental, sport, and healthcare organizations increased to varying degrees, with volunteers involved in sport witnessing the most pronounced growth, but it was those in environmental organizations who surpassed volunteers in education. By contrast, the remaining categories experienced a noticeable decline over the period. Notably, healthcare and 'other' sectors had significantly lower and comparable percentages of volunteers in 2014. 
+
+'Education' organizations boasted a significantly higher proportion of unpaid workers initially, at 24%. However, the share decreased markedly to 17% in 2014, which positioned education in the third rank. Similar, though less drastic, drops were registered in the percentage of unpaid workers in 'other' and art organizations, with the figures dipping from 15% and 18% in 2008 to 9% and 12% by 2014, respectively. 
+
+Conversely, the remaining types of organizations saw an upward trajectory. Despite attracting 15% of volunteers in the first year, sports organizations witnessed a sharp rise to 25%, becoming the second largest sector for volunteering. However, it was in environmental organizations where most volunteers were concentrated in 2014, as the figure grew from an initial 21% to 29%, highlighting a significant rise in environmental awareness. Healthcare, on the other hand, saw a minimal increase of 1% over the period, accounting for 8% in 2014 and remaining the least chosen sector in the graph.
+
+`
+  }, 
+  {
     id: '122',
     task: 'task1',
     title: 'Task One: 22 of 100: Map ',
@@ -59,7 +86,7 @@ export const task1Essays: IELTSEssay[] = [
     grammaticalRangeAccuracy: 9,
     writingTime: '21 minutes',
     wordCount: 278,
-    tags: ['Bar'],
+    tags: ['Map'],
     image: chart_1_22, // Add your image here when available
     content: `
 
