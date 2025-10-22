@@ -18,6 +18,10 @@ import chart_1_14 from '@/assets/ielts-task1-images/chart_1_14.png';
 import chart_1_15 from '@/assets/ielts-task1-images/chart_1_15.png';
 import chart_1_16 from '@/assets/ielts-task1-images/chart_1_16.png';
 import chart_1_17 from '@/assets/ielts-task1-images/chart_1_17.png';
+import chart_1_18 from '@/assets/ielts-task1-images/chart_1_18.png';
+import chart_1_19 from '@/assets/ielts-task1-images/chart_1_19.png';
+import chart_1_20 from '@/assets/ielts-task1-images/chart_1_20.png';
+import chart_1_21 from '@/assets/ielts-task1-images/chart_1_21.png';
 
 
 export interface IELTSEssay {
@@ -42,6 +46,34 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
+  {
+    id: '118',
+    task: 'task1',
+    title: 'Task One: 18 of 100: Bar chart',
+    question: 'The bar chart shows the average number of hours students in five different universities studied.. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '12 minutes',
+    wordCount: 195,
+    tags: ['Bar'],
+    image: chart_1_18, // Add your image here when available
+    content: `
+
+The bar chart compares the number of workers with different skills who emigrated to Australia from 2009 to 2012.
+
+Overall, more accountants emigrated to Australia than any other group of skilled workers during the period shown, followed by software engineers. Although the number of chefs fluctuated noticeably, computer programmers consistently accounted for the smallest proportion of migrants.
+
+In 2009, around 20 thousand accountants emigrated to Australia. This figure rose sharply to about 28 thousand in 2010 — the highest point in the chart — before declining steadily to roughly 21 thousand by 2012.
+
+The number of software engineers stood at nearly 20 thousand in 2009 and increased slightly to 21 thousand by 2011, after which it dropped sharply to 16 thousand in 2012, marking a fall of around 5 thousand. As for chefs, their figure began at about 17 thousand in 2009, fell to 15 thousand in 2010, then rose again to approximately 18 thousand in 2011 before decreasing to 16 thousand in the final year.
+
+By contrast, computer programmers made up the smallest group, starting at 3 thousand in 2009. The number grew gradually to around 4 thousand in 2011 and reached 5 thousand by 2012.
+
+`
+  },
   {
     id: '117',
     task: 'task1',
