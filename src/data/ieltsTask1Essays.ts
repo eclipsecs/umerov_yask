@@ -22,6 +22,7 @@ import chart_1_18 from '@/assets/ielts-task1-images/chart_1_18.png';
 import chart_1_19 from '@/assets/ielts-task1-images/chart_1_19.png';
 import chart_1_20 from '@/assets/ielts-task1-images/chart_1_20.png';
 import chart_1_21 from '@/assets/ielts-task1-images/chart_1_21.png';
+import chart_1_22 from '@/assets/ielts-task1-images/chart_1_22.png';
 
 
 export interface IELTSEssay {
@@ -46,6 +47,58 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
+   {
+    id: '122',
+    task: 'task1',
+    title: 'Task One: 22 of 100: Map ',
+    question: 'The picture below shows the difference in the layout of the conference centre in 2010 and 2025. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '21 minutes',
+    wordCount: 278,
+    tags: ['Bar'],
+    image: chart_1_22, // Add your image here when available
+    content: `
+
+The maps illustrate the layout of a conference center in 2010 and its current look.
+
+Overall, the center used to be a work-oriented place, with minimal facilities for employees only. However, following the redevelopment, it has become significantly multifunctional, accommodating a wide range of recreational, leisure, and educational facilities. Notably, the center now also serves as a home for a certain number of residents, showing the versatile nature of the newly transformed area. 
+
+Back then, the conference center was primarily dedicated to work. A large garden occupied the right-hand section, adjacent to which lay a car park in a similar fashion. The top of the map featured a hall that faced two rooms on the left top corner, and all of these could be accessed through a single door. Another extensive garden could be found in the heart of the area, and in the same, shared zone, a reception was situated close to the hall and two rooms. 
+
+Since then, however, the place has undergone a significant makeover. Although the original rooms, hall, reception, and the garden in the middle were not subject to change, the other green area on the right side has been cleared to make way for a new car park and a residence hall with 20 rooms, which stands near the hall. The most notable change has been the introduction of a wide variety of new features to the bottom side of the layout, including an IT center to support learners, canteen and kitchen for dining, and two separate meeting rooms—each being placed sequentially. Meanwhile, on the opposite, right side, game and music rooms have been constructed, enabling visitors to enjoy leisure pursuits.
+
+`
+  },
+  {
+    id: '121',
+    task: 'task1',
+    title: 'Task One: 21 of 100: Bar chart',
+    question: 'The charts below show the performance of spending on roads and transport in four countries from 1990 to 2005. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '27 minutes',
+    wordCount: 265,
+    tags: ['Bar'],
+    image: chart_1_21, // Add your image here when available
+    content: `
+
+The bar chart shows the expenditures of governments of four countries on road and transportation between 1990 and 2005.
+
+Overall, all countries in question curtailed their expenses on the road infrastructure, albeit to varying degrees, with the steepest drop occurring in Portugal, though it maintained its position as the leading nation with the highest expenditure. Notably, while the declining pattern of all nations varied widely, their spending performance became somewhat comparable by 2005, although the UK trailed behind for most of the period. 
+
+Italy and especially Portugal were the two nations that expended significantly more initially. Portugal, in particular, dedicated around 27% of its budget to the transportation-related services in 1990—the highest figure in the dataset. However, over time, it decreased gradually, falling to about 16% in 2005. A similar drop was recorded in Italy, where the investment in the road infrastructure plummeted from 20% to about 13% in 2000 before slightly recovering to 14% in the final year. 
+
+The UK and the USA, on the other hand, were found to spend significantly less on road and transport systems. Despite this, the latter country channeled nearly 14% of its budget into them in 1990, which dropped by 1% after 5 years, prior to increasing to almost 15% in 2000 but eventually falling back to 13%. Unlike the decline registered in the USA, the figure for the UK decreased substantially, as it began at 11%, followed by a slight rise to 14% in 1995—a proportion that was not sustained and plunged to a mere 6% in 2000 and slowly grew to 7% in 2005.
+
+`
+  },
   {
     id: '120',
     task: 'task1',
