@@ -50,7 +50,7 @@ export const task1Essays: IELTSEssay[] = [
     id: '118',
     task: 'task1',
     title: 'Task One: 18 of 100: Bar chart',
-    question: 'The bar chart shows the average number of hours students in five different universities studied.. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    question: 'The bar chart below gives information on the number of workers in different occupations who migrated to Australia between 2009 and 2012. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
     bandScore: 9,
     taskAchievement: 9,
     coherenceCohesion: 9,
