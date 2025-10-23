@@ -19,6 +19,60 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '17',
+    task: 'task2',
+    title: 'Task two: 17 of 100 - Space Exploration',
+    question: 'In the future it may be necessary for us to live on other planets. For this reason, some people believe that we should spend money now to research other planets, such as Mars. To what extent do you agree or disagree? ',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '39 minutes',
+    wordCount: 379,
+    tags: ['Space Exploration', 'Mars', 'Government Spending'],
+    content: `
+
+Ever since the potential for life on Mars was discovered, there has been an increasing tendency among people to contend that we should invest more resources in further researching such planets, as it might not be possible to live on Earth in the future. Although this view holds some merit, I disagree with it for two main reasons. 
+
+Some believe that Mars, among other planets, is one of the most viable places for people to live in the future and is considered a back-up plan. As the world faces climate change and other difficulties, such as global warming, rising sea levels, and the extinction of species, some scientists fear that these issues are irreversible, thus turning to other solutions. SpaceX, for example, is actively developing technologies to make Mars a possible habitat in case of a catastrophic event. 
+
+However, I think that this urge to explore space stems from human curiosity rather than necessity. The majority of oceans and marine life have not been studied yet, but scientists are quick to gravitate towards outer space in pursuit of seeing what lies beyond our planet. What they do not consider is that most solutions to the existing problems may lie in understanding our own planet first. Some studies in marine life and terrestrial exploration, for instance, have led to the discovery of essential chemicals and substances. 
+
+In addition to human curiosity, there are also significant costs to bear if we are to commit to making Mars livable. Constructing new roads, towns, other necessary facilities and houses will require not only substantial funds but also decades to completely transform an uninhabited place. These efforts, though, are not even guaranteed to succeed and fully provide a new, untouched planet to live in. Instead of embarking on such a risky endeavor, it is wiser to channel those resources into improving life on Earth, such as developing cleaner technologies, shifting to greener alternatives, or initiating sustainable living projects. 
+
+To conclude, space exploration is not actually a fruitless endeavor, but we should consider that it might be easier to address problems on our planet by researching oceans and deep levels. Beyond this, the cost of such exploration may be quite high, and redirecting that investment toward mitigating problems on Earth can be far more effective.
+
+`
+  },
+  {
+    id: '16',
+    task: 'task2',
+    title: 'Task two: 16 of 100 - Tax Education',
+    question: 'Some people believe that it is important to introduce tax education in secondary school. Other people think that it is a waste of valuable school time. Discuss both views and give your opinion.',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '43 minutes',
+    wordCount: 440,
+    tags: ['Tax Education', 'School Curriculum', 'Financial Literacy'],
+    content: `
+
+There is a view that tax education should be incorporated into school curriculum to prepare secondary school students for financial realities of adult life. While some are in favor of this suggestion, others disagree, believing that it would be a waste of time. While both perspectives hold merit, I lean toward the former view since tax education is of paramount importance. 
+
+Some people are of the opinion that introducing tax education to young learners' school curriculum is widely beneficial. This subject can teach students the fundamentals, such as why people pay taxes, where taxes go, and the importance of paying them regularly, which equips students with the necessary skills to navigate adulthood with ease. Better literate graduates would not feel overwhelmed when they first encounter tax policies—after noticing that a chunk of their income has gone. A student who can file taxes, handle their paychecks, and who adheres to tax policies is not just a responsible citizen but a win for society. 
+
+Others, on the other hand, think that the time dedicated for school subjects is already stretched thin, and students will be overburdened with additional lessons. They say that other seemingly more important disciplines, like math, science, and languages, play a more crucial role in students' future lives, while tax education may dilute that focus from core subjects. In addition to this, the constantly changing nature of tax policies often makes people question the relevance of tax education, as why students should spend their time on something that would ultimately change and become irrelevant? 
+
+However, I argue that the goal is not to cultivate future accountants, the aim is to lay the foundation for financial literacy. Instead of focusing on carving out a new, full-blown course, it is better to embed tax lessons into the existing subjects, such as math, civic studies, and economics. A math teacher can also explain problems related to tax deduction while teaching percentages, or in civic lessons, a mentor can explain how tax-payer money is used by the government and why it is essential to pay taxes. Germany offers a compelling example. The schools here include tax education that is incorporated into related disciplines, which not only fosters civic engagement but also prepares students for adulthood. 
+
+To conclude, the opinions remain divided on whether tax education should be a part of school curriculum or not—some encourage the view, while others feel that it would divert time and focus from more fundamental subjects. I maintain that lessons on tax do not require carving a new discipline, as it can be just taught with other similar subjects, and these efforts will undoubtedly pay dividends. 
+
+`
+  },
+  {
     id: '15',
     task: 'task2',
     title: 'Task two: 15 of 100 - Family Values',
@@ -28,8 +82,8 @@ export const task2Essays: IELTSEssay[] = [
     coherenceCohesion: 9,
     lexicalResource: 8,
     grammaticalRangeAccuracy: 9,
-    writingTime: '43 minutes',
-    wordCount: 381,
+    writingTime: '31 minutes',
+    wordCount: 402,
     tags: ['Family Values', 'Education', 'Success'],
     content: `
 
@@ -55,7 +109,7 @@ To conclude, although values learned from family and parents have a significant 
     coherenceCohesion: 9,
     lexicalResource: 8,
     grammaticalRangeAccuracy: 9,
-    writingTime: '32 minutes',
+    writingTime: '28 minutes',
     wordCount: 381,
     tags: ['advertising', 'Consumer Behavior', 'Marketing'],
     content: `
