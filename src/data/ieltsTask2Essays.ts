@@ -19,6 +19,33 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '15',
+    task: 'task2',
+    title: 'Task two: 15 of 100 - Family Values',
+    question: 'The values that we learn from our parents and family have a greater influence on our future success than the knowledge and skills we learn at school. To what extent do you agree or disagree?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '43 minutes',
+    wordCount: 381,
+    tags: ['Family Values', 'Education', 'Success'],
+    content: `
+
+Some people believe that the values learned from family and parents are more important in attaining success in life compared to the knowledge and skills taught at schools and other institutions. While I agree that family plays a crucial role in societal and moral success, schools also have a profound impact on individuals' professional achievements, which makes me argue that success requires a combination of both family values and academic expertise. 
+
+Family, undoubtedly, is the first institution of core virtues for everyone. Parents or grandparents in a family often instill fundamental, positive behavior and skills, such as perseverance, kindness, honesty, and respect for the elderly, in children. These qualities nurtured from a young age are of paramount importance in many facets of adulthood, including maintaining healthy relationships, building a social network, and staying persistent in one's goals. Many successful entrepreneurs often credit their upbringing as one of the most crucial indicators of their success, highlighting family's vital role. 
+
+While such interpersonal skills lay the foundation for social and moral success, professional attainment often comes with academic knowledge. It is schools that provide an avenue for this type of success, which means deeming the knowledge and skills learned in schools useless is an oversimplification. An accountant with only personal virtues cannot climb the career ladder if they lack technical skills, which are often acquired in schools. These institutions also facilitate collaboration between students, work in teams, and communication with their students from different backgrounds—core skills that are highly sought after in today's job market. 
+
+Given these realities, it is wise to acknowledge that there should be a healthy balance between both personal values and academic skills. Since the term 'success' can be defined in various ways, a truly successful individual is a person with a wide range of skills, not limited to virtues taught from parents. Take great leaders, for instance. They have attained success not only because of their interpersonal values but also thanks to their expertise in their fields, which would not be possible if they lacked either personal qualities or skills taught at school. 
+
+To conclude, although values learned from family and parents have a significant influence in children's future lives, I maintain that the skills and knowledge acquired in schools should not be overlooked altogether. This is because success comes in different forms, such as emotional, personal, and professional achievements, prompting calls for striking balance between both sides. 
+
+`
+  },
+  {
     id: '14',
     task: 'task2',
     title: 'Task two: 14 of 100 - Advertising',
