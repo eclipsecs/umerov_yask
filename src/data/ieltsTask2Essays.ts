@@ -19,17 +19,44 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '14',
+    task: 'task2',
+    title: 'Task two: 14 of 100 - Advertising',
+    question: 'The main aim of the advertising is to increase the sales of the product which people don’t really need. To what extent do you agree or disagree?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '32 minutes',
+    wordCount: 381,
+    tags: ['advertising', 'Consumer Behavior', 'Marketing'],
+    content: `
+
+Some believe that the primary goal of commercials is to maximize profits by convincing people to purchase products that they do not necessarily need. While advertising can be regarded as a perfect medium for financial gain, I contend that not all ads are designed to make people buy unnecessary things, and instead they aim to introduce a product to the public. 
+
+These days, we are constantly bombarded with commercials at every step of the way, most of which create artificial desires. Aggressive marketing has become more prevalent than ever, employing emotional and psychological triggers to ignite curiosity in offers. Many ads seem to equate products with self-worth, empowerment, and status, convincing consumers that they will be happier, cooler, and even fully ‘complete’ if they purchase certain goods. Take some ads of sneakers, for instance: even if a person has a pair of sneakers, the ad may persuade them that they need another one to boost their productivity and improve their performance. 
+
+However, reducing the main objective of advertising to mere financial gain is an oversimplification. Some commercials genuinely inform the public and try to reach a niche audience by explaining the purpose of their services or goods. Without such informative ads, customers would spend hours searching for products that meet their needs best, usually failing to find the right ones. Commercials of pills, for example, often clearly show what effects they may cause, who should take them, and when to avoid using them–helping consumers make better-informed decisions. 
+
+Equally important is the role of commercials in the expansion of businesses. When companies first establish and do not have a customer base, the first platform they turn to is advertising, which enables them to introduce their offers to locals and build initial trust, potentially expanding their business. For instance, an ad for a new café can nudge locals to visit the place and enjoy different cuisines, which might not be possible if it were not for tailored ads. 
+
+To conclude, although ads may seem to encourage impulsive buying and reckless spending habits when exaggerated, these are not always the case. I believe that not all of them are focused on only the financial side, as they also serve as a tool for informing the public and helping businesses reach a wider audience.
+
+`
+  },
+  {
     id: '13',
     task: 'task2',
-    title: 'Task two: 13 of 100 - Independence and Dependence',
+    title: 'Task two: 13 of 100 - Road Safety',
     question: 'Some people think that the best way to improve road safety is to increase the minimum legal age for driving a car or motorbike. To what extent do you agree or disagree?',
     bandScore: 9,
     taskResponse: 9,
     coherenceCohesion: 8,
     lexicalResource: 9,
     grammaticalRangeAccuracy: 9,
-    writingTime: '37 minutes',
-    wordCount: 363,
+    writingTime: '29 minutes',
+    wordCount: 369,
     tags: ['Road Safety', 'Driving Age', 'Government Policies'],
     content: `
 
