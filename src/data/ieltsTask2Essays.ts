@@ -19,6 +19,172 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '23',
+    task: 'task2',
+    title: 'Task two: 23 of 100 - Household Waste',
+    question: 'In many countries, the amount of household waste like food packaging is increasing. What are the causes of this problem? What measures could be taken to reduce it?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '39 minutes',
+    wordCount: 423,
+    tags: ['Household Waste', 'Food Packaging', 'Environmental Issues'],
+    content: `
+
+The amount of household waste has seen a notable rise across many nations, with food packaging constituting the largest portion of it. While this worrying trend can be attributed to consumerism and irresponsible use of single-use packaging, the solution may lie in educating the public and shifting to cleaner options. 
+
+The rise of consumerist society is one of the primary reasons for the increased household waste. As the stream of products and different services continue to grow, many individuals are compelled to purchase a range of products that they may not even need due to aggressive marketing strategies, affordable pricing, and online shopping opportunities. Almost all of the products from such services come with significant packaging, most of which are non-recyclable. Such reckless purchasing habits directly translate into more waste at homes, such as clothes, food waste, and packaging, leading to a throwaway culture. 
+
+Excessive use of non-biodegradable packaging is another major issue. Since plastic packaging is relatively cheap, accessible, and versatile, many organizations and companies rely heavily on it for many purposes. Plastic, being primarily tailored for single use, is also hassle-free given its benefits regarding hygiene of products, while other alternatives may carry bacteria and harmful contaminants. A single trip to a grocery store, for example, often comes with significant packaging. Individual fruits and vegetables are wrapped in plastic, all of which are also packed in another layer of plastic to facilitate handling for shoppers, thus resulting in a mountain of packaging at home. 
+
+Remedying the problem requires immediate action, with educating being at the heart of it. The government, by raising awareness through programs and different projects, can inform individuals about the growing issue of packaging. Once aware of the negative effects of their habits, the public is likely to take preventative actions, including bringing their own bags for groceries or making mindful decisions. Japan is a prime example. There, children are taught the importance of protecting the environment from an early age and avoid unnecessary purchases, which encourages them to live zero-waste lifestyles. 
+
+Equally important is strict regulations for plastic use. Instead of relying on non-recyclable packaging, which ends up in landfills and contaminates the environment, the state should incentivize the use of alternative and greener options, such as paper, glass, or recyclable plastic. However, single-use plastic remains significant for some purposes to avoid counter-effects; for daily choices and use, though, cleaner options should be prioritized to recycle domestic waste. Take Switzerland, for instance. The country has invested in the use of green sources and implemented policies for plastic packaging use, resulting in a cleaner environment and overall lower waste levels. 
+
+To conclude, the problem of increasing domestic waste such as food packaging stems largely from consumerism and the excessive dependence on plastic packaging, I believe that it can be mitigated with the help of educational campaigns and switching to alternatives to non-recyclable plastic packaging. Although these solutions may not eliminate the use of plastic, as it will remain important in some regards, they can yield telling outcomes in terms of reducing waste. 
+
+`
+  }, 
+  {
+    id: '22',
+    task: 'task2',
+    title: 'Task two: 22 of 100 - Charity Donations',
+    question: 'Everybody should donate a fixed amount of their income to support charity. To what extent do you agree or disagree? ',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '36 minutes',
+    wordCount: 423,
+    tags: ['Charity', 'Donations', 'Income'],
+    content: `
+
+Some people believe that everyone should allocate a fixed percentage of their incomes to charitable causes. While it may sound fair on the surface, I totally disagree with this view, as it fails to account for people's financial circumstances, undermines voluntary giving, and overlooks non-monetary contributions. 
+
+Imposing obligatory donations overburdens individuals with too many financial commitments. While donating a small amount of money may seem negligible, even a minor deduction might lead to significant pressure, especially for those living paycheck to paycheck—such as freelancers with irregular earnings or those sustaining larger families. Even individuals residing in rural areas or cities with high living costs may earn the same salary but experience vastly different living expenditures. This form of imposition, therefore, would not feel like altruism but more like an additional tax, further pushing people into economic strain. 
+
+An argument could be made that the policy can be adjusted by charging poorer households less or exempting them totally, while affluent citizens should bear larger share of the donation. However, this introduces another complex set of bureaucratic challenges, such as evaluating families' economic status and creating new frameworks—all of which require significant time and resources. Charity donations, by themselves, should be voluntary not mandatory. When it comes from heart, people foster empathy and compassion, but if they are obliged to allocate a portion of their incomes, they are likely to chafe at being told what to do with their hard-earned money, leading to resentment and dissatisfaction. 
+
+Equally important is the fact that there are other forms of altruism apart from monetary donations. In many nations, the majority of people who may be financially constrained are willing to dedicate their time, energy, and expertise to those in need. Teachers, for example, often volunteer and give lessons on weekends to underprivileged children, while nurses may help patients in underserved regions outside their working hours, making a world of difference. This suggests that a genuine desire to help others should not be limited to cash, but it should be available in any forms and without strict guidelines. 
+
+To conclude, although the suggestion that everyone should donate a fixed amount of money to charity may seem just, I do not buy this view due to a number of factors, such as real financial limitations people face, the potential for waste of time and resources, and neglecting the true nature of monetary donations. Instead of equating humanitarian aid with money, we should promote other types of donations which are equally significant and are not made out of guilt.
+
+`
+  }, 
+  {
+    id: '21',
+    task: 'task2',
+    title: 'Task two: 21 of 100 - Global vs Domestic Issues',
+    question: 'Some people argue that governments should focus on domestic matters, while others believe that addressing global issues is more important. Discuss both views and give your own opinion.',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '35 minutes',
+    wordCount: 409,
+    tags: ['Global Issues', 'Domestic Issues', 'Government Priorities'],
+    content: `
+
+There is a view that governments should prioritize domestic issues over engaging in global problems, while others believe that the opposite is true in today's world. While both perspectives hold merit, I contend that there should be a balance between both, as neglecting either side would result in negative outcomes. 
+
+Governments should actually serve their citizens at first. It would be unethical if they try to address global issues at the cost of domestic matters, such as famine, rising crime rates or poverty—problems that have a direct impact on people's lives. Take South Korea, for instance. For the past two decades, it focused heavily on more urgent needs of its public by improving living standards, including investing in education, enhancing healthcare, and upgrading infrastructures. These efforts have led to a growing and thriving society, enabling the country to considerably reduce crime rates, poverty, and illiteracy. 
+
+However, others emphasize the highly interconnected nature of today's era, where different global issues do not seem to respect borders. With the rise of globalization, one challenge a country experiences might have a nationwide influence—economically, environmentally, and socially. The COVID-19 pandemic serves a great example. The disease originated in one country, but spread like wildfire across the globe, having devastating effects on many countries. This period of lockdown proved that no country is safe unless all nations are safeguarded, which requires a collaborated approach and collective agreements. 
+
+Given these arguments, governments should try to both address local issues and engage in global conversations. Nowadays, cross-cultural collaborations are more important than ever before, meaning it would be unwise to focus solely on domestic cases. Germany, for example, leads by example. It is actively involved in international initiatives, but it also places importance on improving internal conditions. While an argument could be made that developing countries may be financially constrained to do the same, I feel that these nations should be selective when to contribute and invest in what truly matters. Alternatively, richer countries can support financially in times of need, as global issues have become problems of each nation. 
+
+To conclude, I agree that authorities should be concerned more about the domestic problems, but overlooking global challenges is not a prudent course of action either, especially in today's day and age, when many problems transcend geographical borders. Thus, striking a balance between both commitments is the best approach, and to ensure every nation benefits from this action, developed countries should aid poorer ones.
+
+`
+  },
+  {
+    id: '20',
+    task: 'task2',
+    title: 'Task two: 20 of 100 - Living in Apartment Blocks',
+    question: 'Nowadays, many people in cities live in large apartment blocks. Does this kind of accommodation have more advantages or disadvantages?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '33 minutes',
+    wordCount: 412,
+    tags: ['Apartment Living', 'Urbanization', 'Housing'],
+    content: `
+
+Across many countries, vertical living has seen a significant rise for the past several years. While this increasing shift does entail certain drawbacks, especially in terms of space and acoustic challenges, I believe that the benefits, such as space efficiency and convenience, are far more significant. 
+
+Living in a high-rise apartment block may come at the cost of personal space. In these apartments, people often find themselves confined to concrete cages and feel overwhelmed due to shared corridors, paper-thin walls, and the lack of sufficient greenery. For a person craving nature and freedom of space, these limitations will feel draining, leading to feelings of dissatisfaction, anxiety and even some health repercussions associated with the lack of connection with nature. 
+
+Noise pollution is another major demerit. Since large apartment blocks house a significantly large number of people, noise tends to be quite high in those areas because of constant chatters, children’s voice, construction noise, and neighbors celebrating a party. Over time, individuals might become prone to auditory fatigue and mental exhaustion—which is particularly disruptive after a tiring and stressful day at work. My family, for example, finds it difficult to recharge at night in the presence of noise from all over the neighborhood, which often leads to lower productivity and energy levels. 
+
+Nevertheless, I contend that vertical living has significantly improved urban lifestyles. One compelling merit is space efficiency. In densely populated cities, such apartment blocks can accommodate more people in a smaller footprint. Take Tokyo or Singapore as an example. These urban areas boast large apartments that not only provide a pleasant and compact look, but they also regulate urban sprawl, showing their importance in many nations with similar problems. 
+
+Equally appealing are the convenience and safety these blocks offer. Most of the time, daily necessities, including shops, markets, schools, and even workplaces are within walking distance or are located not far from living accommodations—the convenience that considerably eases the commute times. Specialized zones for children and community gardens have also become common in large apartment blocks, providing a safe environment for children and community to interact and socialize. 
+
+To conclude, although there are some disadvantages to living in large blocks, like shortage of space, the potential for health issues, and noise, I believe that given overpopulation in certain places, such accommodation options can be the most suitable choice. Not only do they serve more residents and provide safety, but also promote social cohesion through shared gardens in some communities.
+
+`
+  },
+  {
+    id: '19',
+    task: 'task2',
+    title: 'Task two: 19 of 100 - Art and Talent',
+    question: 'Some people believe that everyone can create art, while others think that only people with special talents can be artists. Discuss both views and give your opinion.',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '27 minutes',
+    wordCount: 359,
+    tags: ['Art', 'Talent', 'Creativity'],
+    content: `
+
+When discussing the topic of arts, many people have different opinions on who can create art—some argue only a selected few with talents can become an artist, while others of the opinion that everyone can make a piece of artwork. While both perspectives hold merit, I believe that true artistry demands both hard work and talent. 
+
+For some individuals, art is not just about expression, it is perfection. Some people have raw talents and abilities, such as composing, singing, or drawing—skills that others may never fully master even with years of exposure or training. Take Beethoven as an example. Despite his hearing difficulties, he demonstrated an extraordinary ability in music from an early age, which led him to create masterpieces of all time, showing how natural talents can be powerful. 
+
+Others, however, contend that art is a universal form of expression—the language that everyone speaks. The idea that anyone can create an artwork by no means undermines the field’s value, as everyone possesses emotions, creativity, feelings, and life experiences, the core ingredients of a great work. Everything from a child’s doodles, quiet hums, and a mother’s culinary skills can be a certain form of art, reflecting inner feelings and a deep personal flair. 
+
+In my view, arts have a low barrier to entry but high ceiling, meaning everyone can make a piece but only those with strong natural abilities or consistent practice can become true artists. A talent without hard work rarely leads to success stories or masterpieces that will be celebrated by many. Ed Sheeran exemplifies this idea. Although he might have had a natural talent for singing, it is through regular practice and vocal lessons that he was able to fine tune his voice within 10 years, becoming one of the most ‘naturally-gifted’ singers for some who may not know his consistent training in refining his voice. 
+
+To conclude, arts can be indeed created by anyone as it reflects one’s internal emotions, but true artistry requires a certain talent in the field. However, the talent alone cannot be a sole contributor, as those who practice and improve their skills over time can attain success.
+
+`
+  },
+  {
+    id: '18',
+    task: 'task2',
+    title: 'Task two: 18 of 100 - Adult Education',
+    question: 'While educating young people is essential, some believe that governments should invest more in educating disadvantaged adults. To what extent do you agree or disagree?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '39 minutes',
+    wordCount: 356,
+    tags: ['Adult Education', 'Government Spending', 'Disadvantaged Groups'],
+    content: `
+
+The word education is almost synonymous with children's school years and the period of studying during youth. However, there is a view that adults who might not have had an opportunity to study before should also be provided with specialized state-funded training courses. While some think that this view is not valid, I argue that re-educating adults is significantly important for two main reasons. 
+
+Some people may believe that young generations' education should be the main area of focus. Since investing in adults' education might require substantial sums, some fear that it may divert funds away from the educational programs for youth. Children or young adults are, however, the driving force of a country, and they can have a more long-lasting as well as direct impact in countries' later sustainability compared to adults, who might have fewer years of productivity and may not bring such long-term positive effects. 
+
+Nevertheless, I argue that this view neglects a more complex issue that stems from the worrying trend of increased illiteracy among adults—reduced academic engagement among children. As the saying goes: 'Everything starts with family', a deep love for knowledge acquisition is primarily nurtured by parents. Educated caregivers are better equipped to support their children's academic excellence through constant motivation, assistance with homework, academic resources, or by just reminding of the importance of education. By contrast, disadvantaged adults' children might mirror their lifestyles or habits, which can create a continuous cycle of illiteracy. 
+
+Given these realities, overlooking adults' education is not favorable. By initiating programs aimed at improving and enhancing education for older individuals, governments can reduce unemployment, promote active citizenship, or nurture a more productive and skilled workforce. Take Germany as a striking example. The country places equal importance on both children's and adults' training programs, and the state has pioneered 'Re-skilling' campaigns, which have significantly minimized unemployment, contributed to a more engaged public and increased literacy rates. 
+
+To conclude, investing in education of the adults from underprivileged backgrounds should not be seen as a luxury—it is a necessity. This is because such an initiative would not only benefit individuals but also society as a whole.
+
+`
+  },
+  {
     id: '17',
     task: 'task2',
     title: 'Task two: 17 of 100 - Space Exploration',
