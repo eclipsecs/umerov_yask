@@ -19,6 +19,33 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '13',
+    task: 'task2',
+    title: 'Task two: 13 of 100 - Independence and Dependence',
+    question: 'Some people think that the best way to improve road safety is to increase the minimum legal age for driving a car or motorbike. To what extent do you agree or disagree?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 8,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '37 minutes',
+    wordCount: 363,
+    tags: ['Road Safety', 'Driving Age', 'Government Policies'],
+    content: `
+
+With road accidents ranking among the leading causes of death, especially among young people, some argue that raising the minimum driving age can be the most effective way to tackle the problem. While the perspective holds merit, I feel that there should be a combination of different measures concerning licensing education, stricter policies, and investment in infrastructure. 
+
+Advocates of raising the legal driving age contend that age brings maturity and therefore, fewer accidents. The increasing number of road fatalities are believed to occur because of the characteristics of young teenagers, including risk-taking behavior, poor judgment, and inexperience, but older individuals are often cautious, less impulsive, and emotionally mature, which help them handle situations relatively easily. Countries with higher driving age like Sweden or Norway (18) consistently report lower rates of youth-related fatalities compared to ones where teenagers can drive at the age of 16. 
+
+However, age alone is not the sole factor causing constant road accidents. In fact, carelessness, distraction, and even overconfidence are usually witnessed across all age groups, meaning delaying access to driving may not erase widespread traffic violations. Germany, for example, offers a compelling solution to such a problem. German learners undergo extensive training, informative lessons, and a tough licensing exam before being allowed to drive a vehicle – a method that has been the key in minimizing the road accidents. 
+
+Strict law enforcement and infrastructure development can further strengthen the process of mitigating the issue. Speeding, drunk driving, and tailgating are common in many regions, which often lead to adverse outcomes. If drivers are fined and faced harsh, legal consequences, they are more likely to toe the line. However, there are also situations when poor lighting, pothole-driven roads, and other issues regarding the infrastructure can contribute to increased road fatalities, not because of drivers’ fault. These problems require urgent investment in the development of the area to ensure a safer environment for everyone. 
+
+To conclude, although age can be a reason for road accidents, it is far from the only contributor. Road fatalities, in fact, often stem from a wide range of factors, such as drivers’ carelessness, irresponsible behavior, and poor road infrastructure – which are best alleviated through education, stringent rules as well as improved infrastructure.
+
+`
+  },
+  {
     id: '12',
     task: 'task2',
     title: 'Task two: 12 of 100 - Independence and Dependence',
