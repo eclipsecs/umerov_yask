@@ -54,14 +54,14 @@ export const task1Essays: IELTSEssay[] = [
     task: 'task1',
     title: 'Task One: 24 of 100: Table ',
     question: 'The table below shows the number of temporary migrant workers in four countries in 2003 and 2006 and the number of these workers per 1000 popel in these countries in 2006. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
-    bandScore: 9,
-    taskAchievement: 9,
-    coherenceCohesion: 9,
-    lexicalResource: 9,
-    grammaticalRangeAccuracy: 9,
-    writingTime: '21 minutes',
-    wordCount: 235,
-    tags: ['Pie'],
+    bandScore: 8,
+    taskAchievement: 8,
+    coherenceCohesion: 8,
+    lexicalResource: 8.5,
+    grammaticalRangeAccuracy: 8,
+    writingTime: '18 minutes',
+    wordCount: 225,
+    tags: ['Table'],
     image: chart_1_24, // Add your image here when available
     content: `
 
