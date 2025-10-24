@@ -24,6 +24,7 @@ import chart_1_20 from '@/assets/ielts-task1-images/chart_1_20.png';
 import chart_1_21 from '@/assets/ielts-task1-images/chart_1_21.png';
 import chart_1_22 from '@/assets/ielts-task1-images/chart_1_22.png';
 import chart_1_23 from '@/assets/ielts-task1-images/chart_1_23.png';
+import chart_1_24 from '@/assets/ielts-task1-images/chart_1_24.png';
 
 
 export interface IELTSEssay {
@@ -49,6 +50,32 @@ export interface IELTSEssay {
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
    {
+    id: '124',
+    task: 'task1',
+    title: 'Task One: 24 of 100: Table ',
+    question: 'The table below shows the number of temporary migrant workers in four countries in 2003 and 2006 and the number of these workers per 1000 popel in these countries in 2006. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '21 minutes',
+    wordCount: 235,
+    tags: ['Pie'],
+    image: chart_1_24, // Add your image here when available
+    content: `
+
+The table compares the number of short-term workers in four different countries between 2003 and 2006, and the total number of employees per 1,000 people in 2006.
+
+Overall, the United States had by far the highest number of temporary workers in all periods, despite ranking last in the per 1000 people category. Although the number of employees working temporarily in New Zealand was the lowest in two given years, there were more people in terms of 1000 people.
+
+In detail, there were a staggering  577,000 temporary employees in the United States in 2003, which it increased to 678,000 after three years despite having the least number of workers per 1000 people. Australia followed, with 152,000 short-term employees in 2003 rising to 219 thousand in 2006. However, this country recorded a total of 10.7 workers per 1000 people.
+
+Regarding the United Kingdom, it had 137,000 temporary workers, that then doubled to 266,000 in 2006. In terms of workers per 1000 people, the figure stood at 4.4 in 2006 - double that of the United States at 2.3. In contrast, New Zealand employed 65,000 short-term workers in 2003. In 2006, this country hosted 87,000 employees in 2006 – an increase of 22,000 over the period. Despite having the lowest number of short-term of employees throughout the given period, this country still had more workers per 1000 people.
+
+`
+  },  
+  {
     id: '123',
     task: 'task1',
     title: 'Task One: 23 of 100: Pie Chart ',
