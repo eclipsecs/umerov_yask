@@ -25,6 +25,7 @@ import chart_1_21 from '@/assets/ielts-task1-images/chart_1_21.png';
 import chart_1_22 from '@/assets/ielts-task1-images/chart_1_22.png';
 import chart_1_23 from '@/assets/ielts-task1-images/chart_1_23.png';
 import chart_1_24 from '@/assets/ielts-task1-images/chart_1_24.png';
+import chart_1_25 from '@/assets/ielts-task1-images/chart_1_25.png';
 
 
 export interface IELTSEssay {
@@ -50,6 +51,34 @@ export interface IELTSEssay {
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
    {
+    id: '125',
+    task: 'task1',
+    title: 'Task One: 25 of 100: Table ',
+    question: 'The table below gives information about changes in modes of travel in England between 1985 and 2000. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 8,
+    taskAchievement: 8,
+    coherenceCohesion: 8,
+    lexicalResource: 8.5,
+    grammaticalRangeAccuracy: 8,
+    writingTime: '12 minutes',
+    wordCount: 198,
+    tags: ['Table'],
+    image: chart_1_25, // Add your image here when available
+    content: `
+
+The table compares the number of kilometers traveled by different modes of transport between 1985 and 2000.
+
+Overall, the most significant increase was observed in car travel, which saw an exponential rise. Other modes also experienced growth, but to a lesser extent. Notably, walking and cycling decreased in usage, with local bus travel showing a notable decline.
+
+In detail, the distance covered by cars increased dramatically from 3,199 kilometers in 1985 to a staggering 4,805 kilometers in 2000, the highest figure among all modes. Although the distance traveled by long-distance buses rose slightly from 289 kilometers to 366 kilometers, the distance covered by local buses almost halved, falling to 274 kilometers over the same period.
+
+Taxi travel recorded the most substantial growth among the remaining categories, increasing from 13 kilometers in 1985 to 42 kilometers in 2000—a more than threefold increase. Additionally, other modes of transport accounted for 450 kilometers in 1985, rising to 585 kilometers by 2000.
+
+In contrast, walking and cycling saw declines, dropping from 255 to 237 kilometers and 51 to 41 kilometers, respectively. Overall, the total distance covered by all modes combined rose from 4,740 kilometers in 1985 to 6,475 kilometers in 2000.
+
+`
+  },  
+  {
     id: '124',
     task: 'task1',
     title: 'Task One: 24 of 100: Table ',
