@@ -26,6 +26,7 @@ import chart_1_22 from '@/assets/ielts-task1-images/chart_1_22.png';
 import chart_1_23 from '@/assets/ielts-task1-images/chart_1_23.png';
 import chart_1_24 from '@/assets/ielts-task1-images/chart_1_24.png';
 import chart_1_25 from '@/assets/ielts-task1-images/chart_1_25.png';
+import chart_1_26 from '@/assets/ielts-task1-images/chart_1_26.jpeg';
 
 
 export interface IELTSEssay {
@@ -50,7 +51,33 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
-   {
+  {
+    id: '126',
+    task: 'task1',
+    title: 'Task One: 26 of 100: Pie Chart ',
+    question: 'The pie charts below show exports between the US and Vietnam. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9,
+    taskAchievement: 9,
+    coherenceCohesion: 8,
+    lexicalResource: 9.0,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '16 minutes',
+    wordCount: 198,
+    tags: ['Table'],
+    image: chart_1_26, // Add your image here when available
+    content: `
+
+The pie charts illustrate the value of exported goods between the U.S. and Vietnam across a range of product categories.
+
+Overall, coffee represented the highest-value export from Vietnam to the U.S., followed by fruit and vegetables. In contrast, the U.S. primarily exported aircraft parts and other manufactured goods to Vietnam, with these two categories far exceeding the value of cotton, cars, garments, and fertilizers.
+
+In detail, Vietnam’s coffee exports generated 23 million dollars, making it the country’s most valuable export item. Fruit and vegetables ranked second at 16 million dollars, creating a 7-million-dollar gap between the two categories. Seafood and rice contributed almost identical amounts, at 4.4 and 4.3 million dollars, respectively, while garments and other materials recorded the lowest value, at 2 million dollars each.
+
+Turning to the U.S., aircraft parts dominated its export profile, reaching 72 million dollars, which was more than double the value of other goods at 35 million dollars. Machinery followed at 30.5 million dollars, nearly twice the figure for fertilizers at 16.5 million dollars. Meanwhile, cotton accounted for 12 million dollars, and cars recorded the lowest export value at 6 million dollars, representing half the value of cotton.
+
+`
+  },  
+  {
     id: '125',
     task: 'task1',
     title: 'Task One: 25 of 100: Table ',
