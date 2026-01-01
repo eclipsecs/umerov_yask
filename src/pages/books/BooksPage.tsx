@@ -41,7 +41,7 @@ const BooksPage = () => {
   const toReadBooks = books.filter(b => b.readingStatus === 'to-read').length;
 
   return (
-    <div className="container mx-auto px-4 py-10 max-w-5xl">
+    <div className="container mx-auto px-4 py-12 max-w-4xl">
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-5xl font-sans font-bold mb-4 text-foreground">
@@ -93,7 +93,7 @@ const BooksPage = () => {
               <button
                 key={key}
                 onClick={() => setFilter(key as typeof filter)}
-                className={`flex items-center justify-center rounded-full border px-3 py-1 gap-1 transition-colors duration-150 cursor-pointer text-xs sm:text-sm bg-transparent
+                className={`flex items-center justify-center rounded-full border px-3 py-1 gap-1 transition-colors duration-200 cursor-pointer text-xs sm:text-sm
                   ${isSelected
                     ? `${colors.bgLight} ${colors.text} ${colors.border}`
                     : `border-transparent text-muted-foreground ${colors.hoverBg}`
@@ -138,14 +138,14 @@ const BooksPage = () => {
               to={`/books/${book.id}`}
               className="group block"
             >
-              <div className="border border-border/20 rounded-lg overflow-hidden hover:border-border/40 transition-colors duration-200 bg-background">
+              <div className="border border-border/20 rounded-lg overflow-hidden hover:border-border/40 hover:shadow-md transition-all duration-300 bg-background scale-95 hover:scale-100">
                 {/* Book Cover */}
                 <div className="aspect-[3/4] relative overflow-hidden bg-muted/20">
                   {book.coverImage ? (
                     <img
                       src={book.coverImage}
                       alt={`${book.title} cover`}
-                      className="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-95"
+                      className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                       onError={(e) => {
                         const target = e.currentTarget;
                         const fallback = target.nextElementSibling as HTMLElement;
@@ -170,7 +170,7 @@ const BooksPage = () => {
                   <div className="absolute top-2 right-2 flex flex-col items-end gap-1">
                     <Badge 
                       variant="secondary" 
-                      className={`text-[11px] font-medium border ${getStatusColor(book.readingStatus)}`}
+                      className={`text-xs font-medium border backdrop-blur-sm ${getStatusColor(book.readingStatus)}`}
                     >
                       {formatStatus(book.readingStatus)}
                     </Badge>
@@ -185,13 +185,13 @@ const BooksPage = () => {
                 {/* Book Info */}
                 <div className="p-4 space-y-3">
                   <div>
-                    <h2 className="font-sans font-semibold text-sm mb-1 transition-colors text-foreground line-clamp-2">
+                    <h2 className="font-sans font-bold text-base mb-1 group-hover:text-accent-pink transition-colors line-clamp-2">
                       {book.title}
                     </h2>
                     <p className="text-muted-foreground text-xs mb-2">
                       {book.author} • {book.publishedYear}
                     </p>
-                    <p className="text-muted-foreground text-xs leading-snug line-clamp-2">
+                    <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
                       {book.description}
                     </p>
                   </div>

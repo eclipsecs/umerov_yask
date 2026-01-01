@@ -19,6 +19,87 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '26',
+    task: 'task2',
+    title: 'Task two: 26 of 100 - Art and Child Development',
+    question: 'Art classes, such as painting and drawing, are as important to a child’s development as other subjects, so it should be compulsory in high schools. To what extent do you agree or disagree?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 7.5,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '43 minutes',
+    wordCount: 400,
+    tags: ['Art Education', 'Creativity', 'School Curriculum'],
+    content: `
+
+Incorporating creative subjects into school curricula is equally important as core disciplines like mathematics and science, as it cultivates creativity—an indispensable skill for holistic development in today’s complex world. I strongly believe that arts should occupy a central role in education, not only to foster creative thinking but also to broaden students’ worldview and enhance their cognitive flexibility. Such integration significantly supports students’ transition into adulthood by equipping them with skills to tackle unforeseen challenges.
+
+Primarily, embedding arts education encourages multifaceted problem-solving abilities. Access to artistic tools and activities enables students to engage with abstract and ambiguous tasks, fostering collaboration and critical thinking that extend beyond traditional academic boundaries. This process not only nurtures innovative thinking but also strengthens emotional intelligence and resilience—qualities that directly correlate with improved academic performance and overall personal growth. For instance, empirical studies have shown that students actively participating in the arts often outperform their peers in standardized testing and exhibit greater motivation and engagement in school.
+
+On the other hand, marginalizing arts within the curriculum jeopardizes students’ intellectual development. Artistic disciplines translate complex social and global issues into visual and experiential forms, making them more accessible and emotionally resonant. Omitting such subjects risks encouraging passive consumption of information rather than active interpretation and critical engagement. While some maintain that arts should remain extracurricular, doing so neglects its profound impact on career readiness and lifelong learning. Countries like Germany have recognized this by adopting thematic curricula integrating arts, which enrich students’ understanding of real-world contexts and foster transferable skills demanded by dynamic labor markets.
+
+Furthermore, combining arts with traditionally analytical subjects such as mathematics enriches educational experiences by promoting balanced cognitive development. Whereas STEM fields cultivate logical reasoning and technical skills, arts education nurtures creativity and divergent thinking, creating a synergy that prepares students for an unpredictable future. In a society increasingly shaped by automation and rapid technological shifts, fostering this balance is vital to developing adaptable innovators capable of leading transformative change.
+
+In conclusion, the integration of creative subjects, particularly arts, is not merely an enrichment but a fundamental component of effective education. It nurtures not only academic excellence but also emotional and social competencies essential for personal success and societal progress. Therefore, educational systems must prioritize arts as an equal pillar alongside other compulsory subjects, ensuring students graduate as well-rounded, responsible individuals ready to meet the challenges of the modern world.
+
+`
+  },
+  {
+    id: '25',
+    task: 'task2',
+    title: 'Task two: 25 of 100 - Space Exploration',
+    question: 'Governments spend millions of dollars each year on their space programmes. Most recently, Mars is the focus of scientists’ attention. Some people think this money would be better spent on dealing with problems closer to home. Do you agree or disagree?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '34 minutes',
+    wordCount: 401,
+    tags: ['Space Exploration', 'Mars', 'Government Spending'],
+    content: `
+
+There is a growing trend of governments investing substantial public funds in space exploration, particularly missions targeting Mars. While critics argue that this money would be better spent addressing urgent problems on Earth, I strongly disagree with this view. Space exploration not only drives technological innovation with direct real-world applications but also inspires younger generations to pursue careers in science, technology, engineering, and mathematics (STEM).
+
+One compelling reason to support government investment in space exploration is its contribution to technological advancement that benefits society as a whole. Although space missions do not always produce immediate or visible outcomes, they have historically led to breakthroughs that far exceed initial expectations. A clear example is GPS technology, which was originally developed for military and space-navigation purposes. Today, it is an indispensable tool for civilians, enabling efficient navigation for drivers, pilots, and emergency services worldwide. While it is true that space travel presents challenges, such as extreme environments that are unsuitable for human survival, the long-term technological benefits significantly outweigh these drawbacks.
+
+Moreover, space exploration plays a crucial role in helping humanity respond to environmental and natural challenges. Satellites and space probes are widely used to monitor weather systems, climate patterns, and environmental changes. This information allows meteorologists to predict extreme weather events, such as hurricanes, floods, and droughts, with greater accuracy. As a result, governments can issue early warnings, reduce loss of life, and mitigate damage to infrastructure. In this sense, investment in space technology directly contributes to disaster prevention and environmental protection on Earth.
+
+Another major advantage of space exploration is its ability to inspire young people to pursue STEM-related careers. In today’s knowledge-based economy, scientific and technical skills are highly valued and often lead to well-paid and stable employment. Leading organizations such as NASA and SpaceX actively recruit highly skilled engineers and scientists, motivating students to develop strong problem-solving abilities and creative thinking from an early age. These skills not only benefit individuals but also strengthen society by fostering innovation, economic growth, and long-term national competitiveness.
+
+In conclusion, although space exploration may appear costly and risky at first glance, its benefits are substantial and far-reaching. From technological innovations such as GPS to environmental monitoring and the inspiration of future scientists, investment in space research delivers significant returns for humanity. Therefore, funding space exploration should be viewed not as a distraction from Earth’s problems, but as a powerful tool for solving them.
+
+`
+  },
+  {
+    id: '24',
+    task: 'task2',
+    title: 'Task two: 24 of 100 - Family Values',
+    question: 'The value we learn from our parents and family have a greater influence on our success than the knowledge and the skills we learn at school. To what extent do you agree or disagree?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '29 minutes',
+    wordCount: 327,
+    tags: ['Family Values', 'Education', 'Success'],
+    content: `
+
+Many people believe that success in life is influenced more by the values learned from parents and family than by the academic knowledge and hands-on skills acquired at school. While I agree that parental and familial influence plays a crucial role in shaping long-term attitudes and motivation, I believe that formal education remains the primary pathway through which success is practically achieved.
+
+Parents and family members play a fundamental role in shaping an individual’s character and mindset. From an early age, they provide emotional support, motivation, and guidance, particularly during periods of academic pressure or personal difficulty. Even when facing their own challenges, parents instil essential life skills such as resilience, responsibility, and perseverance. These values influence how individuals conduct themselves in society, manage risks, and respond to failure—areas that formal education alone cannot fully address. As a result, children often model their behaviour on their parents, adopting similar work ethics and attitudes that significantly influence their future success.
+
+On the other hand, schools are vital in developing intellectual potential and practical competence. Through structured curricula and exposure to diverse disciplines, students acquire critical thinking abilities, technical knowledge, and problem-solving skills. Highly qualified teachers and creative learning environments can spark curiosity and innovation, encouraging students to explore and refine their interests. Educational institutions also provide collaborative spaces where ideas are tested, refined, and transformed into practical outcomes. Without such formal training and guidance, many professional and technological advancements would be far more difficult to achieve.
+
+Ultimately, success is most effectively cultivated through a strong partnership between family and school. Parents motivate children to perform well academically and help them overcome fear of failure, while schools provide the expertise and structure necessary to develop specialised skills. Since teachers interact with students for limited periods, parental involvement—such as monitoring homework and reinforcing learning at home—plays a vital complementary role. Together, these influences shape behaviour, attitude, and competence, creating the foundation for a prosperous future.
+
+In conclusion, while parents and family exert a profound influence by instilling values and motivation, schools serve as the primary mechanism through which these values are transformed into tangible success. Therefore, it is the combination of strong family support and effective education that ultimately determines long-term achievement.
+
+`
+  }, 
+  {
     id: '23',
     task: 'task2',
     title: 'Task two: 23 of 100 - Household Waste',

@@ -10,12 +10,18 @@ export interface Book {
   id: string;
   title: string;
   author: string;
-  isbn?: string;
   publishedYear?: number;
-  genre: string;
   description: string;
-  coverImage?: string;
   readingStatus: 'to-read' | 'reading' | 'completed';
+  coverImage?: string;
+
+  // Reading progress
+  totalPages?: number;
+  currentPage?: number;
+
+  // Other fields
+  isbn?: string;
+  genre: string;
   startedDate?: string;
   completedDate?: string;
   personalComments: string;
