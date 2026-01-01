@@ -28,9 +28,9 @@ const Navbar = () => {
 
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/articles', label: 'Articles' },
-    { path: '/teachings', label: 'Observation' },
-    { path: '/readings', label: 'Journals' },
+    { path: '/articles', label: 'Notes' },
+    { path: '/teachings', label: 'Repository' },
+    { path: '/readings', label: 'Articles' },
     { path: '/ielts-essays', label: 'IELTS Essays' },
     { path: '/books', label: 'Books' },
   ];

@@ -5,7 +5,7 @@ import { teachings } from '@/data/teachings';
 const TeachingsPage = () => {
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
-      <h1 className="text-5xl font-sans font-bold text-center mb-16">Observation</h1>
+      <h1 className="text-5xl font-sans font-bold text-center mb-16">Repository</h1>
       
       <div className="space-y-8 max-w-3xl mx-auto">
         {teachings.map((teaching) => (

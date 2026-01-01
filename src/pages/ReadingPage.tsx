@@ -8,10 +8,10 @@ const ReadingPage = () => {
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-5xl font-sans font-bold mb-4 text-foreground">
-          Journals 
+          Articles 
         </h1>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Collection of journals I have read. Each article consists of words and interesting sentences with usage.
+          Collection of magazines and articles I have read. Each article consists of words and interesting sentences with usage.
         </p>
       </div>
 
