@@ -16,7 +16,7 @@ const ArticleDetailPage = () => {
 
   if (!article) {
     return (
-      <div className="container mx-auto px-4 py-12 max-w-4xl text-center" style={{ fontFamily: 'Aptos, sans-serif' }}>
+      <div className="container mx-auto px-4 py-12 max-w-4xl text-center" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
         <h1 className="text-3xl font-bold mb-4">Article Not Found</h1>
         <p className="text-muted-foreground mb-8">
           The article you're looking for doesn't exist or has been moved.
@@ -90,9 +90,9 @@ const ArticleDetailPage = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-16 max-w-4xl" style={{ fontFamily: 'Aptos, sans-serif' }}>
+    <div className="container mx-auto px-4 py-16 max-w-4xl" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
       {/* Back Button */}
-      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-muted-foreground uppercase text-sm hover:text-foreground transition-colors no-underline hover:no-underline" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
+      <Link to="/articles" className="inline-flex items-center mb-8 font-bold text-muted-foreground uppercase text-sm hover:text-foreground transition-colors no-underline hover:no-underline" style={{ fontWeight: 700, fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', textDecoration: 'none' }}>
         <ArrowLeft className="w-4 h-4 mr-2 font-bold" />
         Back to Articles
       </Link>
@@ -100,19 +100,19 @@ const ArticleDetailPage = () => {
       {/* Article Header */}
       <header className="mb-12">
         <div className="flex justify-between items-center gap-4 mb-6">
-          <span className="font-bold text-muted-foreground uppercase text-sm" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif' }}>
+          <span className="font-bold text-muted-foreground uppercase text-sm" style={{ fontWeight: 700, fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
             {formatRelativeDate(article.publishedAt)}
           </span>
-          <span className="font-bold text-muted-foreground uppercase text-sm" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif' }}>
+          <span className="font-bold text-muted-foreground uppercase text-sm" style={{ fontWeight: 700, fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
             {formatReadTime(readTime)}
           </span>
         </div>
         
-        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-foreground leading-tight" style={{ fontWeight: 700, fontFamily: 'Aptos, sans-serif' }}>
+        <h1 className="text-2xl md:text-3xl font-bold mb-2 text-foreground leading-tight" style={{ fontWeight: 700, fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
           {article.title}
         </h1> {/* You can adjust the title size here */}
         
-        <p className="text-xl md:text-2xl text-muted-foreground leading-8 md:leading-9 mb-4" style={{ fontWeight: 400, fontStyle: 'normal', fontFamily: 'Aptos, sans-serif' }}>
+        <p className="text-xl md:text-2xl text-muted-foreground leading-8 md:leading-9 mb-4" style={{ fontWeight: 400, fontStyle: 'normal', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
           {article.excerpt}
         </p>
         
@@ -168,19 +168,19 @@ const ArticleDetailPage = () => {
           "prose-img:rounded-lg prose-img:shadow-md " +
           "text-gray-800 dark:text-gray-200"
         }
-        style={{ fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem', fontFamily: 'Aptos, sans-serif' }}
+        style={{ fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}
       >
         <MarkdownRenderer content={article.content} />
         {/* Quotes Section */}
         {article.quotes && article.quotes.length > 0 && (
           <section className="mt-10">
-            <h2 className="text-xl font-bold text-muted-foreground mb-2 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Quotes</h2>
+            <h2 className="text-xl font-bold text-muted-foreground mb-2 font-sans" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>Quotes</h2>
             <div className="space-y-4">
               {article.quotes.map((quote, index) => (
                 <blockquote
                   key={index}
                   className="border-l-4 border-muted-foreground pl-4 text-lg text-gray-900 dark:text-gray-100 font-medium bg-muted/30 rounded-md py-2"
-                  style={{ fontFamily: 'Aptos, sans-serif', fontStyle: 'normal' }}
+                  style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', fontStyle: 'normal' }}
                 >
                   “{quote}”
                 </blockquote>
@@ -188,14 +188,14 @@ const ArticleDetailPage = () => {
             </div>
           </section>
         )}
-        <div className="mt-6 text-lg font-bold text-gray-900 dark:text-gray-100 tracking-wide text-left" style={{ fontFamily: 'Aptos, sans-serif' }}>
+        <div className="mt-6 text-lg font-bold text-gray-900 dark:text-gray-100 tracking-wide text-left" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
           {article.content.split(/\s+/).filter(Boolean).length} WORDS
         </div>
 
         {/* References / External Links */}
         {article.links && article.links.length > 0 && (
           <div className="mt-10 bg-muted/30 dark:bg-muted/20 rounded-lg p-6 border border-muted-foreground/20">
-            <h2 className="text-xl font-bold text-muted-foreground mb-4 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>
+            <h2 className="text-xl font-bold text-muted-foreground mb-4 font-sans" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>
               References & Further Reading
             </h2>
             <ul className="space-y-3 list-disc list-inside">
@@ -206,7 +206,7 @@ const ArticleDetailPage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-foreground text-base md:text-lg font-medium no-underline font-sans"
-                    style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}
+                    style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', textDecoration: 'none' }}
                   >
                     <RoughNotation type="underline" onHover={true} color="currentColor">
                       <span>{link.title || link.url}</span>
@@ -223,7 +223,7 @@ const ArticleDetailPage = () => {
       <section className="mt-16">
         <div
           className="bg-gray-100 dark:bg-gray-600 rounded-lg p-6 flex flex-row items-center justify-between gap-4 border border-gray-300 dark:border-gray-600"
-          style={{ fontFamily: 'Aptos, sans-serif' }}
+          style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}
         >
           <div className="flex flex-col items-start gap-2">
             <div className="text-4xl font-bold text-gray-900 dark:text-gray-100">
@@ -238,7 +238,7 @@ const ArticleDetailPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-md font-semibold text-lg flex items-center text-white bg-black dark:bg-muted-foreground hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors"
-            style={{ fontFamily: 'Aptos, sans-serif' }}
+            style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}
           >
             <Youtube className="w-6 h-6 mr-2 flex-shrink-0" />
             Follow Me
@@ -251,8 +251,8 @@ const ArticleDetailPage = () => {
         <div className="flex justify-between gap-12 items-start">
           {prevArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Previous Article</span>
-              <Link to={`/article/${prevArticle.id}`} className="text-muted-foreground text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
+              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>Previous Article</span>
+              <Link to={`/article/${prevArticle.id}`} className="text-muted-foreground text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', textDecoration: 'none' }}>
                 <RoughNotation type="underline" onHover={true} color="currentColor">
                   <span>{prevArticle.title}</span>
                 </RoughNotation>
@@ -261,8 +261,8 @@ const ArticleDetailPage = () => {
           )}
           {nextArticle && (
             <div className="flex flex-col items-start text-left">
-              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontFamily: 'Aptos, sans-serif' }}>Next Up</span>
-              <Link to={`/article/${nextArticle.id}`} className="text-muted-foreground text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Aptos, sans-serif', textDecoration: 'none' }}>
+              <span className="text-2xl font-bold text-foreground mb-3 font-sans" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}>Next Up</span>
+              <Link to={`/article/${nextArticle.id}`} className="text-muted-foreground text-base md:text-lg font-semibold no-underline hover:no-underline font-sans" style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', textDecoration: 'none' }}>
                 <RoughNotation type="underline" onHover={true} color="currentColor">
                   <span>{nextArticle.title}</span>
                 </RoughNotation>
@@ -275,7 +275,7 @@ const ArticleDetailPage = () => {
       <Button
         onClick={handleScrollClick}
         className="fixed bottom-6 right-6 bg-muted-foreground text-white rounded-full shadow-lg hover:bg-foreground transition-all flex items-center justify-center group"
-        style={{ fontFamily: 'Aptos, sans-serif', padding: '0.75rem 1rem' }}
+        style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', padding: '0.75rem 1rem' }}
       >
         {isAtBottom ? (
           <>

@@ -45,8 +45,8 @@
     --ring: 220 90% 50%;
     
     /* Typography Scale */
-    --font-sans: 'Aptos', system-ui, sans-serif;
-    --font-serif: 'Aptos', system-ui, sans-serif;
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     
     /* Spacing & Layout */
     --radius: 0.75rem;

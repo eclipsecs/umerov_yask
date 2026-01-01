@@ -216,7 +216,7 @@ const ArticleDetailPage = () => {
       <Button
         onClick={handleScrollClick}
         className="fixed bottom-6 right-6 bg-muted-foreground text-white rounded-full shadow-lg hover:bg-foreground transition-all flex items-center justify-center group"
-        style={{ fontFamily: 'Aptos, sans-serif', padding: '0.75rem 1rem' }}
+        style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', padding: '0.75rem 1rem' }}
       >
         {isAtBottom ? (
           <>

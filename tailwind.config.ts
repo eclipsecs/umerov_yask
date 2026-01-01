@@ -58,8 +58,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				sans: ['Aptos', 'system-ui', 'sans-serif'],
-				serif: ['Aptos', 'system-ui', 'sans-serif']
+				sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+				serif: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif']
 			},
 			maxWidth: {
 				'content': 'var(--content-width)'
