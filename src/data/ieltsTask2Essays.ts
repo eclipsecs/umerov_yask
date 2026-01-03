@@ -19,6 +19,33 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '32',
+    task: 'task2',
+    title: 'Task two: 32 of 100 - Professional Athletes as Role Models',
+    question: 'Some people say that professional athletes should be role model for young people.  Do you agree or disagree?',
+    bandScore: 8.5,
+    taskResponse: 9,
+    coherenceCohesion: 8,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '39 minutes',
+    wordCount: 391,
+    tags: ['Higher Education', 'Theoretical Education', 'Practical Skills'],
+    content: `
+
+Professional athletes are now some of the most followed individuals in the world, which is why people believe those athletes should position themselves as role models for a younger generation. I agree with this notion since professional athletes represent the concept of sportsmanship and have a huge following thanks to the power of media.
+
+Nearly any sport is based on the idea that opponents should respect one another, meaning sportspeople are often examples of how people should conduct themselves. This philosophy is not entirely new as sports events such as the Olympic Games have always been associated with peace and fair competition. Thus, it is reasonable that we, as a society, expect athletes to be role models for children and teenagers by showing them great athletic ability combined with moral compass. Sportspeople who fail to act as a role model may disrespect the sport they represent and its principles.
+
+The world of sports has been commercialized to a point that we are highly likely to be influenced by a sports celebrity these days. In fact, two of the most popular people in the world are Cristiano Ronaldo and Lionel Messi, both with hundreds of millions of followers on platforms, such as Instagram, are constantly shown on feeds. This is the second reason why athletes should be role models as long as they want to have a positive impact both on and off the field. By choosing a path of a great model, athletes can inspire and guide entire generations. Muhammad Ali, for example, is often celebrated for his attitude and behaviour outside of a ring, representing values such as being truthful, dedicated and brave.
+
+Failure to act as an exemplary athlete may lead to negative consequences such as distorting sports fans’ moral values. This is especially true in boxing and MMA, the sports where trash talking and disrespect have become quite evident, making some younger individuals imitate such behaviour. Conor McGregor, for instance, has become notorious for his ability to trash talk his opponents and have an evil presence, and he, is arguably, the most popular MMA fighter in the world with millions of followers.
+
+In conclusion, I firmly believe that sportspeople should prioritize being a role model along with becoming successful in their respective sports. This ensures that they showcase great sportsmanship and have a positive impact on young people.
+
+`
+  },
+  {
     id: '31',
     task: 'task2',
     title: 'Task two: 31 of 100 - Theoretical vs Practical Education',
