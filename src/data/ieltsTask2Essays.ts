@@ -19,6 +19,31 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '31',
+    task: 'task2',
+    title: 'Task two: 31 of 100 - Theoretical vs Practical Education',
+    question: 'University education is becoming increasingly theoretical, and many students graduate without practical skills. To what extent do you agree or disagree?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '37 minutes',
+    wordCount: 306,
+    tags: ['Higher Education', 'Theoretical Education', 'Practical Skills'],
+    content: `
+
+There is a view, people claiming that theoretical skills are becoming more common than practical ones. I believe that this strategy is not entirely negative as theory forms the foundation for innovation, however, educational institutions should still integrate more practical components to meet modern job demands.
+
+Overemphasizing on theoretical skills subjects to lack of readiness. If students are constantly faced with abstract models instead of real tools, this form of education might lead to higher unemployment among graduates. Given the fact that in modern job market, companies send employer representatives to seek for candidates with hands-on experiences. Most universities in Central Asia, Uzbekistan for example, works on outdated curricula which is limited to practical work. In fact, computer science has become so prevalent in this country to an extent where students know algorithm but are unable to work in industry software. This, as a result, leaves no room for individuals to land a job with higher-wage salary.
+
+Despite these disadvantages, theory provides a foundation, which however should be blended with practice. Ivy league universities like: Harvard, and Stanford, conduct classes combined with practical training such as: medical and engineering internship. Engineering breakthroughs come from strong theoretical grounding combined with applied experimentation. While advantageous, theory is permanent compared with practical skills that constantly transitions as the market demand changes. Therefore, universities should adopt hybrid approach. By doing so, they not only produce civil workers but also cultivate citizens who will contribute to the society in the long run. 
+
+In conclusion, although universities are often criticised for delivering programmes that are too theoretical, this academic focus remains essential for building a strong intellectual foundation. However, without practical components that reflect industry needs, graduates may continue to feel unprepared for the workplace. Therefore, universities should adopt a more balanced approach that combines rigorous theoretical study with practical, hands-on experience.
+
+`
+  },
+  {
     id: '30',
     task: 'task2',
     title: 'Task two: 30 of 100 - University Attendance',
