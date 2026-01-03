@@ -19,6 +19,108 @@ export interface IELTSEssay {
 export const task2Essays: IELTSEssay[] = [
   // Task 2 - Part 1 of 100
   {
+    id: '30',
+    task: 'task2',
+    title: 'Task two: 30 of 100 - University Attendance',
+    question: 'More young people than ever before are attending university. What are the advantages and disadvantages of this trend?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '37 minutes',
+    wordCount: 300,
+    tags: ['Higher Education', 'University Enrollment', 'Youth Trends'],
+    content: `
+
+There is a growing demand from young individuals enrolling in universities. While true in certain countries, this trend has sparked debate about whether it brings more benefits than drawbacks. Although pursuing higher education can open doors to personal and professional development, it may also create unnecessary pressure on both individuals and society.
+
+One of the most prevalent reasons for attending universities is the tailored curriculum for students enrolling in a particular institution. Prestigious universities, in particular, design programmes that cater closely to students’ academic strengths, career aspirations, and research interests. Such specialised training not only equips learners with in-depth knowledge but also exposes them to expert faculty, advanced facilities, and a network of forward-thinking peers. These elements collectively enhance students’ intellectual growth and improve their employability. For many young people, this fine-tuned educational environment is a compelling reason to pursue university studies.
+
+However, the rising number of university enrollments also comes with notable disadvantages. Firstly, not all students have the aptitude or interest in academically rigorous pathways, yet they may still feel compelled to join university due to societal expectations. This often results in disengagement, weak academic performance, or even dropping out, which can negatively affect their confidence and long-term prospects. Secondly, as more graduates enter the labour market, competition becomes fiercer, potentially devaluing university degrees. In contrast, vocational professions—such as electricians, mechanics, and healthcare technicians—remain understaffed despite offering stable income and practical career progression. Overemphasis on university education can therefore create an imbalance in the workforce and limit economic productivity.
+
+In conclusion, while the growing enrolment in universities offers students specialised knowledge and valuable opportunities, it may also lead to skill mismatches and increased pressure on individuals. For society to progress sustainably, both university education and vocational training should be recognised as equally legitimate pathways to success
+
+`
+  },
+  {
+    id: '29',
+    task: 'task2',
+    title: 'Task two: 29 of 100 - Wildlife Conservation',
+    question: 'Many believe that it is important to save wild animals, while others believe that it is important to protect some, not all of them. Discuss both views and give your opinion.',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '37 minutes',
+    wordCount: 362,
+    tags: ['Wildlife Conservation', 'Animal Protection', 'Ecology'],
+    content: `
+
+There has been an ongoing debate regarding if animals of all species should be preserved. Some people believe that it is better to save countable number of them rather than focusing on all. Although saving all animals could put resource into strain, I believe that a broader approach is necesasry because every wild animal contributes to ecological stability and long-term environmental health.
+
+All wild animals have the equal rights as human to live, as long as they do not negatively impact human beings. There are certain number of animals, if not all, contribute to the ecosystem, and the loss of even seemingly insignificant species might trigger a cascade of environmental problems. These animals control the natural processes such as: pollination, seed dispersal, soil formation, and regulating other species populations. Disappearance of any of these roles could mean that the entire ecosystem may become unstable. Bees, for example, contribute to crop yields. However, there has been a decline in their population, which has already reduced the crop yields and threatens food security in many countries. Therefore, it is important to maintain a wide variety of species as it increases ecosystem resilience, allowing nature to recover from natural disasters quicker and human disturbances. Thus, comprehensive protetion is necessary to preserve stability in the long term.
+
+In contrast, some animals require more resources and investment to preserve them. Governments and organizations often prioritize limited number of species due to limited resources and budgets. This means that trying to save all animals is going to put these essential tools to danger and should be used strategically. Prioritizing some animals is also financially practical, as flagship species like elephant and panda attract funding across the globe. This approach allows conservationists to allocate resources where they can have the greatest impoact. For these reasons, focusing on a small number of species is seen as more realistic, and cost-effective method of protecting biodiversity.
+
+In conclusion, although focusing on some animals may appear efficient, this narrow approach overlooks the intricate connections that sustan natural ecosystems. In my view, all wild animals should be protected, as they play an irreplaceable role in maintaing environmental balance and the ensuring planets long-term sustainability.
+
+`
+  },
+  {
+    id: '28',
+    task: 'task2',
+    title: 'Task two: 28 of 100 - Advertising and Consumer Behavior',
+    question: 'Some believe that people will purchase a product based on their needs and advertising is not needed. To what extent do you agree or disagree?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '42 minutes',
+    wordCount: 417,
+    tags: ['Advertising', 'Consumer Behavior', 'Marketing'],
+    content: `
+
+Advertising is widely seen as one of the most powerful tools influencing people’s purchasing decisions. However, some argue that consumers ultimately buy products based on their genuine needs, and therefore advertisements have limited importance. While individuals certainly make rational choices at times, I believe that advertising remains highly influential because it builds product awareness and helps companies generate sustainable revenue.
+
+To begin with, advertisements shape consumer behaviour by creating desires that might not exist otherwise. Modern consumers are constantly exposed to promotional messages—on streets, online platforms, or public transport—which subtly encourage conformity and trend-following. This is especially evident among young people, who are more susceptible to impulsive purchases. For example, branded sneakers often represent more than simple footwear: they symbolise identity, belonging, and confidence. Even when individuals already own similar pairs, compelling advertising may convince them that buying another will make them happier, more stylish, or more complete. Although such purchases may not always reflect genuine need, they demonstrate how effectively advertisements can influence emotions and behaviour.
+
+On the other hand, advertising is not only designed to trigger unnecessary consumption; it also plays a crucial role in building brand identity and informing the public. Start-up companies, for instance, depend heavily on marketing to make their products recognisable in a competitive market. By investing in advertising, businesses create emotional connections with consumers and help them understand how a product works or why it matters. Without this visibility, companies—especially small enterprises—risk financial collapse due to a lack of customer awareness. Pharmaceutical advertisements illustrate this clearly: they provide essential information about who should use a medication, potential side effects, and when to avoid it. Such campaigns empower consumers to make informed decisions rather than relying on guesswork.
+
+Effective advertising is indispensable for boosting sales and ensuring long-term business growth. When a company is first established, it typically lacks a customer base and must rely on strategic promotion to build trust and attract early buyers. Digital advertising has become especially important in this regard. Local cafés, for example, often use targeted online ads to introduce their menus, highlight special offers, and persuade residents to try new dishes. Without these promotional efforts, many small businesses would struggle to survive, let alone expand.
+
+In conclusion, although some advertisements encourage unnecessary or impulsive purchases, this is not their sole purpose. Advertising is essential for raising awareness, creating brand identity, and helping businesses grow, especially in the early stages. Therefore, it remains a highly significant factor in shaping modern consumer behaviour.
+
+`
+  },
+  {
+    id: '27',
+    task: 'task2',
+    title: 'Task two: 27 of 100 - Sports Facilities',
+    question: 'Some countries invest in specialized sport facilities for top athletes but not for the average people. Is this a positive or negative development?',
+    bandScore: 9,
+    taskResponse: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 8,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '40 minutes',
+    wordCount: 320,
+    tags: ['Sports Facilities', 'Elite Athletes', 'Public Health'],
+    content: `
+
+In many countries, governments prioritise investment in specialised sports facilities designed exclusively for elite athletes rather than the general public. While such an approach can enhance international sporting success, I believe this is largely a negative development because it marginalises ordinary citizens and undermines public health, despite the potential economic and reputational benefits.
+    
+On the positive side, investing in specialised sports facilities can significantly enhance elite athletic performance and national prestige. Professional athletes require highly advanced training environments tailored to their physical and technical needs, which are rarely available in public sports centres. Access to cutting-edge equipment, specialised coaching, and controlled training conditions allows athletes to maximise endurance, reduce injury risk, and perform consistently at an international level. For example, Uzbekistan has increasingly supported high-performance training centres for national athletes, contributing to stronger results in events such as the Olympic Games and international football qualifiers. As a result, these investments elevate a country’s global profile and reinforce national pride.
+    
+Despite these advantages, prioritising elite athletes over the general population can have serious negative implications for public health and social fairness. When sports facilities are inaccessible to ordinary citizens, opportunities for regular physical activity become limited, increasing the risk of sedentary lifestyles and long-term health issues. This is particularly problematic given that such facilities are often funded through public taxation. Consequently, people may feel excluded from resources they indirectly finance. In Uzbekistan, for instance, community football pitches play an essential role in providing recreation and social interaction for young people. Restricting access to sports infrastructure may therefore discourage participation in physical activity and foster dissatisfaction among the wider population.
+    
+In conclusion, although specialised sports facilities can improve elite performance and enhance a nation’s international standing, their prioritisation over public facilities is largely detrimental. Governments should adopt a more balanced approach that supports top athletes while ensuring accessible sports infrastructure for the wider population, thereby promoting both national success and public well-being.
+
+`
+  },
+  {
     id: '26',
     task: 'task2',
     title: 'Task two: 26 of 100 - Art and Child Development',
