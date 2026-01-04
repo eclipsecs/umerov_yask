@@ -27,6 +27,8 @@ import chart_1_23 from '@/assets/ielts-task1-images/chart_1_23.png';
 import chart_1_24 from '@/assets/ielts-task1-images/chart_1_24.png';
 import chart_1_25 from '@/assets/ielts-task1-images/chart_1_25.png';
 import chart_1_26 from '@/assets/ielts-task1-images/chart_1_26.jpeg';
+import chart_1_27 from '@/assets/ielts-task1-images/chart_1_27.jpg';
+
 
 
 export interface IELTSEssay {
@@ -51,6 +53,32 @@ export interface IELTSEssay {
 
 export const task1Essays: IELTSEssay[] = [
   // Task 1 - Part 4 of 100
+  {
+    id: '127',
+    task: 'task1',
+    title: 'Task One: 27 of 100: Map ',
+    question: 'TThe picture below shows 2 different plans designed for a conference room. Summarize the information by selecting and reporting the main features, and make comparisons where relevant.',
+    bandScore: 9,
+    taskAchievement: 9,
+    coherenceCohesion: 9,
+    lexicalResource: 9.0,
+    grammaticalRangeAccuracy: 9,
+    writingTime: '12 minutes',
+    wordCount: 208,
+    tags: ['Maps'],
+    image: chart_1_27, // Add your image here when available
+    content: `
+
+The images illustrate the changes that have taken place in a conference room under two different plans.
+
+Overall, Plan A adopts a more traditional, teacher-centred layout, which is suitable for lecture-style sessions, whereas Plan B is designed to encourage interaction and collaboration, making it more appropriate for group discussions. Notably, Plan B accommodates a larger number of participants than Plan A.
+
+Under Plan A, the room is relatively simple and open, with limited facilities. The entrance is located in the top-right corner and faces a whiteboard positioned at the front of the room. A podium is situated to the left of the whiteboard for presentations, while the back wall is allocated to a morning-tea area. In the centre of the room, tables are arranged in a U-shaped formation, allowing participants to face the speaker during lectures.
+
+By contrast, Plan B makes more efficient use of space. Although the entrance remains unchanged, the whiteboard is relocated closer to the centre, with the podium positioned directly in front of it. The morning-tea area is moved to the top-left corner and arranged in an L-shape. While the tables retain their original U-shaped layout, additional seating is provided, enabling the room to accommodate up to 18 participants, with six seats per table.
+
+`
+  },
   {
     id: '126',
     task: 'task1',
