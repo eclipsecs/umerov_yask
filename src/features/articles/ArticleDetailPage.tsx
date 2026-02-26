@@ -166,7 +166,7 @@ const ArticleDetailPage = () => {
           "prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md " +
           "prose-pre:rounded-lg prose-pre:p-4 " +
           "prose-img:rounded-lg prose-img:shadow-md " +
-          "text-gray-800 dark:text-gray-200"
+          "text-black dark:text-white"
         }
         style={{ fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem', fontFamily: 'var(--font-article)' }}
       >
