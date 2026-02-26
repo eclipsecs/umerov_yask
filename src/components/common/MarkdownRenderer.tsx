@@ -9,7 +9,7 @@ interface MarkdownRendererProps {
 
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, className }) => {
   return (
-    <div className={cn('prose prose-lg', className)}>
+    <div className={cn('prose prose-lg', className)} style={{ fontFamily: 'var(--font-article)' }}>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{

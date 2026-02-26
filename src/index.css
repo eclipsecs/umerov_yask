@@ -47,6 +47,7 @@
     /* Typography Scale */
     --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-article: 'Aptos', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     
     /* Spacing & Layout */
     --radius: 0.75rem;

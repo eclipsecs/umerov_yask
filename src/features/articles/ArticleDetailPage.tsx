@@ -168,7 +168,7 @@ const ArticleDetailPage = () => {
           "prose-img:rounded-lg prose-img:shadow-md " +
           "text-gray-800 dark:text-gray-200"
         }
-        style={{ fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif' }}
+        style={{ fontWeight: 450, fontStyle: 'normal', fontSize: '1.25rem', fontFamily: 'var(--font-article)' }}
       >
         <MarkdownRenderer content={article.content} />
         {/* Quotes Section */}
