@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ArrowDown, ArrowUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import RoughNotation from '@/components/RoughNotation';
+import RoughNotation from '@/components/common/RoughNotation';
 
 import { articles } from '@/data/readings';
 

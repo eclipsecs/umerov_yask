@@ -3,7 +3,7 @@ import { Clock, Calendar, Tag, ArrowRight, FileText } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import RoughNotation from '@/components/RoughNotation';
+import RoughNotation from '@/components/common/RoughNotation';
 import { articles } from '@/data/articles';
 
 const ArticlesPage = () => {

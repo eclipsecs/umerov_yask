@@ -4,9 +4,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import RoughNotation from '@/components/RoughNotation';
-import { task1Essays } from '@/data/ieltsTask1Essays';
-import { task2Essays } from '@/data/ieltsTask2Essays';
+import RoughNotation from '@/components/common/RoughNotation';
+import { task1Essays } from '@/data/ielts/task1';
+import { task2Essays } from '@/data/ielts/task2';
 
 const IELTSEssaysPage = () => {
   const [searchParams] = useSearchParams();

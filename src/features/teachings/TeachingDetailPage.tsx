@@ -1,11 +1,11 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import MarkdownRenderer from '@/components/MarkdownRenderer';
-import YouTubeEmbed from '@/components/YouTubeEmbed';
+import MarkdownRenderer from '@/components/common/MarkdownRenderer';
+import YouTubeEmbed from '@/components/common/YouTubeEmbed';
 import { teachings } from '@/data/teachings';
 import { calculateReadTime, formatReadTime } from '@/utils/readTime';
-import RoughNotation from '@/components/RoughNotation';
+import RoughNotation from '@/components/common/RoughNotation';
 
 const TeachingDetailPage = () => {
   const { id } = useParams<{ id: string }>();

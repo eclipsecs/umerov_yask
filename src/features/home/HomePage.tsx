@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import RoughNotation from '@/components/RoughNotation';
-import LiquidTextReveal from '@/components/LiquidTextReveal';
+import RoughNotation from '@/components/common/RoughNotation';
+import LiquidTextReveal from '@/components/common/LiquidTextReveal';
 import { articles } from '@/data/articles';
 
 const getRelativeTime = (dateString: string) => {

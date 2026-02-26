@@ -4,7 +4,7 @@ import { Book, Calendar, Tag, BookOpen, Clock, ArrowRight, CheckCircle, Bookmark
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { books } from '@/data/books';
-import RoughNotation from '@/components/RoughNotation';
+import RoughNotation from '@/components/common/RoughNotation';
 
 const BooksPage = () => {
   const [filter, setFilter] = useState<'all' | 'reading' | 'to-read' | 'completed'>('all');

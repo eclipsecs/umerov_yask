@@ -3,11 +3,11 @@ import { ArrowLeft, Calendar, Clock, Tag, Twitter, Youtube, ArrowDown, ArrowUp }
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import MarkdownRenderer from '@/components/MarkdownRenderer';
-import YouTubeEmbed from '@/components/YouTubeEmbed';
-import { articles } from './../data/articles';
+import MarkdownRenderer from '@/components/common/MarkdownRenderer';
+import YouTubeEmbed from '@/components/common/YouTubeEmbed';
+import { articles } from '@/data/articles';
 import { calculateReadTime, formatReadTime } from '@/utils/readTime';
-import RoughNotation from '@/components/RoughNotation';
+import RoughNotation from '@/components/common/RoughNotation';
 
 
 const ArticleDetailPage = () => {

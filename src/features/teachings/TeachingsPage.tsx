@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import RoughNotation from '@/components/RoughNotation';
+import RoughNotation from '@/components/common/RoughNotation';
 import { teachings } from '@/data/teachings';
 
 const TeachingsPage = () => {

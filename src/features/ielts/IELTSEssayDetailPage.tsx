@@ -4,17 +4,19 @@ import { ArrowLeft, Clock, Award, FileText, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import MarkdownRenderer from '@/components/MarkdownRenderer';
-import { ieltsEssays } from '@/data/ieltsEssays';
-import { RoughNotation } from 'react-rough-notation';
+import MarkdownRenderer from '@/components/common/MarkdownRenderer';
+import { task1Essays } from '@/data/ielts/task1';
+import { task2Essays } from '@/data/ielts/task2';
+import RoughNotation from '@/components/common/RoughNotation';
 
 const IELTSEssayDetailPage = () => {
   const { id } = useParams<{ id: string }>();
-  const essay = ieltsEssays.find(e => e.id === id);
+  const essay = [...task1Essays, ...task2Essays].find(e => e.id === id);
+  const essays = essay?.task === 'task1' ? task1Essays : task2Essays;
 
-  const currentIndex = ieltsEssays.findIndex(e => e.id === id);
-  const prevEssay = currentIndex > 0 ? ieltsEssays[currentIndex - 1] : null;
-  const nextEssay = currentIndex < ieltsEssays.length - 1 ? ieltsEssays[currentIndex + 1] : null;
+  const currentIndex = essays.findIndex(e => e.id === id);
+  const prevEssay = currentIndex > 0 ? essays[currentIndex - 1] : null;
+  const nextEssay = currentIndex < essays.length - 1 ? essays[currentIndex + 1] : null;
 
   const [hoveredPrev, setHoveredPrev] = useState(false);
   const [hoveredNext, setHoveredNext] = useState(false);
@@ -210,7 +212,7 @@ const IELTSEssayDetailPage = () => {
                 className="text-muted-foreground text-base md:text-lg font-semibold"
                 style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', fontWeight: 700 }}
               >
-                <RoughNotation type="underline" show={hoveredPrev} color="currentColor" strokeWidth={4} animationDuration={500}>
+                <RoughNotation type="underline" onHover={true} color="currentColor" strokeWidth={4} animationDuration={500}>
                   <span>{prevEssay.title}</span>
                 </RoughNotation>
               </Link>
@@ -226,7 +228,7 @@ const IELTSEssayDetailPage = () => {
                 className="text-muted-foreground text-base md:text-lg font-semibold"
                 style={{ fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', fontWeight: 700 }}
               >
-                <RoughNotation type="underline" show={hoveredNext} color="currentColor" strokeWidth={4} animationDuration={500}>
+                <RoughNotation type="underline" onHover={true} color="currentColor" strokeWidth={4} animationDuration={500}>
                   <span>{nextEssay.title}</span>
                 </RoughNotation>
               </Link>
